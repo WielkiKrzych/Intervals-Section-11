@@ -1,1 +1,18 @@
-{}
+{
+  "athlete_id": "39505110",
+  "last_updated": "2026-02-01T08:37:56.458538",
+  "date_range": {
+    "start": "2026-01-18",
+    "end": "2026-02-01"
+  },
+  "wellness": [],
+  "activities": [],
+  "profile": {},
+  "quick_stats": {
+    "total_activities": 0,
+    "total_tss": 0,
+    "total_duration_hours": 0,
+    "total_energy_kj": 0,
+    "period_days": 14
+  }
+}
