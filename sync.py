@@ -165,6 +165,32 @@ def compute_zone_distribution(activities: list[dict[str, Any]]) -> dict[str, int
     return sorted_zones
 
 
+def get_recovery_recommendation(tsb: float) -> dict[str, str]:
+    if tsb >= 10:
+        return {"status": "green", "text": "Fresh - Great for race or hard workout", "icon": "🚀"}
+    elif tsb >= 5:
+        return {"status": "green", "text": "Ready - Good for threshold or VO2max", "icon": "✅"}
+    elif tsb >= 0:
+        return {"status": "ok", "text": "Normal - Maintain endurance", "icon": "👍"}
+    elif tsb >= -5:
+        return {"status": "warning", "text": "Caution - Easy training only", "icon": "⚠️"}
+    else:
+        return {"status": "danger", "text": "Overreaching - Rest day recommended", "icon": "🛑"}
+
+
+def compute_weekly_tss_distribution(activities: list[dict[str, Any]]) -> dict[str, float]:
+    from collections import defaultdict
+    weekly_tss = defaultdict(float)
+    for a in activities:
+        date_str = a.get("start_date_local", "")
+        if date_str:
+            date = date_str[:10]
+            week_start = date[:8] + "01"
+            tss = a.get("icu_training_load", 0) or 0
+            weekly_tss[week_start] += tss
+    return dict(sorted(weekly_tss.items()))
+
+
 def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[str, Any]:
     if not activities:
         return {
@@ -235,8 +261,11 @@ def generate_html_report(data: dict[str, Any]) -> str:
     sport_totals = data.get("sport_totals", {})
     zones = data.get("zone_distribution", {})
     wellness = data.get("wellness", [])
+    activities = data.get("activities", [])
     
     latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
+    
+    recovery = get_recovery_recommendation(summary['tsb'])
     
     zone_data = []
     zone_labels = []
@@ -250,6 +279,18 @@ def generate_html_report(data: dict[str, Any]) -> str:
     wellness_dates = [w.get("id", "") for w in wellness_sorted]
     ctl_data = [w.get("ctl", 0) or 0 for w in wellness_sorted]
     atl_data = [w.get("atl", 0) or 0 for w in wellness_sorted]
+    
+    weight_data = []
+    weight_dates = []
+    for w in wellness_sorted:
+        weight = w.get("weight")
+        if weight:
+            weight_dates.append(w.get("id", ""))
+            weight_data.append(weight)
+    
+    weekly_tss = compute_weekly_tss_distribution(activities)
+    weekly_labels = list(weekly_tss.keys())
+    weekly_tss_data = list(weekly_tss.values())
     
     sport_rows = "".join(f"<tr><td>{sport}</td><td>{t.get('total_time_hours', 0)}h</td><td>{t.get('total_distance_km', 0)} km</td><td>{t.get('total_kj', 0)} kJ</td><td>{t.get('total_load', 0)}</td></tr>" for sport, t in sport_totals.items())
     
@@ -328,6 +369,10 @@ def generate_html_report(data: dict[str, Any]) -> str:
                     <span class="metric-label">Ramp Rate</span>
                     <span class="metric-value">{summary['ramp_rate']}</span>
                 </div>
+                <div class="metric" style="background: var(--bg-secondary); margin: 10px -20px -20px; padding: 12px 20px; border-radius: 0 0 12px 12px;">
+                    <span class="metric-label">{recovery['icon']} Recovery</span>
+                    <span class="metric-value" style="font-size: 0.95rem;">{recovery['text']}</span>
+                </div>
             </div>
             
             <div class="card">
@@ -362,6 +407,21 @@ def generate_html_report(data: dict[str, Any]) -> str:
                 <h2>Zone Distribution</h2>
                 <div class="chart-container">
                     <canvas id="zoneChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Weekly TSS Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="weeklyTssChart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Weight Trend</h2>
+                <div class="chart-container">
+                    <canvas id="weightChart"></canvas>
                 </div>
             </div>
         </div>
@@ -427,6 +487,36 @@ def generate_html_report(data: dict[str, Any]) -> str:
             }},
             options: {{ responsive: true, maintainAspectRatio: false }}
         }});
+        
+        new Chart(document.getElementById('weeklyTssChart'), {{
+            type: 'bar',
+            data: {{
+                labels: {json.dumps(weekly_labels)},
+                datasets: [{{
+                    label: 'Weekly TSS',
+                    data: {json.dumps(weekly_tss_data)},
+                    backgroundColor: '#0071e3',
+                    borderRadius: 4
+                }}]
+            }},
+            options: {{ responsive: true, maintainAspectRatio: false }}
+        }});
+        
+        new Chart(document.getElementById('weightChart'), {{
+            type: 'line',
+            data: {{
+                labels: {json.dumps(weight_dates)},
+                datasets: [{{
+                    label: 'Weight (kg)',
+                    data: {json.dumps(weight_data)},
+                    borderColor: '#5856d6',
+                    backgroundColor: 'rgba(88, 86, 214, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }}]
+            }},
+            options: {{ responsive: true, maintainAspectRatio: false }}
+        }});
     </script>
 </body>
 </html>"""
@@ -440,6 +530,7 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
     wellness = data.get("wellness", [])
     
     latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
+    recovery = get_recovery_recommendation(summary['tsb'])
     
     lines = [
         f"# Training Report",
@@ -451,6 +542,7 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
         f"- **Fatigue (ATL):** {summary['atl']} - Acute Training Load", 
         f"- **Form (TSB):** {summary['tsb']} = CTL - ATL (negative = overtraining)",
         f"- **Ramp Rate:** {summary['ramp_rate']}",
+        f"- **{recovery['icon']} Recovery:** {recovery['text']}",
         "",
         "## Activity Summary",
         f"- **Total Activities:** {stats['total_activities']}",

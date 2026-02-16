@@ -116,6 +116,9 @@ python3 preferences.py
 
 - 🌙 **Dark Mode** — Auto-follows system theme
 - 📈 **CTL vs ATL Chart** — Fitness & fatigue over time
+- 📊 **Weekly TSS** — Bar chart showing training load per week
+- ⚖️ **Weight Trend** — Line chart tracking body weight
+- 💡 **Recovery Recommendation** — AI-powered advice based on TSB
 - 🥧 **Zone Distribution** — Pie chart of training zones
 - 🚴 **Sport Breakdown** — Ride/Run/Swim stats
 - 💤 **Wellness Data** — Sleep, HR, HRV, weight, readiness
