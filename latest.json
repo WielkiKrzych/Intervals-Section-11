@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-02-16T11:09:26.312428",
+  "last_updated": "2026-02-16T11:54:59.563329",
   "date_range": {
     "start": "2026-01-19",
     "end": "2026-02-16"
@@ -1732,26 +1732,26 @@
     },
     {
       "id": "2026-02-16",
-      "ctl": 91.451416,
-      "atl": 93.62504,
-      "rampRate": 0.544487,
-      "ctlLoad": 90.0,
-      "atlLoad": 90.0,
+      "ctl": 90.486755,
+      "atl": 88.16703,
+      "rampRate": -0.42017365,
+      "ctlLoad": 49.0,
+      "atlLoad": 49.0,
       "sportInfo": [
         {
           "type": "Ride",
-          "eftp": 371.25363,
-          "wPrime": 31229.502,
-          "pMax": 1294.6471
+          "eftp": 370.8824,
+          "wPrime": 31198.273,
+          "pMax": 1293.3524
         },
         {
           "type": "Run",
-          "eftp": 461.8887,
-          "wPrime": 39404.938,
-          "pMax": 928.07996
+          "eftp": 461.42682,
+          "wPrime": 39365.53,
+          "pMax": 927.1519
         }
       ],
-      "updated": "2026-02-16T03:59:42.739+00:00",
+      "updated": "2026-02-16T11:54:32.684+00:00",
       "weight": 98.2,
       "restingHR": 67,
       "hrv": 38.0,
@@ -1793,45 +1793,45 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 91.5,
-    "atl": 93.6,
-    "tsb": -2.2,
-    "ramp_rate": 0.54
+    "ctl": 90.5,
+    "atl": 88.2,
+    "tsb": 2.3,
+    "ramp_rate": -0.42
   },
   "activities": [
     {
       "id": 93658551,
       "start_date_local": "2026-02-16T11:15:00",
-      "icu_training_load": 90,
-      "icu_atl": 93.62504,
-      "icu_ctl": 91.451416,
+      "icu_training_load": 48,
+      "icu_atl": 88.03391,
+      "icu_ctl": 90.46323,
       "type": "Ride",
       "carbs_used": null,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
-      "ss_cp": 127.87864,
+      "ss_cp": 68.29533,
       "calendar_id": 1,
       "uid": "22fcfef4-5dd5-491d-947f-fd7fb7819e31",
       "athlete_id": "39505110",
       "category": "WORKOUT",
-      "end_date_local": "2026-02-16T13:25:00",
+      "end_date_local": "2026-02-16T12:25:00",
       "name": "Easy Z2",
-      "description": "-5m 56%\n-5m 60%\n-120m 65%",
+      "description": "-5m 56%\n-5m 60%\n-60m 65%",
       "indoor": false,
       "color": "#1f77b4",
-      "moving_time": 7800,
+      "moving_time": 4200,
       "icu_ftp": null,
       "w_prime": null,
       "p_max": null,
       "atl_days": null,
       "ctl_days": null,
-      "updated": "2026-02-15T19:01:46.122+00:00",
+      "updated": "2026-02-16T11:23:41.021+00:00",
       "not_on_fitness_chart": false,
       "show_as_note": false,
       "show_on_ctl_line": false,
       "for_week": false,
       "target": null,
-      "joules": 2034300,
+      "joules": 1087500,
       "joules_above_ftp": 0,
       "workout_doc": {
         "steps": [
@@ -1854,13 +1854,13 @@
               "units": "%ftp",
               "value": 65
             },
-            "duration": 7200
+            "duration": 3600
           }
         ],
         "locales": [],
         "options": {},
         "distance": 0,
-        "duration": 7800,
+        "duration": 4200,
         "zoneTimes": [
           {
             "id": "Z1",
@@ -1877,7 +1877,7 @@
             "id": "Z2",
             "max": 75,
             "name": "Z2",
-            "secs": 7800,
+            "secs": 4200,
             "zone": 2,
             "color": "#009e00",
             "maxWatts": 303,
@@ -1954,13 +1954,13 @@
           }
         ],
         "strain_score": {
-          "ss_cp": 127.87863786672989,
+          "ss_cp": 68.29532245685778,
           "ss_p_max": 0,
           "ss_w_prime": 0,
-          "strain_score": 127.87863786672989
+          "strain_score": 68.29532245685778
         },
-        "average_watts": 261,
-        "normalized_power": 261,
+        "average_watts": 259,
+        "normalized_power": 259,
         "variability_index": 1,
         "polarization_index": 0
       },
@@ -1985,17 +1985,17 @@
       "plan_folder_id": null,
       "plan_workout_id": null,
       "plan_applied": null,
-      "icu_intensity": 64.45034,
-      "strain_score": 127.87864,
+      "icu_intensity": 64.1427,
+      "strain_score": 68.29533,
       "plan_name": null,
-      "paired_activity_id": null
+      "paired_activity_id": "i125576420"
     },
     {
       "id": 93312676,
       "start_date_local": "2026-02-17T11:00:00",
       "icu_training_load": 67,
-      "icu_atl": 90.08066,
-      "icu_ctl": 90.876114,
+      "icu_atl": 85.34923,
+      "icu_ctl": 89.93415,
       "type": "Run",
       "carbs_used": null,
       "ss_p_max": null,
@@ -2140,8 +2140,8 @@
       "id": 86841652,
       "start_date_local": "2026-02-18T06:00:00",
       "icu_training_load": 67,
-      "icu_atl": 103.38213,
-      "icu_ctl": 93.20833,
+      "icu_atl": 99.280556,
+      "icu_ctl": 92.28853,
       "type": "Swim",
       "carbs_used": null,
       "ss_p_max": null,
@@ -2244,8 +2244,8 @@
       "id": 93312688,
       "start_date_local": "2026-02-18T11:00:00",
       "icu_training_load": 123,
-      "icu_atl": 103.38213,
-      "icu_ctl": 93.20833,
+      "icu_atl": 99.280556,
+      "icu_ctl": 92.28853,
       "type": "Ride",
       "carbs_used": null,
       "ss_p_max": 0.0,
@@ -2474,8 +2474,8 @@
       "id": 93312717,
       "start_date_local": "2026-02-19T12:00:00",
       "icu_training_load": 67,
-      "icu_atl": 98.538864,
-      "icu_ctl": 92.59169,
+      "icu_atl": 94.9833,
+      "icu_ctl": 91.693535,
       "type": "Run",
       "carbs_used": null,
       "ss_p_max": null,
@@ -2599,8 +2599,8 @@
       "id": 93312749,
       "start_date_local": "2026-02-20T12:00:00",
       "icu_training_load": 109,
-      "icu_atl": 99.93147,
-      "icu_ctl": 92.97775,
+      "icu_atl": 96.849236,
+      "icu_ctl": 92.10072,
       "type": "Ride",
       "carbs_used": null,
       "ss_p_max": 0.83367276,
@@ -2882,8 +2882,8 @@
       "id": 93658637,
       "start_date_local": "2026-02-21T10:00:00",
       "icu_training_load": 129,
-      "icu_atl": 103.80114,
-      "icu_ctl": 93.825294,
+      "icu_atl": 101.12921,
+      "icu_ctl": 92.9689,
       "type": "Ride",
       "carbs_used": null,
       "ss_p_max": 0.024518091,
@@ -3296,18 +3296,18 @@
   },
   "quick_stats": {
     "total_activities": 7,
-    "total_tss": 652,
-    "total_duration_hours": 11.43,
-    "total_energy_kj": 8828.4,
+    "total_tss": 610,
+    "total_duration_hours": 10.43,
+    "total_energy_kj": 7881.6,
     "period_days": 28
   },
   "sport_totals": {
     "Ride": {
-      "total_time": 30900,
-      "total_kj": 8828.4,
+      "total_time": 27300,
+      "total_kj": 7881.6,
       "total_distance": 0,
-      "total_load": 451,
-      "total_time_hours": 8.58,
+      "total_load": 409,
+      "total_time_hours": 7.58,
       "total_distance_km": 0.0
     },
     "Run": {
@@ -3329,7 +3329,7 @@
   },
   "zone_distribution": {
     "Z1": 0,
-    "Z2": 26900,
+    "Z2": 23300,
     "Z3": 2400,
     "Z4": 1440,
     "Z5": 60,
