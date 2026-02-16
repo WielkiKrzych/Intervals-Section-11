@@ -1,0 +1,32 @@
+#!/bin/bash
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")/../.."
+cd "$SCRIPT_DIR"
+
+while true; do
+    CHOICE=$(osascript -e '
+    tell application "System Events"
+        activate
+        choose from list {"Sync Now", "Open Report", "Preferences", "Quit"} with title "Training Sync"
+    end tell
+    ')
+    
+    if [ "$CHOICE" = "false" ] || [ -z "$CHOICE" ]; then
+        exit 0
+    fi
+    
+    case "$CHOICE" in
+        "Sync Now")
+            python3 sync.py
+            osascript -e 'display notification "Sync complete!" with title "Training Sync"'
+            ;;
+        "Open Report")
+            open latest.html
+            ;;
+        "Preferences")
+            python3 preferences.py
+            ;;
+        "Quit")
+            exit 0
+            ;;
+    esac
+done

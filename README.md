@@ -50,14 +50,26 @@ export INTERVALS_KEY=your_api_key
 python3 sync.py
 ```
 
-### macOS App
+### macOS App (Desktop)
 Double-click `TrainingReport.app` - it will:
 1. Sync data from Intervals.icu
 2. Automatically open the HTML report in your browser
 
+### Menu Bar App
+Double-click `MenuBarApp.app` - runs in background with menu:
+- **Sync Now** - sync and show notification
+- **Open Report** - open HTML report
+- **Preferences** - open settings GUI
+- **Quit** - exit app
+
 ### Python Script
 ```bash
 python3 run_and_report.py
+```
+
+### Preferences GUI
+```bash
+python3 preferences.py
 ```
 
 ## Output Files
@@ -94,6 +106,19 @@ pytest tests/
 
 ## Files
 
+```
+Intervals-Section-11/
+├── sync.py                    # Main sync script
+├── preferences.py            # GUI settings editor
+├── run_and_report.py        # Python runner with report
+├── TrainingReport.app/      # Desktop app
+├── MenuBarApp.app/          # Menu bar app
+├── latest.json             # Raw data output
+├── latest.md               # Markdown report
+├── latest.csv              # CSV export
+├── latest.html             # Interactive HTML report
+├── .env                    # Credentials (gitignored)
+└── tests/                  # Unit tests
 ```
 Intervals-Section-11/
 ├── sync.py                    # Main sync script
