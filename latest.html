@@ -83,19 +83,19 @@
                 <h2>Activity Summary</h2>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">7</span>
+                    <span class="metric-value">66</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">10.43h</span>
+                    <span class="metric-value">87.19h</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">610</span>
+                    <span class="metric-value">5490</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Energy</span>
-                    <span class="metric-value">7881.6 kJ</span>
+                    <span class="metric-value">93847.5 kJ</span>
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
                     <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Ride</td><td>7.58h</td><td>0.0 km</td><td>7881.6 kJ</td><td>409</td></tr><tr><td>Run</td><td>2.18h</td><td>25.4 km</td><td>0.0 kJ</td><td>134</td></tr><tr><td>Swim</td><td>0.67h</td><td>2.0 km</td><td>0.0 kJ</td><td>67</td></tr>
+                    <tr><td>Ride</td><td>62.81h</td><td>2282.0 km</td><td>64144.0 kJ</td><td>3244</td></tr><tr><td>Run</td><td>18.31h</td><td>238.1 km</td><td>21109 kcal</td><td>1404</td></tr><tr><td>Swim</td><td>6.07h</td><td>20.2 km</td><td>5458 kcal</td><td>842</td></tr><tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>87.19h</td><td>2540.3 km</td><td>64255.1 kJ</td><td>5490</td></tr>
                 </tbody>
             </table>
         </div>
@@ -158,7 +158,7 @@
             </div>
         </div>
         
-        <p class="footer">Last updated: 2026-02-16T14:28:12.219790</p>
+        <p class="footer">Last updated: 2026-02-16T14:40:14.206055</p>
     </div>
     
     <script>
@@ -186,8 +186,8 @@
         new Chart(document.getElementById('zoneChart'), {
             type: 'pie',
             data: {
-                labels: ["'Z2'", "'Z3'", "'Z4'", "'Z5'", "'Z7'", "'Sweet Spot'", "'Z0'"],
-                datasets: [{ data: ["388", "40", "24", "1", "2", "40", "171"] }]
+                labels: ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7", "SS"],
+                datasets: [{ data: [103, 2940, 656, 782, 385, 2, 1, 238] }]
             },
             options: { responsive: true, maintainAspectRatio: false }
         });
@@ -195,10 +195,10 @@
         new Chart(document.getElementById('weeklyTssChart'), {
             type: 'bar',
             data: {
-                labels: ["2026-02-01"],
+                labels: ["2025-12-01", "2026-01-01", "2026-02-01"],
                 datasets: [{
                     label: 'Weekly TSS',
-                    data: [610.0],
+                    data: [1154.0, 2856.0, 1480.0],
                     backgroundColor: '#0071e3',
                     borderRadius: 4
                 }]

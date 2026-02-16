@@ -1,12 +1,71 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
-2026-02-16,Ride,Easy Z2,70,48,1087.5,0.0
-2026-02-17,Run,Treadmill: Threshold 6x1km,59,67,0.0,12.0
-2026-02-18,Swim,Swim,40,67,0.0,2.0
-2026-02-18,Ride,LowCadence // Force,135,123,2388.0,0.0
-2026-02-19,Run,Easy Run + R,71,67,0.0,13.3
-2026-02-20,Ride,Z2 + NM,120,109,2108.3,0.0
-2026-02-21,Ride,Threshold 4x6’ // Endurance,130,129,2297.8,0.0
+2026-02-16,Ride,Easy Z2,71,49,1104.6,40.1
+2026-02-15,Run,Treadmill: Vo2Max 20x400m,75,79,1810.2,14.8
+2026-02-14,Ride,Threshold 3x6’ // Endurance,120,116,2104.6,80.1
+2026-02-13,Ride,Z2 + NM,93,84,1603.7,46.6
+2026-02-12,Run,Easy Run + R,55,69,1475.3,11.8
+2026-02-11,Ride,LowCadence // Force,77,75,1404.5,50.4
+2026-02-11,Swim,Swim,37,89,0.0,2.1
+2026-02-10,Run,Treadmill: Easy Run,49,60,1334.7,10.5
+2026-02-09,Ride,Variable Z2,105,91,1824.9,61.3
+2026-02-08,Run,Treadmill: Threshold 3x1mile,54,58,1357.2,10.7
+2026-02-07,Ride,Threshold 1x10’ // Endurance,156,138,2701.7,108.8
+2026-02-06,VirtualRide,Z2,91,80,1605.0,57.4
+2026-02-05,Run,Easy Run,59,73,1616.6,12.7
+2026-02-04,Ride,LowCadence Force,90,87,1611.9,53.9
+2026-02-04,Swim,Swim,36,95,0.0,2.1
+2026-02-03,Run,Treadmill: Threshold 6x1km,53,70,1468.6,11.7
+2026-02-02,Ride,Z2,143,125,2499.1,86.1
+2026-02-01,Run,Treadmill: Easy Run + R,35,42,941.6,7.5
+2026-01-31,Run,Treadmill: Easy Run,40,49,1034.4,8.5
+2026-01-30,Ride,SST 2x10’ // Endurance,120,112,2102.6,76.0
+2026-01-29,Run,Easy Run,49,64,1354.8,10.9
+2026-01-28,Ride,Low Z2,90,62,1414.6,53.7
+2026-01-28,Swim,Swim,37,77,0.0,2.0
+2026-01-27,Run,Treadmill: Threshold 6x1km,52,80,1551.7,12.5
+2026-01-26,Ride,Z2,131,105,2202.0,76.5
+2026-01-25,Run,Treadmill: Vo2Max 10x500m,48,68,1379.6,11.0
+2026-01-24,Ride,SST 4x10’ // Endurance,120,117,2133.5,76.0
+2026-01-23,Ride,High Z2,94,88,1704.0,60.2
+2026-01-22,Run,Easy Run,61,70,1605.5,12.6
+2026-01-21,Ride,LowCadence 2x10' // Endurance,127,110,2206.6,67.9
+2026-01-21,Swim,Swim,38,83,0.0,2.1
+2026-01-20,Run,Treadmill: Threshold 6x1km,58,68,1515.6,12.1
+2026-01-19,Ride,Z2,126,111,2217.4,70.3
+2026-01-17,Run,Easy Run,33,37,958.5,6.7
+2026-01-16,Ride,SST 3x10’,90,90,1615.6,49.4
+2026-01-15,Run,Easy Run + R,56,74,1554.9,12.4
+2026-01-14,Ride,LowCadence Force // Endurance,92,83,1595.8,61.1
+2026-01-14,Swim,Swim,38,95,0.0,2.2
+2026-01-13,Run,Treadmill: Threshold 6x1km,48,77,1452.2,11.7
+2026-01-12,Ride,Z2,125,100,2101.5,80.4
+2026-01-11,Run,Treadmill: Vo2Max 12x400m,44,69,1297.5,10.6
+2026-01-10,Ride,SST 2x10’ // Endurance,136,127,2403.3,84.1
+2026-01-09,Swim,Swim,36,95,0.0,2.1
+2026-01-08,Run,Easy Run + R,39,56,1135.7,9.1
+2026-01-07,Ride,LowCadence // Force,91,82,1611.7,54.6
+2026-01-06,Run,Treadmill: Threshold 6x1km,56,78,1608.5,12.8
+2026-01-05,VirtualRide,Z2,105,85,1777.3,67.2
+2026-01-04,Run,Treadmill: Test,39,57,1119.3,9.1
+2026-01-03,Ride,Z2,110,81,1759.7,69.0
+2026-01-03,VirtualRide,Ramp Test,48,51,765.1,27.7
+2026-01-02,VirtualRide,Easy,67,35,912.3,37.3
+2026-01-02,Swim,Swim,34,95,0.0,2.0
+2026-01-01,VirtualRide,Z2,150,125,2545.3,94.9
+2025-12-31,VirtualRide,Endurance,132,109,2226.5,83.0
+2025-12-31,Run,Easy Run,31,24,524.0,5.3
+2025-12-29,VirtualRide,Z2,119,100,2019.2,72.6
+2025-12-28,VirtualRide,SST 2x5x4',109,107,1907.9,65.6
+2025-12-27,VirtualRide,Z2 + R,160,137,2709.5,96.0
+2025-12-26,VirtualRide,Z2,150,123,2528.6,91.1
+2025-12-24,Run,Treadmill: Sub-LT 6x1km,55,82,1607.0,12.9
+2025-12-23,Swim,Swim,63,107,0.0,3.2
+2025-12-21,VirtualRide,Z2,72,58,1199.6,42.6
+2025-12-20,VirtualRide,Tempo 2x20',90,87,1613.7,53.5
+2025-12-19,VirtualRide,High Z2,77,75,1402.7,46.8
+2025-12-19,Swim,Swim,41,106,0.0,2.4
+2025-12-18,VirtualRide,Low Z2,75,39,1008.3,39.8
 
 === WELLNESS ===
 date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,tsb
@@ -73,6 +132,6 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-02-16,6.8,49,38.0,97.5,34.0,3,3,7198,90.486755,88.16703,2.3
 
 === SPORT TOTALS ===
-Ride,7.58h,7881.6kJ,0.0km,409 TSS
-Run,2.18h,0.0kJ,25.4km,134 TSS
-Swim,0.67h,0.0kJ,2.0km,67 TSS
+Ride,62.81h,64144.0kJ,2282.0km,3244 TSS
+Run,18.31h,29703.5kJ,238.1km,1404 TSS
+Swim,6.07h,0.0kJ,20.2km,842 TSS

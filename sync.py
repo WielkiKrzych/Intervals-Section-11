@@ -71,8 +71,8 @@ def fetch_wellness(
 def fetch_activities(
     base_url: str, headers: dict[str, str], start: datetime, end: datetime, verify_ssl: bool
 ) -> list[dict[str, Any]]:
-    url = f"{base_url}/events"
-    params = {"start": start.strftime("%Y-%m-%d"), "end": end.strftime("%Y-%m-%d")}
+    url = f"{base_url}/activities"
+    params = {"oldest": start.strftime("%Y-%m-%d"), "newest": end.strftime("%Y-%m-%d")}
     try:
         response = requests.get(
             url, headers=headers, params=params, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
@@ -124,39 +124,53 @@ def compute_weekly_summary(wellness: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+SPORT_ALIASES = {
+    "VirtualRide": "Ride",
+    "MountainBikeRide": "Ride",
+    "GravelRide": "Ride",
+    "EBikeRide": "Ride",
+    "VirtualRun": "Run",
+    "TrailRun": "Run",
+}
+
+
+def normalize_sport(sport: str) -> str:
+    return SPORT_ALIASES.get(sport, sport)
+
+
 def compute_sport_totals(activities: list[dict[str, Any]]) -> dict[str, Any]:
     totals = {"Ride": {}, "Run": {}, "Swim": {}}
-    
+
     for activity in activities:
-        sport = activity.get("type", "Other")
+        sport = normalize_sport(activity.get("type", "Other"))
         if sport not in totals:
             totals[sport] = {}
-        
+
         sport_data = totals[sport]
         sport_data["total_time"] = sport_data.get("total_time", 0) + (activity.get("moving_time", 0) or 0)
-        sport_data["total_kj"] = sport_data.get("total_kj", 0) + (activity.get("joules", 0) or 0) / 1000
+        sport_data["total_kj"] = sport_data.get("total_kj", 0) + (activity.get("icu_joules", 0) or 0) / 1000
+        sport_data["total_calories"] = sport_data.get("total_calories", 0) + (activity.get("calories", 0) or 0)
         sport_data["total_distance"] = sport_data.get("total_distance", 0) + (activity.get("distance", 0) or 0)
         sport_data["total_load"] = sport_data.get("total_load", 0) + (activity.get("icu_training_load", 0) or 0)
-    
+
     for sport in totals:
         if totals[sport]:
             totals[sport]["total_time_hours"] = round(totals[sport].get("total_time", 0) / 3600, 2)
             totals[sport]["total_kj"] = round(totals[sport].get("total_kj", 0), 1)
             totals[sport]["total_distance_km"] = round(totals[sport].get("total_distance", 0) / 1000, 1)
-    
+
     return {k: v for k, v in totals.items() if v}
 
 
 def compute_zone_distribution(activities: list[dict[str, Any]]) -> dict[str, int]:
     zones = {}
     for activity in activities:
-        workout_doc = activity.get("workout_doc", {})
-        zone_times = workout_doc.get("zoneTimes", [])
+        zone_times = activity.get("icu_zone_times") or []
         for zone in zone_times:
-            zone_name = zone.get("name", f"Z{zone.get('zone', 0)}")
-            zones[zone_name] = zones.get(zone_name, 0) + zone.get("secs", 0)
-    
-    zone_order = ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7"]
+            zone_name = zone.get("id", "Unknown")
+            zones[zone_name] = zones.get(zone_name, 0) + (zone.get("secs", 0) or 0)
+
+    zone_order = ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7", "SS"]
     sorted_zones = {}
     for z in zone_order:
         if z in zones:
@@ -203,7 +217,7 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
 
     total_tss = sum(a.get("icu_training_load", 0) or 0 for a in activities)
     total_duration = sum(a.get("moving_time", 0) or 0 for a in activities)
-    total_kj = sum((a.get("joules", 0) or 0) / 1000 for a in activities)
+    total_kj = sum((a.get("icu_joules", 0) or 0) / 1000 for a in activities)
 
     return {
         "total_activities": len(activities),
@@ -225,7 +239,7 @@ def generate_csv(data: dict[str, Any]) -> str:
         name = a.get("name", "").replace(",", ";")
         duration = (a.get("moving_time", 0) or 0) // 60
         tss = a.get("icu_training_load", 0) or 0
-        kj = (a.get("joules", 0) or 0) / 1000
+        kj = (a.get("icu_joules", 0) or 0) / 1000
         dist = (a.get("distance", 0) or 0) / 1000
         output.append(f"{date},{type_},{name},{duration},{tss},{kj:.1f},{dist:.1f}")
     
@@ -272,8 +286,8 @@ def generate_html_report(data: dict[str, Any]) -> str:
     total_zones = sum(zones.values())
     for zone, secs in zones.items():
         if secs > 0:
-            zone_labels.append(f"'{zone}'")
-            zone_data.append(str(round(secs / 60)))
+            zone_labels.append(zone)
+            zone_data.append(round(secs / 60))
     
     wellness_sorted = sorted(wellness, key=lambda x: x.get("id", ""))
     wellness_dates = [w.get("id", "") for w in wellness_sorted]
@@ -292,7 +306,27 @@ def generate_html_report(data: dict[str, Any]) -> str:
     weekly_labels = list(weekly_tss.keys())
     weekly_tss_data = list(weekly_tss.values())
     
-    sport_rows = "".join(f"<tr><td>{sport}</td><td>{t.get('total_time_hours', 0)}h</td><td>{t.get('total_distance_km', 0)} km</td><td>{t.get('total_kj', 0)} kJ</td><td>{t.get('total_load', 0)}</td></tr>" for sport, t in sport_totals.items())
+    sum_time = 0
+    sum_dist = 0
+    sum_energy_kj = 0
+    sum_load = 0
+    sport_row_list = []
+    for sport, t in sport_totals.items():
+        time_h = t.get('total_time_hours', 0)
+        dist_km = t.get('total_distance_km', 0)
+        kj = t.get('total_kj', 0)
+        cal = t.get('total_calories', 0)
+        load = t.get('total_load', 0)
+        use_kcal = sport in ("Run", "Swim") or kj == 0
+        energy_str = f"{cal} kcal" if use_kcal else f"{kj} kJ"
+        energy_kj = round(cal * 4.184 / 1000, 1) if use_kcal else kj
+        sport_row_list.append(f"<tr><td>{sport}</td><td>{time_h}h</td><td>{dist_km} km</td><td>{energy_str}</td><td>{load}</td></tr>")
+        sum_time += time_h
+        sum_dist += dist_km
+        sum_energy_kj += energy_kj
+        sum_load += load
+    sport_row_list.append(f'<tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>{round(sum_time, 2)}h</td><td>{round(sum_dist, 1)} km</td><td>{round(sum_energy_kj, 1)} kJ</td><td>{round(sum_load)}</td></tr>')
+    sport_rows = "".join(sport_row_list)
     
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -554,16 +588,34 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
     
     if sport_totals:
         lines.append("## Sport Breakdown")
+        md_sum_time = 0
+        md_sum_dist = 0
+        md_sum_energy_kj = 0
+        md_sum_load = 0
         for sport, totals in sport_totals.items():
+            kj = totals.get('total_kj', 0)
+            cal = totals.get('total_calories', 0)
+            use_kcal = sport in ("Run", "Swim") or kj == 0
+            energy_str = f"{cal} kcal" if use_kcal else f"{kj} kJ"
+            energy_kj = round(cal * 4.184 / 1000, 1) if use_kcal else kj
             lines.append(f"### {sport}")
             lines.append(f"- Time: {totals.get('total_time_hours', 0)}h")
             if totals.get('total_distance_km'):
                 lines.append(f"- Distance: {totals['total_distance_km']} km")
-            if totals.get('total_kj'):
-                lines.append(f"- Energy: {totals['total_kj']} kJ")
+            lines.append(f"- Energy: {energy_str}")
             if totals.get('total_load'):
                 lines.append(f"- Load: {totals['total_load']}")
             lines.append("")
+            md_sum_time += totals.get('total_time_hours', 0)
+            md_sum_dist += totals.get('total_distance_km', 0)
+            md_sum_energy_kj += energy_kj
+            md_sum_load += totals.get('total_load', 0)
+        lines.append(f"### Total")
+        lines.append(f"- Time: {round(md_sum_time, 2)}h")
+        lines.append(f"- Distance: {round(md_sum_dist, 1)} km")
+        lines.append(f"- Energy: {round(md_sum_energy_kj, 1)} kJ")
+        lines.append(f"- Load: {round(md_sum_load)}")
+        lines.append("")
     
     if zones:
         lines.append("## Zone Distribution")
