@@ -3,10 +3,17 @@
 import os
 import json
 import re
-import requests
-from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+import requests
+from datetime import datetime, timedelta
 
 DEFAULT_DAYS = 28
 DEFAULT_TIMEOUT = 30
