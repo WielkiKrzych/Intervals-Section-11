@@ -1,24 +1,24 @@
 # Training Report
 **Period:** 2026-01-19 to 2026-02-16
-**Last Updated:** 2026-02-16T11:11:40.815252
+**Last Updated:** 2026-02-16T13:11:07.811494
 
 ## Training Status
-- **Fitness (CTL):** 91.5 - Chronic Training Load
-- **Fatigue (ATL):** 93.6 - Acute Training Load
-- **Form (TSB):** -2.2 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 0.54
+- **Fitness (CTL):** 90.5 - Chronic Training Load
+- **Fatigue (ATL):** 88.2 - Acute Training Load
+- **Form (TSB):** 2.3 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -0.42
 
 ## Activity Summary
 - **Total Activities:** 7
-- **Total Duration:** 11.43h
-- **Total TSS:** 652
-- **Total Energy:** 8828.4 kJ
+- **Total Duration:** 10.43h
+- **Total TSS:** 610
+- **Total Energy:** 7881.6 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 8.58h
-- Energy: 8828.4 kJ
-- Load: 451
+- Time: 7.58h
+- Energy: 7881.6 kJ
+- Load: 409
 
 ### Run
 - Time: 2.18h
@@ -31,13 +31,13 @@
 - Load: 67
 
 ## Zone Distribution
-- **Z2:** 448m (61.8%)
-- **Z3:** 40m (5.5%)
-- **Z4:** 24m (3.3%)
-- **Z5:** 1m (0.1%)
-- **Z7:** 1m (0.2%)
-- **Sweet Spot:** 40m (5.5%)
-- **Z0:** 170m (23.5%)
+- **Z2:** 388m (58.3%)
+- **Z3:** 40m (6.0%)
+- **Z4:** 24m (3.6%)
+- **Z5:** 1m (0.2%)
+- **Z7:** 1m (0.3%)
+- **Sweet Spot:** 40m (6.0%)
+- **Z0:** 170m (25.6%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 6.8h
