@@ -21,7 +21,6 @@ OUTPUT_FILENAME = "latest.json"
 
 
 def validate_athlete_id(athlete_id: str) -> str:
-    """Validate athlete ID format (alphanumeric and hyphens only)."""
     if not athlete_id:
         raise ValueError("ATHLETE_ID cannot be empty")
     if not re.match(r"^[a-zA-Z0-9\-_]+$", athlete_id):
@@ -30,7 +29,6 @@ def validate_athlete_id(athlete_id: str) -> str:
 
 
 def get_config() -> dict[str, Any]:
-    """Load configuration from environment variables."""
     athlete_id = os.environ.get("ATHLETE_ID")
     api_key = os.environ.get("INTERVALS_KEY")
     verify_ssl = os.environ.get("VERIFY_SSL", "true").lower() == "true"
@@ -50,7 +48,6 @@ def get_config() -> dict[str, Any]:
 
 
 def get_headers(api_key: str) -> dict[str, str]:
-    """Create authorization headers for API requests."""
     import base64
     credentials = base64.b64encode(f"API_KEY:{api_key}".encode()).decode()
     return {"Authorization": f"Basic {credentials}", "Accept": "application/json"}
@@ -59,7 +56,6 @@ def get_headers(api_key: str) -> dict[str, str]:
 def fetch_wellness(
     base_url: str, headers: dict[str, str], verify_ssl: bool
 ) -> list[dict[str, Any]]:
-    """Fetch wellness data from Intervals.icu API."""
     url = f"{base_url}/wellness"
     try:
         response = requests.get(url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl)
@@ -72,10 +68,9 @@ def fetch_wellness(
         return []
 
 
-def fetch_events(
+def fetch_activities(
     base_url: str, headers: dict[str, str], start: datetime, end: datetime, verify_ssl: bool
 ) -> list[dict[str, Any]]:
-    """Fetch and anonymize activity events from Intervals.icu API."""
     url = f"{base_url}/events"
     params = {"start": start.strftime("%Y-%m-%d"), "end": end.strftime("%Y-%m-%d")}
     try:
@@ -83,34 +78,17 @@ def fetch_events(
             url, headers=headers, params=params, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
         )
         if response.status_code == 200:
-            events = response.json()
-            return _anonymize_events(events)
-        print(f"Events fetch failed: {response.status_code}")
+            return response.json()
+        print(f"Activities fetch failed: {response.status_code}")
         return []
     except requests.RequestException as e:
-        print(f"Error fetching events: {e}")
+        print(f"Error fetching activities: {e}")
         return []
-
-
-def _anonymize_events(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Anonymize event names and IDs for privacy."""
-    anonymized = []
-    for i, event in enumerate(events):
-        anon_event = event.copy()
-        name = event.get("name", "").lower()
-        if "zwift" in name or "trainer" in name:
-            anon_event["name"] = event.get("name", "Training Session")
-        else:
-            anon_event["name"] = "Training Session"
-        anon_event["id"] = f"activity_{i + 1}"
-        anonymized.append(anon_event)
-    return anonymized
 
 
 def fetch_profile(
     base_url: str, headers: dict[str, str], verify_ssl: bool
 ) -> dict[str, Any]:
-    """Fetch athlete profile from Intervals.icu API."""
     url = f"{base_url}/profile"
     try:
         response = requests.get(url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl)
@@ -126,8 +104,68 @@ def fetch_profile(
         return {}
 
 
+def filter_recent_wellness(wellness: list[dict[str, Any]], days: int) -> list[dict[str, Any]]:
+    cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+    return [w for w in wellness if w.get("id", "") >= cutoff]
+
+
+def compute_weekly_summary(wellness: list[dict[str, Any]]) -> dict[str, Any]:
+    if not wellness:
+        return {"ctl": 0, "atl": 0, "tsb": 0, "ramp_rate": 0}
+    
+    latest = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0]
+    ctl = latest.get("ctl", 0) or 0
+    atl = latest.get("atl", 0) or 0
+    return {
+        "ctl": round(ctl, 1),
+        "atl": round(atl, 1),
+        "tsb": round(ctl - atl, 1),
+        "ramp_rate": round(latest.get("rampRate", 0) or 0, 2),
+    }
+
+
+def compute_sport_totals(activities: list[dict[str, Any]]) -> dict[str, Any]:
+    totals = {"Ride": {}, "Run": {}, "Swim": {}}
+    
+    for activity in activities:
+        sport = activity.get("type", "Other")
+        if sport not in totals:
+            totals[sport] = {}
+        
+        sport_data = totals[sport]
+        sport_data["total_time"] = sport_data.get("total_time", 0) + (activity.get("moving_time", 0) or 0)
+        sport_data["total_kj"] = sport_data.get("total_kj", 0) + (activity.get("joules", 0) or 0) / 1000
+        sport_data["total_distance"] = sport_data.get("total_distance", 0) + (activity.get("distance", 0) or 0)
+        sport_data["total_load"] = sport_data.get("total_load", 0) + (activity.get("icu_training_load", 0) or 0)
+    
+    for sport in totals:
+        if totals[sport]:
+            totals[sport]["total_time_hours"] = round(totals[sport].get("total_time", 0) / 3600, 2)
+            totals[sport]["total_kj"] = round(totals[sport].get("total_kj", 0), 1)
+            totals[sport]["total_distance_km"] = round(totals[sport].get("total_distance", 0) / 1000, 1)
+    
+    return {k: v for k, v in totals.items() if v}
+
+
+def compute_zone_distribution(activities: list[dict[str, Any]]) -> dict[str, int]:
+    zones = {}
+    for activity in activities:
+        workout_doc = activity.get("workout_doc", {})
+        zone_times = workout_doc.get("zoneTimes", [])
+        for zone in zone_times:
+            zone_name = zone.get("name", f"Z{zone.get('zone', 0)}")
+            zones[zone_name] = zones.get(zone_name, 0) + zone.get("secs", 0)
+    
+    zone_order = ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7"]
+    sorted_zones = {}
+    for z in zone_order:
+        if z in zones:
+            sorted_zones[z] = zones[z]
+    sorted_zones.update({k: v for k, v in zones.items() if k not in zone_order})
+    return sorted_zones
+
+
 def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[str, Any]:
-    """Calculate quick statistics from activities."""
     if not activities:
         return {
             "total_activities": 0,
@@ -137,9 +175,9 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
             "period_days": period_days,
         }
 
-    total_tss = sum(a.get("tss", 0) for a in activities if a.get("tss"))
-    total_duration = sum(a.get("moving_time", 0) for a in activities if a.get("moving_time"))
-    total_kj = sum(a.get("kilojoules", 0) for a in activities if a.get("kilojoules"))
+    total_tss = sum(a.get("icu_training_load", 0) or 0 for a in activities)
+    total_duration = sum(a.get("moving_time", 0) or 0 for a in activities)
+    total_kj = sum((a.get("joules", 0) or 0) / 1000 for a in activities)
 
     return {
         "total_activities": len(activities),
@@ -151,7 +189,6 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
 
 
 def fetch_intervals_data() -> dict[str, Any]:
-    """Fetch all data from Intervals.icu API."""
     config = get_config()
     athlete_id = config["athlete_id"]
     api_key = config["api_key"]
@@ -173,16 +210,21 @@ def fetch_intervals_data() -> dict[str, Any]:
         },
     }
 
-    data["wellness"] = fetch_wellness(base_url, headers, verify_ssl)
-    data["activities"] = fetch_events(base_url, headers, start_date, end_date, verify_ssl)
+    wellness = fetch_wellness(base_url, headers, verify_ssl)
+    data["wellness"] = filter_recent_wellness(wellness, days)
+    data["weekly_summary"] = compute_weekly_summary(data["wellness"])
+    
+    activities = fetch_activities(base_url, headers, start_date, end_date, verify_ssl)
+    data["activities"] = activities
     data["profile"] = fetch_profile(base_url, headers, verify_ssl)
-    data["quick_stats"] = calculate_stats(data.get("activities", []), days)
+    data["quick_stats"] = calculate_stats(activities, days)
+    data["sport_totals"] = compute_sport_totals(activities)
+    data["zone_distribution"] = compute_zone_distribution(activities)
 
     return data
 
 
 def main() -> None:
-    """Main entry point for the sync script."""
     print(f"Starting sync at {datetime.now().isoformat()}")
 
     try:
@@ -193,9 +235,10 @@ def main() -> None:
             json.dump(data, f, indent=2)
 
         stats = data["quick_stats"]
+        summary = data["weekly_summary"]
         print(f"✓ Sync complete. {stats['total_activities']} activities synced.")
-        print(f"  TSS: {stats['total_tss']}")
-        print(f"  Duration: {stats['total_duration_hours']}h")
+        print(f"  TSS: {stats['total_tss']}, Duration: {stats['total_duration_hours']}h")
+        print(f"  Fitness (CTL): {summary['ctl']}, Fatigue (ATL): {summary['atl']}, Form (TSB): {summary['tsb']}")
 
     except Exception as e:
         print(f"✗ Sync failed: {e}")
