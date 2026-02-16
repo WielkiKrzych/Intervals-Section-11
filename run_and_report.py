@@ -18,7 +18,8 @@ def main():
         if os.path.exists(report_path):
             subprocess.run(["open", report_path])
     else:
-        input("Press Enter to exit...")
+        if sys.stdin.isatty():
+            input("Press Enter to exit...")
 
 if __name__ == "__main__":
     main()
