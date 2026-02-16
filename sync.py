@@ -188,6 +188,90 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
     }
 
 
+def format_duration(seconds: int) -> str:
+    hours = seconds // 3600
+    mins = (seconds % 3600) // 60
+    if hours > 0:
+        return f"{hours}h {mins}m"
+    return f"{mins}m"
+
+
+def generate_markdown_report(data: dict[str, Any]) -> str:
+    stats = data["quick_stats"]
+    summary = data["weekly_summary"]
+    sport_totals = data.get("sport_totals", {})
+    zones = data.get("zone_distribution", {})
+    wellness = data.get("wellness", [])
+    
+    latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
+    
+    lines = [
+        f"# Training Report",
+        f"**Period:** {data['date_range']['start']} to {data['date_range']['end']}",
+        f"**Last Updated:** {data['last_updated']}",
+        "",
+        "## Training Status",
+        f"- **Fitness (CTL):** {summary['ctl']} - Chronic Training Load",
+        f"- **Fatigue (ATL):** {summary['atl']} - Acute Training Load", 
+        f"- **Form (TSB):** {summary['tsb']} = CTL - ATL (negative = overtraining)",
+        f"- **Ramp Rate:** {summary['ramp_rate']}",
+        "",
+        "## Activity Summary",
+        f"- **Total Activities:** {stats['total_activities']}",
+        f"- **Total Duration:** {stats['total_duration_hours']}h",
+        f"- **Total TSS:** {stats['total_tss']}",
+        f"- **Total Energy:** {stats['total_energy_kj']} kJ",
+        "",
+    ]
+    
+    if sport_totals:
+        lines.append("## Sport Breakdown")
+        for sport, totals in sport_totals.items():
+            lines.append(f"### {sport}")
+            lines.append(f"- Time: {totals.get('total_time_hours', 0)}h")
+            if totals.get('total_distance_km'):
+                lines.append(f"- Distance: {totals['total_distance_km']} km")
+            if totals.get('total_kj'):
+                lines.append(f"- Energy: {totals['total_kj']} kJ")
+            if totals.get('total_load'):
+                lines.append(f"- Load: {totals['total_load']}")
+            lines.append("")
+    
+    if zones:
+        lines.append("## Zone Distribution")
+        total_secs = sum(zones.values())
+        for zone, secs in zones.items():
+            if secs > 0:
+                pct = (secs / total_secs * 100) if total_secs > 0 else 0
+                mins = secs // 60
+                lines.append(f"- **{zone}:** {mins}m ({pct:.1f}%)")
+        lines.append("")
+    
+    if latest_wellness:
+        lines.append("## Daily Wellness (Latest)")
+        w = latest_wellness
+        if w.get('sleepSecs'):
+            sleep_hours = w['sleepSecs'] / 3600
+            lines.append(f"- **Sleep:** {sleep_hours:.1f}h")
+        if w.get('restingHR'):
+            lines.append(f"- **Resting HR:** {w['restingHR']} bpm")
+        if w.get('hrv'):
+            lines.append(f"- **HRV:** {w['hrv']}")
+        if w.get('weight'):
+            lines.append(f"- **Weight:** {w['weight']} kg")
+        if w.get('readiness'):
+            lines.append(f"- **Readiness:** {w['readiness']}%")
+        if w.get('soreness'):
+            lines.append(f"- **Soreness:** {w['soreness']}/5")
+        if w.get('fatigue'):
+            lines.append(f"- **Fatigue:** {w['fatigue']}/5")
+        if w.get('steps'):
+            lines.append(f"- **Steps:** {w['steps']}")
+        lines.append("")
+    
+    return "\n".join(lines)
+
+
 def fetch_intervals_data() -> dict[str, Any]:
     config = get_config()
     athlete_id = config["athlete_id"]
@@ -234,11 +318,16 @@ def main() -> None:
         with open(config["output_path"], "w") as f:
             json.dump(data, f, indent=2)
 
+        report_path = config["output_path"].with_suffix(".md")
+        with open(report_path, "w") as f:
+            f.write(generate_markdown_report(data))
+
         stats = data["quick_stats"]
         summary = data["weekly_summary"]
         print(f"✓ Sync complete. {stats['total_activities']} activities synced.")
         print(f"  TSS: {stats['total_tss']}, Duration: {stats['total_duration_hours']}h")
         print(f"  Fitness (CTL): {summary['ctl']}, Fatigue (ATL): {summary['atl']}, Form (TSB): {summary['tsb']}")
+        print(f"  Report saved to: {report_path}")
 
     except Exception as e:
         print(f"✗ Sync failed: {e}")
