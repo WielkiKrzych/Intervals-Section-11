@@ -247,9 +247,9 @@ def generate_html_report(data: dict[str, Any]) -> str:
             zone_data.append(str(round(secs / 60)))
     
     wellness_sorted = sorted(wellness, key=lambda x: x.get("id", ""))
-    wellness_dates = [w.get("id", "") for w in wellness_sorted][-14:]
-    ctl_data = [w.get("ctl", 0) or 0 for w in wellness_sorted][-14:]
-    atl_data = [w.get("atl", 0) or 0 for w in wellness_sorted][-14:]
+    wellness_dates = [w.get("id", "") for w in wellness_sorted]
+    ctl_data = [w.get("ctl", 0) or 0 for w in wellness_sorted]
+    atl_data = [w.get("atl", 0) or 0 for w in wellness_sorted]
     
     sport_rows = "".join(f"<tr><td>{sport}</td><td>{t.get('total_time_hours', 0)}h</td><td>{t.get('total_distance_km', 0)} km</td><td>{t.get('total_kj', 0)} kJ</td><td>{t.get('total_load', 0)}</td></tr>" for sport, t in sport_totals.items())
     
