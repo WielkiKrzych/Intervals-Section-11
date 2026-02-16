@@ -14,9 +14,13 @@ def main():
         print(result.stderr, file=sys.stderr)
     
     if result.returncode == 0:
-        report_path = os.path.join(script_dir, "latest.md")
+        report_path = os.path.join(script_dir, "latest.html")
         if os.path.exists(report_path):
             subprocess.run(["open", report_path])
+        else:
+            report_path = os.path.join(script_dir, "latest.md")
+            if os.path.exists(report_path):
+                subprocess.run(["open", report_path])
     else:
         if sys.stdin.isatty():
             input("Press Enter to exit...")

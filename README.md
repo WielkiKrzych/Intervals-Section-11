@@ -1,11 +1,11 @@
 # Intervals-Section-11
 
-Training data mirror for AI coaching - syncs workout data from Intervals.icu API.
+Training data mirror for AI coaching - syncs workout data from Intervals.icu API with beautiful HTML reports.
 
 ## Quick Start (macOS)
 
 1. Double-click `TrainingReport.app` to run
-2. Report opens automatically in Markdown viewer
+2. Report opens automatically in your browser
 
 Or via terminal:
 ```bash
@@ -53,7 +53,7 @@ python3 sync.py
 ### macOS App
 Double-click `TrainingReport.app` - it will:
 1. Sync data from Intervals.icu
-2. Automatically open the report
+2. Automatically open the HTML report in your browser
 
 ### Python Script
 ```bash
@@ -65,11 +65,21 @@ python3 run_and_report.py
 | File | Description |
 |------|-------------|
 | `latest.json` | Raw data for AI processing |
-| `latest.md` | Human-readable training report |
+| `latest.md` | Markdown report |
+| `latest.csv` | CSV for spreadsheets |
+| `latest.html` | Interactive HTML report with charts |
+
+## HTML Report Features
+
+- **Dark mode support** - Automatically follows system theme
+- **Interactive charts** - CTL vs ATL fitness chart (Chart.js)
+- **Zone distribution pie chart** - Visual breakdown of training zones
+- **Sport breakdown table** - Ride, Run, Swim statistics
+- **Latest wellness data** - Sleep, HR, HRV, weight, readiness
 
 ## Report Contents
 
-The Markdown report includes:
+The reports include:
 - **Training Status**: CTL (Fitness), ATL (Fatigue), TSB (Form), Ramp Rate
 - **Activity Summary**: Total activities, duration, TSS, energy
 - **Sport Breakdown**: Ride, Run, Swim (time, distance, load)
@@ -88,9 +98,11 @@ pytest tests/
 Intervals-Section-11/
 ├── sync.py                    # Main sync script
 ├── run_and_report.py         # Python runner with report
-├── TrainingReport.app/      # macOS app
-├── latest.json              # Raw data output
-├── latest.md                # Markdown report
+├── TrainingReport.app/       # macOS app
+├── latest.json               # Raw data output
+├── latest.md                 # Markdown report
+├── latest.csv               # CSV export
+├── latest.html              # Interactive HTML report
 ├── .env                     # Credentials (gitignored)
 └── tests/                   # Unit tests
 ```

@@ -188,12 +188,248 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
     }
 
 
-def format_duration(seconds: int) -> str:
-    hours = seconds // 3600
-    mins = (seconds % 3600) // 60
-    if hours > 0:
-        return f"{hours}h {mins}m"
-    return f"{mins}m"
+def generate_csv(data: dict[str, Any]) -> str:
+    output = []
+    
+    output.append("=== ACTIVITIES ===")
+    output.append("date,type,name,duration_min,tss,kj,distance_km")
+    for a in data.get("activities", []):
+        date = a.get("start_date_local", "")[:10]
+        type_ = a.get("type", "")
+        name = a.get("name", "").replace(",", ";")
+        duration = (a.get("moving_time", 0) or 0) // 60
+        tss = a.get("icu_training_load", 0) or 0
+        kj = (a.get("joules", 0) or 0) / 1000
+        dist = (a.get("distance", 0) or 0) / 1000
+        output.append(f"{date},{type_},{name},{duration},{tss},{kj:.1f},{dist:.1f}")
+    
+    output.append("")
+    output.append("=== WELLNESS ===")
+    output.append("date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,tsb")
+    for w in data.get("wellness", []):
+        date = w.get("id", "")
+        sleep = (w.get("sleepSecs", 0) or 0) / 3600
+        resting_hr = w.get("restingHR", "") or ""
+        hrv = w.get("hrv", "") or ""
+        weight = w.get("weight", "") or ""
+        readiness = w.get("readiness", "") or ""
+        soreness = w.get("soreness", "") or ""
+        fatigue = w.get("fatigue", "") or ""
+        steps = w.get("steps", "") or ""
+        ctl = w.get("ctl", "") or ""
+        atl = w.get("atl", "") or ""
+        tsb = round((ctl or 0) - (atl or 0), 1) if ctl and atl else ""
+        output.append(f"{date},{sleep:.1f},{resting_hr},{hrv},{weight},{readiness},{soreness},{fatigue},{steps},{ctl},{atl},{tsb}")
+    
+    output.append("")
+    output.append("=== SPORT TOTALS ===")
+    for sport, totals in data.get("sport_totals", {}).items():
+        output.append(f"{sport},{totals.get('total_time_hours', 0)}h,{totals.get('total_kj', 0)}kJ,{totals.get('total_distance_km', 0)}km,{totals.get('total_load', 0)} TSS")
+    
+    return "\n".join(output)
+
+
+def generate_html_report(data: dict[str, Any]) -> str:
+    stats = data["quick_stats"]
+    summary = data["weekly_summary"]
+    sport_totals = data.get("sport_totals", {})
+    zones = data.get("zone_distribution", {})
+    wellness = data.get("wellness", [])
+    
+    latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
+    
+    zone_data = []
+    zone_labels = []
+    total_zones = sum(zones.values())
+    for zone, secs in zones.items():
+        if secs > 0:
+            zone_labels.append(f"'{zone}'")
+            zone_data.append(str(round(secs / 60)))
+    
+    wellness_sorted = sorted(wellness, key=lambda x: x.get("id", ""))
+    wellness_dates = [w.get("id", "") for w in wellness_sorted][-14:]
+    ctl_data = [w.get("ctl", 0) or 0 for w in wellness_sorted][-14:]
+    atl_data = [w.get("atl", 0) or 0 for w in wellness_sorted][-14:]
+    
+    sport_rows = "".join(f"<tr><td>{sport}</td><td>{t.get('total_time_hours', 0)}h</td><td>{t.get('total_distance_km', 0)} km</td><td>{t.get('total_kj', 0)} kJ</td><td>{t.get('total_load', 0)}</td></tr>" for sport, t in sport_totals.items())
+    
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {{
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --card-bg: #ffffff;
+            --shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }}
+        @media (prefers-color-scheme: dark) {{
+            :root {{
+                --bg-primary: #1d1d1f;
+                --bg-secondary: #2c2c2e;
+                --text-primary: #f5f5f7;
+                --text-secondary: #98989d;
+                --accent: #0a84ff;
+                --card-bg: #2c2c2e;
+                --shadow: 0 2px 8px rgba(0,0,0,0.3);
+            }}
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-secondary); color: var(--text-primary); padding: 20px; line-height: 1.6; }}
+        .container {{ max-width: 1200px; margin: 0 auto; }}
+        h1 {{ font-size: 2rem; margin-bottom: 0.5rem; }}
+        h2 {{ font-size: 1.25rem; margin: 1.5rem 0 1rem; color: var(--text-secondary); }}
+        h3 {{ font-size: 1rem; margin-bottom: 0.5rem; }}
+        .subtitle {{ color: var(--text-secondary); margin-bottom: 2rem; }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 1rem; }}
+        .card {{ background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }}
+        .metric {{ display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--bg-secondary); }}
+        .metric:last-child {{ border-bottom: none; }}
+        .metric-label {{ color: var(--text-secondary); font-size: 0.9rem; }}
+        .metric-value {{ font-weight: 600; font-size: 1.1rem; }}
+        .status-ok {{ color: #34c759; }}
+        .status-warning {{ color: #ff9500; }}
+        .status-danger {{ color: #ff3b30; }}
+        table {{ width: 100%; border-collapse: collapse; }}
+        th, td {{ padding: 10px; text-align: left; border-bottom: 1px solid var(--bg-secondary); }}
+        th {{ color: var(--text-secondary); font-weight: 500; font-size: 0.85rem; }}
+        .chart-container {{ position: relative; height: 250px; }}
+        .footer {{ text-align: center; color: var(--text-secondary); margin-top: 2rem; font-size: 0.85rem; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Training Report</h1>
+        <p class="subtitle">{data['date_range']['start']} to {data['date_range']['end']}</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Training Status</h2>
+                <div class="metric">
+                    <span class="metric-label">Fitness (CTL)</span>
+                    <span class="metric-value">{summary['ctl']}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Fatigue (ATL)</span>
+                    <span class="metric-value">{summary['atl']}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Form (TSB)</span>
+                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">{summary['tsb']}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Ramp Rate</span>
+                    <span class="metric-value">{summary['ramp_rate']}</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Activity Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Activities</span>
+                    <span class="metric-value">{stats['total_activities']}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Duration</span>
+                    <span class="metric-value">{stats['total_duration_hours']}h</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">TSS</span>
+                    <span class="metric-value">{stats['total_tss']}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Energy</span>
+                    <span class="metric-value">{stats['total_energy_kj']} kJ</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Performance Chart (CTL vs ATL)</h2>
+                <div class="chart-container">
+                    <canvas id="fitnessChart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Zone Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="zoneChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Sport Breakdown</h2>
+            <table>
+                <thead>
+                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th></tr>
+                </thead>
+                <tbody>
+                    {sport_rows}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Latest Wellness</h2>
+            <div class="grid">
+                <div>
+                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">{latest_wellness.get('sleepSecs', 0) / 3600:.1f}h</span></div>
+                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">{latest_wellness.get('restingHR', '-')} bpm</span></div>
+                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">{latest_wellness.get('hrv', '-')}</span></div>
+                </div>
+                <div>
+                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">{latest_wellness.get('weight', '-')} kg</span></div>
+                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">{latest_wellness.get('readiness', '-')}%</span></div>
+                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">{latest_wellness.get('steps', '-')}</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="footer">Last updated: {data['last_updated']}</p>
+    </div>
+    
+    <script>
+        new Chart(document.getElementById('fitnessChart'), {{
+            type: 'line',
+            data: {{
+                labels: {json.dumps(wellness_dates)},
+                datasets: [{{
+                    label: 'CTL (Fitness)',
+                    data: {json.dumps(ctl_data)},
+                    borderColor: '#34c759',
+                    backgroundColor: 'rgba(52, 199, 89, 0.1)',
+                    fill: true
+                }}, {{
+                    label: 'ATL (Fatigue)',
+                    data: {json.dumps(atl_data)},
+                    borderColor: '#ff9500',
+                    backgroundColor: 'rgba(255, 149, 0, 0.1)',
+                    fill: true
+                }}]
+            }},
+            options: {{ responsive: true, maintainAspectRatio: false }}
+        }});
+        
+        new Chart(document.getElementById('zoneChart'), {{
+            type: 'pie',
+            data: {{
+                labels: {json.dumps(zone_labels)},
+                datasets: [{{ data: {json.dumps(zone_data)} }}]
+            }},
+            options: {{ responsive: true, maintainAspectRatio: false }}
+        }});
+    </script>
+</body>
+</html>"""
 
 
 def generate_markdown_report(data: dict[str, Any]) -> str:
@@ -314,20 +550,34 @@ def main() -> None:
     try:
         data = fetch_intervals_data()
         config = get_config()
+        output_dir = config["output_path"].parent
 
-        with open(config["output_path"], "w") as f:
+        json_path = config["output_path"]
+        with open(json_path, "w") as f:
             json.dump(data, f, indent=2)
 
-        report_path = config["output_path"].with_suffix(".md")
-        with open(report_path, "w") as f:
+        md_path = output_dir / "latest.md"
+        with open(md_path, "w") as f:
             f.write(generate_markdown_report(data))
+
+        csv_path = output_dir / "latest.csv"
+        with open(csv_path, "w") as f:
+            f.write(generate_csv(data))
+
+        html_path = output_dir / "latest.html"
+        with open(html_path, "w") as f:
+            f.write(generate_html_report(data))
 
         stats = data["quick_stats"]
         summary = data["weekly_summary"]
         print(f"✓ Sync complete. {stats['total_activities']} activities synced.")
         print(f"  TSS: {stats['total_tss']}, Duration: {stats['total_duration_hours']}h")
         print(f"  Fitness (CTL): {summary['ctl']}, Fatigue (ATL): {summary['atl']}, Form (TSB): {summary['tsb']}")
-        print(f"  Report saved to: {report_path}")
+        print(f"  Reports saved:")
+        print(f"    - JSON: {json_path}")
+        print(f"    - Markdown: {md_path}")
+        print(f"    - CSV: {csv_path}")
+        print(f"    - HTML: {html_path}")
 
     except Exception as e:
         print(f"✗ Sync failed: {e}")

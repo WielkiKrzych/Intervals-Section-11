@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --card-bg: #ffffff;
+            --shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1d1d1f;
+                --bg-secondary: #2c2c2e;
+                --text-primary: #f5f5f7;
+                --text-secondary: #98989d;
+                --accent: #0a84ff;
+                --card-bg: #2c2c2e;
+                --shadow: 0 2px 8px rgba(0,0,0,0.3);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-secondary); color: var(--text-primary); padding: 20px; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.25rem; margin: 1.5rem 0 1rem; color: var(--text-secondary); }
+        h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 1rem; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
+        .metric { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--bg-secondary); }
+        .metric:last-child { border-bottom: none; }
+        .metric-label { color: var(--text-secondary); font-size: 0.9rem; }
+        .metric-value { font-weight: 600; font-size: 1.1rem; }
+        .status-ok { color: #34c759; }
+        .status-warning { color: #ff9500; }
+        .status-danger { color: #ff3b30; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border-bottom: 1px solid var(--bg-secondary); }
+        th { color: var(--text-secondary); font-weight: 500; font-size: 0.85rem; }
+        .chart-container { position: relative; height: 250px; }
+        .footer { text-align: center; color: var(--text-secondary); margin-top: 2rem; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Training Report</h1>
+        <p class="subtitle">2026-01-19 to 2026-02-16</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Training Status</h2>
+                <div class="metric">
+                    <span class="metric-label">Fitness (CTL)</span>
+                    <span class="metric-value">91.5</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Fatigue (ATL)</span>
+                    <span class="metric-value">93.6</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Form (TSB)</span>
+                    <span class="metric-value status-warning">-2.2</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Ramp Rate</span>
+                    <span class="metric-value">0.54</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Activity Summary</h2>
+                <div class="metric">
+                    <span class="metric-label">Activities</span>
+                    <span class="metric-value">7</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Duration</span>
+                    <span class="metric-value">11.43h</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">TSS</span>
+                    <span class="metric-value">652</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Energy</span>
+                    <span class="metric-value">8828.4 kJ</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Performance Chart (CTL vs ATL)</h2>
+                <div class="chart-container">
+                    <canvas id="fitnessChart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Zone Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="zoneChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Sport Breakdown</h2>
+            <table>
+                <thead>
+                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ride</td><td>8.58h</td><td>0.0 km</td><td>8828.4 kJ</td><td>451</td></tr><tr><td>Run</td><td>2.18h</td><td>25.4 km</td><td>0.0 kJ</td><td>134</td></tr><tr><td>Swim</td><td>0.67h</td><td>2.0 km</td><td>0.0 kJ</td><td>67</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Latest Wellness</h2>
+            <div class="grid">
+                <div>
+                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">6.8h</span></div>
+                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">67 bpm</span></div>
+                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">38.0</span></div>
+                </div>
+                <div>
+                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">98.2 kg</span></div>
+                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">34.0%</span></div>
+                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">43</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="footer">Last updated: 2026-02-16T11:11:40.815252</p>
+    </div>
+    
+    <script>
+        new Chart(document.getElementById('fitnessChart'), {
+            type: 'line',
+            data: {
+                labels: ["2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-07", "2026-02-08", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-14", "2026-02-15", "2026-02-16"],
+                datasets: [{
+                    label: 'CTL (Fitness)',
+                    data: [89.080376, 91.26662, 90.83684, 90.58186, 91.69753, 90.904686, 90.90693, 90.17974, 91.91661, 91.37742, 91.20384, 91.787254, 91.48639, 91.451416],
+                    borderColor: '#34c759',
+                    backgroundColor: 'rgba(52, 199, 89, 0.1)',
+                    fill: true
+                }, {
+                    label: 'ATL (Fatigue)',
+                    data: [86.10155, 98.86775, 95.42418, 93.37088, 99.312004, 93.81246, 93.438065, 88.98672, 98.97264, 94.98262, 93.52059, 96.5131, 94.18172, 93.62504],
+                    borderColor: '#ff9500',
+                    backgroundColor: 'rgba(255, 149, 0, 0.1)',
+                    fill: true
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+        
+        new Chart(document.getElementById('zoneChart'), {
+            type: 'pie',
+            data: {
+                labels: ["'Z2'", "'Z3'", "'Z4'", "'Z5'", "'Z7'", "'Sweet Spot'", "'Z0'"],
+                datasets: [{ data: ["448", "40", "24", "1", "2", "40", "171"] }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+        });
+    </script>
+</body>
+</html>
