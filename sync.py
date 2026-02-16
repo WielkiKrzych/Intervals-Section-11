@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-DEFAULT_DAYS = 14
+DEFAULT_DAYS = 28
 DEFAULT_TIMEOUT = 30
 OUTPUT_FILENAME = "latest.json"
 
@@ -44,7 +44,9 @@ def get_config() -> dict[str, Any]:
 
 def get_headers(api_key: str) -> dict[str, str]:
     """Create authorization headers for API requests."""
-    return {"Authorization": f"Bearer {api_key}", "Accept": "application/json"}
+    import base64
+    credentials = base64.b64encode(f"API_KEY:{api_key}".encode()).decode()
+    return {"Authorization": f"Basic {credentials}", "Accept": "application/json"}
 
 
 def fetch_wellness(
