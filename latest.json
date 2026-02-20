@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-02-20T18:03:04.530495",
+  "last_updated": "2026-02-20T19:06:31.257707",
   "date_range": {
     "start": "2026-01-23",
     "end": "2026-02-20"
@@ -2643,8 +2643,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-02-18T13:04:48.477+00:00",
-      "icu_sync_date": "2026-02-18T13:31:58.343+00:00",
-      "analyzed": "2026-02-18T13:31:58.343+00:00",
+      "icu_sync_date": "2026-02-20T18:48:48.664+00:00",
+      "analyzed": "2026-02-20T18:48:48.664+00:00",
       "icu_w_prime": 31000,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2678,7 +2678,7 @@
       "ignore_velocity": false,
       "ignore_pace": false,
       "ignore_parts": null,
-      "icu_training_load_data": 95,
+      "icu_training_load_data": 96,
       "interval_summary": [
         "1x 5m1s 237w",
         "5x 5m1s 289w",
@@ -2821,7 +2821,7 @@
       "min_altitude": 10.2,
       "max_altitude": 34.0,
       "power_load": 79,
-      "hr_load": 76,
+      "hr_load": 77,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2869,7 +2869,7 @@
       "VT2VE": 109,
       "AeTwkg": 2.947918796527979,
       "V02max": 131,
-      "LoadCTL": 84.45938086920661,
+      "LoadCTL": 86.19390141667753,
       "Pvo2max": 412.0,
       "VT1Power": 300,
       "VT2Power": 405,
