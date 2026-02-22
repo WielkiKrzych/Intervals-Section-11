@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-02-22T15:50:56.378581",
+  "last_updated": "2026-02-22T16:33:40.363893",
   "date_range": {
     "start": "2026-01-25",
     "end": "2026-02-22"
@@ -2257,8 +2257,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-02-21T12:08:07.545+00:00",
-      "icu_sync_date": "2026-02-21T12:46:46.145+00:00",
-      "analyzed": "2026-02-21T12:46:46.145+00:00",
+      "icu_sync_date": "2026-02-22T16:09:53.306+00:00",
+      "analyzed": "2026-02-22T16:09:53.306+00:00",
       "icu_w_prime": 31000,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2294,14 +2294,14 @@
       "ignore_parts": null,
       "icu_training_load_data": 96,
       "interval_summary": [
-        "5x 5m1s 239w",
+        "4x 5m1s 241w",
         "1x 5m1s 301w",
         "2x 31s 432w",
         "2x 2m31s 255w",
         "3x 6m1s 411w",
         "1x 1h6m 284w"
       ],
-      "skyline_chart_bytes": "CAYSGq0CrQKtAh+XAR+XAekCrQLgAq0C6QKtAvkeGg43QEpsPmg+ZDplOWY7RiIOAgICBQIEAgQCBAIEAgIoAQ==",
+      "skyline_chart_bytes": "CAYSGq0CrQKtAh+XAR+XAekCrQLgAqsC6QKtAvkeGg43QEpsPmg+ZDplOWY7RiIOAgICBQIEAgQCBAIEAgIoAQ==",
       "stream_types": [
         "time",
         "watts",
@@ -2382,16 +2382,16 @@
               "start": 0.0,
               "end": 1.0,
               "start_value": 0.0,
-              "end_value": 290.0,
-              "secs": 5675
+              "end_value": 289.0,
+              "secs": 5518
             },
             {
               "id": "2",
               "start": 1.0,
               "end": 1.0,
-              "start_value": 290.0,
+              "start_value": 289.0,
               "end_value": 347.0,
-              "secs": 388
+              "secs": 545
             },
             {
               "id": "3",
@@ -2568,7 +2568,7 @@
           }
         }
       ],
-      "icu_intervals_edited": false,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 0,
       "icu_joules_above_ftp": 16837,
@@ -2633,8 +2633,8 @@
       "icu_variability_index": 1.0576271,
       "strain_score": 138.70943,
       "BP": 82,
-      "AeT": 290.12148249194667,
-      "MSS": 347.5607412459733,
+      "AeT": 289.44621969319184,
+      "MSS": 347.2231098465959,
       "VT1": 71,
       "VT2": 109,
       "NNRR": 0,
@@ -2644,9 +2644,9 @@
       "VT1VE": 71,
       "VT2HR": 153,
       "VT2VE": 109,
-      "AeTwkg": 2.933483094194203,
+      "AeTwkg": 2.974781198508531,
       "V02max": 131,
-      "LoadCTL": 127.12024809917446,
+      "LoadCTL": 131.00560547843358,
       "Pvo2max": 420.0,
       "VT1Power": 300,
       "VT2Power": 405,
@@ -2654,7 +2654,7 @@
       "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
       "AllWorkFTP": 475.702,
       "PVCsnumber": 0,
-      "WorkHourKg": 10.733766265132179,
+      "WorkHourKg": 10.91027201135141,
       "Workoverz2": 506.651,
       "Vo2MaxPower": 460,
       "SmO2BP1Power": 305,
