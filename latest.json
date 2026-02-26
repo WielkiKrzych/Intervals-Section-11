@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-02-26T13:21:13.209099",
+  "last_updated": "2026-02-26T14:33:01.307882",
   "date_range": {
     "start": "2026-01-29",
     "end": "2026-02-26"
@@ -1691,7 +1691,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-02-25T04:03:14.137+00:00",
+      "updated": "2026-02-26T13:49:09.360+00:00",
       "weight": 100.0,
       "restingHR": 63,
       "hrv": 82.0,
@@ -1699,7 +1699,7 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 25540,
+      "sleepSecs": 21174,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 62.0,
@@ -1730,9 +1730,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 6489.828469991684,
-      "DeepSleep": 2512.2741614580154,
-      "LightSleep": 16538.70086121559
+      "REMSleep": 5084.183699011803,
+      "DeepSleep": 1405.6912474632263,
+      "LightSleep": 14684.456648111343
     },
     {
       "id": "2026-02-25",
@@ -1819,15 +1819,15 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-02-26T11:37:48.495+00:00",
-      "weight": 100.1,
-      "restingHR": 63,
+      "updated": "2026-02-26T13:49:09.312+00:00",
+      "weight": 98.7,
+      "restingHR": 64,
       "hrv": 69.0,
       "hrvSDNN": 79.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 24480,
+      "kcalConsumed": 2507,
+      "sleepSecs": 24523,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 63.0,
@@ -1837,11 +1837,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 2.1,
       "readiness": null,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 111,
+      "steps": 19187,
       "respiration": 16.705883,
       "carbohydrates": null,
       "protein": null,
@@ -1966,8 +1966,8 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 63,
-      "icu_weight": 100.1,
+      "icu_resting_hr": 64,
+      "icu_weight": 98.7,
       "icu_power_zones": [
         80,
         90,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 63.69522,
+      "trimp": 62.928623,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
