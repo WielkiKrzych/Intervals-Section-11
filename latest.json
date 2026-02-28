@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-02-28T06:41:14.570144",
+  "last_updated": "2026-02-28T07:15:11.446875",
   "date_range": {
     "start": "2026-01-31",
     "end": "2026-02-28"
@@ -2323,8 +2323,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-02-27T12:20:36.118+00:00",
-      "icu_sync_date": "2026-02-27T16:06:45.302+00:00",
-      "analyzed": "2026-02-27T16:06:45.302+00:00",
+      "icu_sync_date": "2026-02-28T07:10:33.823+00:00",
+      "analyzed": "2026-02-28T07:10:33.823+00:00",
       "icu_w_prime": 31000,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2440,31 +2440,47 @@
       "use_gap_zone_times": null,
       "custom_zones": [
         {
-          "code": "AerobicThreshold",
+          "code": "VentilatoryThresholds",
           "zones": [
             {
               "id": "1",
-              "start": 0.0,
+              "start": null,
               "end": 1.0,
-              "start_value": 0.0,
-              "end_value": 295.0,
-              "secs": 1915
+              "start_value": null,
+              "end_value": 54.0,
+              "secs": 1067
             },
             {
               "id": "2",
               "start": 1.0,
               "end": 1.0,
-              "start_value": 295.0,
-              "end_value": 350.0,
-              "secs": 240
+              "start_value": 54.0,
+              "end_value": 71.0,
+              "secs": 336
             },
             {
               "id": "3",
               "start": 1.0,
-              "end": null,
-              "start_value": 350.0,
-              "end_value": null,
-              "secs": 846
+              "end": 1.0,
+              "start_value": 71.0,
+              "end_value": 109.0,
+              "secs": 1144
+            },
+            {
+              "id": "4",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 109.0,
+              "end_value": 113.0,
+              "secs": 104
+            },
+            {
+              "id": "5",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 113.0,
+              "end_value": 165.0,
+              "secs": 348
             }
           ]
         }
@@ -2711,7 +2727,7 @@
       "strava_id": null,
       "lengths": null,
       "pool_length": null,
-      "compliance": 98.113205,
+      "compliance": 100.0,
       "coach_tick": null,
       "source": "WAHOO",
       "oauth_client_id": null,
@@ -2767,16 +2783,22 @@
       "VT2VE": 109,
       "AeTwkg": 3.0293718036373822,
       "V02max": 131,
+      "VO2max": 165,
       "LoadCTL": 56.448371279918,
       "Pvo2max": 464.0,
+      "TopZ4HR": 162,
+      "TopZ4VE": 113,
       "VT1Power": 300,
       "VT2Power": 405,
       "Vo2MaxHR": 169,
       "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
       "AllWorkFTP": 238.547,
       "PVCsnumber": 0,
+      "TopZ4Power": 440,
       "WorkHourKg": 10.042573339435888,
       "Workoverz2": 428.607,
+      "EnduranceHR": 116,
+      "EnduranceVE": 54,
       "Vo2MaxPower": 460,
       "SmO2BP1Power": 305,
       "SmO2BP2Power": 405,
@@ -2784,11 +2806,14 @@
       "VO2MaxGarmin": 0.0,
       "BalancePointHR": 132,
       "BalancePointVE": 82,
+      "EndurancePower": 270,
       "VT1BreathingRate": 27,
       "VT2BreathingRate": 37,
       "BalancePointPower": 330,
+      "TopZ4BreathingRate": 48,
       "Vo2MaxBreathingRate": 51,
       "AveragePowerAboveFTP": 440.1236162361624,
+      "EnduranceBreathingRate": 25,
       "BalancePointBreathingRate": 29
     },
     {
