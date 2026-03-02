@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-02T10:06:41.761610",
+  "last_updated": "2026-03-02T11:03:09.556464",
   "date_range": {
     "start": "2026-02-02",
     "end": "2026-03-02"
@@ -1691,7 +1691,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-01T05:11:45.460+00:00",
+      "updated": "2026-03-02T10:10:52.712+00:00",
       "weight": 97.9,
       "restingHR": 71,
       "hrv": 68.0,
@@ -1699,10 +1699,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 5438,
-      "sleepSecs": 27304,
+      "sleepSecs": 22967,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 61.0,
+      "avgSleepingHR": 60.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1730,9 +1730,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 7147.560136437416,
-      "DeepSleep": 2063.5462630987167,
-      "LightSleep": 18093.18838763237
+      "REMSleep": 6160.665500402451,
+      "DeepSleep": 628.0408960580826,
+      "LightSleep": 16179.186537623405
     },
     {
       "id": "2026-03-01",
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-02",
-      "ctl": 93.2387,
-      "atl": 100.51249,
-      "rampRate": 2.82901,
-      "ctlLoad": 112.0,
-      "atlLoad": 112.0,
+      "ctl": 92.86225,
+      "atl": 98.38253,
+      "rampRate": 2.4525604,
+      "ctlLoad": 96.0,
+      "atlLoad": 96.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,15 +1819,15 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-02T05:07:21.710+00:00",
-      "weight": 100.8,
-      "restingHR": 60,
+      "updated": "2026-03-02T10:10:52.673+00:00",
+      "weight": 98.6,
+      "restingHR": 63,
       "hrv": 98.0,
       "hrvSDNN": 131.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 24060,
+      "kcalConsumed": 880,
+      "sleepSecs": 24075,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 59.0,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.6,
       "readiness": 86.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 84,
+      "steps": 5776,
       "respiration": 17.529411,
       "carbohydrates": null,
       "protein": null,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 93.2,
-    "atl": 100.5,
-    "tsb": -7.3,
-    "ramp_rate": 2.83
+    "ctl": 92.9,
+    "atl": 98.4,
+    "tsb": -5.5,
+    "ramp_rate": 2.45
   },
   "activities": [
     {
@@ -2861,9 +2861,9 @@
       "icu_pm_ftp_watts": 262,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 30980.543,
+      "icu_rolling_w_prime": 32614.0,
       "icu_rolling_p_max": 1284.3262,
-      "icu_rolling_ftp": 368,
+      "icu_rolling_ftp": 386,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 45,
       "icu_atl": 97.0807,
@@ -3238,7 +3238,7 @@
       "icu_pm_ftp_watts": 425,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 30980.543,
+      "icu_rolling_w_prime": 32614.0,
       "icu_rolling_p_max": 1284.3262,
       "icu_rolling_ftp": 386,
       "icu_rolling_ftp_delta": 18,
