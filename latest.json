@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-04T04:41:30.419377",
+  "last_updated": "2026-03-04T05:34:19.893427",
   "date_range": {
     "start": "2026-02-04",
     "end": "2026-03-04"
@@ -1691,7 +1691,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-04T04:34:18.441+00:00",
+      "updated": "2026-03-04T04:56:44.481+00:00",
       "weight": 98.6,
       "restingHR": 63,
       "hrv": 177.45114,
@@ -1699,10 +1699,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 4974,
-      "sleepSecs": 26078,
+      "sleepSecs": 18452,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 59.861897,
+      "avgSleepingHR": 59.0,
       "soreness": 3,
       "fatigue": 1,
       "stress": null,
@@ -1730,9 +1730,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 6639.34488260746,
-      "DeepSleep": 2542.1560649871826,
-      "LightSleep": 17525.503237962723
+      "REMSleep": 4515.91315805912,
+      "DeepSleep": 1375.785486459732,
+      "LightSleep": 12560.925824522972
     },
     {
       "id": "2026-03-03",
@@ -1755,7 +1755,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-04T04:34:36.255+00:00",
+      "updated": "2026-03-04T04:56:44.441+00:00",
       "weight": 99.3,
       "restingHR": 64,
       "hrv": 130.04544,
@@ -1763,10 +1763,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 4230,
-      "sleepSecs": 22969,
+      "sleepSecs": 26228,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 61.887066,
+      "avgSleepingHR": 62.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-04",
-      "ctl": 93.51872,
-      "atl": 100.512314,
-      "rampRate": 0.72155,
-      "ctlLoad": 115.0,
-      "atlLoad": 115.0,
+      "ctl": 93.44814,
+      "atl": 100.112946,
+      "rampRate": 0.65097046,
+      "ctlLoad": 112.0,
+      "atlLoad": 112.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,18 +1819,18 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-04T04:34:36.338+00:00",
-      "weight": 98.4,
+      "updated": "2026-03-04T04:56:44.397+00:00",
+      "weight": 97.7,
       "restingHR": 61,
       "hrv": 88.395195,
       "hrvSDNN": 81.80653,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 24912,
+      "sleepSecs": 19020,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 60.92442,
+      "avgSleepingHR": 60.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 0.5,
       "readiness": 90.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 56,
+      "steps": 3695,
       "respiration": 16.224138,
       "carbohydrates": null,
       "protein": null,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 93.5,
-    "atl": 100.5,
-    "tsb": -7.0,
-    "ramp_rate": 0.72
+    "ctl": 93.4,
+    "atl": 100.1,
+    "tsb": -6.7,
+    "ramp_rate": 0.65
   },
   "activities": [
     {
