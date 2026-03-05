@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-05T15:06:09.387823",
+  "last_updated": "2026-03-05T16:04:17.243482",
   "date_range": {
     "start": "2026-02-05",
     "end": "2026-03-05"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-05T12:42:49.103+00:00",
-      "icu_sync_date": "2026-03-05T13:04:26.748+00:00",
-      "analyzed": "2026-03-05T13:04:26.748+00:00",
+      "icu_sync_date": "2026-03-05T15:42:43.672+00:00",
+      "analyzed": "2026-03-05T15:42:43.672+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -1983,17 +1983,10 @@
       "ignore_parts": null,
       "icu_training_load_data": 96,
       "interval_summary": [
-        "1x 5m1s 228w",
-        "1x 5m1s 258w",
-        "1x 5m1s 299w",
-        "1x 31s 306w",
-        "2x 2m31s 322w",
-        "1x 31s 265w",
-        "5x 2m1s 375w",
-        "5x 4m1s 295w",
-        "1x 1h9m 308w"
+        "5x 1m57s 473w",
+        "1x 1h12m 309w"
       ],
-      "skyline_chart_bytes": "CAYSHa0CrQKtAh+XAR+XAXnxAXnxAXnxAXnxAXnxAcoiGhI3PkhKT0BNYEhdSFpHWkdXRksiEgICAgIDAgMEAgQCBAIEAgMCAygB",
+      "skyline_chart_bytes": "CAYSFKMKdPQBdPEBd/QBdPIBdvIBlCIBGg1Ddzx3PHE8cTxtPEtNIg0CBQIFAgUCBQIFAgMDKAE=",
       "stream_types": [
         "time",
         "watts",
@@ -2287,7 +2280,7 @@
       "VT2VE": 105,
       "AeTwkg": 3.025750896767072,
       "VO2max": 165,
-      "LoadCTL": 133.04555685326696,
+      "LoadCTL": 137.3107896650087,
       "Pvo2max": 464.0,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
