@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-06T05:59:33.797667",
+  "last_updated": "2026-03-06T07:03:15.535346",
   "date_range": {
     "start": "2026-02-06",
     "end": "2026-03-06"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-06",
-      "ctl": 95.41274,
-      "atl": 108.60869,
-      "rampRate": 3.293167,
-      "ctlLoad": 126.0,
-      "atlLoad": 126.0,
+      "ctl": 95.2951,
+      "atl": 107.94308,
+      "rampRate": 3.1755219,
+      "ctlLoad": 121.0,
+      "atlLoad": 121.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,7 +1819,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-06T05:45:49.820+00:00",
+      "updated": "2026-03-06T06:50:51.292+00:00",
       "weight": 100.4,
       "restingHR": 68,
       "hrv": 47.0,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 95.4,
-    "atl": 108.6,
-    "tsb": -13.2,
-    "ramp_rate": 3.29
+    "ctl": 95.3,
+    "atl": 107.9,
+    "tsb": -12.6,
+    "ramp_rate": 3.18
   },
   "activities": [
     {
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-05T12:42:49.103+00:00",
-      "icu_sync_date": "2026-03-05T15:42:43.672+00:00",
-      "analyzed": "2026-03-05T15:42:43.672+00:00",
+      "icu_sync_date": "2026-03-06T06:15:26.525+00:00",
+      "analyzed": "2026-03-06T06:15:26.525+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2269,8 +2269,8 @@
       "icu_average_watts": 307,
       "icu_variability_index": 1.0553746,
       "strain_score": 157.35678,
-      "AeT": 298.0364633315566,
-      "MSS": 354.01823166577833,
+      "AeT": 297.3508941613742,
+      "MSS": 353.6754470806871,
       "NNRR": 0,
       "PaHr": -23.13,
       "AeTHR": 135.28,
@@ -2278,7 +2278,7 @@
       "VT1VE": 73,
       "VT2HR": 153,
       "VT2VE": 105,
-      "AeTwkg": 3.025750896767072,
+      "AeTwkg": 3.040397595938825,
       "VO2max": 165,
       "LoadCTL": 137.3107896650087,
       "Pvo2max": 464.0,
@@ -2291,7 +2291,7 @@
       "AllWorkFTP": 314.107,
       "PVCsnumber": 0,
       "TopZ4Power": 440,
-      "WorkHourKg": 11.21380059611609,
+      "WorkHourKg": 11.294062620150214,
       "Workoverz2": 1382.418,
       "EnduranceHR": 116,
       "EnduranceVE": 54,
