@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-08T14:01:10.861826",
+  "last_updated": "2026-03-08T14:43:08.326370",
   "date_range": {
     "start": "2026-02-08",
     "end": "2026-03-08"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-08",
-      "ctl": 94.889694,
-      "atl": 103.306175,
-      "rampRate": 2.1030502,
-      "ctlLoad": 113.0,
-      "atlLoad": 113.0,
+      "ctl": 94.37207,
+      "atl": 100.37749,
+      "rampRate": 1.5854263,
+      "ctlLoad": 91.0,
+      "atlLoad": 91.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,9 +1819,9 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-08T13:32:02.423+00:00",
+      "updated": "2026-03-08T14:42:54.287+00:00",
       "weight": null,
-      "restingHR": 70,
+      "restingHR": 67,
       "hrv": 50.0,
       "hrvSDNN": 65.0,
       "menstrualPhase": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.8,
+      "hydrationVolume": 3.5,
       "readiness": 45.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4698,
+      "steps": 11140,
       "respiration": 16.894737,
       "carbohydrates": null,
       "protein": null,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 94.9,
-    "atl": 103.3,
-    "tsb": -8.4,
-    "ramp_rate": 2.1
+    "ctl": 94.4,
+    "atl": 100.4,
+    "tsb": -6.0,
+    "ramp_rate": 1.59
   },
   "activities": [
     {
@@ -1888,8 +1888,8 @@
       "icu_rolling_ftp": 460,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 29,
-      "icu_atl": 103.306175,
-      "icu_ctl": 94.889694,
+      "icu_atl": 100.37749,
+      "icu_ctl": 94.37207,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 35.11305,
@@ -1900,7 +1900,7 @@
       "elapsed_time": 1538,
       "icu_weighted_avg_watts": 346,
       "carbs_used": null,
-      "name": "Warszawa / Jawczyce",
+      "name": "Recovery Run",
       "description": null,
       "start_date": "2026-03-08T12:56:19Z",
       "distance": 5124.11,
@@ -1966,7 +1966,7 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 70,
+      "icu_resting_hr": 67,
       "icu_weight": 99.5,
       "icu_power_zones": [
         80,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 27.216902,
+      "trimp": 28.401062,
       "icu_warmup_time": 0,
       "icu_cooldown_time": 0,
       "icu_chat_id": null,
@@ -2071,7 +2071,7 @@
       "icu_power_hr_z2_mins": 12,
       "icu_cadence_z2": 83,
       "icu_rpe": 3,
-      "feel": null,
+      "feel": 2,
       "kg_lifted": null,
       "decoupling": 3.9533327,
       "icu_median_time_delta": 1,
