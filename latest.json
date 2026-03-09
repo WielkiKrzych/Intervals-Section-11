@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-09T09:10:13.114306",
+  "last_updated": "2026-03-09T10:07:28.697579",
   "date_range": {
     "start": "2026-02-09",
     "end": "2026-03-09"
@@ -1691,7 +1691,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-09T04:26:45.499+00:00",
+      "updated": "2026-03-09T09:52:15.157+00:00",
       "weight": null,
       "restingHR": 69,
       "hrv": 47.0,
@@ -1755,7 +1755,7 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-09T03:58:35.088+00:00",
+      "updated": "2026-03-09T09:52:15.106+00:00",
       "weight": null,
       "restingHR": 67,
       "hrv": 50.0,
@@ -1819,9 +1819,9 @@
           "pMax": 920.6814
         }
       ],
-      "updated": "2026-03-09T07:46:46.152+00:00",
+      "updated": "2026-03-09T10:03:43.130+00:00",
       "weight": 99.5,
-      "restingHR": 72,
+      "restingHR": 67,
       "hrv": 40.0,
       "hrvSDNN": 75.0,
       "menstrualPhase": null,
@@ -1837,7 +1837,7 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4248,
+      "steps": 5983,
       "respiration": 17.206896,
       "carbohydrates": null,
       "protein": null,
