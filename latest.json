@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-12T11:43:43.481400",
+  "last_updated": "2026-03-12T12:01:18.462925",
   "date_range": {
     "start": "2026-02-12",
     "end": "2026-03-12"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-12T11:40:38.787+00:00",
-      "icu_sync_date": "2026-03-12T11:40:39.638+00:00",
-      "analyzed": "2026-03-12T11:40:39.638+00:00",
+      "icu_sync_date": "2026-03-12T11:45:08.487+00:00",
+      "analyzed": "2026-03-12T11:45:08.487+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.132231,
@@ -2130,7 +2130,7 @@
           }
         }
       ],
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 11,
       "icu_joules_above_ftp": 24244,
@@ -2142,7 +2142,7 @@
       "icu_power_hr_z2_mins": 7,
       "icu_cadence_z2": 83,
       "icu_rpe": 5,
-      "feel": null,
+      "feel": 2,
       "kg_lifted": null,
       "decoupling": 7.264954,
       "icu_median_time_delta": 1,
@@ -2151,7 +2151,7 @@
       "strava_id": null,
       "lengths": null,
       "pool_length": null,
-      "compliance": 92.72727,
+      "compliance": 100.0,
       "coach_tick": null,
       "source": "OAUTH_CLIENT",
       "oauth_client_id": 1,
@@ -2204,7 +2204,7 @@
       "PaHr": 11.218,
       "AeTHR": 136.8,
       "AeTwkg": 2.1029874694027284,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 54.777320699541946,
       "Pvo2max": 537.0,
       "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
       "AllWorkFTP": 138.454,
