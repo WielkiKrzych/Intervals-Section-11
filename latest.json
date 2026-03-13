@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-13T20:37:10.315931",
+  "last_updated": "2026-03-13T21:17:10.960151",
   "date_range": {
     "start": "2026-02-13",
     "end": "2026-03-13"
@@ -1960,7 +1960,7 @@
       ],
       "pace_zones": null,
       "lthr": 162,
-      "icu_resting_hr": 72,
+      "icu_resting_hr": 69,
       "icu_weight": 96.7,
       "icu_power_zones": [
         55,
@@ -1973,7 +1973,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 35.93568,
+      "trimp": 38.913113,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
