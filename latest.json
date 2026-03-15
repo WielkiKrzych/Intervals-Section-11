@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-15T18:44:33.948825",
+  "last_updated": "2026-03-15T19:17:37.754761",
   "date_range": {
     "start": "2026-02-15",
     "end": "2026-03-15"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-15T18:27:27.949+00:00",
-      "icu_sync_date": "2026-03-15T18:27:28.899+00:00",
-      "analyzed": "2026-03-15T18:27:28.899+00:00",
+      "icu_sync_date": "2026-03-15T19:04:30.714+00:00",
+      "analyzed": "2026-03-15T19:04:30.714+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2050,7 +2050,7 @@
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.0,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 1,
       "icu_joules_above_ftp": 0,
@@ -2124,7 +2124,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.0598131485742854,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 20.913067316437903,
       "Pvo2max": 464.0,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
