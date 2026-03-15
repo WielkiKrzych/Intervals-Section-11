@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-15T08:04:45.227181",
+  "last_updated": "2026-03-15T08:55:21.686384",
   "date_range": {
     "start": "2026-02-15",
     "end": "2026-03-15"
@@ -1691,7 +1691,7 @@
           "pMax": 918.841
         }
       ],
-      "updated": "2026-03-14T05:13:10.879+00:00",
+      "updated": "2026-03-15T08:19:12.072+00:00",
       "weight": 96.7,
       "restingHR": 69,
       "hrv": 48.0,
@@ -1699,7 +1699,7 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 3759,
-      "sleepSecs": 28980,
+      "sleepSecs": 24613,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 68.0,
@@ -1731,8 +1731,8 @@
       "tempWeight": false,
       "tempRestingHR": false,
       "REMSleep": 8852.516705393791,
-      "DeepSleep": 2661.787256002426,
-      "LightSleep": 17465.82987654209
+      "DeepSleep": 1076.6786739826202,
+      "LightSleep": 14684.439630150795
     },
     {
       "id": "2026-03-14",
@@ -1819,15 +1819,15 @@
           "pMax": 917.0043
         }
       ],
-      "updated": "2026-03-15T07:47:16.265+00:00",
-      "weight": 98.0,
-      "restingHR": 66,
+      "updated": "2026-03-15T08:19:12.042+00:00",
+      "weight": 97.4,
+      "restingHR": 73,
       "hrv": 48.0,
       "hrvSDNN": 59.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 27660,
+      "sleepSecs": 27693,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 65.0,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.7,
       "readiness": 50.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 91,
+      "steps": 4340,
       "respiration": 16.837837,
       "carbohydrates": null,
       "protein": null,
