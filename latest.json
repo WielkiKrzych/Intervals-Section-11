@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-17T08:32:10.190189",
+  "last_updated": "2026-03-17T09:39:02.232253",
   "date_range": {
     "start": "2026-02-17",
     "end": "2026-03-17"
@@ -1691,7 +1691,7 @@
           "pMax": 917.0043
         }
       ],
-      "updated": "2026-03-16T03:57:55.752+00:00",
+      "updated": "2026-03-17T08:47:05.206+00:00",
       "weight": 97.4,
       "restingHR": 72,
       "hrv": 48.0,
@@ -1699,10 +1699,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 4060,
-      "sleepSecs": 27693,
+      "sleepSecs": 20097,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 65.0,
+      "avgSleepingHR": 66.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1731,8 +1731,8 @@
       "tempWeight": false,
       "tempRestingHR": false,
       "REMSleep": 5801.915443062782,
-      "DeepSleep": 1884.172747015953,
-      "LightSleep": 20007.677266597748
+      "DeepSleep": null,
+      "LightSleep": 14295.414650678635
     },
     {
       "id": "2026-03-16",
@@ -1819,15 +1819,15 @@
           "pMax": 915.1712
         }
       ],
-      "updated": "2026-03-17T04:31:19.700+00:00",
-      "weight": 98.7,
-      "restingHR": 69,
+      "updated": "2026-03-17T08:47:05.154+00:00",
+      "weight": 98.1,
+      "restingHR": 73,
       "hrv": 42.0,
       "hrvSDNN": 59.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 20400,
+      "kcalConsumed": 853,
+      "sleepSecs": 20427,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 69.0,
@@ -1837,11 +1837,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.8,
       "readiness": 30.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 114,
+      "steps": 5304,
       "respiration": 17.234375,
       "carbohydrates": null,
       "protein": null,
