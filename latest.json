@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-17T14:06:00.209149",
+  "last_updated": "2026-03-17T15:16:51.633842",
   "date_range": {
     "start": "2026-02-17",
     "end": "2026-03-17"
@@ -1906,9 +1906,9 @@
       "distance": 16300.0,
       "icu_distance": 16300.0,
       "moving_time": 4147,
-      "coasting_time": 34,
-      "total_elevation_gain": null,
-      "total_elevation_loss": null,
+      "coasting_time": 35,
+      "total_elevation_gain": 0.0,
+      "total_elevation_loss": 1.2000008,
       "timezone": null,
       "trainer": true,
       "sub_type": null,
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-17T12:13:29.918+00:00",
-      "icu_sync_date": "2026-03-17T13:23:00.352+00:00",
-      "analyzed": "2026-03-17T13:23:00.352+00:00",
+      "icu_sync_date": "2026-03-17T14:15:44.225+00:00",
+      "analyzed": "2026-03-17T14:15:44.225+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -1988,12 +1988,16 @@
       "ignore_parts": null,
       "icu_training_load_data": 100,
       "interval_summary": [
-        "1x 15m1s 4:37",
-        "12x 61s 44:48",
+        "2x 15m2s 4:32",
+        "6x 59s 1:19:04",
         "12x 3m1s 3:30",
-        "1x 61s 5:35"
+        "1x 59s 5:41",
+        "1x 60s 39:51",
+        "2x 60s 39:42",
+        "2x 60s 1:22:32",
+        "1x 59s 1:16:42"
       ],
-      "skyline_chart_bytes": "CAUSKYUHPbUBPbUBPbUBPbUBPbUBPbUBPbUBPbUBPbUBPbUBPbUBPbUBPYUHGhtTB2pFaQdsC2wMbghvC3AJbwRwB3AIcglyBFciGwIBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBAigD",
+      "skyline_chart_bytes": "CAUSKYYHOrUBO7QBPLQBPLQBPLUBO7UBO7UBO7QBPLUBO7UBO7UBO7QBPIYHGhtTAmpEaQVsCWwKbgVvCHAGbwNwBHAFcgVyBFciGwIBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBAigD",
       "stream_types": [
         "time",
         "watts",
@@ -2008,7 +2012,15 @@
         "tidal_volume_min",
         "TymeVentilation",
         "torque",
-        "VerticalOscillation"
+        "VerticalOscillation",
+        "altitude",
+        "smo2",
+        "core_temperature",
+        "skin_temperature",
+        "heat_strain_index",
+        "HeatStrainIndex",
+        "THb",
+        "TymeBreathRate"
       ],
       "has_weather": false,
       "has_segments": false,
@@ -2058,6 +2070,43 @@
         {
           "code": "VentilatoryThresholds",
           "zones": []
+        },
+        {
+          "code": "COREsHeatZones",
+          "zones": [
+            {
+              "id": "1",
+              "start": 0.0,
+              "end": 1.0,
+              "start_value": 0.0,
+              "end_value": 1.0,
+              "secs": 1014
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 3.0,
+              "start_value": 1.0,
+              "end_value": 3.0,
+              "secs": 3608
+            },
+            {
+              "id": "3",
+              "start": 3.0,
+              "end": 7.0,
+              "start_value": 3.0,
+              "end_value": 7.0,
+              "secs": 96
+            },
+            {
+              "id": "4",
+              "start": 7.0,
+              "end": null,
+              "start_value": 7.0,
+              "end_value": null,
+              "secs": 0
+            }
+          ]
         }
       ],
       "tiz_order": "PACE_HR_POWER",
@@ -2304,7 +2353,7 @@
           }
         }
       ],
-      "icu_intervals_edited": true,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 27,
       "icu_joules_above_ftp": 312315,
@@ -2330,9 +2379,9 @@
       "source": "UPLOAD",
       "oauth_client_id": null,
       "oauth_client_name": null,
-      "average_altitude": null,
-      "min_altitude": null,
-      "max_altitude": null,
+      "average_altitude": 24.098686,
+      "min_altitude": 23.2,
+      "max_altitude": 25.6,
       "power_load": 152,
       "hr_load": 58,
       "pace_load": 97,
@@ -6667,7 +6716,7 @@
       "icu_pm_ftp_watts": 480,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 39090.81,
+      "icu_rolling_w_prime": 39233.0,
       "icu_rolling_p_max": 920.6814,
       "icu_rolling_ftp": 460,
       "icu_rolling_ftp_delta": 2,
