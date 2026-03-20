@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-20T16:05:59.271000",
+  "last_updated": "2026-03-20T17:02:32.064099",
   "date_range": {
     "start": "2026-02-20",
     "end": "2026-03-20"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-20",
-      "ctl": 92.94605,
-      "atl": 95.4078,
-      "rampRate": 1.1148071,
-      "ctlLoad": 89.0,
-      "atlLoad": 89.0,
+      "ctl": 94.35775,
+      "atl": 103.39513,
+      "rampRate": 2.5265045,
+      "ctlLoad": 149.0,
+      "atlLoad": 149.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,7 +1819,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-03-20T14:46:06.595+00:00",
+      "updated": "2026-03-20T17:02:29.582+00:00",
       "weight": 99.6,
       "restingHR": 70,
       "hrv": 43.0,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 92.9,
-    "atl": 95.4,
-    "tsb": -2.5,
-    "ramp_rate": 1.11
+    "ctl": 94.4,
+    "atl": 103.4,
+    "tsb": -9.0,
+    "ramp_rate": 2.53
   },
   "activities": [
     {
@@ -1888,12 +1888,12 @@
       "icu_rolling_ftp": 460,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 58,
-      "icu_atl": 95.4078,
-      "icu_ctl": 92.94605,
+      "icu_atl": 103.39513,
+      "icu_ctl": 94.35775,
       "ss_p_max": 1.1832831,
       "ss_w_prime": 10.704807,
       "ss_cp": 114.31819,
-      "paired_event_id": 94378195,
+      "paired_event_id": null,
       "icu_ftp": 460,
       "icu_joules": 1409806,
       "icu_recording_time": 3300,
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-20T14:46:05.565+00:00",
-      "icu_sync_date": "2026-03-20T14:47:13.840+00:00",
-      "analyzed": "2026-03-20T14:47:13.840+00:00",
+      "icu_sync_date": "2026-03-20T17:01:54.024+00:00",
+      "analyzed": "2026-03-20T17:01:54.024+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -1988,12 +1988,11 @@
       "ignore_parts": null,
       "icu_training_load_data": 100,
       "interval_summary": [
-        "2x 14m24s 4:57",
-        "1x 61s 7:29",
-        "12x 76s 5:31",
-        "12x 46s 4:09"
+        "8x 4m48s 4:48",
+        "3x 5m22s 5:22",
+        "1x 29s 4:41"
       ],
-      "skyline_chart_bytes": "CAUSHuAGPUwuTC5MLkwuTC5MLkwuTC5MLkwuTC5MLuAGSxocTzM7Y0dbRF9FZUdbR15HXEhcSFxEXUZbSlZNUSIcAQEBBAEDAQQBBQEDAQMBAwEDAQMBAwEDAQIBAigD",
+      "skyline_chart_bytes": "CAUSFKcCpgKjAtIClQK0ApkCwQLjBh0BGgtOT1BFVEtTSFBTACILAQECAQIBAgECAgAoAw==",
       "stream_types": [
         "time",
         "watts",
@@ -2074,7 +2073,7 @@
       "strava_id": null,
       "lengths": null,
       "pool_length": null,
-      "compliance": 96.666664,
+      "compliance": 0.0,
       "coach_tick": null,
       "source": "OAUTH_CLIENT",
       "oauth_client_id": 1,
@@ -2155,8 +2154,8 @@
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 31,
-      "icu_atl": 95.4078,
-      "icu_ctl": 92.94605,
+      "icu_atl": 103.39513,
+      "icu_ctl": 94.35775,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 50.16747,
