@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-20T07:08:12.369047",
+  "last_updated": "2026-03-20T07:54:48.995468",
   "date_range": {
     "start": "2026-02-20",
     "end": "2026-03-20"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-20T06:57:32.850+00:00",
-      "icu_sync_date": "2026-03-20T06:57:33.422+00:00",
-      "analyzed": "2026-03-20T06:57:33.422+00:00",
+      "icu_sync_date": "2026-03-20T07:29:35.267+00:00",
+      "analyzed": "2026-03-20T07:29:35.267+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2102,7 +2102,7 @@
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.0,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 1,
       "icu_joules_above_ftp": 0,
@@ -2132,7 +2132,7 @@
       "min_altitude": null,
       "max_altitude": null,
       "power_load": 31,
-      "hr_load": 46,
+      "hr_load": 45,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2178,7 +2178,7 @@
       "AeTwkg": 2.0359483864347028,
       "MeanVE": 53.186776859504135,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 32.927581932566085,
       "Pvo2max": 464.0,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -2263,9 +2263,9 @@
       "average_heartrate": 119,
       "average_cadence": 78.194565,
       "calories": 788,
-      "average_temp": null,
-      "min_temp": null,
-      "max_temp": null,
+      "average_temp": 21.20593,
+      "min_temp": 21,
+      "max_temp": 23,
       "avg_lr_balance": null,
       "gap": null,
       "gap_model": "NONE",
@@ -2287,8 +2287,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-20T06:54:30.685+00:00",
-      "icu_sync_date": "2026-03-20T06:59:31.361+00:00",
-      "analyzed": "2026-03-20T06:59:31.361+00:00",
+      "icu_sync_date": "2026-03-20T07:29:23.674+00:00",
+      "analyzed": "2026-03-20T07:29:23.674+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2335,7 +2335,17 @@
         "latlng",
         "velocity_smooth",
         "torque",
-        "PercentageinZ2"
+        "PercentageinZ2",
+        "temp",
+        "smo2",
+        "hrv",
+        "core_temperature",
+        "respiration",
+        "tidal_volume",
+        "tidal_volume_min",
+        "TymeVentilation",
+        "THb",
+        "TymeBreathRate"
       ],
       "has_weather": true,
       "has_segments": false,
@@ -2387,7 +2397,53 @@
       "pace_zone_times": null,
       "gap_zone_times": null,
       "use_gap_zone_times": null,
-      "custom_zones": null,
+      "custom_zones": [
+        {
+          "code": "VentilatoryThresholds",
+          "zones": [
+            {
+              "id": "1",
+              "start": null,
+              "end": 1.0,
+              "start_value": null,
+              "end_value": 54.0,
+              "secs": 2018
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 54.0,
+              "end_value": 73.0,
+              "secs": 1484
+            },
+            {
+              "id": "3",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 73.0,
+              "end_value": 105.0,
+              "secs": 106
+            },
+            {
+              "id": "4",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 105.0,
+              "end_value": 113.0,
+              "secs": 0
+            },
+            {
+              "id": "5",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 113.0,
+              "end_value": 165.0,
+              "secs": 0
+            }
+          ]
+        }
+      ],
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.0,
       "icu_achievements": null,
@@ -2465,6 +2521,7 @@
       "VT2HR": 153,
       "VT2VE": 105,
       "AeTwkg": 2.0359483864347028,
+      "MeanVE": 53.157150776053214,
       "VO2max": 165,
       "LoadCTL": 32.927581932566085,
       "Pvo2max": 464.0,
@@ -2482,6 +2539,7 @@
       "EnduranceHR": 116,
       "EnduranceVE": 54,
       "Vo2MaxPower": 470,
+      "AvgBreathing": 32.434950105366845,
       "SmO2BP1Power": 320,
       "SmO2BP2Power": 410,
       "TimeAboveFTP": 0,
