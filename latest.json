@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-21T09:46:13.188857",
+  "last_updated": "2026-03-21T10:29:30.259553",
   "date_range": {
     "start": "2026-02-21",
     "end": "2026-03-21"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-03-21",
-      "ctl": 97.37064,
-      "atl": 120.11422,
-      "rampRate": 6.5942,
-      "ctlLoad": 281.0,
-      "atlLoad": 281.0,
+      "ctl": 94.688416,
+      "atl": 104.9383,
+      "rampRate": 3.911972,
+      "ctlLoad": 167.0,
+      "atlLoad": 167.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,7 +1819,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-03-21T08:54:07.953+00:00",
+      "updated": "2026-03-21T10:24:38.241+00:00",
       "weight": 98.1,
       "restingHR": 74,
       "hrv": 30.0,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 97.4,
-    "atl": 120.1,
-    "tsb": -22.7,
-    "ramp_rate": 6.59
+    "ctl": 94.7,
+    "atl": 104.9,
+    "tsb": -10.2,
+    "ramp_rate": 3.91
   },
   "activities": [
     {
@@ -1888,8 +1888,8 @@
       "icu_rolling_ftp": null,
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 80,
-      "icu_atl": 120.11422,
-      "icu_ctl": 97.37064,
+      "icu_atl": 104.9383,
+      "icu_ctl": 94.688416,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
