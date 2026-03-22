@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-22T11:00:32.016194",
+  "last_updated": "2026-03-22T11:36:41.569351",
   "date_range": {
     "start": "2026-02-22",
     "end": "2026-03-22"
@@ -1819,7 +1819,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-03-22T10:33:50.911+00:00",
+      "updated": "2026-03-22T11:24:29.772+00:00",
       "weight": 97.4,
       "restingHR": 75,
       "hrv": 45.0,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 8304,
+      "steps": 12213,
       "respiration": 16.90244,
       "carbohydrates": null,
       "protein": null,
