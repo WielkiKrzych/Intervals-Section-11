@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-24T05:05:12.832519",
+  "last_updated": "2026-03-24T06:13:55.295636",
   "date_range": {
     "start": "2026-02-24",
     "end": "2026-03-24"
@@ -15368,7 +15368,8 @@
       "website": "https://instagram.com/WielkiKrzych",
       "email": null,
       "countries": null,
-      "languages": null
+      "languages": null,
+      "icu_coach": false
     },
     "sharedFolders": [],
     "customItems": [
