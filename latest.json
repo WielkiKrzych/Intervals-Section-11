@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-26T05:23:48.208892",
+  "last_updated": "2026-03-26T06:44:47.781564",
   "date_range": {
     "start": "2026-02-26",
     "end": "2026-03-26"
@@ -1819,7 +1819,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-03-26T05:09:49.136+00:00",
+      "updated": "2026-03-26T06:38:16.896+00:00",
       "weight": 98.8,
       "restingHR": 75,
       "hrv": 33.0,
@@ -1831,8 +1831,8 @@
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 75.0,
-      "soreness": null,
-      "fatigue": null,
+      "soreness": 2,
+      "fatigue": 3,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 1198,
+      "steps": 2081,
       "respiration": 17.651516,
       "carbohydrates": null,
       "protein": null,
