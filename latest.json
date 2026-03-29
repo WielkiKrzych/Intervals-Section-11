@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-29T08:22:14.260160",
+  "last_updated": "2026-03-29T09:05:25.012730",
   "date_range": {
     "start": "2026-03-01",
     "end": "2026-03-29"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-29T08:07:07.549+00:00",
-      "icu_sync_date": "2026-03-29T08:07:13.121+00:00",
-      "analyzed": "2026-03-29T08:07:13.121+00:00",
+      "icu_sync_date": "2026-03-29T08:54:23.825+00:00",
+      "analyzed": "2026-03-29T08:54:23.825+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -2015,7 +2015,8 @@
         "torque",
         "fixed_altitude",
         "PercentageinZ2",
-        "VerticalOscillation"
+        "VerticalOscillation",
+        "TymeBreathRate"
       ],
       "has_weather": true,
       "has_segments": false,
@@ -2146,7 +2147,7 @@
           }
         }
       ],
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 21,
       "icu_joules_above_ftp": 9856,
@@ -2221,7 +2222,7 @@
       "AeTHR": 139.84,
       "AeTwkg": 2.4860707520105905,
       "MeanVE": 99.55908776779543,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 107.83865097368601,
       "Pvo2max": 587.0,
       "PVCsPSVCs": "PVCs: 19 (S: 19, C: 0, R: 0), PSVCs: 0",
       "AllWorkFTP": 270.466,
