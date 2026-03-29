@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-29T18:02:18.309411",
+  "last_updated": "2026-03-29T19:02:20.090344",
   "date_range": {
     "start": "2026-03-01",
     "end": "2026-03-29"
@@ -4338,7 +4338,7 @@
       "icu_pm_ftp_watts": 521,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 40616.0,
+      "icu_rolling_w_prime": 43622.0,
       "icu_rolling_p_max": 913.3418,
       "icu_rolling_ftp": 512,
       "icu_rolling_ftp_delta": 35,
