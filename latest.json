@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-03-31T10:33:54.910550",
+  "last_updated": "2026-03-31T11:35:25.787865",
   "date_range": {
     "start": "2026-03-03",
     "end": "2026-03-31"
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-03-31T10:05:42.036+00:00",
-      "icu_sync_date": "2026-03-31T10:05:59.568+00:00",
-      "analyzed": "2026-03-31T10:05:59.568+00:00",
+      "icu_sync_date": "2026-03-31T11:18:46.590+00:00",
+      "analyzed": "2026-03-31T11:18:46.590+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -1988,7 +1988,7 @@
       "ignore_parts": null,
       "icu_training_load_data": 100,
       "interval_summary": [
-        "2x 14m57s 4:36",
+        "2x 15m1s 4:36",
         "1x 59s 1:30:18",
         "3x 12m 3:51",
         "1x 60s 14:06",
@@ -1996,7 +1996,7 @@
         "1x 60s 56:30",
         "1x 60s 1:29:03"
       ],
-      "skyline_chart_bytes": "CAUSEIUHO9EFPNAFPNAFPDz9BggaC1MEYxtlJmUGBFVJIgsCAQQBBQEFAQECASgD",
+      "skyline_chart_bytes": "CAUSD4UHO9EFPNAFPNAFPDyFBxoKUwRjG2UmZQYEVSIKAgEEAQUBBQEBAigD",
       "stream_types": [
         "time",
         "watts",
@@ -2018,7 +2018,9 @@
         "TymeVentilation",
         "torque",
         "PercentageinZ2",
-        "VerticalOscillation"
+        "VerticalOscillation",
+        "THb",
+        "TymeBreathRate"
       ],
       "has_weather": false,
       "has_segments": false,
@@ -2287,7 +2289,7 @@
           }
         }
       ],
-      "icu_intervals_edited": true,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 10,
       "icu_joules_above_ftp": 108191,
