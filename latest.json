@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-03T13:38:12.763066",
+  "last_updated": "2026-04-03T14:27:30.265905",
   "date_range": {
     "start": "2026-03-06",
     "end": "2026-04-03"
@@ -1892,20 +1892,20 @@
       "icu_ctl": 102.827705,
       "ss_p_max": 0.7105871,
       "ss_w_prime": 8.495107,
-      "ss_cp": 104.304825,
+      "ss_cp": 103.53968,
       "paired_event_id": 99688551,
       "icu_ftp": 530,
-      "icu_joules": 1777319,
-      "icu_recording_time": 3841,
-      "elapsed_time": 3842,
+      "icu_joules": 1762617,
+      "icu_recording_time": 3810,
+      "elapsed_time": 3811,
       "icu_weighted_avg_watts": 514,
       "carbs_used": null,
       "name": "Vo2Max Run 16x400m",
       "description": null,
       "start_date": "2026-04-03T11:07:57Z",
-      "distance": 14202.77,
-      "icu_distance": 14202.77,
-      "moving_time": 3744,
+      "distance": 14090.54,
+      "icu_distance": 14090.54,
+      "moving_time": 3713,
       "coasting_time": 5,
       "total_elevation_gain": null,
       "total_elevation_loss": null,
@@ -1915,14 +1915,14 @@
       "commute": false,
       "race": false,
       "max_speed": 5.925,
-      "average_speed": 3.697,
+      "average_speed": 3.78616,
       "device_watts": true,
       "has_heartrate": true,
       "max_heartrate": 174,
       "average_heartrate": 149,
-      "average_cadence": 82.45598,
+      "average_cadence": 82.45386,
       "calories": 1269,
-      "average_temp": 27.360916,
+      "average_temp": 27.353882,
       "min_temp": 25,
       "max_temp": 30,
       "avg_lr_balance": null,
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-04-03T12:20:07.786+00:00",
-      "icu_sync_date": "2026-04-03T12:20:08.318+00:00",
-      "analyzed": "2026-04-03T12:20:08.318+00:00",
+      "icu_sync_date": "2026-04-03T13:47:07.038+00:00",
+      "analyzed": "2026-04-03T13:47:07.038+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 105.63871,
+      "trimp": 104.76403,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -1988,7 +1988,7 @@
       "ignore_parts": null,
       "icu_training_load_data": 100,
       "interval_summary": [
-        "2x 15m2s 4:25",
+        "1x 15m1s 4:17",
         "1x 60s 28:27",
         "16x 76s 3:17",
         "13x 44s 10:18",
@@ -1997,7 +1997,7 @@
         "1x 50s 12:21",
         "1x 55s 15:49"
       ],
-      "skyline_chart_bytes": "CAUSJoUHPEssTC1LLEwsTCxMLEwsTC1LLEwsTCxMLEwsTCxMLUsyN4YHGiRaDXUgcS10HnUldCB1IXUpczJ1KHUldiB2H3kjeS57LHsfGFQiJAMBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBBQEBAigD",
+      "skyline_chart_bytes": "CAUSJoUHPEssTC1LLEwsTCxMLEwsTC1LLEwsTCxMLEwsTCxMLUsyN+cGGiRaDXUgcS10HnUldCB1IXUpczJ1KHUldiB2H3kjeS57LHsfGFQiJAMBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBBQEFAQUBBQEBAigD",
       "stream_types": [
         "time",
         "watts",
@@ -2016,10 +2016,12 @@
         "tidal_volume_min",
         "heat_strain_index",
         "HeatStrainIndex",
-        "TymeVentilation",
-        "torque",
         "PercentageinZ2",
-        "VerticalOscillation"
+        "TymeVentilation",
+        "VerticalOscillation",
+        "THb",
+        "TymeBreathRate",
+        "torque"
       ],
       "has_weather": false,
       "has_segments": false,
@@ -2034,11 +2036,11 @@
         },
         {
           "id": "Z2",
-          "secs": 87
+          "secs": 70
         },
         {
           "id": "Z3",
-          "secs": 1710
+          "secs": 1696
         },
         {
           "id": "Z4",
@@ -2052,13 +2054,13 @@
       "icu_hr_zone_times": [
         72,
         588,
-        1470,
+        1439,
         1369,
         245
       ],
       "pace_zone_times": [
         757,
-        1168,
+        1137,
         653,
         17,
         1213
@@ -2083,7 +2085,7 @@
               "end": 3.0,
               "start_value": 1.0,
               "end_value": 3.0,
-              "secs": 2589
+              "secs": 2558
             },
             {
               "id": "3",
@@ -2240,9 +2242,9 @@
           }
         }
       ],
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
-      "icu_lap_count": 36,
+      "icu_lap_count": 35,
       "icu_joules_above_ftp": 118288,
       "icu_max_wbal_depletion": 26463,
       "icu_hrr": {
@@ -2263,7 +2265,7 @@
       "icu_rpe": 8,
       "feel": 1,
       "kg_lifted": null,
-      "decoupling": 8.76097,
+      "decoupling": 9.125106,
       "icu_median_time_delta": 1,
       "p30s_exponent": null,
       "workout_shift_secs": null,
@@ -2278,7 +2280,7 @@
       "average_altitude": null,
       "min_altitude": null,
       "max_altitude": null,
-      "power_load": 98,
+      "power_load": 97,
       "hr_load": 68,
       "pace_load": 81,
       "hr_load_type": "HRSS",
@@ -2302,33 +2304,33 @@
       "max_snow": null,
       "carbs_ingested": null,
       "route_id": null,
-      "pace": 3.7934747,
+      "pace": 3.7949204,
       "athlete_max_hr": 184,
       "group": "0aca4982",
       "icu_intensity": 96.98113,
       "icu_efficiency_factor": 3.4496644,
       "icu_power_hr": 3.1073825,
-      "session_rpe": 499,
-      "average_stride": 1.3801819,
+      "session_rpe": 495,
+      "average_stride": 1.3807434,
       "icu_average_watts": 463,
       "icu_variability_index": 1.1101512,
-      "strain_score": 113.51052,
+      "strain_score": 112.74538,
       "AeT": 252.80254188389645,
       "MSS": 391.4012709419482,
       "EPOC": 217.02444,
       "NNRR": 95.78585250483766,
-      "PaHr": 8.911,
+      "PaHr": 9.17,
       "AeTHR": 139.84,
       "AeTwkg": 2.5381781702494877,
-      "MeanVE": 119.26827998959146,
-      "LoadCTL": "Infinity",
+      "MeanVE": 119.20487932843652,
+      "LoadCTL": 78.77254451809873,
       "Pvo2max": 587.0,
       "PVCsPSVCs": "PVCs: 13 (S: 13, C: 0, R: 0), PSVCs: 2",
       "AllWorkFTP": 798.808,
       "PVCsnumber": 13,
-      "WorkHourKg": 17.15823898699269,
-      "Workoverz2": 1639.963,
-      "AvgBreathing": 42.94569349673586,
+      "WorkHourKg": 17.15837575243688,
+      "Workoverz2": 1631.304,
+      "AvgBreathing": 42.91057190339688,
       "TimeAboveFTP": 21.4,
       "TrainingLoad": 217.02444,
       "VO2MaxGarmin": 0.0,
@@ -16255,8 +16257,8 @@
   "quick_stats": {
     "total_activities": 41,
     "total_tss": 3094,
-    "total_duration_hours": 51.6,
-    "total_energy_kj": 53155.6,
+    "total_duration_hours": 51.59,
+    "total_energy_kj": 53140.8,
     "period_days": 28
   },
   "sport_totals": {
@@ -16270,13 +16272,13 @@
       "total_distance_km": 1227.9
     },
     "Run": {
-      "total_time": 51009,
-      "total_kj": 21106.8,
+      "total_time": 50978,
+      "total_kj": 21092.1,
       "total_calories": 16151,
-      "total_distance": 186118.45999999996,
+      "total_distance": 186006.22999999998,
       "total_load": 1057,
-      "total_time_hours": 14.17,
-      "total_distance_km": 186.1
+      "total_time_hours": 14.16,
+      "total_distance_km": 186.0
     },
     "Swim": {
       "total_time": 16561,
@@ -16290,8 +16292,8 @@
   },
   "zone_distribution": {
     "Z1": 4415,
-    "Z2": 111268,
-    "Z3": 26318,
+    "Z2": 111251,
+    "Z3": 26304,
     "Z4": 12788,
     "Z5": 8368,
     "Z6": 173,
