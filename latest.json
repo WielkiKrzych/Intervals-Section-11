@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-10T05:14:44.053247",
+  "last_updated": "2026-04-10T07:02:17.957595",
   "date_range": {
     "start": "2026-03-13",
     "end": "2026-04-10"
@@ -1800,26 +1800,26 @@
     },
     {
       "id": "2026-04-10",
-      "ctl": 103.90666,
-      "atl": 116.48889,
-      "rampRate": 1.0789566,
-      "ctlLoad": 120.0,
-      "atlLoad": 120.0,
+      "ctl": 102.65966,
+      "atl": 109.43342,
+      "rampRate": -0.16804504,
+      "ctlLoad": 67.0,
+      "atlLoad": 67.0,
       "sportInfo": [
         {
           "type": "Ride",
-          "eftp": 382.92282,
-          "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "eftp": 382.53992,
+          "wPrime": 32321.65,
+          "pMax": 1272.8134
         },
         {
           "type": "Run",
-          "eftp": 531.0,
-          "wPrime": 45221.0,
-          "pMax": 913.3418
+          "eftp": 530.469,
+          "wPrime": 45175.78,
+          "pMax": 912.42847
         }
       ],
-      "updated": "2026-04-10T05:11:36.225+00:00",
+      "updated": "2026-04-10T05:41:47.582+00:00",
       "weight": 102.3,
       "restingHR": 75,
       "hrv": 35.0,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 103.9,
-    "atl": 116.5,
-    "tsb": -12.6,
-    "ramp_rate": 1.08
+    "ctl": 102.7,
+    "atl": 109.4,
+    "tsb": -6.8,
+    "ramp_rate": -0.17
   },
   "activities": [
     {
@@ -1887,9 +1887,9 @@
       "icu_rolling_p_max": null,
       "icu_rolling_ftp": null,
       "icu_rolling_ftp_delta": null,
-      "icu_training_load": 69,
-      "icu_atl": 116.48889,
-      "icu_ctl": 103.90666,
+      "icu_training_load": 16,
+      "icu_atl": 109.43342,
+      "icu_ctl": 102.65966,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -1941,8 +1941,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-04-10T05:10:48.746+00:00",
-      "icu_sync_date": "2026-04-10T05:11:36.137+00:00",
-      "analyzed": "2026-04-10T05:11:36.137+00:00",
+      "icu_sync_date": "2026-04-10T05:41:47.491+00:00",
+      "analyzed": "2026-04-10T05:41:47.491+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 0.8333333,
@@ -1973,7 +1973,7 @@
       "icu_chat_id": null,
       "icu_ignore_hr": false,
       "ignore_velocity": false,
-      "ignore_pace": false,
+      "ignore_pace": true,
       "ignore_parts": null,
       "icu_training_load_data": 100,
       "interval_summary": [
@@ -2015,105 +2015,8 @@
       "use_gap_zone_times": null,
       "custom_zones": null,
       "tiz_order": "PACE_HR_POWER",
-      "polarization_index": null,
-      "icu_achievements": [
-        {
-          "id": "pa0_0",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 29,
-          "value": null,
-          "distance": 45.719997,
-          "pace": 1.5765517,
-          "point": {
-            "start_index": 2664,
-            "end_index": 2694,
-            "secs": 0,
-            "value": 0
-          }
-        },
-        {
-          "id": "pa0_1",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 32,
-          "value": null,
-          "distance": 50.0,
-          "pace": 1.5625,
-          "point": {
-            "start_index": 2664,
-            "end_index": 2696,
-            "secs": 0,
-            "value": 0
-          }
-        },
-        {
-          "id": "pa0_4",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 59,
-          "value": null,
-          "distance": 91.439995,
-          "pace": 1.5498304,
-          "point": {
-            "start_index": 2697,
-            "end_index": 2756,
-            "secs": 0,
-            "value": 0
-          }
-        },
-        {
-          "id": "pa0_5",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 64,
-          "value": null,
-          "distance": 100.0,
-          "pace": 1.5625,
-          "point": {
-            "start_index": 2697,
-            "end_index": 2761,
-            "secs": 0,
-            "value": 0
-          }
-        },
-        {
-          "id": "pa0_11",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 130,
-          "value": null,
-          "distance": 200.0,
-          "pace": 1.5384616,
-          "point": {
-            "start_index": 2664,
-            "end_index": 2794,
-            "secs": 0,
-            "value": 0
-          }
-        },
-        {
-          "id": "pa0_19",
-          "type": "BEST_PACE",
-          "message": null,
-          "watts": null,
-          "secs": 431,
-          "value": null,
-          "distance": 400.0,
-          "pace": 0.92807424,
-          "point": {
-            "start_index": 2363,
-            "end_index": 2794,
-            "secs": 0,
-            "value": 0
-          }
-        }
-      ],
+      "polarization_index": 0.0,
+      "icu_achievements": [],
       "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 24,
@@ -2135,7 +2038,7 @@
       "strava_id": null,
       "lengths": 84,
       "pool_length": 25.0,
-      "compliance": 102.98508,
+      "compliance": 23.880596,
       "coach_tick": null,
       "source": "UPLOAD",
       "oauth_client_id": null,
@@ -2172,7 +2075,7 @@
       "pace": 0.8449514,
       "athlete_max_hr": 180,
       "group": "0c9c3236",
-      "icu_intensity": 93.95367,
+      "icu_intensity": 45.24277,
       "icu_efficiency_factor": null,
       "icu_power_hr": null,
       "session_rpe": 197,
@@ -2183,7 +2086,7 @@
       "EPOC": 44.24295,
       "NNRR": 0,
       "AeTHR": 136.8,
-      "LoadCTL": 66.25572441154797,
+      "LoadCTL": 15.398435185950712,
       "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
       "PVCsnumber": 0,
       "WorkHourKg": 0.0,
@@ -16069,7 +15972,7 @@
   },
   "quick_stats": {
     "total_activities": 40,
-    "total_tss": 3220,
+    "total_tss": 3167,
     "total_duration_hours": 53.48,
     "total_energy_kj": 55091.3,
     "period_days": 28
@@ -16098,7 +16001,7 @@
       "total_kj": 0.0,
       "total_calories": 5299,
       "total_distance": 17025.0,
-      "total_load": 626,
+      "total_load": 573,
       "total_time_hours": 5.39,
       "total_distance_km": 17.0
     }
