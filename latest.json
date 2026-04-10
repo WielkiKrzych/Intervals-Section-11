@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-10T20:39:45.203569",
+  "last_updated": "2026-04-10T21:20:36.012314",
   "date_range": {
     "start": "2026-03-13",
     "end": "2026-04-10"
@@ -16186,7 +16186,7 @@
           "processes_fit_messages": false,
           "name": "Avg Tidal Volume"
         },
-        "usage_count": 23,
+        "usage_count": 24,
         "index": 8,
         "hide_script": false,
         "hidden_by_id": null,
