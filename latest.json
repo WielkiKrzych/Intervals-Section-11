@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-11T08:25:21.821441",
+  "last_updated": "2026-04-11T09:09:05.608858",
   "date_range": {
     "start": "2026-03-14",
     "end": "2026-04-11"
@@ -1819,9 +1819,9 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-11T07:52:04.736+00:00",
+      "updated": "2026-04-11T08:59:37.483+00:00",
       "weight": 97.7,
-      "restingHR": 77,
+      "restingHR": 76,
       "hrv": 35.0,
       "hrvSDNN": 145.0,
       "menstrualPhase": null,
