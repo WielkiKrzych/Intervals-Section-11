@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-13T06:32:14.460658",
+  "last_updated": "2026-04-13T08:35:15.200492",
   "date_range": {
     "start": "2026-03-16",
     "end": "2026-04-13"
@@ -1799,11 +1799,11 @@
     },
     {
       "id": "2026-04-13",
-      "ctl": 105.039635,
-      "atl": 118.93043,
-      "rampRate": 0.89793396,
-      "ctlLoad": 145.0,
-      "atlLoad": 145.0,
+      "ctl": 104.71024,
+      "atl": 117.06672,
+      "rampRate": 0.5685425,
+      "ctlLoad": 131.0,
+      "atlLoad": 131.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1818,9 +1818,9 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-13T06:30:55.783+00:00",
+      "updated": "2026-04-13T08:34:09.394+00:00",
       "weight": 101.8,
-      "restingHR": 76,
+      "restingHR": 71,
       "hrv": 39.0,
       "hrvSDNN": 54.0,
       "menstrualPhase": null,
@@ -1836,7 +1836,7 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
@@ -1849,7 +1849,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4471,
+      "steps": 5527,
       "respiration": 18.196428,
       "carbohydrates": null,
       "protein": null,
@@ -1863,10 +1863,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 105.0,
-    "atl": 118.9,
-    "tsb": -13.9,
-    "ramp_rate": 0.9
+    "ctl": 104.7,
+    "atl": 117.1,
+    "tsb": -12.4,
+    "ramp_rate": 0.57
   },
   "activities": [
     {
