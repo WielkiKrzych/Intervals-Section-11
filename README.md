@@ -1,12 +1,12 @@
 # 🏃‍♂️ Intervals-Section-11
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.14+-blue?style=flat&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/python-3.12+-blue?style=flat&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/macOS-ready-green?style=flat&logo=apple" alt="macOS">
   <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat" alt="License">
 </p>
 
-> Training data mirror for AI coaching — syncs workout data from Intervals.icu with beautiful interactive reports.
+> Training data mirror for AI coaching — syncs workout data from Intervals.icu with beautiful, fast interactive reports.
 
 ---
 
@@ -116,13 +116,35 @@ python3 preferences.py
 
 - 🌙 **Dark Mode** — Auto-follows system theme
 - 📈 **CTL vs ATL Chart** — Fitness & fatigue over time
+- 📈 **TSB (Form) Chart** — TSB line on the CTL vs ATL performance chart
 - 📊 **Weekly TSS** — Bar chart showing training load per week
+- 📋 **Recent Activities** — Table showing latest 10 activities with details
+- 📊 **Week Comparison** — Current vs previous week with percentage changes
+- 📅 **Daily Training Load** — Bar chart showing TSS distribution per day
 - ⚖️ **Weight Trend** — Line chart tracking body weight
 - 💡 **Recovery Recommendation** — AI-powered advice based on TSB
 - 🥧 **Zone Distribution** — Pie chart of training zones
 - 🚴 **Sport Breakdown** — Ride/Run/Swim stats with totals row
+- 🏃 **Avg Speed & Pace** — Speed (km/h) and pace (min/km) in sport breakdown
 - 💤 **Wellness Data** — Sleep, HR, HRV, weight, readiness
 - 🔄 **Smart Energy** — Uses kJ for cycling, calories for run/swim
+- 📱 **Mobile Responsive** — Optimized layout for phone and tablet screens
+
+---
+
+## ⚡ Performance
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Parallel-3x%20faster-green?style=flat" alt="Parallel">
+  <img src="https://img.shields.io/badge/Cache-5%20min%20TTL-orange?style=flat" alt="Cache">
+  <img src="https://img.shields.io/badge/Retry-auto%20backoff-blue?style=flat" alt="Retry">
+</p>
+
+- 🚀 **Parallel API Calls** — Fetches wellness, activities & profile simultaneously (3x faster)
+- 💾 **Smart Caching** — 5-minute response cache avoids redundant API calls
+- 🔄 **Auto Retry** — Exponential backoff on network errors (up to 3 retries)
+- 🛡️ **Data Validation** — Numeric range validation on all API responses
+- 🔒 **HTML Escaping** — Protection against injection in report rendering
 
 ---
 
@@ -144,7 +166,8 @@ Intervals-Section-11/
 ├── 🌐 latest.html           # Interactive HTML
 │
 ├── 🔐 .env                 # Credentials (gitignored)
-└── 🧪 tests/               # Unit tests
+├── 📦 .cache/              # API response cache (gitignored)
+└── 🧪 tests/               # Unit tests (29 tests)
 ```
 
 ---
@@ -152,8 +175,10 @@ Intervals-Section-11/
 ## 🧪 Testing
 
 ```bash
-pytest tests/
+python3 -m pytest tests/ -v
 ```
+
+29 tests covering: config validation, API headers, stats computation, numeric validation, week comparison, response caching.
 
 ---
 
@@ -181,6 +206,16 @@ pytest tests/
 │  ├─ Ride: 67.9h • 68175 kJ • 4885 TSS  │
 │  ├─ Run: 17.7h • 212 km • 538 TSS      │
 │  └─ Swim: 1.5h • 3.8 km • 67 TSS       │
+├─────────────────────────────────────────────┤
+│  📊 Week Comparison                        │
+│  ├─ TSS: 245 (↑ 15%)                      │
+│  ├─ Duration: 8.5h (↓ 5%)                 │
+│  └─ Activities: 5 (= 0%)                   │
+├─────────────────────────────────────────────┤
+│  📋 Recent Activities                      │
+│  ├─ 🚴 Morning Ride — 2.1h — 120 TSS     │
+│  ├─ 🏃 Evening Run — 0.8h — 65 TSS       │
+│  └─ ... (10 most recent)                   │
 ├─────────────────────────────────────────────┤
 │  💤 Latest Wellness                        │
 │  ├─ Sleep: 6.8h                          │

@@ -47,62 +47,86 @@
         th { color: var(--text-secondary); font-weight: 500; font-size: 0.85rem; }
         .chart-container { position: relative; height: 250px; }
         .footer { text-align: center; color: var(--text-secondary); margin-top: 2rem; font-size: 0.85rem; }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            body { padding: 10px; }
+            h1 { font-size: 1.5rem; }
+            .card { padding: 12px; }
+            table { font-size: 0.8rem; display: block; overflow-x: auto; white-space: nowrap; }
+            .chart-container { height: 200px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Training Report</h1>
-        <p class="subtitle">2025-12-18 to 2026-02-16</p>
-        
+        <p class="subtitle">2026-02-18 to 2026-04-19</p>
+
         <div class="grid">
             <div class="card">
                 <h2>Training Status</h2>
                 <div class="metric">
                     <span class="metric-label">Fitness (CTL)</span>
-                    <span class="metric-value">90.5</span>
+                    <span class="metric-value">103.6</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Fatigue (ATL)</span>
-                    <span class="metric-value">88.2</span>
+                    <span class="metric-value">106.3</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Form (TSB)</span>
-                    <span class="metric-value status-ok">2.3</span>
+                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">-2.7</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Ramp Rate</span>
-                    <span class="metric-value">-0.42</span>
+                    <span class="metric-value">-0.44</span>
                 </div>
                 <div class="metric" style="background: var(--bg-secondary); margin: 10px -20px -20px; padding: 12px 20px; border-radius: 0 0 12px 12px;">
-                    <span class="metric-label">👍 Recovery</span>
-                    <span class="metric-value" style="font-size: 0.95rem;">Normal - Maintain endurance</span>
+                    <span class="metric-label">⚠️ Recovery</span>
+                    <span class="metric-value" style="font-size: 0.95rem;">Caution - Easy training only</span>
                 </div>
             </div>
-            
+
             <div class="card">
                 <h2>Activity Summary</h2>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">66</span>
+                    <span class="metric-value">82</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">87.19h</span>
+                    <span class="metric-value">105.85h</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">5490</span>
+                    <span class="metric-value">6457.0</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Energy</span>
-                    <span class="metric-value">93847.5 kJ</span>
+                    <span class="metric-value">113132.3 kJ</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Week Comparison</h2>
+                <div class="metric">
+                    <span class="metric-label">TSS</span>
+                    <span class="metric-value">596 (↓ 18%)</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Duration</span>
+                    <span class="metric-value">9.06h (↓ 28%)</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Activities</span>
+                    <span class="metric-value">8 (↓ 11%)</span>
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="card">
-                <h2>Performance Chart (CTL vs ATL)</h2>
+                <h2>Performance Chart (CTL vs ATL vs TSB)</h2>
                 <div class="chart-container">
                     <canvas id="fitnessChart"></canvas>
                 </div>
@@ -114,7 +138,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="card">
                 <h2>Weekly TSS Distribution</h2>
@@ -129,97 +153,171 @@
                 </div>
             </div>
         </div>
-        
+
+        <div class="grid">
+            <div class="card">
+                <h2>Daily Training Load</h2>
+                <div class="chart-container">
+                    <canvas id="dailyLoadChart"></canvas>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <h2>Sport Breakdown</h2>
             <table>
                 <thead>
-                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th></tr>
+                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th><th>Avg Speed/Pace</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Ride</td><td>62.81h</td><td>2282.0 km</td><td>64144.0 kJ</td><td>3244</td></tr><tr><td>Run</td><td>18.31h</td><td>238.1 km</td><td>21109 kcal</td><td>1404</td></tr><tr><td>Swim</td><td>6.07h</td><td>20.2 km</td><td>5458 kcal</td><td>842</td></tr><tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>87.19h</td><td>2540.3 km</td><td>64255.1 kJ</td><td>5490</td></tr>
+                    <tr><td>Run</td><td>28.69h</td><td>374.1 km</td><td>32304 kcal</td><td>2105</td><td>4.6 min/km</td></tr><tr><td>Ride</td><td>68.13h</td><td>2522.1 km</td><td>68297.6 kJ</td><td>3296</td><td>37.0 km/h</td></tr><tr><td>Swim</td><td>9.03h</td><td>29.0 km</td><td>8917 kcal</td><td>1056</td><td>3.2 km/h</td></tr><tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>105.85h</td><td>2925.2 km</td><td>68470.1 kJ</td><td>6457</td><td>-</td></tr>
                 </tbody>
             </table>
         </div>
-        
+
         <div class="card">
             <h2>Latest Wellness</h2>
             <div class="grid">
                 <div>
-                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">6.8h</span></div>
-                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">49 bpm</span></div>
+                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">6.4h</span></div>
+                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">77 bpm</span></div>
                     <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">38.0</span></div>
                 </div>
                 <div>
-                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">97.5 kg</span></div>
-                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">34.0%</span></div>
-                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">7198</span></div>
+                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">99.6 kg</span></div>
+                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">27.0%</span></div>
+                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">26271</span></div>
                 </div>
             </div>
         </div>
-        
-        <p class="footer">Last updated: 2026-02-16T14:40:14.206055</p>
+
+        <div class="card">
+            <h2>Recent Activities</h2>
+            <table>
+                <thead>
+                    <tr><th>Date</th><th>Name</th><th>Sport</th><th>Duration</th><th>TSS</th><th>Distance</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2026-04-19</td><td>Long Run</td><td>Run</td><td>94m</td><td>103</td><td>20.0 km</td></tr>\n<tr><td>2026-04-18</td><td>Outdoor</td><td>Ride</td><td>107m</td><td>84</td><td>61.4 km</td></tr>\n<tr><td>2026-04-18</td><td>Swim</td><td>Swim</td><td>30m</td><td>61</td><td>1.6 km</td></tr>\n<tr><td>2026-04-17</td><td>Warszawa Bieganie</td><td>Run</td><td>37m</td><td>44</td><td>8.0 km</td></tr>\n<tr><td>2026-04-16</td><td>VT1</td><td>Ride</td><td>90m</td><td>83</td><td>46.6 km</td></tr>\n<tr><td>2026-04-15</td><td>Z2</td><td>Ride</td><td>61m</td><td>46</td><td>40.3 km</td></tr>\n<tr><td>2026-04-15</td><td>Swim</td><td>Swim</td><td>40m</td><td>76</td><td>2.1 km</td></tr>\n<tr><td>2026-04-14</td><td>SubT 12x3&#x27;</td><td>Run</td><td>84m</td><td>99</td><td>18.2 km</td></tr>\n<tr><td>2026-04-13</td><td>Threshold 3x5&#x27; // Endurance</td><td>Ride</td><td>120m</td><td>113</td><td>71.5 km</td></tr>\n<tr><td>2026-04-12</td><td>Warszawa Bieganie</td><td>Run</td><td>118m</td><td>132</td><td>25.0 km</td></tr>\n
+                </tbody>
+            </table>
+        </div>
+
+        <p class="footer">Last updated: 2026-04-19T18:02:47.360117</p>
     </div>
-    
+
     <script>
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+        const textColor = isDark ? '#98989d' : '#86868b';
+
         new Chart(document.getElementById('fitnessChart'), {
             type: 'line',
             data: {
-                labels: ["2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-22", "2025-12-23", "2025-12-24", "2025-12-25", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31", "2026-01-01", "2026-01-02", "2026-01-03", "2026-01-04", "2026-01-05", "2026-01-06", "2026-01-07", "2026-01-08", "2026-01-09", "2026-01-10", "2026-01-11", "2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15", "2026-01-16", "2026-01-17", "2026-01-18", "2026-01-19", "2026-01-20", "2026-01-21", "2026-01-22", "2026-01-23", "2026-01-24", "2026-01-25", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-01-31", "2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-07", "2026-02-08", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-14", "2026-02-15", "2026-02-16"],
+                labels: ["2026-02-18", "2026-02-19", "2026-02-20", "2026-02-21", "2026-02-22", "2026-02-23", "2026-02-24", "2026-02-25", "2026-02-26", "2026-02-27", "2026-02-28", "2026-03-01", "2026-03-02", "2026-03-03", "2026-03-04", "2026-03-05", "2026-03-06", "2026-03-07", "2026-03-08", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19"],
                 datasets: [{
                     label: 'CTL (Fitness)',
-                    data: [88.81855, 90.98743, 90.89361, 90.119675, 87.99931, 88.446365, 88.29469, 86.21727, 87.0827, 88.25717, 88.69816, 88.96407, 86.870895, 87.95624, 88.82781, 89.796524, 90.7895, 89.994484, 89.87697, 89.59753, 89.41877, 88.632484, 88.7823, 89.6815, 89.1949, 89.44913, 89.15622, 91.24657, 90.84078, 90.821, 89.55468, 87.44761, 88.001755, 87.53115, 90.01266, 89.541794, 89.505516, 90.15241, 89.6312, 89.992805, 89.75769, 90.91628, 90.28299, 90.79395, 89.81061, 88.68571, 89.54012, 89.080376, 91.26662, 90.83684, 90.58186, 91.69753, 90.904686, 90.90693, 90.17974, 91.91661, 91.37742, 91.20384, 91.787254, 91.48639, 90.486755],
+                    data: [91.65382, 90.956116, 90.15719, 90.83581, 90.274994, 90.40969, 90.117714, 92.79717, 92.00198, 92.119576, 93.52846, 92.786644, 93.097534, 93.00113, 93.82459, 94.675735, 94.77748, 94.45332, 94.06621, 94.20582, 93.495125, 94.11874, 93.104225, 91.831245, 90.77644, 90.85229, 91.16163, 91.298996, 92.6566, 93.04113, 92.94605, 94.335495, 94.727585, 93.698746, 93.51761, 95.83473, 95.97979, 95.5097, 98.109344, 98.295, 98.71157, 98.624245, 101.19767, 101.522415, 102.827705, 103.39644, 103.92826, 104.1417, 102.77373, 103.55549, 103.51889, 103.36551, 103.40397, 104.07678, 104.28673, 104.16234, 104.58203, 104.07424, 102.6608, 103.65697, 103.64151],
                     borderColor: '#34c759',
                     backgroundColor: 'rgba(52, 199, 89, 0.1)',
                     fill: true
                 }, {
                     label: 'ATL (Fatigue)',
-                    data: [72.51477, 86.95655, 86.96233, 83.106804, 72.04345, 76.69694, 77.40289, 67.098854, 74.540535, 82.85527, 86.069466, 87.92393, 76.21931, 83.77807, 89.26562, 94.68826, 99.65528, 93.97692, 92.78189, 90.814095, 89.64075, 85.16242, 86.47202, 91.867195, 88.82307, 90.31097, 88.53899, 100.44823, 96.92738, 96.005196, 88.1503, 76.41554, 81.0195, 79.286316, 94.42412, 91.17273, 90.75037, 94.244774, 90.751015, 92.64787, 90.964165, 97.358795, 92.918, 95.45824, 89.27362, 82.98045, 88.57418, 86.10155, 98.86775, 95.42418, 93.37088, 99.312004, 93.81246, 93.438065, 88.98672, 98.97264, 94.98262, 93.52059, 96.5131, 94.18172, 88.16703],
+                    data: [95.70399, 91.21724, 86.66217, 90.96705, 87.776505, 88.87123, 87.42403, 102.94286, 97.093094, 97.0807, 104.39168, 98.748405, 99.71375, 98.28751, 102.242905, 105.93799, 105.01439, 101.81754, 98.646904, 98.827034, 94.19079, 97.626564, 91.41954, 84.44134, 79.45707, 81.39305, 84.402534, 86.07954, 94.45564, 96.391815, 95.4078, 102.941475, 104.014244, 96.95688, 95.498276, 108.34479, 107.50015, 103.306786, 116.97752, 115.516174, 115.58058, 112.84085, 125.50864, 124.1097, 128.48813, 128.29002, 127.98517, 125.99031, 115.341835, 118.091896, 115.94971, 113.427086, 112.30525, 114.927055, 114.670525, 112.584435, 113.83785, 109.73265, 100.982185, 106.84193, 106.33048],
                     borderColor: '#ff9500',
                     backgroundColor: 'rgba(255, 149, 0, 0.1)',
                     fill: true
+                }, {
+                    label: 'TSB (Form)',
+                    data: [-4.1, -0.3, 3.5, -0.1, 2.5, 1.5, 2.7, -10.1, -5.1, -5.0, -10.9, -6.0, -6.6, -5.3, -8.4, -11.3, -10.2, -7.4, -4.6, -4.6, -0.7, -3.5, 1.7, 7.4, 11.3, 9.5, 6.8, 5.2, -1.8, -3.4, -2.5, -8.6, -9.3, -3.3, -2.0, -12.5, -11.5, -7.8, -18.9, -17.2, -16.9, -14.2, -24.3, -22.6, -25.7, -24.9, -24.1, -21.8, -12.6, -14.5, -12.4, -10.1, -8.9, -10.9, -10.4, -8.4, -9.3, -5.7, 1.7, -3.2, -2.7],
+                    borderColor: '#5856d6',
+                    backgroundColor: 'rgba(88, 86, 214, 0.05)',
+                    fill: false,
+                    borderDash: [5, 5]
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { grid: { color: gridColor }, ticks: { color: textColor } },
+                    y: { grid: { color: gridColor }, ticks: { color: textColor } }
+                }
+            }
         });
-        
+
         new Chart(document.getElementById('zoneChart'), {
             type: 'pie',
             data: {
                 labels: ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7", "SS"],
-                datasets: [{ data: [103, 2940, 656, 782, 385, 2, 1, 238] }]
+                datasets: [{ data: [165, 3811, 1047, 450, 232, 5, 1, 95] }]
             },
             options: { responsive: true, maintainAspectRatio: false }
         });
-        
+
         new Chart(document.getElementById('weeklyTssChart'), {
             type: 'bar',
             data: {
-                labels: ["2025-12-01", "2026-01-01", "2026-02-01"],
+                labels: ["2026-W07", "2026-W08", "2026-W09", "2026-W10", "2026-W11", "2026-W12", "2026-W13", "2026-W14", "2026-W15"],
                 datasets: [{
                     label: 'Weekly TSS',
-                    data: [1154.0, 2856.0, 1480.0],
+                    data: [469.0, 748.0, 711.0, 515.0, 811.0, 819.0, 944.0, 731.0, 709.0],
                     backgroundColor: '#0071e3',
                     borderRadius: 4
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { grid: { color: gridColor }, ticks: { color: textColor } },
+                    y: { grid: { color: gridColor }, ticks: { color: textColor } }
+                }
+            }
         });
-        
+
         new Chart(document.getElementById('weightChart'), {
             type: 'line',
             data: {
-                labels: ["2025-12-18", "2025-12-19", "2025-12-20", "2025-12-21", "2025-12-26", "2025-12-27", "2025-12-28", "2025-12-29", "2025-12-30", "2025-12-31", "2026-01-01", "2026-01-02", "2026-01-03", "2026-01-04", "2026-01-05", "2026-01-06", "2026-01-07", "2026-01-08", "2026-01-09", "2026-01-10", "2026-01-11", "2026-01-12", "2026-01-13", "2026-01-14", "2026-01-15", "2026-01-16", "2026-01-19", "2026-01-20", "2026-01-21", "2026-01-22", "2026-01-23", "2026-01-24", "2026-01-25", "2026-01-26", "2026-01-27", "2026-01-28", "2026-01-29", "2026-01-30", "2026-01-31", "2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-07", "2026-02-08", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-14", "2026-02-15", "2026-02-16"],
+                labels: ["2026-02-18", "2026-02-19", "2026-02-20", "2026-02-21", "2026-02-22", "2026-02-23", "2026-02-24", "2026-02-25", "2026-02-26", "2026-02-27", "2026-02-28", "2026-03-01", "2026-03-02", "2026-03-03", "2026-03-04", "2026-03-05", "2026-03-06", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19"],
                 datasets: [{
                     label: 'Weight (kg)',
-                    data: [96.0, 95.2, 94.9, 96.0, 97.5, 97.4, 97.1, 97.3, 96.4, 95.6, 95.7, 95.9, 96.7, 97.6, 97.9, 96.3, 96.9, 97.7, 97.4, 95.9, 96.6, 98.4, 97.0, 97.9, 96.3, 98.0, 97.3, 98.1, 98.0, 98.2, 96.4, 96.7, 95.3, 97.0, 96.9, 98.9, 97.1, 97.3, 97.0, 95.3, 96.5, 96.8, 97.9, 96.5, 96.1, 97.8, 97.1, 97.8, 97.2, 98.55, 96.9, 97.3, 96.5, 96.0, 97.5],
+                    data: [98.2, 98.2, 98.1, 97.3, 97.5, 99.0, 100.0, 99.5, 98.7, 97.7, 97.9, 99.6, 98.6, 99.3, 97.7, 97.8, 99.5, 99.5, 100.5, 100.8, 97.6, 96.7, 96.5, 97.4, 97.4, 98.1, 97.2, 97.9, 98.3, 96.4, 97.4, 98.5, 98.6, 98.7, 98.5, 97.7, 99.1, 98.9, 98.8, 98.2, 98.8, 98.8, 97.9, 97.4, 98.8, 99.7, 102.5, 100.2, 99.9, 101.2, 97.7, 99.8, 101.8, 101.8, 101.1, 99.4, 98.4, 99.6, 99.6],
                     borderColor: '#5856d6',
                     backgroundColor: 'rgba(88, 86, 214, 0.1)',
                     fill: true,
                     tension: 0.3
                 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { grid: { color: gridColor }, ticks: { color: textColor } },
+                    y: { grid: { color: gridColor }, ticks: { color: textColor } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('dailyLoadChart'), {
+            type: 'bar',
+            data: {
+                labels: ["2026-02-18", "2026-02-19", "2026-02-20", "2026-02-21", "2026-02-22", "2026-02-23", "2026-02-24", "2026-02-25", "2026-02-26", "2026-02-27", "2026-02-28", "2026-03-01", "2026-03-02", "2026-03-03", "2026-03-04", "2026-03-05", "2026-03-06", "2026-03-07", "2026-03-08", "2026-03-09", "2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-22", "2026-03-23", "2026-03-24", "2026-03-25", "2026-03-26", "2026-03-27", "2026-03-28", "2026-03-29", "2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04", "2026-04-05", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19"],
+                datasets: [{
+                    label: 'Daily TSS',
+                    data: [164, 62, 57, 119, 67, 96, 78, 204, 59, 97, 152, 62, 106, 89, 128, 130, 99, 81, 78, 100, 64, 120, 51, 39, 47, 94, 104, 97, 149, 109, 89, 152, 111, 51, 86, 192, 102, 76, 206, 106, 116, 95, 208, 115, 157, 127, 126, 113, 46, 136, 102, 97, 105, 132, 113, 99, 122, 83, 44, 145, 103],
+                    backgroundColor: '#ff9500',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { grid: { color: gridColor }, ticks: { color: textColor } },
+                    y: { grid: { color: gridColor }, ticks: { color: textColor } }
+                }
+            }
         });
     </script>
 </body>

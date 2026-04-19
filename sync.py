@@ -1,23 +1,104 @@
 #!/usr/bin/env python3
 """Sync training data from Intervals.icu for AI coaching."""
+
 import os
+import html
 import json
 import re
+import logging
+import time
+import functools
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta
 
 try:
     from dotenv import load_dotenv
+
     load_dotenv()
 except ImportError:
     pass
 
 import requests
-from datetime import datetime, timedelta
 
 DEFAULT_DAYS = 28
 DEFAULT_TIMEOUT = 30
 OUTPUT_FILENAME = "latest.json"
+CACHE_DIR = Path(__file__).parent / ".cache"
+CACHE_TTL = 300  # 5 minutes
+
+logger = logging.getLogger(__name__)
+
+
+def with_retry(max_retries: int = 3, initial_delay: float = 1.0, backoff: float = 2.0):
+    """Retry decorator with exponential backoff for network operations."""
+
+    def decorator(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            delay = initial_delay
+            last_exception = None
+            for attempt in range(max_retries + 1):
+                try:
+                    return func(*args, **kwargs)
+                except requests.RequestException as e:
+                    last_exception = e
+                    if attempt < max_retries:
+                        logger.warning(
+                            f"Attempt {attempt + 1}/{max_retries + 1} failed for {func.__name__}: {e}. Retrying in {delay:.1f}s..."
+                        )
+                        time.sleep(delay)
+                        delay *= backoff
+                    else:
+                        logger.error(
+                            f"All {max_retries + 1} attempts failed for {func.__name__}"
+                        )
+            raise last_exception
+
+        return wrapper
+
+    return decorator
+
+
+def _cache_path(key: str) -> Path:
+    CACHE_DIR.mkdir(exist_ok=True)
+    safe_key = re.sub(r"[^a-zA-Z0-9_-]", "_", key)
+    return CACHE_DIR / f"{safe_key}.json"
+
+
+def _read_cache(key: str) -> Optional[Any]:
+    path = _cache_path(key)
+    if path.exists():
+        try:
+            data = json.loads(path.read_text())
+            cached_time = datetime.fromisoformat(data["cached_at"])
+            if (datetime.now() - cached_time).total_seconds() < CACHE_TTL:
+                logger.debug(f"Cache hit for {key}")
+                return data["value"]
+        except (json.JSONDecodeError, KeyError, ValueError):
+            pass
+    return None
+
+
+def _write_cache(key: str, value: Any) -> None:
+    path = _cache_path(key)
+    path.write_text(
+        json.dumps({"cached_at": datetime.now().isoformat(), "value": value})
+    )
+
+
+def _validate_numeric(
+    value: Any, min_val: float, max_val: float, default: float = 0
+) -> float:
+    """Validate and coerce numeric value within expected range."""
+    if value is None:
+        return default
+    try:
+        num = float(value)
+        return max(min_val, min(max_val, num))
+    except (ValueError, TypeError):
+        return default
 
 
 def validate_athlete_id(athlete_id: str) -> str:
@@ -49,62 +130,70 @@ def get_config() -> dict[str, Any]:
 
 def get_headers(api_key: str) -> dict[str, str]:
     import base64
+
     credentials = base64.b64encode(f"API_KEY:{api_key}".encode()).decode()
     return {"Authorization": f"Basic {credentials}", "Accept": "application/json"}
 
 
+@with_retry()
 def fetch_wellness(
     base_url: str, headers: dict[str, str], verify_ssl: bool
 ) -> list[dict[str, Any]]:
+    cache_key = f"wellness_{base_url}"
+    cached = _read_cache(cache_key)
+    if cached is not None:
+        return cached
     url = f"{base_url}/wellness"
-    try:
-        response = requests.get(url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl)
-        if response.status_code == 200:
-            return response.json()
-        print(f"Wellness fetch failed: {response.status_code}")
-        return []
-    except requests.RequestException as e:
-        print(f"Error fetching wellness: {e}")
-        return []
+    response = requests.get(
+        url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
+    )
+    response.raise_for_status()
+    data = response.json()
+    _write_cache(cache_key, data)
+    return data
 
 
+@with_retry()
 def fetch_activities(
-    base_url: str, headers: dict[str, str], start: datetime, end: datetime, verify_ssl: bool
+    base_url: str,
+    headers: dict[str, str],
+    start: datetime,
+    end: datetime,
+    verify_ssl: bool,
 ) -> list[dict[str, Any]]:
+    cache_key = f"activities_{start.strftime('%Y%m%d')}_{end.strftime('%Y%m%d')}"
+    cached = _read_cache(cache_key)
+    if cached is not None:
+        return cached
     url = f"{base_url}/activities"
     params = {"oldest": start.strftime("%Y-%m-%d"), "newest": end.strftime("%Y-%m-%d")}
-    try:
-        response = requests.get(
-            url, headers=headers, params=params, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
-        )
-        if response.status_code == 200:
-            return response.json()
-        print(f"Activities fetch failed: {response.status_code}")
-        return []
-    except requests.RequestException as e:
-        print(f"Error fetching activities: {e}")
-        return []
+    response = requests.get(
+        url, headers=headers, params=params, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
+    )
+    response.raise_for_status()
+    data = response.json()
+    _write_cache(cache_key, data)
+    return data
 
 
+@with_retry()
 def fetch_profile(
     base_url: str, headers: dict[str, str], verify_ssl: bool
 ) -> dict[str, Any]:
     url = f"{base_url}/profile"
-    try:
-        response = requests.get(url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl)
-        if response.status_code == 200:
-            profile = response.json()
-            if "id" in profile:
-                profile["id"] = "REDACTED"
-            return profile
-        print(f"Profile fetch failed: {response.status_code}")
-        return {}
-    except requests.RequestException as e:
-        print(f"Error fetching profile: {e}")
-        return {}
+    response = requests.get(
+        url, headers=headers, timeout=DEFAULT_TIMEOUT, verify=verify_ssl
+    )
+    response.raise_for_status()
+    profile = response.json()
+    if "id" in profile:
+        profile["id"] = "REDACTED"
+    return profile
 
 
-def filter_recent_wellness(wellness: list[dict[str, Any]], days: int) -> list[dict[str, Any]]:
+def filter_recent_wellness(
+    wellness: list[dict[str, Any]], days: int
+) -> list[dict[str, Any]]:
     cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
     return [w for w in wellness if w.get("id", "") >= cutoff]
 
@@ -112,15 +201,15 @@ def filter_recent_wellness(wellness: list[dict[str, Any]], days: int) -> list[di
 def compute_weekly_summary(wellness: list[dict[str, Any]]) -> dict[str, Any]:
     if not wellness:
         return {"ctl": 0, "atl": 0, "tsb": 0, "ramp_rate": 0}
-    
+
     latest = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0]
-    ctl = latest.get("ctl", 0) or 0
-    atl = latest.get("atl", 0) or 0
+    ctl = _validate_numeric(latest.get("ctl"), 0, 500, 0)
+    atl = _validate_numeric(latest.get("atl"), 0, 500, 0)
     return {
         "ctl": round(ctl, 1),
         "atl": round(atl, 1),
         "tsb": round(ctl - atl, 1),
-        "ramp_rate": round(latest.get("rampRate", 0) or 0, 2),
+        "ramp_rate": round(_validate_numeric(latest.get("rampRate"), -100, 100, 0), 2),
     }
 
 
@@ -138,28 +227,52 @@ def normalize_sport(sport: str) -> str:
     return SPORT_ALIASES.get(sport, sport)
 
 
-def compute_sport_totals(activities: list[dict[str, Any]]) -> dict[str, Any]:
-    totals = {"Ride": {}, "Run": {}, "Swim": {}}
-
-    for activity in activities:
-        sport = normalize_sport(activity.get("type", "Other"))
+def compute_sport_totals(activities: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    totals: dict[str, dict[str, Any]] = {}
+    for a in activities:
+        sport = normalize_sport(a.get("type", "Other"))
         if sport not in totals:
-            totals[sport] = {}
+            totals[sport] = {
+                "count": 0,
+                "total_time": 0,
+                "total_distance": 0,
+                "total_kj": 0,
+                "total_calories": 0,
+                "total_load": 0,
+            }
+        t = totals[sport]
+        t["count"] += 1
+        t["total_time"] += _validate_numeric(a.get("moving_time"), 0, 86400, 0)
+        t["total_distance"] += _validate_numeric(a.get("distance"), 0, 1000000, 0)
+        t["total_kj"] += _validate_numeric(a.get("icu_joules"), 0, 100000000, 0) / 1000
+        t["total_calories"] += _validate_numeric(a.get("calories"), 0, 10000, 0)
+        t["total_load"] += _validate_numeric(a.get("icu_training_load"), 0, 10000, 0)
 
-        sport_data = totals[sport]
-        sport_data["total_time"] = sport_data.get("total_time", 0) + (activity.get("moving_time", 0) or 0)
-        sport_data["total_kj"] = sport_data.get("total_kj", 0) + (activity.get("icu_joules", 0) or 0) / 1000
-        sport_data["total_calories"] = sport_data.get("total_calories", 0) + (activity.get("calories", 0) or 0)
-        sport_data["total_distance"] = sport_data.get("total_distance", 0) + (activity.get("distance", 0) or 0)
-        sport_data["total_load"] = sport_data.get("total_load", 0) + (activity.get("icu_training_load", 0) or 0)
+    result = {}
+    for sport, t in totals.items():
+        time_h = round(t["total_time"] / 3600, 2)
+        dist_km = round(t["total_distance"] / 1000, 1)
+        kj = round(t["total_kj"], 1)
+        cal = round(t["total_calories"])
+        load = round(t["total_load"])
 
-    for sport in totals:
-        if totals[sport]:
-            totals[sport]["total_time_hours"] = round(totals[sport].get("total_time", 0) / 3600, 2)
-            totals[sport]["total_kj"] = round(totals[sport].get("total_kj", 0), 1)
-            totals[sport]["total_distance_km"] = round(totals[sport].get("total_distance", 0) / 1000, 1)
+        avg_speed = round(dist_km / time_h, 1) if time_h > 0 else 0
+        avg_pace = (
+            round(t["total_time"] / 60 / dist_km, 1) if dist_km > 0 else 0
+        )  # min/km
 
-    return {k: v for k, v in totals.items() if v}
+        entry: dict[str, Any] = {
+            "total_time_hours": time_h,
+            "total_distance_km": dist_km,
+            "total_kj": kj,
+            "total_calories": cal,
+            "total_load": load,
+            "avg_speed_kmh": avg_speed,
+        }
+        if sport == "Run" and avg_pace > 0:
+            entry["avg_pace_minkm"] = avg_pace
+        result[sport] = entry
+    return result
 
 
 def compute_zone_distribution(activities: list[dict[str, Any]]) -> dict[str, int]:
@@ -181,31 +294,55 @@ def compute_zone_distribution(activities: list[dict[str, Any]]) -> dict[str, int
 
 def get_recovery_recommendation(tsb: float) -> dict[str, str]:
     if tsb >= 10:
-        return {"status": "green", "text": "Fresh - Great for race or hard workout", "icon": "🚀"}
+        return {
+            "status": "green",
+            "text": "Fresh - Great for race or hard workout",
+            "icon": "🚀",
+        }
     elif tsb >= 5:
-        return {"status": "green", "text": "Ready - Good for threshold or VO2max", "icon": "✅"}
+        return {
+            "status": "green",
+            "text": "Ready - Good for threshold or VO2max",
+            "icon": "✅",
+        }
     elif tsb >= 0:
         return {"status": "ok", "text": "Normal - Maintain endurance", "icon": "👍"}
     elif tsb >= -5:
-        return {"status": "warning", "text": "Caution - Easy training only", "icon": "⚠️"}
+        return {
+            "status": "warning",
+            "text": "Caution - Easy training only",
+            "icon": "⚠️",
+        }
     else:
-        return {"status": "danger", "text": "Overreaching - Rest day recommended", "icon": "🛑"}
+        return {
+            "status": "danger",
+            "text": "Overreaching - Rest day recommended",
+            "icon": "🛑",
+        }
 
 
-def compute_weekly_tss_distribution(activities: list[dict[str, Any]]) -> dict[str, float]:
+def compute_weekly_tss_distribution(
+    activities: list[dict[str, Any]],
+) -> dict[str, float]:
     from collections import defaultdict
+
     weekly_tss = defaultdict(float)
     for a in activities:
         date_str = a.get("start_date_local", "")
         if date_str:
-            date = date_str[:10]
-            week_start = date[:8] + "01"
+            try:
+                act_date = datetime.strptime(date_str[:10], "%Y-%m-%d")
+                week_key = act_date.strftime("%Y-W%W")
+            except ValueError:
+                continue
             tss = a.get("icu_training_load", 0) or 0
-            weekly_tss[week_start] += tss
+            weekly_tss[week_key] += tss
     return dict(sorted(weekly_tss.items()))
 
 
-def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[str, Any]:
+def calculate_stats(
+    activities: list[dict[str, Any]], period_days: int
+) -> dict[str, Any]:
     if not activities:
         return {
             "total_activities": 0,
@@ -215,9 +352,16 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
             "period_days": period_days,
         }
 
-    total_tss = sum(a.get("icu_training_load", 0) or 0 for a in activities)
-    total_duration = sum(a.get("moving_time", 0) or 0 for a in activities)
-    total_kj = sum((a.get("icu_joules", 0) or 0) / 1000 for a in activities)
+    total_tss = sum(
+        _validate_numeric(a.get("icu_training_load"), 0, 10000, 0) for a in activities
+    )
+    total_duration = sum(
+        _validate_numeric(a.get("moving_time"), 0, 86400, 0) for a in activities
+    )
+    total_kj = sum(
+        _validate_numeric(a.get("icu_joules"), 0, 100000000, 0) / 1000
+        for a in activities
+    )
 
     return {
         "total_activities": len(activities),
@@ -228,9 +372,75 @@ def calculate_stats(activities: list[dict[str, Any]], period_days: int) -> dict[
     }
 
 
+def compute_week_comparison(activities: list[dict[str, Any]]) -> dict[str, Any]:
+    """Compare current week vs previous week training metrics."""
+    if not activities:
+        return {
+            "this_week": {"count": 0, "tss": 0, "duration_hours": 0},
+            "previous_week": {"count": 0, "tss": 0, "duration_hours": 0},
+            "tss_change": "N/A",
+            "duration_change": "N/A",
+            "count_change": "N/A",
+        }
+
+    now = datetime.now()
+    this_week_start = now - timedelta(days=now.weekday())
+    last_week_start = this_week_start - timedelta(days=7)
+
+    this_week = []
+    last_week = []
+    for a in activities:
+        date_str = (
+            a.get("startDate")
+            or a.get("start_date_local")
+            or a.get("start_date")
+            or a.get("id", "")
+        )
+        try:
+            act_date = datetime.fromisoformat(date_str.replace("Z", "+00:00")).replace(
+                tzinfo=None
+            )
+        except (ValueError, AttributeError):
+            try:
+                act_date = datetime.strptime(date_str[:10], "%Y-%m-%d")
+            except (ValueError, TypeError):
+                continue
+
+        if this_week_start <= act_date <= now:
+            this_week.append(a)
+        elif last_week_start <= act_date < this_week_start:
+            last_week.append(a)
+
+    def week_stats(acts):
+        tss = sum(a.get("icu_training_load", 0) or 0 for a in acts)
+        duration = sum(a.get("moving_time", 0) or 0 for a in acts)
+        return {
+            "count": len(acts),
+            "tss": round(tss, 1),
+            "duration_hours": round(duration / 3600, 2),
+        }
+
+    this = week_stats(this_week)
+    prev = week_stats(last_week)
+
+    def pct_change(curr, prev_val):
+        if prev_val == 0:
+            return "N/A"
+        change = ((curr - prev_val) / prev_val) * 100
+        return f"{'↑' if change > 0 else '↓'} {abs(change):.0f}%"
+
+    return {
+        "this_week": this,
+        "previous_week": prev,
+        "tss_change": pct_change(this["tss"], prev["tss"]),
+        "duration_change": pct_change(this["duration_hours"], prev["duration_hours"]),
+        "count_change": pct_change(this["count"], prev["count"]),
+    }
+
+
 def generate_csv(data: dict[str, Any]) -> str:
     output = []
-    
+
     output.append("=== ACTIVITIES ===")
     output.append("date,type,name,duration_min,tss,kj,distance_km")
     for a in data.get("activities", []):
@@ -242,10 +452,12 @@ def generate_csv(data: dict[str, Any]) -> str:
         kj = (a.get("icu_joules", 0) or 0) / 1000
         dist = (a.get("distance", 0) or 0) / 1000
         output.append(f"{date},{type_},{name},{duration},{tss},{kj:.1f},{dist:.1f}")
-    
+
     output.append("")
     output.append("=== WELLNESS ===")
-    output.append("date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,tsb")
+    output.append(
+        "date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,tsb"
+    )
     for w in data.get("wellness", []):
         date = w.get("id", "")
         sleep = (w.get("sleepSecs", 0) or 0) / 3600
@@ -259,13 +471,17 @@ def generate_csv(data: dict[str, Any]) -> str:
         ctl = w.get("ctl", "") or ""
         atl = w.get("atl", "") or ""
         tsb = round((ctl or 0) - (atl or 0), 1) if ctl and atl else ""
-        output.append(f"{date},{sleep:.1f},{resting_hr},{hrv},{weight},{readiness},{soreness},{fatigue},{steps},{ctl},{atl},{tsb}")
-    
+        output.append(
+            f"{date},{sleep:.1f},{resting_hr},{hrv},{weight},{readiness},{soreness},{fatigue},{steps},{ctl},{atl},{tsb}"
+        )
+
     output.append("")
     output.append("=== SPORT TOTALS ===")
     for sport, totals in data.get("sport_totals", {}).items():
-        output.append(f"{sport},{totals.get('total_time_hours', 0)}h,{totals.get('total_kj', 0)}kJ,{totals.get('total_distance_km', 0)}km,{totals.get('total_load', 0)} TSS")
-    
+        output.append(
+            f"{sport},{totals.get('total_time_hours', 0)}h,{totals.get('total_kj', 0)}kJ,{totals.get('total_distance_km', 0)}km,{totals.get('total_load', 0)} TSS"
+        )
+
     return "\n".join(output)
 
 
@@ -276,24 +492,31 @@ def generate_html_report(data: dict[str, Any]) -> str:
     zones = data.get("zone_distribution", {})
     wellness = data.get("wellness", [])
     activities = data.get("activities", [])
-    
-    latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
-    
-    recovery = get_recovery_recommendation(summary['tsb'])
-    
+    week_comp = data.get("week_comparison", {})
+
+    latest_wellness = (
+        sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0]
+        if wellness
+        else {}
+    )
+
+    recovery = get_recovery_recommendation(summary["tsb"])
+    recovery_icon = html.escape(recovery["icon"])
+    recovery_text = html.escape(recovery["text"])
+
     zone_data = []
     zone_labels = []
-    total_zones = sum(zones.values())
     for zone, secs in zones.items():
         if secs > 0:
             zone_labels.append(zone)
             zone_data.append(round(secs / 60))
-    
+
     wellness_sorted = sorted(wellness, key=lambda x: x.get("id", ""))
     wellness_dates = [w.get("id", "") for w in wellness_sorted]
     ctl_data = [w.get("ctl", 0) or 0 for w in wellness_sorted]
     atl_data = [w.get("atl", 0) or 0 for w in wellness_sorted]
-    
+    tsb_data = [round(c - a, 1) for c, a in zip(ctl_data, atl_data)]
+
     weight_data = []
     weight_dates = []
     for w in wellness_sorted:
@@ -301,33 +524,92 @@ def generate_html_report(data: dict[str, Any]) -> str:
         if weight:
             weight_dates.append(w.get("id", ""))
             weight_data.append(weight)
-    
+
     weekly_tss = compute_weekly_tss_distribution(activities)
     weekly_labels = list(weekly_tss.keys())
     weekly_tss_data = list(weekly_tss.values())
-    
+
+    daily_load = {}
+    for a in activities:
+        date_str = (a.get("start_date_local", "") or a.get("startDate", ""))[:10]
+        if date_str:
+            tss = a.get("icu_training_load", 0) or 0
+            daily_load[date_str] = daily_load.get(date_str, 0) + tss
+    sorted_daily = sorted(daily_load.items())
+    daily_labels = [d[0] for d in sorted_daily]
+    daily_data = [round(d[1], 1) for d in sorted_daily]
+
+    sorted_activities = sorted(
+        activities,
+        key=lambda a: a.get("start_date_local", "") or a.get("startDate", "") or "",
+        reverse=True,
+    )[:10]
+    activity_rows = ""
+    for a in sorted_activities:
+        date = (a.get("start_date_local", "") or a.get("startDate", ""))[:10]
+        name = html.escape(a.get("name", ""))
+        sport = html.escape(normalize_sport(a.get("type", "")))
+        duration = round((a.get("moving_time", 0) or 0) / 60)
+        tss = round(a.get("icu_training_load", 0) or 0, 1)
+        dist = round((a.get("distance", 0) or 0) / 1000, 1)
+        activity_rows += f"<tr><td>{{date}}</td><td>{{name}}</td><td>{{sport}}</td><td>{{duration}}m</td><td>{{tss}}</td><td>{{dist}} km</td></tr>\\n".format(
+            date=date, name=name, sport=sport, duration=duration, tss=tss, dist=dist
+        )
+
     sum_time = 0
     sum_dist = 0
     sum_energy_kj = 0
     sum_load = 0
     sport_row_list = []
     for sport, t in sport_totals.items():
-        time_h = t.get('total_time_hours', 0)
-        dist_km = t.get('total_distance_km', 0)
-        kj = t.get('total_kj', 0)
-        cal = t.get('total_calories', 0)
-        load = t.get('total_load', 0)
+        time_h = t.get("total_time_hours", 0)
+        dist_km = t.get("total_distance_km", 0)
+        kj = t.get("total_kj", 0)
+        cal = t.get("total_calories", 0)
+        load = t.get("total_load", 0)
         use_kcal = sport in ("Run", "Swim") or kj == 0
-        energy_str = f"{cal} kcal" if use_kcal else f"{kj} kJ"
+        energy_str = (
+            f"{{cal}} kcal".format(cal=cal) if use_kcal else f"{{kj}} kJ".format(kj=kj)
+        )
         energy_kj = round(cal * 4.184 / 1000, 1) if use_kcal else kj
-        sport_row_list.append(f"<tr><td>{sport}</td><td>{time_h}h</td><td>{dist_km} km</td><td>{energy_str}</td><td>{load}</td></tr>")
+        avg_speed = t.get("avg_speed_kmh", 0)
+        avg_pace = t.get("avg_pace_minkm", 0)
+        if sport == "Run" and avg_pace > 0:
+            pace_speed_str = f"{{avg_pace}} min/km".format(avg_pace=avg_pace)
+        else:
+            pace_speed_str = f"{{avg_speed}} km/h".format(avg_speed=avg_speed)
+        sport_row_list.append(
+            f"<tr><td>{{sport}}</td><td>{{time_h}}h</td><td>{{dist_km}} km</td><td>{{energy_str}}</td><td>{{load}}</td><td>{{pace_speed_str}}</td></tr>".format(
+                sport=html.escape(sport),
+                time_h=time_h,
+                dist_km=dist_km,
+                energy_str=energy_str,
+                load=load,
+                pace_speed_str=pace_speed_str,
+            )
+        )
         sum_time += time_h
         sum_dist += dist_km
         sum_energy_kj += energy_kj
         sum_load += load
-    sport_row_list.append(f'<tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>{round(sum_time, 2)}h</td><td>{round(sum_dist, 1)} km</td><td>{round(sum_energy_kj, 1)} kJ</td><td>{round(sum_load)}</td></tr>')
+    sport_row_list.append(
+        f'<tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>{{sum_time}}h</td><td>{{sum_dist}} km</td><td>{{sum_energy_kj}} kJ</td><td>{{sum_load}}</td><td>-</td></tr>'.format(
+            sum_time=round(sum_time, 2),
+            sum_dist=round(sum_dist, 1),
+            sum_energy_kj=round(sum_energy_kj, 1),
+            sum_load=round(sum_load),
+        )
+    )
     sport_rows = "".join(sport_row_list)
-    
+
+    wc_this = week_comp.get("this_week", {})
+    wc_tss_change = week_comp.get("tss_change", "N/A")
+    wc_duration_change = week_comp.get("duration_change", "N/A")
+    wc_count_change = week_comp.get("count_change", "N/A")
+    wc_this_tss = wc_this.get("tss", 0)
+    wc_this_duration = wc_this.get("duration_hours", 0)
+    wc_this_count = wc_this.get("count", 0)
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -377,62 +659,86 @@ def generate_html_report(data: dict[str, Any]) -> str:
         th {{ color: var(--text-secondary); font-weight: 500; font-size: 0.85rem; }}
         .chart-container {{ position: relative; height: 250px; }}
         .footer {{ text-align: center; color: var(--text-secondary); margin-top: 2rem; font-size: 0.85rem; }}
+        @media (max-width: 768px) {{
+            .grid {{ grid-template-columns: 1fr; }}
+            body {{ padding: 10px; }}
+            h1 {{ font-size: 1.5rem; }}
+            .card {{ padding: 12px; }}
+            table {{ font-size: 0.8rem; display: block; overflow-x: auto; white-space: nowrap; }}
+            .chart-container {{ height: 200px; }}
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Training Report</h1>
-        <p class="subtitle">{data['date_range']['start']} to {data['date_range']['end']}</p>
-        
+        <p class="subtitle">{data["date_range"]["start"]} to {data["date_range"]["end"]}</p>
+
         <div class="grid">
             <div class="card">
                 <h2>Training Status</h2>
                 <div class="metric">
                     <span class="metric-label">Fitness (CTL)</span>
-                    <span class="metric-value">{summary['ctl']}</span>
+                    <span class="metric-value">{summary["ctl"]}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Fatigue (ATL)</span>
-                    <span class="metric-value">{summary['atl']}</span>
+                    <span class="metric-value">{summary["atl"]}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Form (TSB)</span>
-                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">{summary['tsb']}</span>
+                    <span class="metric-value {{'status-ok' if summary['tsb'] > 0 else 'status-warning'}}">{summary["tsb"]}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Ramp Rate</span>
-                    <span class="metric-value">{summary['ramp_rate']}</span>
+                    <span class="metric-value">{summary["ramp_rate"]}</span>
                 </div>
                 <div class="metric" style="background: var(--bg-secondary); margin: 10px -20px -20px; padding: 12px 20px; border-radius: 0 0 12px 12px;">
-                    <span class="metric-label">{recovery['icon']} Recovery</span>
-                    <span class="metric-value" style="font-size: 0.95rem;">{recovery['text']}</span>
+                    <span class="metric-label">{recovery_icon} Recovery</span>
+                    <span class="metric-value" style="font-size: 0.95rem;">{recovery_text}</span>
                 </div>
             </div>
-            
+
             <div class="card">
                 <h2>Activity Summary</h2>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">{stats['total_activities']}</span>
+                    <span class="metric-value">{stats["total_activities"]}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">{stats['total_duration_hours']}h</span>
+                    <span class="metric-value">{stats["total_duration_hours"]}h</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">{stats['total_tss']}</span>
+                    <span class="metric-value">{stats["total_tss"]}</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Energy</span>
-                    <span class="metric-value">{stats['total_energy_kj']} kJ</span>
+                    <span class="metric-value">{stats["total_energy_kj"]} kJ</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Week Comparison</h2>
+                <div class="metric">
+                    <span class="metric-label">TSS</span>
+                    <span class="metric-value">{wc_this_tss} ({wc_tss_change})</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Duration</span>
+                    <span class="metric-value">{wc_this_duration}h ({wc_duration_change})</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Activities</span>
+                    <span class="metric-value">{wc_this_count} ({wc_count_change})</span>
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="card">
-                <h2>Performance Chart (CTL vs ATL)</h2>
+                <h2>Performance Chart (CTL vs ATL vs TSB)</h2>
                 <div class="chart-container">
                     <canvas id="fitnessChart"></canvas>
                 </div>
@@ -444,7 +750,7 @@ def generate_html_report(data: dict[str, Any]) -> str:
                 </div>
             </div>
         </div>
-        
+
         <div class="grid">
             <div class="card">
                 <h2>Weekly TSS Distribution</h2>
@@ -459,39 +765,64 @@ def generate_html_report(data: dict[str, Any]) -> str:
                 </div>
             </div>
         </div>
-        
+
+        <div class="grid">
+            <div class="card">
+                <h2>Daily Training Load</h2>
+                <div class="chart-container">
+                    <canvas id="dailyLoadChart"></canvas>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <h2>Sport Breakdown</h2>
             <table>
                 <thead>
-                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th></tr>
+                    <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th><th>Avg Speed/Pace</th></tr>
                 </thead>
                 <tbody>
                     {sport_rows}
                 </tbody>
             </table>
         </div>
-        
+
         <div class="card">
             <h2>Latest Wellness</h2>
             <div class="grid">
                 <div>
-                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">{latest_wellness.get('sleepSecs', 0) / 3600:.1f}h</span></div>
-                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">{latest_wellness.get('restingHR', '-')} bpm</span></div>
-                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">{latest_wellness.get('hrv', '-')}</span></div>
+                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">{latest_wellness.get("sleepSecs", 0) / 3600:.1f}h</span></div>
+                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">{latest_wellness.get("restingHR", "-")} bpm</span></div>
+                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">{latest_wellness.get("hrv", "-")}</span></div>
                 </div>
                 <div>
-                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">{latest_wellness.get('weight', '-')} kg</span></div>
-                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">{latest_wellness.get('readiness', '-')}%</span></div>
-                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">{latest_wellness.get('steps', '-')}</span></div>
+                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">{latest_wellness.get("weight", "-")} kg</span></div>
+                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">{latest_wellness.get("readiness", "-")}%</span></div>
+                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">{latest_wellness.get("steps", "-")}</span></div>
                 </div>
             </div>
         </div>
-        
-        <p class="footer">Last updated: {data['last_updated']}</p>
+
+        <div class="card">
+            <h2>Recent Activities</h2>
+            <table>
+                <thead>
+                    <tr><th>Date</th><th>Name</th><th>Sport</th><th>Duration</th><th>TSS</th><th>Distance</th></tr>
+                </thead>
+                <tbody>
+                    {activity_rows}
+                </tbody>
+            </table>
+        </div>
+
+        <p class="footer">Last updated: {data["last_updated"]}</p>
     </div>
-    
+
     <script>
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+        const textColor = isDark ? '#98989d' : '#86868b';
+
         new Chart(document.getElementById('fitnessChart'), {{
             type: 'line',
             data: {{
@@ -508,11 +839,25 @@ def generate_html_report(data: dict[str, Any]) -> str:
                     borderColor: '#ff9500',
                     backgroundColor: 'rgba(255, 149, 0, 0.1)',
                     fill: true
+                }}, {{
+                    label: 'TSB (Form)',
+                    data: {json.dumps(tsb_data)},
+                    borderColor: '#5856d6',
+                    backgroundColor: 'rgba(88, 86, 214, 0.05)',
+                    fill: false,
+                    borderDash: [5, 5]
                 }}]
             }},
-            options: {{ responsive: true, maintainAspectRatio: false }}
+            options: {{
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {{
+                    x: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }},
+                    y: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }}
+                }}
+            }}
         }});
-        
+
         new Chart(document.getElementById('zoneChart'), {{
             type: 'pie',
             data: {{
@@ -521,7 +866,7 @@ def generate_html_report(data: dict[str, Any]) -> str:
             }},
             options: {{ responsive: true, maintainAspectRatio: false }}
         }});
-        
+
         new Chart(document.getElementById('weeklyTssChart'), {{
             type: 'bar',
             data: {{
@@ -533,9 +878,16 @@ def generate_html_report(data: dict[str, Any]) -> str:
                     borderRadius: 4
                 }}]
             }},
-            options: {{ responsive: true, maintainAspectRatio: false }}
+            options: {{
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {{
+                    x: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }},
+                    y: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }}
+                }}
+            }}
         }});
-        
+
         new Chart(document.getElementById('weightChart'), {{
             type: 'line',
             data: {{
@@ -549,7 +901,35 @@ def generate_html_report(data: dict[str, Any]) -> str:
                     tension: 0.3
                 }}]
             }},
-            options: {{ responsive: true, maintainAspectRatio: false }}
+            options: {{
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {{
+                    x: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }},
+                    y: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }}
+                }}
+            }}
+        }});
+
+        new Chart(document.getElementById('dailyLoadChart'), {{
+            type: 'bar',
+            data: {{
+                labels: {json.dumps(daily_labels)},
+                datasets: [{{
+                    label: 'Daily TSS',
+                    data: {json.dumps(daily_data)},
+                    backgroundColor: '#ff9500',
+                    borderRadius: 4
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {{
+                    x: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }},
+                    y: {{ grid: {{ color: gridColor }}, ticks: {{ color: textColor }} }}
+                }}
+            }}
         }});
     </script>
 </body>
@@ -562,10 +942,14 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
     sport_totals = data.get("sport_totals", {})
     zones = data.get("zone_distribution", {})
     wellness = data.get("wellness", [])
-    
-    latest_wellness = sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0] if wellness else {}
-    recovery = get_recovery_recommendation(summary['tsb'])
-    
+
+    latest_wellness = (
+        sorted(wellness, key=lambda x: x.get("id", ""), reverse=True)[0]
+        if wellness
+        else {}
+    )
+    recovery = get_recovery_recommendation(summary["tsb"])
+
     lines = [
         f"# Training Report",
         f"**Period:** {data['date_range']['start']} to {data['date_range']['end']}",
@@ -573,7 +957,7 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
         "",
         "## Training Status",
         f"- **Fitness (CTL):** {summary['ctl']} - Chronic Training Load",
-        f"- **Fatigue (ATL):** {summary['atl']} - Acute Training Load", 
+        f"- **Fatigue (ATL):** {summary['atl']} - Acute Training Load",
         f"- **Form (TSB):** {summary['tsb']} = CTL - ATL (negative = overtraining)",
         f"- **Ramp Rate:** {summary['ramp_rate']}",
         f"- **{recovery['icon']} Recovery:** {recovery['text']}",
@@ -585,7 +969,7 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
         f"- **Total Energy:** {stats['total_energy_kj']} kJ",
         "",
     ]
-    
+
     if sport_totals:
         lines.append("## Sport Breakdown")
         md_sum_time = 0
@@ -593,30 +977,37 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
         md_sum_energy_kj = 0
         md_sum_load = 0
         for sport, totals in sport_totals.items():
-            kj = totals.get('total_kj', 0)
-            cal = totals.get('total_calories', 0)
+            kj = totals.get("total_kj", 0)
+            cal = totals.get("total_calories", 0)
             use_kcal = sport in ("Run", "Swim") or kj == 0
             energy_str = f"{cal} kcal" if use_kcal else f"{kj} kJ"
             energy_kj = round(cal * 4.184 / 1000, 1) if use_kcal else kj
             lines.append(f"### {sport}")
             lines.append(f"- Time: {totals.get('total_time_hours', 0)}h")
-            if totals.get('total_distance_km'):
+            if totals.get("total_distance_km"):
                 lines.append(f"- Distance: {totals['total_distance_km']} km")
             lines.append(f"- Energy: {energy_str}")
-            if totals.get('total_load'):
+            if totals.get("total_load"):
                 lines.append(f"- Load: {totals['total_load']}")
+            avg_speed = totals.get("avg_speed_kmh", 0)
+            if avg_speed:
+                avg_pace = totals.get("avg_pace_minkm", 0)
+                if sport == "Run" and avg_pace > 0:
+                    lines.append(f"- Avg Pace: {avg_pace} min/km")
+                else:
+                    lines.append(f"- Avg Speed: {avg_speed} km/h")
             lines.append("")
-            md_sum_time += totals.get('total_time_hours', 0)
-            md_sum_dist += totals.get('total_distance_km', 0)
+            md_sum_time += totals.get("total_time_hours", 0)
+            md_sum_dist += totals.get("total_distance_km", 0)
             md_sum_energy_kj += energy_kj
-            md_sum_load += totals.get('total_load', 0)
+            md_sum_load += totals.get("total_load", 0)
         lines.append(f"### Total")
         lines.append(f"- Time: {round(md_sum_time, 2)}h")
         lines.append(f"- Distance: {round(md_sum_dist, 1)} km")
         lines.append(f"- Energy: {round(md_sum_energy_kj, 1)} kJ")
         lines.append(f"- Load: {round(md_sum_load)}")
         lines.append("")
-    
+
     if zones:
         lines.append("## Zone Distribution")
         total_secs = sum(zones.values())
@@ -626,29 +1017,29 @@ def generate_markdown_report(data: dict[str, Any]) -> str:
                 mins = secs // 60
                 lines.append(f"- **{zone}:** {mins}m ({pct:.1f}%)")
         lines.append("")
-    
+
     if latest_wellness:
         lines.append("## Daily Wellness (Latest)")
         w = latest_wellness
-        if w.get('sleepSecs'):
-            sleep_hours = w['sleepSecs'] / 3600
+        if w.get("sleepSecs"):
+            sleep_hours = w["sleepSecs"] / 3600
             lines.append(f"- **Sleep:** {sleep_hours:.1f}h")
-        if w.get('restingHR'):
+        if w.get("restingHR"):
             lines.append(f"- **Resting HR:** {w['restingHR']} bpm")
-        if w.get('hrv'):
+        if w.get("hrv"):
             lines.append(f"- **HRV:** {w['hrv']}")
-        if w.get('weight'):
+        if w.get("weight"):
             lines.append(f"- **Weight:** {w['weight']} kg")
-        if w.get('readiness'):
+        if w.get("readiness"):
             lines.append(f"- **Readiness:** {w['readiness']}%")
-        if w.get('soreness'):
+        if w.get("soreness"):
             lines.append(f"- **Soreness:** {w['soreness']}/5")
-        if w.get('fatigue'):
+        if w.get("fatigue"):
             lines.append(f"- **Fatigue:** {w['fatigue']}/5")
-        if w.get('steps'):
+        if w.get("steps"):
             lines.append(f"- **Steps:** {w['steps']}")
         lines.append("")
-    
+
     return "\n".join(lines)
 
 
@@ -674,22 +1065,46 @@ def fetch_intervals_data() -> dict[str, Any]:
         },
     }
 
-    wellness = fetch_wellness(base_url, headers, verify_ssl)
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        future_wellness = executor.submit(fetch_wellness, base_url, headers, verify_ssl)
+        future_activities = executor.submit(
+            fetch_activities, base_url, headers, start_date, end_date, verify_ssl
+        )
+        future_profile = executor.submit(fetch_profile, base_url, headers, verify_ssl)
+
+        try:
+            wellness = future_wellness.result()
+        except Exception as e:
+            logger.error(f"Wellness fetch failed: {e}")
+            wellness = []
+
+        try:
+            activities = future_activities.result()
+        except Exception as e:
+            logger.error(f"Activities fetch failed: {e}")
+            activities = []
+
+        try:
+            profile = future_profile.result()
+        except Exception as e:
+            logger.error(f"Profile fetch failed: {e}")
+            profile = {}
+
     data["wellness"] = filter_recent_wellness(wellness, days)
     data["weekly_summary"] = compute_weekly_summary(data["wellness"])
-    
-    activities = fetch_activities(base_url, headers, start_date, end_date, verify_ssl)
     data["activities"] = activities
-    data["profile"] = fetch_profile(base_url, headers, verify_ssl)
+    data["profile"] = profile
     data["quick_stats"] = calculate_stats(activities, days)
     data["sport_totals"] = compute_sport_totals(activities)
     data["zone_distribution"] = compute_zone_distribution(activities)
+    data["week_comparison"] = compute_week_comparison(activities)
 
     return data
 
 
 def main() -> None:
-    print(f"Starting sync at {datetime.now().isoformat()}")
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    logger.info(f"Starting sync at {datetime.now().isoformat()}")
 
     try:
         data = fetch_intervals_data()
@@ -714,17 +1129,21 @@ def main() -> None:
 
         stats = data["quick_stats"]
         summary = data["weekly_summary"]
-        print(f"✓ Sync complete. {stats['total_activities']} activities synced.")
-        print(f"  TSS: {stats['total_tss']}, Duration: {stats['total_duration_hours']}h")
-        print(f"  Fitness (CTL): {summary['ctl']}, Fatigue (ATL): {summary['atl']}, Form (TSB): {summary['tsb']}")
-        print(f"  Reports saved:")
-        print(f"    - JSON: {json_path}")
-        print(f"    - Markdown: {md_path}")
-        print(f"    - CSV: {csv_path}")
-        print(f"    - HTML: {html_path}")
+        logger.info(f"✓ Sync complete. {stats['total_activities']} activities synced.")
+        logger.info(
+            f"  TSS: {stats['total_tss']}, Duration: {stats['total_duration_hours']}h"
+        )
+        logger.info(
+            f"  Fitness (CTL): {summary['ctl']}, Fatigue (ATL): {summary['atl']}, Form (TSB): {summary['tsb']}"
+        )
+        logger.info(f"  Reports saved:")
+        logger.info(f"    - JSON: {json_path}")
+        logger.info(f"    - Markdown: {md_path}")
+        logger.info(f"    - CSV: {csv_path}")
+        logger.info(f"    - HTML: {html_path}")
 
     except Exception as e:
-        print(f"✗ Sync failed: {e}")
+        logger.error(f"✗ Sync failed: {e}")
         raise
 
 
