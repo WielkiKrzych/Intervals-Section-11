@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-19T15:48:45.107885",
+  "last_updated": "2026-04-19T16:42:44.631780",
   "date_range": {
     "start": "2026-03-22",
     "end": "2026-04-19"
@@ -15097,38 +15097,36 @@
   },
   "quick_stats": {
     "total_activities": 37,
-    "total_tss": 3314,
+    "total_tss": 3314.0,
     "total_duration_hours": 55.32,
     "total_energy_kj": 62432.2,
     "period_days": 28
   },
   "sport_totals": {
-    "Ride": {
-      "total_time": 119665,
-      "total_kj": 33437.2,
-      "total_calories": 32409,
-      "total_distance": 1254528.36,
-      "total_load": 1591,
-      "total_time_hours": 33.24,
-      "total_distance_km": 1254.5
-    },
     "Run": {
-      "total_time": 60256,
+      "total_time_hours": 16.74,
+      "total_distance_km": 218.0,
       "total_kj": 28994.9,
       "total_calories": 18738,
-      "total_distance": 217978.33000000002,
       "total_load": 1186,
-      "total_time_hours": 16.74,
-      "total_distance_km": 218.0
+      "avg_speed_kmh": 13.0,
+      "avg_pace_minkm": 4.6
+    },
+    "Ride": {
+      "total_time_hours": 33.24,
+      "total_distance_km": 1254.5,
+      "total_kj": 33437.2,
+      "total_calories": 32409,
+      "total_load": 1591,
+      "avg_speed_kmh": 37.7
     },
     "Swim": {
-      "total_time": 19233,
+      "total_time_hours": 5.34,
+      "total_distance_km": 16.5,
       "total_kj": 0.0,
       "total_calories": 5615,
-      "total_distance": 16525.0,
       "total_load": 537,
-      "total_time_hours": 5.34,
-      "total_distance_km": 16.5
+      "avg_speed_kmh": 3.1
     }
   },
   "zone_distribution": {
@@ -15140,5 +15138,20 @@
     "Z6": 20,
     "Z7": 0,
     "SS": 1311
+  },
+  "week_comparison": {
+    "this_week": {
+      "count": 8,
+      "tss": 596,
+      "duration_hours": 9.06
+    },
+    "previous_week": {
+      "count": 9,
+      "tss": 731,
+      "duration_hours": 12.58
+    },
+    "tss_change": "\u2193 18%",
+    "duration_change": "\u2193 28%",
+    "count_change": "\u2193 11%"
   }
 }
