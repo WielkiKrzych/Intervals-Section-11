@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-20T10:57:45.734961",
+  "last_updated": "2026-04-20T12:09:23.018416",
   "date_range": {
     "start": "2026-03-23",
     "end": "2026-04-20"
@@ -1798,11 +1798,11 @@
     },
     {
       "id": "2026-04-20",
-      "ctl": 103.791115,
-      "atl": 106.81898,
-      "rampRate": -0.4956131,
-      "ctlLoad": 110.0,
-      "atlLoad": 110.0,
+      "ctl": 103.95581,
+      "atl": 107.75083,
+      "rampRate": -0.33091736,
+      "ctlLoad": 117.0,
+      "atlLoad": 117.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1817,7 +1817,7 @@
           "pMax": 910.60455
         }
       ],
-      "updated": "2026-04-20T10:01:06.137+00:00",
+      "updated": "2026-04-20T11:41:00.017+00:00",
       "weight": 99.9,
       "restingHR": 71,
       "hrv": 50.0,
@@ -1862,12 +1862,397 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 103.8,
-    "atl": 106.8,
-    "tsb": -3.0,
-    "ramp_rate": -0.5
+    "ctl": 104.0,
+    "atl": 107.8,
+    "tsb": -3.8,
+    "ramp_rate": -0.33
   },
   "activities": [
+    {
+      "id": "i141386884",
+      "start_date_local": "2026-04-20T10:58:19",
+      "type": "Ride",
+      "icu_ignore_time": false,
+      "icu_pm_cp": 310,
+      "icu_pm_w_prime": 25424,
+      "icu_pm_p_max": 494,
+      "icu_pm_ftp": 317,
+      "icu_pm_ftp_secs": 1200,
+      "icu_pm_ftp_watts": 331,
+      "icu_ignore_power": false,
+      "icu_rolling_cp": null,
+      "icu_rolling_w_prime": 32257.041,
+      "icu_rolling_p_max": 1270.269,
+      "icu_rolling_ftp": 382,
+      "icu_rolling_ftp_delta": 0,
+      "icu_training_load": 117,
+      "icu_atl": 107.75083,
+      "icu_ctl": 103.95581,
+      "ss_p_max": 0.025341291,
+      "ss_w_prime": 0.5442952,
+      "ss_cp": 139.76988,
+      "paired_event_id": 105050977,
+      "icu_ftp": 410,
+      "icu_joules": 2205347,
+      "icu_recording_time": 7583,
+      "elapsed_time": 7584,
+      "icu_weighted_avg_watts": 305,
+      "carbs_used": 356,
+      "name": "Threshold 3x5'",
+      "description": null,
+      "start_date": "2026-04-20T08:58:19Z",
+      "distance": 69012.6,
+      "icu_distance": 69012.6,
+      "moving_time": 7584,
+      "coasting_time": 0,
+      "total_elevation_gain": 917.0,
+      "total_elevation_loss": 914.0,
+      "timezone": null,
+      "trainer": null,
+      "sub_type": null,
+      "commute": false,
+      "race": false,
+      "max_speed": 25.84,
+      "average_speed": 9.1,
+      "device_watts": true,
+      "has_heartrate": true,
+      "max_heartrate": 160,
+      "average_heartrate": 136,
+      "average_cadence": 78.07647,
+      "calories": 2104,
+      "average_temp": 21.600264,
+      "min_temp": 21,
+      "max_temp": 22,
+      "avg_lr_balance": null,
+      "gap": null,
+      "gap_model": "NONE",
+      "use_elevation_correction": false,
+      "gear": {
+        "id": "b9626622",
+        "name": null,
+        "distance": null,
+        "primary": null
+      },
+      "perceived_exertion": null,
+      "device_name": "STRAVA",
+      "power_meter": null,
+      "power_meter_serial": null,
+      "power_meter_battery": null,
+      "crank_length": null,
+      "external_id": "447504767",
+      "file_sport_index": 0,
+      "file_type": "fit",
+      "icu_athlete_id": "39505110",
+      "created": "2026-04-20T11:05:09.108+00:00",
+      "icu_sync_date": "2026-04-20T11:40:29.888+00:00",
+      "analyzed": "2026-04-20T11:40:29.888+00:00",
+      "icu_w_prime": 15600,
+      "p_max": 1580,
+      "threshold_pace": null,
+      "icu_hr_zones": [
+        116,
+        130,
+        149,
+        162,
+        200
+      ],
+      "pace_zones": null,
+      "lthr": 162,
+      "icu_resting_hr": 71,
+      "icu_weight": 99.9,
+      "icu_power_zones": [
+        55,
+        75,
+        90,
+        105,
+        120,
+        150
+      ],
+      "icu_sweet_spot_min": 84,
+      "icu_sweet_spot_max": 97,
+      "icu_power_spike_threshold": null,
+      "trimp": 107.25199,
+      "icu_warmup_time": 300,
+      "icu_cooldown_time": 300,
+      "icu_chat_id": null,
+      "icu_ignore_hr": false,
+      "ignore_velocity": false,
+      "ignore_pace": false,
+      "ignore_parts": null,
+      "icu_training_load_data": 97,
+      "interval_summary": [
+        "3x 4m58s 413w"
+      ],
+      "skyline_chart_bytes": "CAYSDvIJrALZBKsC2wSoAvwgGgdBYztkPGVFIgcCBAIEAgQCKAE=",
+      "stream_types": [
+        "time",
+        "watts",
+        "cadence",
+        "heartrate",
+        "distance",
+        "altitude",
+        "latlng",
+        "velocity_smooth",
+        "torque",
+        "PercentageinZ2",
+        "temp",
+        "smo2",
+        "thb",
+        "hrv",
+        "core_temperature",
+        "skin_temperature",
+        "respiration",
+        "tidal_volume",
+        "tidal_volume_min",
+        "heat_strain_index",
+        "HeatStrainIndex",
+        "TymeVentilation",
+        "THb",
+        "TymeBreathRate"
+      ],
+      "has_weather": true,
+      "has_segments": false,
+      "power_field_names": [
+        "power"
+      ],
+      "power_field": "power",
+      "icu_zone_times": [
+        {
+          "id": "Z1",
+          "secs": 5
+        },
+        {
+          "id": "Z2",
+          "secs": 6609
+        },
+        {
+          "id": "Z3",
+          "secs": 16
+        },
+        {
+          "id": "Z4",
+          "secs": 899
+        },
+        {
+          "id": "Z5",
+          "secs": 54
+        },
+        {
+          "id": "Z6",
+          "secs": 1
+        },
+        {
+          "id": "Z7",
+          "secs": 0
+        },
+        {
+          "id": "SS",
+          "secs": 14
+        }
+      ],
+      "icu_hr_zone_times": [
+        351,
+        1371,
+        5314,
+        548,
+        0
+      ],
+      "pace_zone_times": null,
+      "gap_zone_times": null,
+      "use_gap_zone_times": null,
+      "custom_zones": [
+        {
+          "code": "COREsHeatZones",
+          "zones": [
+            {
+              "id": "1",
+              "start": 0.0,
+              "end": 1.0,
+              "start_value": 0.0,
+              "end_value": 1.0,
+              "secs": 1664
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 3.0,
+              "start_value": 1.0,
+              "end_value": 3.0,
+              "secs": 4845
+            },
+            {
+              "id": "3",
+              "start": 3.0,
+              "end": 7.0,
+              "start_value": 3.0,
+              "end_value": 7.0,
+              "secs": 0
+            },
+            {
+              "id": "4",
+              "start": 7.0,
+              "end": null,
+              "start_value": 7.0,
+              "end_value": null,
+              "secs": 0
+            }
+          ]
+        },
+        {
+          "code": "VentilatoryThresholds",
+          "zones": [
+            {
+              "id": "1",
+              "start": null,
+              "end": 1.0,
+              "start_value": null,
+              "end_value": 54.0,
+              "secs": 890
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 54.0,
+              "end_value": 73.0,
+              "secs": 3996
+            },
+            {
+              "id": "3",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 73.0,
+              "end_value": 105.0,
+              "secs": 2040
+            },
+            {
+              "id": "4",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 105.0,
+              "end_value": 113.0,
+              "secs": 286
+            },
+            {
+              "id": "5",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 113.0,
+              "end_value": 165.0,
+              "secs": 373
+            }
+          ]
+        }
+      ],
+      "tiz_order": "POWER_HR_PACE",
+      "polarization_index": 0.72,
+      "icu_achievements": null,
+      "icu_intervals_edited": false,
+      "lock_intervals": null,
+      "icu_lap_count": 1,
+      "icu_joules_above_ftp": 7941,
+      "icu_max_wbal_depletion": 2840,
+      "icu_hrr": null,
+      "icu_sync_error": null,
+      "icu_color": null,
+      "icu_power_hr_z2": 2.0639918,
+      "icu_power_hr_z2_mins": 22,
+      "icu_cadence_z2": 79,
+      "icu_rpe": 6,
+      "feel": 2,
+      "kg_lifted": null,
+      "decoupling": 6.259215,
+      "icu_median_time_delta": 1,
+      "p30s_exponent": null,
+      "workout_shift_secs": null,
+      "strava_id": null,
+      "lengths": null,
+      "pool_length": null,
+      "compliance": 106.36364,
+      "coach_tick": null,
+      "source": "WAHOO",
+      "oauth_client_id": null,
+      "oauth_client_name": null,
+      "average_altitude": 127.17142,
+      "min_altitude": 10.2,
+      "max_altitude": 612.2,
+      "power_load": 117,
+      "hr_load": 120,
+      "pace_load": null,
+      "hr_load_type": "HR_ZONES",
+      "pace_load_type": null,
+      "tags": null,
+      "attachments": null,
+      "recording_stops": null,
+      "average_weather_temp": 18.692142,
+      "min_weather_temp": 14.610055,
+      "max_weather_temp": 21.961834,
+      "average_feels_like": 20.073795,
+      "min_feels_like": 14.5577545,
+      "max_feels_like": 24.664137,
+      "average_wind_speed": 0.9368272,
+      "average_wind_gust": 2.639391,
+      "prevailing_wind_deg": 45,
+      "headwind_percent": 36.418777,
+      "tailwind_percent": 24.69673,
+      "average_clouds": 55,
+      "max_rain": 0.0,
+      "max_snow": 0.0,
+      "carbs_ingested": null,
+      "route_id": 6973433,
+      "analysis_issues": null,
+      "pace": 9.099763,
+      "athlete_max_hr": 200,
+      "group": "3aa932a9",
+      "icu_intensity": 74.39024,
+      "icu_efficiency_factor": 2.2426472,
+      "icu_power_hr": 2.139706,
+      "session_rpe": 758,
+      "average_stride": 3.4964807,
+      "icu_average_watts": 291,
+      "icu_variability_index": 1.04811,
+      "strain_score": 140.33952,
+      "AeT": 291.1949132798688,
+      "MSS": 350.5974566399344,
+      "NNRR": 0,
+      "PaHr": 13.218,
+      "AeTHR": 152.0,
+      "VT1HR": 130,
+      "VT1VE": 73,
+      "VT2HR": 153,
+      "VT2VE": 105,
+      "AeTwkg": 2.9148639522736675,
+      "MeanVE": 71.44640738299275,
+      "VO2max": 165,
+      "LoadCTL": 109.64436954371686,
+      "Pvo2max": 416.5,
+      "TopZ4HR": 162,
+      "TopZ4VE": 113,
+      "VT1Power": 320,
+      "VT2Power": 410,
+      "Vo2MaxHR": 178,
+      "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
+      "AllWorkFTP": 332.251,
+      "PVCsnumber": 0,
+      "TopZ4Power": 440,
+      "WorkHourKg": 10.47889804194412,
+      "Workoverz2": 402.492,
+      "EnduranceHR": 116,
+      "EnduranceVE": 54,
+      "Vo2MaxPower": 470,
+      "AvgBreathing": 36.90224129960344,
+      "SmO2BP1Power": 320,
+      "SmO2BP2Power": 410,
+      "TimeAboveFTP": 13.183333333333334,
+      "VO2MaxGarmin": 0.0,
+      "EndurancePower": 270,
+      "VT1BreathingRate": 24,
+      "VT2BreathingRate": 39,
+      "TopZ4BreathingRate": 48,
+      "Vo2MaxBreathingRate": 68,
+      "AveragePowerAboveFTP": 420.03919089759796,
+      "EnduranceBreathingRate": 25
+    },
     {
       "id": "i141043786",
       "start_date_local": "2026-04-19T06:57:41",
@@ -14727,13 +15112,21 @@
     ]
   },
   "quick_stats": {
-    "total_activities": 36,
-    "total_tss": 3203.0,
-    "total_duration_hours": 53.57,
-    "total_energy_kj": 59478.0,
+    "total_activities": 37,
+    "total_tss": 3320.0,
+    "total_duration_hours": 55.67,
+    "total_energy_kj": 61683.3,
     "period_days": 28
   },
   "sport_totals": {
+    "Ride": {
+      "total_time_hours": 35.35,
+      "total_distance_km": 1323.5,
+      "total_kj": 35642.6,
+      "total_calories": 34513,
+      "total_load": 1708,
+      "avg_speed_kmh": 37.4
+    },
     "Run": {
       "total_time_hours": 14.98,
       "total_distance_km": 196.8,
@@ -14742,14 +15135,6 @@
       "total_load": 1075,
       "avg_speed_kmh": 13.1,
       "avg_pace_minkm": 4.6
-    },
-    "Ride": {
-      "total_time_hours": 33.24,
-      "total_distance_km": 1254.5,
-      "total_kj": 33437.2,
-      "total_calories": 32409,
-      "total_load": 1591,
-      "avg_speed_kmh": 37.7
     },
     "Swim": {
       "total_time_hours": 5.34,
@@ -14761,14 +15146,14 @@
     }
   },
   "zone_distribution": {
-    "Z1": 4366,
-    "Z2": 113082,
-    "Z3": 42096,
-    "Z4": 10472,
-    "Z5": 3571,
-    "Z6": 20,
+    "Z1": 4371,
+    "Z2": 119691,
+    "Z3": 42112,
+    "Z4": 11371,
+    "Z5": 3625,
+    "Z6": 21,
     "Z7": 0,
-    "SS": 1311
+    "SS": 1325
   },
   "week_comparison": {
     "this_week": {
@@ -14777,9 +15162,9 @@
       "duration_hours": 0.0
     },
     "previous_week": {
-      "count": 8,
-      "tss": 596,
-      "duration_hours": 9.06
+      "count": 9,
+      "tss": 713,
+      "duration_hours": 11.16
     },
     "tss_change": "\u2193 100%",
     "duration_change": "\u2193 100%",
