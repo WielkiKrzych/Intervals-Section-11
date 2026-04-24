@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-24T12:44:10.877519",
+  "last_updated": "2026-04-24T14:22:03.433344",
   "date_range": {
     "start": "2026-03-27",
     "end": "2026-04-24"
@@ -1944,8 +1944,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-04-24T12:00:52.263+00:00",
-      "icu_sync_date": "2026-04-24T12:00:52.768+00:00",
-      "analyzed": "2026-04-24T12:00:52.768+00:00",
+      "icu_sync_date": "2026-04-24T12:59:15.852+00:00",
+      "analyzed": "2026-04-24T12:59:15.852+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -2015,7 +2015,8 @@
         "TymeVentilation",
         "torque",
         "PercentageinZ2",
-        "VerticalOscillation"
+        "VerticalOscillation",
+        "TymeBreathRate"
       ],
       "has_weather": false,
       "has_segments": false,
@@ -2107,7 +2108,7 @@
       "tiz_order": "PACE_POWER_HR",
       "polarization_index": 1.4,
       "icu_achievements": [],
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 14,
       "icu_joules_above_ftp": 27896,
@@ -2180,7 +2181,7 @@
       "AeTHR": 139.84,
       "AeTwkg": 2.5219186260937114,
       "MeanVE": 103.23152903990517,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 46.50224400858578,
       "Pvo2max": 589.5,
       "PVCsPSVCs": "PVCs: 4 (S: 4, C: 0, R: 0), PSVCs: 0",
       "AllWorkFTP": 210.746,
@@ -14750,17 +14751,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 4,
-      "tss": 334,
-      "duration_hours": 4.4
+      "count": 5,
+      "tss": 382,
+      "duration_hours": 5.07
     },
     "previous_week": {
       "count": 9,
       "tss": 713,
       "duration_hours": 11.16
     },
-    "tss_change": "\u2193 53%",
-    "duration_change": "\u2193 61%",
-    "count_change": "\u2193 56%"
+    "tss_change": "\u2193 46%",
+    "duration_change": "\u2193 55%",
+    "count_change": "\u2193 44%"
   }
 }
