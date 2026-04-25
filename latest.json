@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-25T05:31:34.436068",
+  "last_updated": "2026-04-25T06:57:18.074633",
   "date_range": {
     "start": "2026-03-28",
     "end": "2026-04-25"
@@ -1798,11 +1798,11 @@
     },
     {
       "id": "2026-04-25",
-      "ctl": 103.92148,
-      "atl": 107.33471,
-      "rampRate": 0.2645111,
-      "ctlLoad": 133.0,
-      "atlLoad": 133.0,
+      "ctl": 104.674385,
+      "atl": 111.59461,
+      "rampRate": 1.0174179,
+      "ctlLoad": 165.0,
+      "atlLoad": 165.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1817,7 +1817,7 @@
           "pMax": 907.87555
         }
       ],
-      "updated": "2026-04-25T04:51:00.002+00:00",
+      "updated": "2026-04-25T06:33:53.273+00:00",
       "weight": 99.4,
       "restingHR": 75,
       "hrv": 35.0,
@@ -1825,12 +1825,12 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 30236,
+      "sleepSecs": 30180,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 75.0,
-      "soreness": null,
-      "fatigue": null,
+      "soreness": 2,
+      "fatigue": 2,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -1862,10 +1862,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 103.9,
-    "atl": 107.3,
-    "tsb": -3.4,
-    "ramp_rate": 0.26
+    "ctl": 104.7,
+    "atl": 111.6,
+    "tsb": -6.9,
+    "ramp_rate": 1.02
   },
   "activities": [
     {
