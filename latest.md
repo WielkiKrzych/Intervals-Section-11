@@ -1,26 +1,26 @@
 # Training Report
 **Period:** 2026-03-29 to 2026-04-26
-**Last Updated:** 2026-04-26T12:05:03.656348
+**Last Updated:** 2026-04-26T13:41:22.948257
 
 ## Training Status
 - **Fitness (CTL):** 101.9 - Chronic Training Load
-- **Fatigue (ATL):** 96.2 - Acute Training Load
-- **Form (TSB):** 5.7 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -1.7
+- **Fatigue (ATL):** 96.1 - Acute Training Load
+- **Form (TSB):** 5.8 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -1.72
 - **✅ Recovery:** Ready - Good for threshold or VO2max
 
 ## Activity Summary
 - **Total Activities:** 36
 - **Total Duration:** 50.76h
-- **Total TSS:** 3141.0
-- **Total Energy:** 57537.0 kJ
+- **Total TSS:** 3140.0
+- **Total Energy:** 57527.9 kJ
 
 ## Sport Breakdown
 ### Run
 - Time: 15.34h
-- Distance: 201.8 km
+- Distance: 201.7 km
 - Energy: 17437 kcal
-- Load: 1105
+- Load: 1104
 - Avg Pace: 4.6 min/km
 
 ### Ride
@@ -39,9 +39,9 @@
 
 ### Total
 - Time: 50.76h
-- Distance: 1334.9 km
+- Distance: 1334.8 km
 - Energy: 30917.3 kJ
-- Load: 3141
+- Load: 3140
 
 ## Zone Distribution
 - **Z1:** 74m (2.7%)
