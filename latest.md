@@ -1,27 +1,27 @@
 # Training Report
-**Period:** 2026-03-28 to 2026-04-25
-**Last Updated:** 2026-04-25T21:44:47.224708
+**Period:** 2026-03-29 to 2026-04-26
+**Last Updated:** 2026-04-26T05:41:35.334418
 
 ## Training Status
 - **Fitness (CTL):** 103.0 - Chronic Training Load
-- **Fatigue (ATL):** 102.3 - Acute Training Load
-- **Form (TSB):** 0.8 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -0.63
+- **Fatigue (ATL):** 102.1 - Acute Training Load
+- **Form (TSB):** 0.9 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -0.66
 - **👍 Recovery:** Normal - Maintain endurance
 
 ## Activity Summary
-- **Total Activities:** 37
-- **Total Duration:** 54.19h
-- **Total TSS:** 3290.0
-- **Total Energy:** 59483.0 kJ
+- **Total Activities:** 35
+- **Total Duration:** 50.01h
+- **Total TSS:** 3084.0
+- **Total Energy:** 56241.8 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 33.65h
-- Distance: 1251.7 km
-- Energy: 34061.4 kJ
-- Load: 1630
-- Avg Speed: 37.2 km/h
+- Time: 30.15h
+- Distance: 1116.6 km
+- Energy: 30820.2 kJ
+- Load: 1492
+- Avg Speed: 37.0 km/h
 
 ### Run
 - Time: 14.59h
@@ -31,33 +31,33 @@
 - Avg Pace: 4.6 min/km
 
 ### Swim
-- Time: 5.94h
-- Distance: 18.5 km
-- Energy: 6413 kcal
-- Load: 612
+- Time: 5.27h
+- Distance: 16.5 km
+- Energy: 5761 kcal
+- Load: 544
 - Avg Speed: 3.1 km/h
 
 ### Total
-- Time: 54.18h
-- Distance: 1461.9 km
-- Energy: 34157.2 kJ
-- Load: 3290
+- Time: 50.01h
+- Distance: 1324.8 km
+- Energy: 30913.3 kJ
+- Load: 3084
 
 ## Zone Distribution
-- **Z1:** 63m (2.2%)
-- **Z2:** 1951m (67.2%)
-- **Z3:** 655m (22.5%)
-- **Z4:** 181m (6.2%)
-- **Z5:** 42m (1.5%)
+- **Z1:** 63m (2.4%)
+- **Z2:** 1741m (64.6%)
+- **Z3:** 655m (24.3%)
+- **Z4:** 181m (6.7%)
+- **Z5:** 42m (1.6%)
 - **Z6:** 0m (0.0%)
 - **SS:** 11m (0.4%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 8.4h
-- **Resting HR:** 75 bpm
+- **Sleep:** 8.2h
+- **Resting HR:** 47 bpm
 - **HRV:** 35.0
-- **Weight:** 99.4 kg
-- **Readiness:** 24.0%
-- **Soreness:** 2/5
+- **Weight:** 100.5 kg
+- **Readiness:** 34.0%
+- **Soreness:** 1/5
 - **Fatigue:** 2/5
-- **Steps:** 88
+- **Steps:** 57
