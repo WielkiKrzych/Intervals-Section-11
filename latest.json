@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-27T10:48:00.899359",
+  "last_updated": "2026-04-27T12:20:16.330124",
   "date_range": {
     "start": "2026-03-30",
     "end": "2026-04-27"
@@ -14428,9 +14428,9 @@
       "duration_hours": 0.0
     },
     "previous_week": {
-      "count": 9,
-      "tss": 763,
-      "duration_hours": 12.42
+      "count": 8,
+      "tss": 646,
+      "duration_hours": 10.31
     },
     "tss_change": "\u2193 100%",
     "duration_change": "\u2193 100%",
