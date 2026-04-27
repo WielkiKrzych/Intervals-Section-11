@@ -1,6 +1,6 @@
 # Training Report
 **Period:** 2026-03-30 to 2026-04-27
-**Last Updated:** 2026-04-27T02:56:37.801318
+**Last Updated:** 2026-04-27T06:06:13.835216
 
 ## Training Status
 - **Fitness (CTL):** 102.7 - Chronic Training Load
@@ -53,9 +53,11 @@
 - **SS:** 11m (0.5%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 5.4h
+- **Sleep:** 5.3h
 - **Resting HR:** 73 bpm
 - **HRV:** 39.0
 - **Weight:** 100.5 kg
 - **Readiness:** 41.0%
+- **Soreness:** 2/5
+- **Fatigue:** 2/5
 - **Steps:** 24
