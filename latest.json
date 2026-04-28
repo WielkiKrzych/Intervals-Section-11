@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-28T19:56:30.389445",
+  "last_updated": "2026-04-28T21:11:52.471466",
   "date_range": {
     "start": "2026-03-31",
     "end": "2026-04-28"
@@ -1689,7 +1689,7 @@
           "pMax": 906.0607
         }
       ],
-      "updated": "2026-04-28T08:39:36.265+00:00",
+      "updated": "2026-04-28T20:08:39.522+00:00",
       "weight": 99.8,
       "restingHR": 73,
       "hrv": 35.0,
@@ -1728,9 +1728,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 8314.304450392723,
-      "DeepSleep": 2213.0704694986343,
-      "LightSleep": 20785.62961602211
+      "REMSleep": null,
+      "DeepSleep": null,
+      "LightSleep": null
     },
     {
       "id": "2026-04-27",
@@ -1753,7 +1753,7 @@
           "pMax": 905.15466
         }
       ],
-      "updated": "2026-04-28T08:39:36.226+00:00",
+      "updated": "2026-04-28T20:08:39.495+00:00",
       "weight": 99.9,
       "restingHR": 76,
       "hrv": 39.0,
@@ -1792,9 +1792,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 6728.9217566251755,
-      "DeepSleep": 3409.438956975937,
-      "LightSleep": 13368.09051990509
+      "REMSleep": null,
+      "DeepSleep": null,
+      "LightSleep": null
     },
     {
       "id": "2026-04-28",
@@ -1817,14 +1817,14 @@
           "pMax": 904.2495
         }
       ],
-      "updated": "2026-04-28T18:28:44.015+00:00",
+      "updated": "2026-04-28T20:08:39.471+00:00",
       "weight": 99.8,
       "restingHR": 74,
       "hrv": 35.0,
       "hrvSDNN": 55.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 2528,
+      "kcalConsumed": 3610,
       "sleepSecs": 22280,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1839,7 +1839,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 3.4,
+      "hydrationVolume": 5.4,
       "readiness": 19.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 9395,
+      "steps": 11229,
       "respiration": 17.485294,
       "carbohydrates": null,
       "protein": null,
