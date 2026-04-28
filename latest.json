@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-28T07:31:18.510977",
+  "last_updated": "2026-04-28T09:59:51.582508",
   "date_range": {
     "start": "2026-03-31",
     "end": "2026-04-28"
@@ -1689,7 +1689,7 @@
           "pMax": 906.0607
         }
       ],
-      "updated": "2026-04-28T03:49:49.688+00:00",
+      "updated": "2026-04-28T08:39:36.265+00:00",
       "weight": 99.8,
       "restingHR": 73,
       "hrv": 35.0,
@@ -1753,7 +1753,7 @@
           "pMax": 905.15466
         }
       ],
-      "updated": "2026-04-28T03:43:36.117+00:00",
+      "updated": "2026-04-28T08:39:36.226+00:00",
       "weight": 99.9,
       "restingHR": 76,
       "hrv": 39.0,
@@ -1798,11 +1798,11 @@
     },
     {
       "id": "2026-04-28",
-      "ctl": 102.10674,
-      "atl": 98.44812,
-      "rampRate": -1.4501266,
-      "ctlLoad": 99.0,
-      "atlLoad": 99.0,
+      "ctl": 100.83621,
+      "atl": 91.25953,
+      "rampRate": -2.7206573,
+      "ctlLoad": 45.0,
+      "atlLoad": 45.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1817,9 +1817,9 @@
           "pMax": 904.2495
         }
       ],
-      "updated": "2026-04-28T06:40:07.908+00:00",
+      "updated": "2026-04-28T09:43:00.632+00:00",
       "weight": 99.8,
-      "restingHR": 78,
+      "restingHR": 74,
       "hrv": 35.0,
       "hrvSDNN": 55.0,
       "menstrualPhase": null,
@@ -1835,7 +1835,7 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4737,
+      "steps": 6326,
       "respiration": 17.485294,
       "carbohydrates": null,
       "protein": null,
@@ -1861,10 +1861,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 102.1,
-    "atl": 98.4,
-    "tsb": 3.7,
-    "ramp_rate": -1.45
+    "ctl": 100.8,
+    "atl": 91.3,
+    "tsb": 9.6,
+    "ramp_rate": -2.72
   },
   "activities": [
     {
@@ -14034,17 +14034,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 1,
-      "tss": 113,
-      "duration_hours": 2.33
+      "count": 0,
+      "tss": 0,
+      "duration_hours": 0.0
     },
     "previous_week": {
-      "count": 8,
-      "tss": 650,
-      "duration_hours": 10.09
+      "count": 9,
+      "tss": 763,
+      "duration_hours": 12.42
     },
-    "tss_change": "\u2193 83%",
-    "duration_change": "\u2193 77%",
-    "count_change": "\u2193 88%"
+    "tss_change": "\u2193 100%",
+    "duration_change": "\u2193 100%",
+    "count_change": "\u2193 100%"
   }
 }
