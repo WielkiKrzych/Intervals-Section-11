@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-04-30T09:04:10.473026",
+  "last_updated": "2026-04-30T11:05:18.594991",
   "date_range": {
     "start": "2026-04-02",
     "end": "2026-04-30"
@@ -1797,11 +1797,11 @@
     },
     {
       "id": "2026-04-30",
-      "ctl": 102.78279,
-      "atl": 103.69756,
-      "rampRate": -0.05783081,
-      "ctlLoad": 134.0,
-      "atlLoad": 134.0,
+      "ctl": 101.30051,
+      "atl": 95.31087,
+      "rampRate": -1.5401154,
+      "ctlLoad": 71.0,
+      "atlLoad": 71.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1816,7 +1816,7 @@
           "pMax": 902.44196
         }
       ],
-      "updated": "2026-04-30T04:11:24.862+00:00",
+      "updated": "2026-04-30T10:18:02.979+00:00",
       "weight": 98.2,
       "restingHR": 77,
       "hrv": 30.0,
@@ -1860,10 +1860,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 102.8,
-    "atl": 103.7,
-    "tsb": -0.9,
-    "ramp_rate": -0.06
+    "ctl": 101.3,
+    "atl": 95.3,
+    "tsb": 6.0,
+    "ramp_rate": -1.54
   },
   "activities": [
     {
@@ -13867,17 +13867,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 4,
-      "tss": 310,
-      "duration_hours": 5.6
+      "count": 3,
+      "tss": 197,
+      "duration_hours": 3.27
     },
     "previous_week": {
       "count": 8,
-      "tss": 650,
-      "duration_hours": 10.09
+      "tss": 646,
+      "duration_hours": 10.31
     },
-    "tss_change": "\u2193 52%",
-    "duration_change": "\u2193 44%",
-    "count_change": "\u2193 50%"
+    "tss_change": "\u2193 70%",
+    "duration_change": "\u2193 68%",
+    "count_change": "\u2193 62%"
   }
 }
