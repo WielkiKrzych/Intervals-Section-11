@@ -1,27 +1,27 @@
 # Training Report
-**Period:** 2026-04-02 to 2026-04-30
-**Last Updated:** 2026-04-30T21:03:17.866413
+**Period:** 2026-04-03 to 2026-05-01
+**Last Updated:** 2026-05-01T07:12:52.261539
 
 ## Training Status
-- **Fitness (CTL):** 101.4 - Chronic Training Load
-- **Fatigue (ATL):** 96.1 - Acute Training Load
-- **Form (TSB):** 5.3 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -1.4
-- **✅ Recovery:** Ready - Good for threshold or VO2max
+- **Fitness (CTL):** 101.9 - Chronic Training Load
+- **Fatigue (ATL):** 99.7 - Acute Training Load
+- **Form (TSB):** 2.3 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -1.27
+- **👍 Recovery:** Normal - Maintain endurance
 
 ## Activity Summary
-- **Total Activities:** 36
-- **Total Duration:** 49.87h
-- **Total TSS:** 3002.0
-- **Total Energy:** 54290.4 kJ
+- **Total Activities:** 35
+- **Total Duration:** 47.34h
+- **Total TSS:** 2887.0
+- **Total Energy:** 51787.2 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 32.08h
-- Distance: 1194.7 km
-- Energy: 32488.1 kJ
-- Load: 1562
-- Avg Speed: 37.2 km/h
+- Time: 29.55h
+- Distance: 1092.3 km
+- Energy: 29984.9 kJ
+- Load: 1447
+- Avg Speed: 37.0 km/h
 
 ### Swim
 - Time: 5.19h
@@ -38,26 +38,26 @@
 - Avg Pace: 4.6 min/km
 
 ### Total
-- Time: 49.86h
-- Distance: 1376.3 km
-- Energy: 32572.1 kJ
-- Load: 3002
+- Time: 47.33h
+- Distance: 1273.9 km
+- Energy: 30068.9 kJ
+- Load: 2887
 
 ## Zone Distribution
-- **Z1:** 72m (2.7%)
-- **Z2:** 1974m (73.5%)
-- **Z3:** 436m (16.2%)
-- **Z4:** 149m (5.6%)
-- **Z5:** 47m (1.8%)
+- **Z1:** 72m (2.9%)
+- **Z2:** 1822m (71.9%)
+- **Z3:** 436m (17.2%)
+- **Z4:** 149m (5.9%)
+- **Z5:** 47m (1.9%)
 - **Z6:** 0m (0.0%)
 - **SS:** 7m (0.3%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 5.5h
-- **Resting HR:** 75 bpm
-- **HRV:** 30.0
-- **Weight:** 97.6 kg
-- **Readiness:** 16.0%
+- **Sleep:** 7.6h
+- **Resting HR:** 77 bpm
+- **HRV:** 28.0
+- **Weight:** 98.6 kg
+- **Readiness:** 23.0%
 - **Soreness:** 2/5
-- **Fatigue:** 2/5
-- **Steps:** 11433
+- **Fatigue:** 1/5
+- **Steps:** 121
