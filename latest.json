@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-02T12:07:17.091113",
+  "last_updated": "2026-05-02T13:48:54.646703",
   "date_range": {
     "start": "2026-04-04",
     "end": "2026-05-02"
@@ -8,9 +8,9 @@
   "wellness": [
     {
       "id": "2026-04-04",
-      "ctl": 103.39644,
+      "ctl": 103.41021,
       "atl": 128.29002,
-      "rampRate": 5.287094,
+      "rampRate": 5.284607,
       "ctlLoad": 127.0,
       "atlLoad": 127.0,
       "sportInfo": [
@@ -18,7 +18,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -27,7 +27,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-06T05:56:22.287+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 97.4,
       "restingHR": 72,
       "hrv": 46.0,
@@ -72,9 +72,9 @@
     },
     {
       "id": "2026-04-05",
-      "ctl": 103.92826,
+      "ctl": 103.94171,
       "atl": 127.98517,
-      "rampRate": 5.6332626,
+      "rampRate": 5.6308365,
       "ctlLoad": 126.0,
       "atlLoad": 126.0,
       "sportInfo": [
@@ -82,7 +82,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -91,7 +91,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-07T16:35:29.369+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 98.8,
       "restingHR": 74,
       "hrv": 44.0,
@@ -136,9 +136,9 @@
     },
     {
       "id": "2026-04-06",
-      "ctl": 104.1417,
+      "ctl": 104.15484,
       "atl": 125.99031,
-      "rampRate": 5.43013,
+      "rampRate": 5.427765,
       "ctlLoad": 113.0,
       "atlLoad": 113.0,
       "sportInfo": [
@@ -146,7 +146,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -155,7 +155,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-08T17:02:36.907+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 99.7,
       "restingHR": 76,
       "hrv": 31.0,
@@ -200,9 +200,9 @@
     },
     {
       "id": "2026-04-07",
-      "ctl": 102.77373,
+      "ctl": 102.78655,
       "atl": 115.341835,
-      "rampRate": 4.1494827,
+      "rampRate": 4.147171,
       "ctlLoad": 46.0,
       "atlLoad": 46.0,
       "sportInfo": [
@@ -210,7 +210,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -219,7 +219,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-09T13:00:27.024+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 102.5,
       "restingHR": 74,
       "hrv": 29.0,
@@ -264,9 +264,9 @@
     },
     {
       "id": "2026-04-08",
-      "ctl": 103.55549,
+      "ctl": 103.56801,
       "atl": 118.091896,
-      "rampRate": 2.3578186,
+      "rampRate": 2.3555527,
       "ctlLoad": 136.0,
       "atlLoad": 136.0,
       "sportInfo": [
@@ -274,7 +274,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -283,7 +283,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-10T14:01:33.779+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 100.2,
       "restingHR": 76,
       "hrv": 37.0,
@@ -328,9 +328,9 @@
     },
     {
       "id": "2026-04-09",
-      "ctl": 103.51889,
+      "ctl": 103.53111,
       "atl": 115.94971,
-      "rampRate": 1.9964752,
+      "rampRate": 1.9942627,
       "ctlLoad": 102.0,
       "atlLoad": 102.0,
       "sportInfo": [
@@ -338,7 +338,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -347,7 +347,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-11T05:06:37.271+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 99.9,
       "restingHR": 73,
       "hrv": 34.0,
@@ -392,9 +392,9 @@
     },
     {
       "id": "2026-04-10",
-      "ctl": 103.36551,
+      "ctl": 103.37745,
       "atl": 113.427086,
-      "rampRate": 0.53780365,
+      "rampRate": 0.53564453,
       "ctlLoad": 97.0,
       "atlLoad": 97.0,
       "sportInfo": [
@@ -402,7 +402,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -411,7 +411,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-12T19:01:09.993+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 101.2,
       "restingHR": 74,
       "hrv": 35.0,
@@ -456,9 +456,9 @@
     },
     {
       "id": "2026-04-11",
-      "ctl": 103.40397,
+      "ctl": 103.41563,
       "atl": 112.30525,
-      "rampRate": 0.0075302124,
+      "rampRate": 0.00541687,
       "ctlLoad": 105.0,
       "atlLoad": 105.0,
       "sportInfo": [
@@ -466,7 +466,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -475,7 +475,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-13T04:00:56.355+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 97.7,
       "restingHR": 72,
       "hrv": 35.0,
@@ -520,9 +520,9 @@
     },
     {
       "id": "2026-04-12",
-      "ctl": 104.07678,
+      "ctl": 104.088165,
       "atl": 114.927055,
-      "rampRate": 0.14852142,
+      "rampRate": 0.14645386,
       "ctlLoad": 132.0,
       "atlLoad": 132.0,
       "sportInfo": [
@@ -530,7 +530,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -539,7 +539,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-14T04:14:08.097+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 99.8,
       "restingHR": 72,
       "hrv": 36.0,
@@ -583,9 +583,9 @@
     },
     {
       "id": "2026-04-13",
-      "ctl": 104.28673,
+      "ctl": 104.297844,
       "atl": 114.670525,
-      "rampRate": 0.14502716,
+      "rampRate": 0.14300537,
       "ctlLoad": 113.0,
       "atlLoad": 113.0,
       "sportInfo": [
@@ -593,7 +593,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -602,7 +602,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-15T03:22:42.008+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 101.8,
       "restingHR": 72,
       "hrv": 39.0,
@@ -647,9 +647,9 @@
     },
     {
       "id": "2026-04-14",
-      "ctl": 104.16234,
+      "ctl": 104.173195,
       "atl": 112.584435,
-      "rampRate": 1.3886108,
+      "rampRate": 1.3866425,
       "ctlLoad": 99.0,
       "atlLoad": 99.0,
       "sportInfo": [
@@ -657,7 +657,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -666,7 +666,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-16T17:43:49.135+00:00",
+      "updated": "2026-05-02T12:54:56.114+00:00",
       "weight": 101.8,
       "restingHR": 72,
       "hrv": 39.0,
@@ -711,9 +711,9 @@
     },
     {
       "id": "2026-04-15",
-      "ctl": 104.58203,
+      "ctl": 104.59263,
       "atl": 113.83785,
-      "rampRate": 1.0265427,
+      "rampRate": 1.02462,
       "ctlLoad": 122.0,
       "atlLoad": 122.0,
       "sportInfo": [
@@ -721,7 +721,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -730,7 +730,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-18T02:51:03.175+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 101.1,
       "restingHR": 74,
       "hrv": 44.0,
@@ -775,9 +775,9 @@
     },
     {
       "id": "2026-04-16",
-      "ctl": 104.07424,
+      "ctl": 104.08459,
       "atl": 109.73265,
-      "rampRate": 0.55535126,
+      "rampRate": 0.5534744,
       "ctlLoad": 83.0,
       "atlLoad": 83.0,
       "sportInfo": [
@@ -785,7 +785,7 @@
           "type": "Ride",
           "eftp": 382.92282,
           "wPrime": 32354.004,
-          "pMax": 1274.0874
+          "pMax": 1271.5405
         },
         {
           "type": "Run",
@@ -794,7 +794,7 @@
           "pMax": 913.3418
         }
       ],
-      "updated": "2026-04-18T02:56:14.079+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.4,
       "restingHR": 75,
       "hrv": 38.0,
@@ -839,9 +839,9 @@
     },
     {
       "id": "2026-04-17",
-      "ctl": 102.6608,
+      "ctl": 102.6709,
       "atl": 100.982185,
-      "rampRate": -0.7047119,
+      "rampRate": -0.7065506,
       "ctlLoad": 44.0,
       "atlLoad": 44.0,
       "sportInfo": [
@@ -849,7 +849,7 @@
           "type": "Ride",
           "eftp": 382.53992,
           "wPrime": 32321.65,
-          "pMax": 1272.8134
+          "pMax": 1270.269
         },
         {
           "type": "Run",
@@ -858,7 +858,7 @@
           "pMax": 912.42847
         }
       ],
-      "updated": "2026-04-19T04:35:11.729+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 98.4,
       "restingHR": 70,
       "hrv": 47.0,
@@ -902,9 +902,9 @@
     },
     {
       "id": "2026-04-18",
-      "ctl": 103.65697,
+      "ctl": 103.66683,
       "atl": 106.84193,
-      "rampRate": 0.25299835,
+      "rampRate": 0.25120544,
       "ctlLoad": 145.0,
       "atlLoad": 145.0,
       "sportInfo": [
@@ -912,7 +912,7 @@
           "type": "Ride",
           "eftp": 382.53992,
           "wPrime": 32321.65,
-          "pMax": 1272.8134
+          "pMax": 1270.269
         },
         {
           "type": "Run",
@@ -921,7 +921,7 @@
           "pMax": 912.42847
         }
       ],
-      "updated": "2026-04-21T03:43:37.421+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.6,
       "restingHR": 76,
       "hrv": 39.0,
@@ -966,9 +966,9 @@
     },
     {
       "id": "2026-04-19",
-      "ctl": 103.64151,
+      "ctl": 103.651146,
       "atl": 106.33048,
-      "rampRate": -0.43527222,
+      "rampRate": -0.43701935,
       "ctlLoad": 103.0,
       "atlLoad": 103.0,
       "sportInfo": [
@@ -976,7 +976,7 @@
           "type": "Ride",
           "eftp": 382.15738,
           "wPrime": 32289.33,
-          "pMax": 1271.5405
+          "pMax": 1268.9988
         },
         {
           "type": "Run",
@@ -985,7 +985,7 @@
           "pMax": 911.51605
         }
       ],
-      "updated": "2026-04-22T03:06:15.864+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.6,
       "restingHR": 77,
       "hrv": 38.0,
@@ -1030,9 +1030,9 @@
     },
     {
       "id": "2026-04-20",
-      "ctl": 103.95581,
+      "ctl": 103.965225,
       "atl": 107.75083,
-      "rampRate": -0.33091736,
+      "rampRate": -0.3326187,
       "ctlLoad": 117.0,
       "atlLoad": 117.0,
       "sportInfo": [
@@ -1040,7 +1040,7 @@
           "type": "Ride",
           "eftp": 381.77524,
           "wPrime": 32257.041,
-          "pMax": 1270.269
+          "pMax": 1267.7297
         },
         {
           "type": "Run",
@@ -1049,7 +1049,7 @@
           "pMax": 910.60455
         }
       ],
-      "updated": "2026-04-22T19:45:51.095+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.3,
       "restingHR": 73,
       "hrv": 50.0,
@@ -1094,9 +1094,9 @@
     },
     {
       "id": "2026-04-21",
-      "ctl": 103.55687,
+      "ctl": 103.56606,
       "atl": 104.988434,
-      "rampRate": -0.60546875,
+      "rampRate": -0.60713196,
       "ctlLoad": 87.0,
       "atlLoad": 87.0,
       "sportInfo": [
@@ -1104,7 +1104,7 @@
           "type": "Ride",
           "eftp": 381.39346,
           "wPrime": 32224.785,
-          "pMax": 1268.9988
+          "pMax": 1266.462
         },
         {
           "type": "Run",
@@ -1113,7 +1113,7 @@
           "pMax": 909.694
         }
       ],
-      "updated": "2026-04-23T12:44:31.736+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 100.2,
       "restingHR": 74,
       "hrv": 34.0,
@@ -1158,9 +1158,9 @@
     },
     {
       "id": "2026-04-22",
-      "ctl": 102.88497,
+      "ctl": 102.89395,
       "atl": 100.99631,
-      "rampRate": -1.6970596,
+      "rampRate": -1.6986771,
       "ctlLoad": 75.0,
       "atlLoad": 75.0,
       "sportInfo": [
@@ -1168,7 +1168,7 @@
           "type": "Ride",
           "eftp": 381.0121,
           "wPrime": 32192.56,
-          "pMax": 1267.7297
+          "pMax": 1265.1956
         },
         {
           "type": "Run",
@@ -1177,7 +1177,7 @@
           "pMax": 908.7843
         }
       ],
-      "updated": "2026-04-23T03:46:10.913+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 98.9,
       "restingHR": 73,
       "hrv": 34.0,
@@ -1222,9 +1222,9 @@
     },
     {
       "id": "2026-04-23",
-      "ctl": 102.84062,
+      "ctl": 102.84939,
       "atl": 100.996796,
-      "rampRate": -1.2336197,
+      "rampRate": -1.235199,
       "ctlLoad": 101.0,
       "atlLoad": 101.0,
       "sportInfo": [
@@ -1232,7 +1232,7 @@
           "type": "Ride",
           "eftp": 380.63107,
           "wPrime": 32160.37,
-          "pMax": 1266.462
+          "pMax": 1263.9304
         },
         {
           "type": "Run",
@@ -1241,7 +1241,7 @@
           "pMax": 907.87555
         }
       ],
-      "updated": "2026-04-25T04:49:59.142+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 98.6,
       "restingHR": 73,
       "hrv": 31.0,
@@ -1286,9 +1286,9 @@
     },
     {
       "id": "2026-04-24",
-      "ctl": 103.220825,
+      "ctl": 103.229385,
       "atl": 103.39342,
-      "rampRate": 0.5600281,
+      "rampRate": 0.55848694,
       "ctlLoad": 119.0,
       "atlLoad": 119.0,
       "sportInfo": [
@@ -1296,7 +1296,7 @@
           "type": "Ride",
           "eftp": 380.63107,
           "wPrime": 32160.37,
-          "pMax": 1266.462
+          "pMax": 1263.9304
         },
         {
           "type": "Run",
@@ -1305,7 +1305,7 @@
           "pMax": 907.87555
         }
       ],
-      "updated": "2026-04-26T05:20:11.275+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.9,
       "restingHR": 79,
       "hrv": 37.0,
@@ -1350,9 +1350,9 @@
     },
     {
       "id": "2026-04-25",
-      "ctl": 103.027405,
+      "ctl": 103.03576,
       "atl": 102.27607,
-      "rampRate": -0.6295624,
+      "rampRate": -0.631073,
       "ctlLoad": 95.0,
       "atlLoad": 95.0,
       "sportInfo": [
@@ -1360,7 +1360,7 @@
           "type": "Ride",
           "eftp": 380.25046,
           "wPrime": 32128.209,
-          "pMax": 1265.1956
+          "pMax": 1262.6665
         },
         {
           "type": "Run",
@@ -1369,7 +1369,7 @@
           "pMax": 906.9677
         }
       ],
-      "updated": "2026-04-28T03:43:36.167+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 98.1,
       "restingHR": 79,
       "hrv": 35.0,
@@ -1414,9 +1414,9 @@
     },
     {
       "id": "2026-04-26",
-      "ctl": 101.92093,
+      "ctl": 101.929085,
       "atl": 96.1157,
-      "rampRate": -1.720581,
+      "rampRate": -1.7220612,
       "ctlLoad": 56.0,
       "atlLoad": 56.0,
       "sportInfo": [
@@ -1424,7 +1424,7 @@
           "type": "Ride",
           "eftp": 379.8702,
           "wPrime": 32096.082,
-          "pMax": 1263.9304
+          "pMax": 1261.4038
         },
         {
           "type": "Run",
@@ -1433,7 +1433,7 @@
           "pMax": 906.0607
         }
       ],
-      "updated": "2026-04-29T02:51:52.101+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.8,
       "restingHR": 73,
       "hrv": 35.0,
@@ -1478,9 +1478,9 @@
     },
     {
       "id": "2026-04-27",
-      "ctl": 102.1816,
+      "ctl": 102.18957,
       "atl": 98.36337,
-      "rampRate": -1.7742081,
+      "rampRate": -1.7756577,
       "ctlLoad": 113.0,
       "atlLoad": 113.0,
       "sportInfo": [
@@ -1488,7 +1488,7 @@
           "type": "Ride",
           "eftp": 379.49036,
           "wPrime": 32063.986,
-          "pMax": 1262.6665
+          "pMax": 1260.1425
         },
         {
           "type": "Run",
@@ -1497,7 +1497,7 @@
           "pMax": 905.15466
         }
       ],
-      "updated": "2026-04-29T03:04:58.506+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.9,
       "restingHR": 76,
       "hrv": 39.0,
@@ -1542,9 +1542,9 @@
     },
     {
       "id": "2026-04-28",
-      "ctl": 101.2362,
+      "ctl": 101.24397,
       "atl": 93.522606,
-      "rampRate": -2.320671,
+      "rampRate": -2.3220901,
       "ctlLoad": 62.0,
       "atlLoad": 62.0,
       "sportInfo": [
@@ -1552,7 +1552,7 @@
           "type": "Ride",
           "eftp": 379.11087,
           "wPrime": 32031.922,
-          "pMax": 1261.4038
+          "pMax": 1258.8823
         },
         {
           "type": "Run",
@@ -1561,7 +1561,7 @@
           "pMax": 904.2495
         }
       ],
-      "updated": "2026-04-30T03:46:04.987+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 99.8,
       "restingHR": 74,
       "hrv": 35.0,
@@ -1605,9 +1605,9 @@
     },
     {
       "id": "2026-04-29",
-      "ctl": 102.0306,
+      "ctl": 102.03819,
       "atl": 99.04417,
-      "rampRate": -0.8543701,
+      "rampRate": -0.85575867,
       "ctlLoad": 135.0,
       "atlLoad": 135.0,
       "sportInfo": [
@@ -1615,7 +1615,7 @@
           "type": "Ride",
           "eftp": 378.73175,
           "wPrime": 31999.89,
-          "pMax": 1260.1425
+          "pMax": 1257.6234
         },
         {
           "type": "Run",
@@ -1624,7 +1624,7 @@
           "pMax": 903.3453
         }
       ],
-      "updated": "2026-05-01T05:04:12.462+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 98.5,
       "restingHR": 73,
       "hrv": 33.0,
@@ -1669,9 +1669,9 @@
     },
     {
       "id": "2026-04-30",
-      "ctl": 101.44167,
+      "ctl": 101.44909,
       "atl": 96.109604,
-      "rampRate": -1.3989487,
+      "rampRate": -1.4002991,
       "ctlLoad": 77.0,
       "atlLoad": 77.0,
       "sportInfo": [
@@ -1679,7 +1679,7 @@
           "type": "Ride",
           "eftp": 378.35303,
           "wPrime": 31967.89,
-          "pMax": 1258.8823
+          "pMax": 1256.3658
         },
         {
           "type": "Run",
@@ -1688,7 +1688,7 @@
           "pMax": 902.44196
         }
       ],
-      "updated": "2026-05-02T07:05:47.574+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 97.6,
       "restingHR": 75,
       "hrv": 30.0,
@@ -1733,9 +1733,9 @@
     },
     {
       "id": "2026-05-01",
-      "ctl": 100.89013,
+      "ctl": 100.89737,
       "atl": 93.698814,
-      "rampRate": -2.330696,
+      "rampRate": -2.332016,
       "ctlLoad": 78.0,
       "atlLoad": 78.0,
       "sportInfo": [
@@ -1743,7 +1743,7 @@
           "type": "Ride",
           "eftp": 377.97467,
           "wPrime": 31935.924,
-          "pMax": 1257.6234
+          "pMax": 1255.1095
         },
         {
           "type": "Run",
@@ -1752,7 +1752,7 @@
           "pMax": 901.53955
         }
       ],
-      "updated": "2026-05-02T07:05:47.550+00:00",
+      "updated": "2026-05-02T12:54:56.126+00:00",
       "weight": 97.6,
       "restingHR": 78,
       "hrv": 28.0,
@@ -1797,33 +1797,33 @@
     },
     {
       "id": "2026-05-02",
-      "ctl": 103.81023,
-      "atl": 111.1779,
-      "rampRate": 0.78282166,
-      "ctlLoad": 225.0,
-      "atlLoad": 225.0,
+      "ctl": 102.17031,
+      "atl": 101.85936,
+      "rampRate": -0.865448,
+      "ctlLoad": 155.0,
+      "atlLoad": 155.0,
       "sportInfo": [
         {
           "type": "Ride",
-          "eftp": 377.97467,
-          "wPrime": 31935.924,
-          "pMax": 1257.6234
+          "eftp": 377.5967,
+          "wPrime": 31903.988,
+          "pMax": 1253.8544
         },
         {
           "type": "Run",
-          "eftp": 524.13837,
-          "wPrime": 44636.65,
-          "pMax": 901.53955
+          "eftp": 523.61426,
+          "wPrime": 44592.01,
+          "pMax": 900.638
         }
       ],
-      "updated": "2026-05-02T07:40:45.525+00:00",
-      "weight": 98.2,
-      "restingHR": 79,
+      "updated": "2026-05-02T13:37:01.930+00:00",
+      "weight": 97.9,
+      "restingHR": 78,
       "hrv": 31.0,
       "hrvSDNN": 47.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 788,
+      "kcalConsumed": 2335,
       "sleepSecs": 20935,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1838,7 +1838,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.6,
+      "hydrationVolume": 5.7,
       "readiness": 17.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1847,7 +1847,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4617,
+      "steps": 5762,
       "respiration": 16.785715,
       "carbohydrates": null,
       "protein": null,
@@ -1861,12 +1861,427 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 103.8,
-    "atl": 111.2,
-    "tsb": -7.4,
-    "ramp_rate": 0.78
+    "ctl": 102.2,
+    "atl": 101.9,
+    "tsb": 0.3,
+    "ramp_rate": -0.87
   },
   "activities": [
+    {
+      "id": "i144792975",
+      "start_date_local": "2026-05-02T10:15:51",
+      "type": "Ride",
+      "icu_ignore_time": false,
+      "icu_pm_cp": 251,
+      "icu_pm_w_prime": 20974,
+      "icu_pm_p_max": 885,
+      "icu_pm_ftp": 256,
+      "icu_pm_ftp_secs": 3600,
+      "icu_pm_ftp_watts": 257,
+      "icu_ignore_power": false,
+      "icu_rolling_cp": null,
+      "icu_rolling_w_prime": 31903.988,
+      "icu_rolling_p_max": 1253.8544,
+      "icu_rolling_ftp": 378,
+      "icu_rolling_ftp_delta": 0,
+      "icu_training_load": 155,
+      "icu_atl": 101.85936,
+      "icu_ctl": 102.17031,
+      "ss_p_max": 0.12262543,
+      "ss_w_prime": 1.0908318,
+      "ss_cp": 216.58891,
+      "paired_event_id": 99806387,
+      "icu_ftp": 410,
+      "icu_joules": 3485945,
+      "icu_recording_time": 14157,
+      "elapsed_time": 15157,
+      "icu_weighted_avg_watts": 257,
+      "carbs_used": 575,
+      "name": "Endurance",
+      "description": null,
+      "start_date": "2026-05-02T08:15:51Z",
+      "distance": 130004.27,
+      "icu_distance": 130004.27,
+      "moving_time": 14164,
+      "coasting_time": 545,
+      "total_elevation_gain": 207.0,
+      "total_elevation_loss": 231.0,
+      "timezone": null,
+      "trainer": null,
+      "sub_type": null,
+      "commute": false,
+      "race": false,
+      "max_speed": 13.941,
+      "average_speed": 9.212,
+      "device_watts": true,
+      "has_heartrate": true,
+      "max_heartrate": 141,
+      "average_heartrate": 127,
+      "average_cadence": 84.082565,
+      "calories": 3462,
+      "average_temp": 22.970451,
+      "min_temp": 21,
+      "max_temp": 25,
+      "avg_lr_balance": 53.09388,
+      "gap": null,
+      "gap_model": "NONE",
+      "use_elevation_correction": false,
+      "gear": {
+        "id": "b9626622",
+        "name": null,
+        "distance": null,
+        "primary": null
+      },
+      "perceived_exertion": null,
+      "device_name": "WAHOO_FITNESS ELEMNT ROAM",
+      "power_meter": "FAVERO_ELECTRONICS 12",
+      "power_meter_serial": "934940474",
+      "power_meter_battery": "GOOD",
+      "crank_length": null,
+      "external_id": "450047562",
+      "file_sport_index": 0,
+      "file_type": "fit",
+      "icu_athlete_id": "39505110",
+      "created": "2026-05-02T13:13:33.779+00:00",
+      "icu_sync_date": "2026-05-02T13:17:27.425+00:00",
+      "analyzed": "2026-05-02T13:17:27.425+00:00",
+      "icu_w_prime": 15600,
+      "p_max": 1580,
+      "threshold_pace": null,
+      "icu_hr_zones": [
+        116,
+        130,
+        149,
+        162,
+        200
+      ],
+      "pace_zones": null,
+      "lthr": 162,
+      "icu_resting_hr": 78,
+      "icu_weight": 97.9,
+      "icu_power_zones": [
+        55,
+        75,
+        90,
+        105,
+        120,
+        150
+      ],
+      "icu_sweet_spot_min": 84,
+      "icu_sweet_spot_max": 97,
+      "icu_power_spike_threshold": null,
+      "trimp": 131.2067,
+      "icu_warmup_time": 300,
+      "icu_cooldown_time": 300,
+      "icu_chat_id": null,
+      "icu_ignore_hr": false,
+      "ignore_velocity": false,
+      "ignore_pace": false,
+      "ignore_parts": null,
+      "icu_training_load_data": 96,
+      "interval_summary": null,
+      "skyline_chart_bytes": "CAYSAqFuGgE8IgECKAE=",
+      "stream_types": [
+        "time",
+        "watts",
+        "cadence",
+        "heartrate",
+        "distance",
+        "altitude",
+        "latlng",
+        "velocity_smooth",
+        "temp",
+        "left_right_balance",
+        "core_temperature",
+        "torque",
+        "PercentageinZ2",
+        "smo2",
+        "thb",
+        "hrv",
+        "skin_temperature",
+        "respiration",
+        "tidal_volume",
+        "tidal_volume_min",
+        "heat_strain_index",
+        "HeatStrainIndex",
+        "TymeVentilation"
+      ],
+      "has_weather": true,
+      "has_segments": false,
+      "power_field_names": [
+        "power"
+      ],
+      "power_field": "power",
+      "icu_zone_times": [
+        {
+          "id": "Z1",
+          "secs": 3830
+        },
+        {
+          "id": "Z2",
+          "secs": 8652
+        },
+        {
+          "id": "Z3",
+          "secs": 1254
+        },
+        {
+          "id": "Z4",
+          "secs": 286
+        },
+        {
+          "id": "Z5",
+          "secs": 106
+        },
+        {
+          "id": "Z6",
+          "secs": 33
+        },
+        {
+          "id": "Z7",
+          "secs": 3
+        },
+        {
+          "id": "SS",
+          "secs": 457
+        }
+      ],
+      "icu_hr_zone_times": [
+        481,
+        9927,
+        3756,
+        0,
+        0
+      ],
+      "pace_zone_times": null,
+      "gap_zone_times": null,
+      "use_gap_zone_times": null,
+      "custom_zones": [
+        {
+          "code": "COREsHeatZones",
+          "zones": [
+            {
+              "id": "1",
+              "start": 0.0,
+              "end": 1.0,
+              "start_value": 0.0,
+              "end_value": 1.0,
+              "secs": 10368
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 3.0,
+              "start_value": 1.0,
+              "end_value": 3.0,
+              "secs": 3240
+            },
+            {
+              "id": "3",
+              "start": 3.0,
+              "end": 7.0,
+              "start_value": 3.0,
+              "end_value": 7.0,
+              "secs": 0
+            },
+            {
+              "id": "4",
+              "start": 7.0,
+              "end": null,
+              "start_value": 7.0,
+              "end_value": null,
+              "secs": 0
+            }
+          ]
+        },
+        {
+          "code": "VentilatoryThresholds",
+          "zones": [
+            {
+              "id": "1",
+              "start": null,
+              "end": 1.0,
+              "start_value": null,
+              "end_value": 54.0,
+              "secs": 13086
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 54.0,
+              "end_value": 73.0,
+              "secs": 972
+            },
+            {
+              "id": "3",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 73.0,
+              "end_value": 105.0,
+              "secs": 55
+            },
+            {
+              "id": "4",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 105.0,
+              "end_value": 113.0,
+              "secs": 0
+            },
+            {
+              "id": "5",
+              "start": 1.0,
+              "end": 1.0,
+              "start_value": 113.0,
+              "end_value": 165.0,
+              "secs": 0
+            }
+          ]
+        }
+      ],
+      "tiz_order": "POWER_HR_PACE",
+      "polarization_index": 0.91,
+      "icu_achievements": [
+        {
+          "id": "ps0_1",
+          "type": "BEST_POWER",
+          "message": null,
+          "watts": 885,
+          "secs": 1,
+          "value": null,
+          "distance": null,
+          "pace": null,
+          "point": {
+            "start_index": 4951,
+            "end_index": 4952,
+            "secs": 1,
+            "value": 885
+          }
+        },
+        {
+          "id": "ps0_14400",
+          "type": "BEST_POWER",
+          "message": null,
+          "watts": 232,
+          "secs": 14400,
+          "value": null,
+          "distance": null,
+          "pace": null,
+          "point": {
+            "start_index": 146,
+            "end_index": 13597,
+            "secs": 14400,
+            "value": 232
+          }
+        }
+      ],
+      "icu_intervals_edited": false,
+      "lock_intervals": null,
+      "icu_lap_count": 1,
+      "icu_joules_above_ftp": 16505,
+      "icu_max_wbal_depletion": 1513,
+      "icu_hrr": null,
+      "icu_sync_error": null,
+      "icu_color": null,
+      "icu_power_hr_z2": 1.9878646,
+      "icu_power_hr_z2_mins": 125,
+      "icu_cadence_z2": 84,
+      "icu_rpe": 3,
+      "feel": 3,
+      "kg_lifted": null,
+      "decoupling": 7.076926,
+      "icu_median_time_delta": 1,
+      "p30s_exponent": null,
+      "workout_shift_secs": null,
+      "strava_id": null,
+      "lengths": null,
+      "pool_length": null,
+      "compliance": 107.638885,
+      "coach_tick": null,
+      "source": "WAHOO",
+      "oauth_client_id": null,
+      "oauth_client_name": null,
+      "average_altitude": 118.96443,
+      "min_altitude": 94.8,
+      "max_altitude": 156.6,
+      "power_load": 155,
+      "hr_load": 173,
+      "pace_load": null,
+      "hr_load_type": "HR_ZONES",
+      "pace_load_type": null,
+      "tags": null,
+      "attachments": null,
+      "recording_stops": null,
+      "average_weather_temp": 20.686443,
+      "min_weather_temp": 18.609222,
+      "max_weather_temp": 23.9916,
+      "average_feels_like": 20.36229,
+      "min_feels_like": 17.404552,
+      "max_feels_like": 22.47236,
+      "average_wind_speed": 2.375107,
+      "average_wind_gust": 6.0719676,
+      "prevailing_wind_deg": 270,
+      "headwind_percent": 35.211166,
+      "tailwind_percent": 28.047052,
+      "average_clouds": 76,
+      "max_rain": 0.0,
+      "max_snow": 0.0,
+      "carbs_ingested": null,
+      "route_id": 7240183,
+      "analysis_issues": null,
+      "pace": 9.1785,
+      "athlete_max_hr": 200,
+      "group": "c7fb635f",
+      "icu_intensity": 62.682926,
+      "icu_efficiency_factor": 2.023622,
+      "icu_power_hr": 1.9370079,
+      "session_rpe": 708,
+      "average_stride": 3.2748168,
+      "icu_average_watts": 246,
+      "icu_variability_index": 1.0447154,
+      "strain_score": 217.80237,
+      "AeT": 289.8320058218285,
+      "MSS": 349.91600291091424,
+      "NNRR": 0,
+      "PaHr": 3.756,
+      "AeTHR": 152.0,
+      "VT1HR": 130,
+      "VT1VE": 73,
+      "VT2HR": 153,
+      "VT2VE": 105,
+      "AeTwkg": 2.9604903095452375,
+      "MeanVE": 50.540778006093674,
+      "VO2max": 165,
+      "LoadCTL": 146.54419257930752,
+      "Pvo2max": 418.5,
+      "TopZ4HR": 162,
+      "TopZ4VE": 113,
+      "VT1Power": 320,
+      "VT2Power": 410,
+      "Vo2MaxHR": 178,
+      "PVCsPSVCs": "PVCs: 0 (S: 0, C: 0, R: 0), PSVCs: 0",
+      "AllWorkFTP": 141.555,
+      "PVCsnumber": 0,
+      "TopZ4Power": 440,
+      "WorkHourKg": 9.050121605107863,
+      "Workoverz2": 723.232,
+      "EnduranceHR": 116,
+      "EnduranceVE": 54,
+      "Vo2MaxPower": 470,
+      "AvgBreathing": 33.4317212270692,
+      "SmO2BP1Power": 320,
+      "SmO2BP2Power": 410,
+      "TimeAboveFTP": 5.083333333333333,
+      "VO2MaxGarmin": 0.0,
+      "EndurancePower": 270,
+      "VT1BreathingRate": 24,
+      "VT2BreathingRate": 39,
+      "TopZ4BreathingRate": 48,
+      "Vo2MaxBreathingRate": 68,
+      "AveragePowerAboveFTP": 464.11475409836066,
+      "EnduranceBreathingRate": 25
+    },
     {
       "id": "i144542355",
       "start_date_local": "2026-05-01T12:38:56",
@@ -1881,12 +2296,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 31935.924,
-      "icu_rolling_p_max": 1257.6234,
+      "icu_rolling_p_max": 1255.1095,
       "icu_rolling_ftp": 378,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 12,
       "icu_atl": 93.698814,
-      "icu_ctl": 100.89013,
+      "icu_ctl": 100.89737,
       "ss_p_max": 0.0011175013,
       "ss_w_prime": 0.014077297,
       "ss_cp": 27.19157,
@@ -2168,12 +2583,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 31935.924,
-      "icu_rolling_p_max": 1257.6234,
+      "icu_rolling_p_max": 1255.1095,
       "icu_rolling_ftp": 378,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 66,
       "icu_atl": 93.698814,
-      "icu_ctl": 100.89013,
+      "icu_ctl": 100.89737,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 72.80367,
@@ -2552,12 +2967,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 31967.89,
-      "icu_rolling_p_max": 1258.8823,
+      "icu_rolling_p_max": 1256.3658,
       "icu_rolling_ftp": 378,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 77,
       "icu_atl": 96.109604,
-      "icu_ctl": 101.44167,
+      "icu_ctl": 101.44909,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 102.01088,
@@ -2934,12 +3349,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 31999.89,
-      "icu_rolling_p_max": 1260.1425,
+      "icu_rolling_p_max": 1257.6234,
       "icu_rolling_ftp": 379,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 61,
       "icu_atl": 99.04417,
-      "icu_ctl": 102.0306,
+      "icu_ctl": 102.03819,
       "ss_p_max": 0.022025174,
       "ss_w_prime": 0.98450506,
       "ss_cp": 70.285,
@@ -3323,7 +3738,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 74,
       "icu_atl": 99.04417,
-      "icu_ctl": 102.0306,
+      "icu_ctl": 102.03819,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -3541,12 +3956,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32031.922,
-      "icu_rolling_p_max": 1261.4038,
+      "icu_rolling_p_max": 1258.8823,
       "icu_rolling_ftp": 379,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 62,
       "icu_atl": 93.522606,
-      "icu_ctl": 101.2362,
+      "icu_ctl": 101.24397,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 88.31652,
@@ -3924,12 +4339,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32063.986,
-      "icu_rolling_p_max": 1262.6665,
+      "icu_rolling_p_max": 1260.1425,
       "icu_rolling_ftp": 379,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 113,
       "icu_atl": 98.36337,
-      "icu_ctl": 102.1816,
+      "icu_ctl": 102.18957,
       "ss_p_max": 0.02586555,
       "ss_w_prime": 0.51921195,
       "ss_cp": 147.10745,
@@ -4313,7 +4728,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 56,
       "icu_atl": 96.1157,
-      "icu_ctl": 101.92093,
+      "icu_ctl": 101.929085,
       "ss_p_max": 0.12385086,
       "ss_w_prime": 2.70202,
       "ss_cp": 67.38506,
@@ -4639,12 +5054,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32128.209,
-      "icu_rolling_p_max": 1265.1956,
+      "icu_rolling_p_max": 1262.6665,
       "icu_rolling_ftp": 380,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 95,
       "icu_atl": 102.27607,
-      "icu_ctl": 103.027405,
+      "icu_ctl": 103.03576,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 131.69069,
@@ -5027,7 +5442,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 48,
       "icu_atl": 103.39342,
-      "icu_ctl": 103.220825,
+      "icu_ctl": 103.229385,
       "ss_p_max": 0.114056736,
       "ss_w_prime": 1.545428,
       "ss_cp": 56.78474,
@@ -5356,7 +5771,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 71,
       "icu_atl": 103.39342,
-      "icu_ctl": 103.220825,
+      "icu_ctl": 103.229385,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -5574,12 +5989,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32160.37,
-      "icu_rolling_p_max": 1266.462,
+      "icu_rolling_p_max": 1263.9304,
       "icu_rolling_ftp": 381,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 101,
       "icu_atl": 100.996796,
-      "icu_ctl": 102.84062,
+      "icu_ctl": 102.84939,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 133.17023,
@@ -5963,7 +6378,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 75,
       "icu_atl": 100.99631,
-      "icu_ctl": 102.88497,
+      "icu_ctl": 102.89395,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -6186,7 +6601,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 87,
       "icu_atl": 104.988434,
-      "icu_ctl": 103.55687,
+      "icu_ctl": 103.56606,
       "ss_p_max": 0.23125026,
       "ss_w_prime": 6.2920427,
       "ss_cp": 122.86697,
@@ -6560,12 +6975,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32257.041,
-      "icu_rolling_p_max": 1270.269,
+      "icu_rolling_p_max": 1267.7297,
       "icu_rolling_ftp": 382,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 117,
       "icu_atl": 107.75083,
-      "icu_ctl": 103.95581,
+      "icu_ctl": 103.965225,
       "ss_p_max": 0.025341291,
       "ss_w_prime": 0.5442952,
       "ss_cp": 139.76988,
@@ -6950,7 +7365,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 103,
       "icu_atl": 106.33048,
-      "icu_ctl": 103.64151,
+      "icu_ctl": 103.651146,
       "ss_p_max": 0.012996098,
       "ss_w_prime": 0.27582368,
       "ss_cp": 137.71753,
@@ -7280,12 +7695,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32321.65,
-      "icu_rolling_p_max": 1272.8134,
+      "icu_rolling_p_max": 1270.269,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 84,
       "icu_atl": 106.84193,
-      "icu_ctl": 103.65697,
+      "icu_ctl": 103.66683,
       "ss_p_max": 0.05921491,
       "ss_w_prime": 0.61465436,
       "ss_cp": 110.27486,
@@ -7669,7 +8084,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 61,
       "icu_atl": 106.84193,
-      "icu_ctl": 103.65697,
+      "icu_ctl": 103.66683,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -7893,7 +8308,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 44,
       "icu_atl": 100.982185,
-      "icu_ctl": 102.6608,
+      "icu_ctl": 102.6709,
       "ss_p_max": 0.03951626,
       "ss_w_prime": 0.6594561,
       "ss_cp": 59.72266,
@@ -8227,12 +8642,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 83,
       "icu_atl": 109.73265,
-      "icu_ctl": 104.07424,
+      "icu_ctl": 104.08459,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 102.622826,
@@ -8579,12 +8994,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 46,
       "icu_atl": 113.83785,
-      "icu_ctl": 104.58203,
+      "icu_ctl": 104.59263,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 62.31048,
@@ -8917,7 +9332,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 76,
       "icu_atl": 113.83785,
-      "icu_ctl": 104.58203,
+      "icu_ctl": 104.59263,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -9142,7 +9557,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 99,
       "icu_atl": 112.584435,
-      "icu_ctl": 104.16234,
+      "icu_ctl": 104.173195,
       "ss_p_max": 0.22799131,
       "ss_w_prime": 6.3404717,
       "ss_cp": 134.06999,
@@ -9457,12 +9872,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 113,
       "icu_atl": 114.670525,
-      "icu_ctl": 104.28673,
+      "icu_ctl": 104.297844,
       "ss_p_max": 0.024092732,
       "ss_w_prime": 0.34371307,
       "ss_cp": 134.30052,
@@ -9853,7 +10268,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 132,
       "icu_atl": 114.927055,
-      "icu_ctl": 104.07678,
+      "icu_ctl": 104.088165,
       "ss_p_max": 0.00093721744,
       "ss_w_prime": 0.054978926,
       "ss_cp": 175.66077,
@@ -10216,12 +10631,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 105,
       "icu_atl": 112.30525,
-      "icu_ctl": 103.40397,
+      "icu_ctl": 103.41563,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 149.94496,
@@ -10606,7 +11021,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 81,
       "icu_atl": 113.427086,
-      "icu_ctl": 103.36551,
+      "icu_ctl": 103.37745,
       "ss_p_max": 0.64017814,
       "ss_w_prime": 8.58275,
       "ss_cp": 104.90708,
@@ -10947,7 +11362,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 16,
       "icu_atl": 113.427086,
-      "icu_ctl": 103.36551,
+      "icu_ctl": 103.37745,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -11169,12 +11584,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 102,
       "icu_atl": 115.94971,
-      "icu_ctl": 103.51889,
+      "icu_ctl": 103.53111,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 132.13553,
@@ -11558,12 +11973,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 48,
       "icu_atl": 118.091896,
-      "icu_ctl": 103.55549,
+      "icu_ctl": 103.56801,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 63.7398,
@@ -11950,7 +12365,7 @@
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 88,
       "icu_atl": 118.091896,
-      "icu_ctl": 103.55549,
+      "icu_ctl": 103.56801,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -12174,7 +12589,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 46,
       "icu_atl": 115.341835,
-      "icu_ctl": 102.77373,
+      "icu_ctl": 102.78655,
       "ss_p_max": 0.04385438,
       "ss_w_prime": 1.0498683,
       "ss_cp": 55.60186,
@@ -12497,12 +12912,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 113,
       "icu_atl": 125.99031,
-      "icu_ctl": 104.1417,
+      "icu_ctl": 104.15484,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 151.0551,
@@ -12886,7 +13301,7 @@
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 126,
       "icu_atl": 127.98517,
-      "icu_ctl": 103.92826,
+      "icu_ctl": 103.94171,
       "ss_p_max": 0.0018479361,
       "ss_w_prime": 0.07193523,
       "ss_cp": 166.31331,
@@ -13249,12 +13664,12 @@
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
       "icu_rolling_w_prime": 32354.004,
-      "icu_rolling_p_max": 1274.0874,
+      "icu_rolling_p_max": 1271.5405,
       "icu_rolling_ftp": 383,
       "icu_rolling_ftp_delta": 0,
       "icu_training_load": 127,
       "icu_atl": 128.29002,
-      "icu_ctl": 103.39644,
+      "icu_ctl": 103.41021,
       "ss_p_max": 0.0,
       "ss_w_prime": 0.0,
       "ss_cp": 165.53604,
@@ -13793,20 +14208,20 @@
     ]
   },
   "quick_stats": {
-    "total_activities": 35,
-    "total_tss": 2808.0,
-    "total_duration_hours": 47.68,
-    "total_energy_kj": 51593.3,
+    "total_activities": 36,
+    "total_tss": 2963.0,
+    "total_duration_hours": 51.62,
+    "total_energy_kj": 55079.3,
     "period_days": 28
   },
   "sport_totals": {
     "Ride": {
-      "total_time_hours": 31.58,
-      "total_distance_km": 1154.9,
-      "total_kj": 31553.6,
-      "total_calories": 30625,
-      "total_load": 1525,
-      "avg_speed_kmh": 36.6
+      "total_time_hours": 35.51,
+      "total_distance_km": 1284.9,
+      "total_kj": 35039.6,
+      "total_calories": 34087,
+      "total_load": 1680,
+      "avg_speed_kmh": 36.2
     },
     "Swim": {
       "total_time_hours": 4.55,
@@ -13827,28 +14242,28 @@
     }
   },
   "zone_distribution": {
-    "Z1": 7187,
-    "Z2": 111222,
-    "Z3": 24506,
-    "Z4": 10466,
-    "Z5": 1903,
-    "Z6": 14,
-    "Z7": 0,
-    "SS": 2219
+    "Z1": 11017,
+    "Z2": 119874,
+    "Z3": 25760,
+    "Z4": 10752,
+    "Z5": 2009,
+    "Z6": 47,
+    "Z7": 3,
+    "SS": 2676
   },
   "week_comparison": {
     "this_week": {
-      "count": 6,
-      "tss": 352,
-      "duration_hours": 6.88
+      "count": 7,
+      "tss": 507,
+      "duration_hours": 10.81
     },
     "previous_week": {
       "count": 8,
       "tss": 646,
       "duration_hours": 10.31
     },
-    "tss_change": "\u2193 46%",
-    "duration_change": "\u2193 33%",
-    "count_change": "\u2193 25%"
+    "tss_change": "\u2193 22%",
+    "duration_change": "\u2191 5%",
+    "count_change": "\u2193 12%"
   }
 }
