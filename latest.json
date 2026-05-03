@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-03T17:08:15.889917",
+  "last_updated": "2026-05-03T18:03:37.180163",
   "date_range": {
     "start": "2026-04-05",
     "end": "2026-05-03"
@@ -1688,7 +1688,7 @@
           "pMax": 901.53955
         }
       ],
-      "updated": "2026-05-03T05:59:36.588+00:00",
+      "updated": "2026-05-03T17:45:03.729+00:00",
       "weight": 97.6,
       "restingHR": 78,
       "hrv": 28.0,
@@ -1752,7 +1752,7 @@
           "pMax": 900.638
         }
       ],
-      "updated": "2026-05-03T07:07:54.533+00:00",
+      "updated": "2026-05-03T17:45:03.697+00:00",
       "weight": 97.9,
       "restingHR": 78,
       "hrv": 31.0,
@@ -1816,7 +1816,7 @@
           "pMax": 899.73737
         }
       ],
-      "updated": "2026-05-03T16:57:23.078+00:00",
+      "updated": "2026-05-03T18:00:40.046+00:00",
       "weight": 98.3,
       "restingHR": 78,
       "hrv": 27.0,
@@ -1847,7 +1847,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 7520,
+      "steps": 9252,
       "respiration": 17.510416,
       "carbohydrates": null,
       "protein": null,
@@ -14391,17 +14391,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 8,
-      "tss": 530,
-      "duration_hours": 11.42
+      "count": 9,
+      "tss": 597,
+      "duration_hours": 12.09
     },
     "previous_week": {
       "count": 8,
       "tss": 646,
       "duration_hours": 10.31
     },
-    "tss_change": "\u2193 18%",
-    "duration_change": "\u2191 11%",
-    "count_change": "\u2193 0%"
+    "tss_change": "\u2193 8%",
+    "duration_change": "\u2191 17%",
+    "count_change": "\u2191 12%"
   }
 }
