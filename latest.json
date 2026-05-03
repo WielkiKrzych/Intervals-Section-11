@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-03T08:19:29.199452",
+  "last_updated": "2026-05-03T09:48:17.248423",
   "date_range": {
     "start": "2026-04-05",
     "end": "2026-05-03"
@@ -1816,7 +1816,7 @@
           "pMax": 899.73737
         }
       ],
-      "updated": "2026-05-03T07:50:39.045+00:00",
+      "updated": "2026-05-03T09:44:28.783+00:00",
       "weight": 98.3,
       "restingHR": 75,
       "hrv": 27.0,
@@ -1838,7 +1838,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 0.4,
+      "hydrationVolume": 2.1,
       "readiness": 20.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1847,7 +1847,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 3356,
+      "steps": 5061,
       "respiration": 17.510416,
       "carbohydrates": null,
       "protein": null,
@@ -13873,17 +13873,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 8,
-      "tss": 620,
-      "duration_hours": 13.14
+      "count": 7,
+      "tss": 507,
+      "duration_hours": 10.81
     },
     "previous_week": {
-      "count": 8,
-      "tss": 650,
-      "duration_hours": 10.09
+      "count": 9,
+      "tss": 763,
+      "duration_hours": 12.42
     },
-    "tss_change": "\u2193 5%",
-    "duration_change": "\u2191 30%",
-    "count_change": "\u2193 0%"
+    "tss_change": "\u2193 34%",
+    "duration_change": "\u2193 13%",
+    "count_change": "\u2193 22%"
   }
 }
