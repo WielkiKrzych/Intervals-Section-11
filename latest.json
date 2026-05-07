@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-07T07:44:45.203133",
+  "last_updated": "2026-05-07T10:09:35.896877",
   "date_range": {
     "start": "2026-04-09",
     "end": "2026-05-07"
@@ -1797,11 +1797,11 @@
     },
     {
       "id": "2026-05-07",
-      "ctl": 100.942825,
-      "atl": 96.51877,
-      "rampRate": -0.50626373,
-      "ctlLoad": 81.0,
-      "atlLoad": 81.0,
+      "ctl": 100.260506,
+      "atl": 92.658226,
+      "rampRate": -1.1885834,
+      "ctlLoad": 52.0,
+      "atlLoad": 52.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1816,14 +1816,14 @@
           "pMax": 896.14386
         }
       ],
-      "updated": "2026-05-07T07:09:54.764+00:00",
-      "weight": 98.4,
-      "restingHR": 82,
+      "updated": "2026-05-07T09:52:56.267+00:00",
+      "weight": 97.9,
+      "restingHR": 80,
       "hrv": 29.0,
       "hrvSDNN": 44.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 715,
+      "kcalConsumed": 802,
       "sleepSecs": 26767,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1838,7 +1838,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.5,
+      "hydrationVolume": 2.1,
       "readiness": 16.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1847,7 +1847,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 3969,
+      "steps": 5482,
       "respiration": 17.868422,
       "carbohydrates": null,
       "protein": null,
@@ -1861,10 +1861,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 100.9,
-    "atl": 96.5,
-    "tsb": 4.4,
-    "ramp_rate": -0.51
+    "ctl": 100.3,
+    "atl": 92.7,
+    "tsb": 7.6,
+    "ramp_rate": -1.19
   },
   "activities": [
     {
@@ -13989,12 +13989,12 @@
       "duration_hours": 4.57
     },
     "previous_week": {
-      "count": 10,
-      "tss": 710,
-      "duration_hours": 14.42
+      "count": 9,
+      "tss": 597,
+      "duration_hours": 12.09
     },
-    "tss_change": "\u2193 60%",
-    "duration_change": "\u2193 68%",
-    "count_change": "\u2193 60%"
+    "tss_change": "\u2193 52%",
+    "duration_change": "\u2193 62%",
+    "count_change": "\u2193 56%"
   }
 }
