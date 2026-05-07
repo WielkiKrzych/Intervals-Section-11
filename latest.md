@@ -1,6 +1,6 @@
 # Training Report
 **Period:** 2026-04-09 to 2026-05-07
-**Last Updated:** 2026-05-07T16:51:49.468262
+**Last Updated:** 2026-05-07T18:25:59.928374
 
 ## Training Status
 - **Fitness (CTL):** 100.5 - Chronic Training Load
@@ -61,4 +61,4 @@
 - **Readiness:** 16.0%
 - **Soreness:** 3/5
 - **Fatigue:** 3/5
-- **Steps:** 20243
+- **Steps:** 20827
