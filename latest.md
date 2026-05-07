@@ -1,33 +1,33 @@
 # Training Report
-**Period:** 2026-04-08 to 2026-05-06
-**Last Updated:** 2026-05-06T21:31:56.652282
+**Period:** 2026-04-09 to 2026-05-07
+**Last Updated:** 2026-05-07T04:56:42.069557
 
 ## Training Status
-- **Fitness (CTL):** 101.4 - Chronic Training Load
-- **Fatigue (ATL):** 98.9 - Acute Training Load
-- **Form (TSB):** 2.5 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -0.61
+- **Fitness (CTL):** 100.9 - Chronic Training Load
+- **Fatigue (ATL):** 96.5 - Acute Training Load
+- **Form (TSB):** 4.4 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -0.51
 - **👍 Recovery:** Normal - Maintain endurance
 
 ## Activity Summary
-- **Total Activities:** 38
-- **Total Duration:** 50.11h
-- **Total TSS:** 2926.0
-- **Total Energy:** 50810.0 kJ
+- **Total Activities:** 36
+- **Total Duration:** 48.39h
+- **Total TSS:** 2790.0
+- **Total Energy:** 49794.1 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 34.35h
-- Distance: 1224.5 km
-- Energy: 33648.4 kJ
-- Load: 1615
+- Time: 33.35h
+- Distance: 1187.5 km
+- Energy: 32632.5 kJ
+- Load: 1567
 - Avg Speed: 35.6 km/h
 
 ### Swim
-- Time: 5.84h
-- Distance: 18.2 km
-- Energy: 6470 kcal
-- Load: 607
+- Time: 5.12h
+- Distance: 15.9 km
+- Energy: 5661 kcal
+- Load: 519
 - Avg Speed: 3.1 km/h
 
 ### Run
@@ -38,27 +38,27 @@
 - Avg Pace: 4.6 min/km
 
 ### Total
-- Time: 50.11h
-- Distance: 1372.3 km
-- Energy: 33722.6 kJ
-- Load: 2926
+- Time: 48.39h
+- Distance: 1333.0 km
+- Energy: 32703.3 kJ
+- Load: 2790
 
 ## Zone Distribution
-- **Z1:** 199m (7.4%)
-- **Z2:** 1864m (68.8%)
-- **Z3:** 376m (13.9%)
-- **Z4:** 181m (6.7%)
+- **Z1:** 199m (7.5%)
+- **Z2:** 1823m (68.9%)
+- **Z3:** 356m (13.5%)
+- **Z4:** 181m (6.8%)
 - **Z5:** 34m (1.3%)
 - **Z6:** 0m (0.0%)
 - **Z7:** 0m (0.0%)
 - **SS:** 51m (1.9%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 6.1h
+- **Sleep:** 7.4h
 - **Resting HR:** 79 bpm
-- **HRV:** 30.0
-- **Weight:** 98.9 kg
+- **HRV:** 29.0
+- **Weight:** 99.4 kg
 - **Readiness:** 16.0%
-- **Soreness:** 2/5
-- **Fatigue:** 2/5
-- **Steps:** 13044
+- **Soreness:** 3/5
+- **Fatigue:** 3/5
+- **Steps:** 74
