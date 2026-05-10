@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-10T11:33:58.187953",
+  "last_updated": "2026-05-10T12:41:26.588878",
   "date_range": {
     "start": "2026-04-12",
     "end": "2026-05-10"
@@ -1816,7 +1816,7 @@
           "pMax": 893.4581
         }
       ],
-      "updated": "2026-05-10T11:19:00.436+00:00",
+      "updated": "2026-05-10T12:05:38.225+00:00",
       "weight": 99.2,
       "restingHR": 74,
       "hrv": 31.0,
@@ -1903,7 +1903,7 @@
       "distance": 136346.39,
       "icu_distance": 136346.39,
       "moving_time": 14300,
-      "coasting_time": 306,
+      "coasting_time": 304,
       "total_elevation_gain": 95.0,
       "total_elevation_loss": 94.0,
       "timezone": null,
@@ -1943,8 +1943,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-05-10T11:18:58.213+00:00",
-      "icu_sync_date": "2026-05-10T11:19:00.346+00:00",
-      "analyzed": "2026-05-10T11:19:00.346+00:00",
+      "icu_sync_date": "2026-05-10T12:05:08.139+00:00",
+      "analyzed": "2026-05-10T12:05:08.139+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -1999,7 +1999,13 @@
         "left_right_balance",
         "core_temperature",
         "torque",
-        "PercentageinZ2"
+        "PercentageinZ2",
+        "smo2",
+        "hrv",
+        "skin_temperature",
+        "respiration",
+        "heat_strain_index",
+        "HeatStrainIndex"
       ],
       "has_weather": true,
       "has_segments": false,
@@ -2051,7 +2057,45 @@
       "pace_zone_times": null,
       "gap_zone_times": null,
       "use_gap_zone_times": null,
-      "custom_zones": null,
+      "custom_zones": [
+        {
+          "code": "COREsHeatZones",
+          "zones": [
+            {
+              "id": "1",
+              "start": 0.0,
+              "end": 1.0,
+              "start_value": 0.0,
+              "end_value": 1.0,
+              "secs": 14273
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 3.0,
+              "start_value": 1.0,
+              "end_value": 3.0,
+              "secs": 0
+            },
+            {
+              "id": "3",
+              "start": 3.0,
+              "end": 7.0,
+              "start_value": 3.0,
+              "end_value": 7.0,
+              "secs": 0
+            },
+            {
+              "id": "4",
+              "start": 7.0,
+              "end": null,
+              "start_value": 7.0,
+              "end_value": null,
+              "secs": 0
+            }
+          ]
+        }
+      ],
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.5,
       "icu_achievements": [
@@ -2088,7 +2132,7 @@
           }
         }
       ],
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 4,
       "icu_joules_above_ftp": 8164,
@@ -2118,7 +2162,7 @@
       "min_altitude": 68.2,
       "max_altitude": 121.8,
       "power_load": 150,
-      "hr_load": 168,
+      "hr_load": 162,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2164,7 +2208,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.816820098719142,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 143.14255304231438,
       "Pvo2max": 418.5,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -2180,6 +2224,7 @@
       "EnduranceHR": 116,
       "EnduranceVE": 54,
       "Vo2MaxPower": 470,
+      "AvgBreathing": 30.026295163127525,
       "SmO2BP1Power": 320,
       "SmO2BP2Power": 410,
       "TimeAboveFTP": 2.533333333333333,
