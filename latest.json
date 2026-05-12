@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-12T04:06:54.302700",
+  "last_updated": "2026-05-12T06:49:47.575455",
   "date_range": {
     "start": "2026-04-14",
     "end": "2026-05-12"
@@ -1689,7 +1689,7 @@
           "pMax": 893.4581
         }
       ],
-      "updated": "2026-05-11T03:43:34.991+00:00",
+      "updated": "2026-05-12T05:56:03.361+00:00",
       "weight": 98.0,
       "restingHR": 79,
       "hrv": 31.0,
@@ -1697,10 +1697,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 5219,
-      "sleepSecs": 25240,
+      "sleepSecs": 20275,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 74.0,
+      "avgSleepingHR": 73.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1728,9 +1728,9 @@
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 7745.444540023804,
-      "DeepSleep": 1644.8040834665298,
-      "LightSleep": 15849.882551074028
+      "REMSleep": 6100.62771999836,
+      "DeepSleep": 448.57668805122375,
+      "LightSleep": 13726.544354081154
     },
     {
       "id": "2026-05-11",
@@ -1817,20 +1817,20 @@
           "pMax": 891.6721
         }
       ],
-      "updated": "2026-05-12T03:44:18.429+00:00",
-      "weight": null,
+      "updated": "2026-05-12T05:56:48.410+00:00",
+      "weight": 99.2,
       "restingHR": 73,
       "hrv": 34.0,
       "hrvSDNN": 52.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 25780,
+      "sleepSecs": 25740,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 73.0,
-      "soreness": null,
-      "fatigue": null,
+      "soreness": 2,
+      "fatigue": 2,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 60,
+      "steps": 1986,
       "respiration": 17.588236,
       "carbohydrates": null,
       "protein": null,
