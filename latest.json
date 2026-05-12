@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-12T06:49:47.575455",
+  "last_updated": "2026-05-12T09:41:59.837380",
   "date_range": {
     "start": "2026-04-14",
     "end": "2026-05-12"
@@ -1798,11 +1798,11 @@
     },
     {
       "id": "2026-05-12",
-      "ctl": 98.19966,
-      "atl": 87.50178,
-      "rampRate": -2.5767365,
-      "ctlLoad": 89.0,
-      "atlLoad": 89.0,
+      "ctl": 97.54086,
+      "atl": 83.77436,
+      "rampRate": -3.2355347,
+      "ctlLoad": 61.0,
+      "atlLoad": 61.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1817,15 +1817,15 @@
           "pMax": 891.6721
         }
       ],
-      "updated": "2026-05-12T05:56:48.410+00:00",
-      "weight": 99.2,
-      "restingHR": 73,
+      "updated": "2026-05-12T09:40:35.272+00:00",
+      "weight": 98.8,
+      "restingHR": 71,
       "hrv": 34.0,
       "hrvSDNN": 52.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 25740,
+      "kcalConsumed": 715,
+      "sleepSecs": 25780,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 73.0,
@@ -1835,11 +1835,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.6,
       "readiness": 42.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 1986,
+      "steps": 5569,
       "respiration": 17.588236,
       "carbohydrates": null,
       "protein": null,
@@ -1862,10 +1862,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 98.2,
-    "atl": 87.5,
-    "tsb": 10.7,
-    "ramp_rate": -2.58
+    "ctl": 97.5,
+    "atl": 83.8,
+    "tsb": 13.8,
+    "ramp_rate": -3.24
   },
   "activities": [
     {
