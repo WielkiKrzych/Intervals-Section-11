@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-14T10:42:52.950227",
+  "last_updated": "2026-05-14T12:18:38.451998",
   "date_range": {
     "start": "2026-04-16",
     "end": "2026-05-14"
@@ -1817,9 +1817,9 @@
           "pMax": 889.8897
         }
       ],
-      "updated": "2026-05-14T08:17:12.157+00:00",
+      "updated": "2026-05-14T12:10:48.432+00:00",
       "weight": 98.8,
-      "restingHR": 81,
+      "restingHR": 80,
       "hrv": 28.0,
       "hrvSDNN": 51.0,
       "menstrualPhase": null,
@@ -1835,11 +1835,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.0,
+      "spO2": 96.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 2.2,
+      "hydrationVolume": 2.7,
       "readiness": 17.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 5713,
+      "steps": 7834,
       "respiration": 17.3,
       "carbohydrates": null,
       "protein": null,
@@ -1957,7 +1957,7 @@
       ],
       "pace_zones": null,
       "lthr": 162,
-      "icu_resting_hr": 81,
+      "icu_resting_hr": 80,
       "icu_weight": 98.8,
       "icu_power_zones": [
         55,
@@ -1970,7 +1970,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 31.26405,
+      "trimp": 32.009384,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -14060,17 +14060,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 5,
-      "tss": 235,
-      "duration_hours": 4.32
+      "count": 4,
+      "tss": 190,
+      "duration_hours": 3.24
     },
     "previous_week": {
       "count": 8,
-      "tss": 612,
-      "duration_hours": 12.1
+      "tss": 554,
+      "duration_hours": 11.09
     },
-    "tss_change": "\u2193 62%",
-    "duration_change": "\u2193 64%",
-    "count_change": "\u2193 38%"
+    "tss_change": "\u2193 66%",
+    "duration_change": "\u2193 71%",
+    "count_change": "\u2193 50%"
   }
 }
