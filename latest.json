@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-14T05:34:16.115734",
+  "last_updated": "2026-05-14T08:18:05.214864",
   "date_range": {
     "start": "2026-04-16",
     "end": "2026-05-14"
@@ -1817,14 +1817,14 @@
           "pMax": 889.8897
         }
       ],
-      "updated": "2026-05-14T05:20:10.648+00:00",
+      "updated": "2026-05-14T08:17:12.157+00:00",
       "weight": 98.8,
-      "restingHR": 77,
+      "restingHR": 81,
       "hrv": 28.0,
       "hrvSDNN": 51.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
+      "kcalConsumed": 715,
       "sleepSecs": 17584,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1839,7 +1839,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 2.2,
       "readiness": 17.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1848,7 +1848,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 2103,
+      "steps": 5713,
       "respiration": 17.3,
       "carbohydrates": null,
       "protein": null,
@@ -1957,7 +1957,7 @@
       ],
       "pace_zones": null,
       "lthr": 162,
-      "icu_resting_hr": 77,
+      "icu_resting_hr": 81,
       "icu_weight": 98.8,
       "icu_power_zones": [
         55,
@@ -1970,7 +1970,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 34.239964,
+      "trimp": 31.26405,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -14060,17 +14060,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 4,
-      "tss": 197,
-      "duration_hours": 3.28
+      "count": 5,
+      "tss": 235,
+      "duration_hours": 4.32
     },
     "previous_week": {
       "count": 8,
       "tss": 612,
       "duration_hours": 12.1
     },
-    "tss_change": "\u2193 68%",
-    "duration_change": "\u2193 73%",
-    "count_change": "\u2193 50%"
+    "tss_change": "\u2193 62%",
+    "duration_change": "\u2193 64%",
+    "count_change": "\u2193 38%"
   }
 }
