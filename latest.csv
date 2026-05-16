@@ -1,5 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-05-16,VirtualRide,Kolarstwo w pomieszczeniu,65,44,997.5,37.1
+2026-05-16,VirtualRide,Z2,65,45,1004.2,38.1
 2026-05-15,VirtualRide,Aktywacja: OPENERS,76,70,1247.0,45.2
 2026-05-15,Swim,Swim,20,43,0.0,1.1
 2026-05-14,VirtualRide,Easy Ride,62,38,896.9,35.1
@@ -67,9 +69,9 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-05-13,6.3,77,30.0,98.6,30.0,2,2,20012,97.385864,84.700806,12.7
 2026-05-14,5.9,80,28.0,98.8,17.0,2,2,13601,95.98862,78.483894,17.5
 2026-05-15,5.4,80,28.0,97.1,23.0,2,2,11791,96.38886,83.07875,13.3
-2026-05-16,8.0,77,32.0,98.6,28.0,2,2,109,95.17977,78.00963,17.2
+2026-05-16,8.0,77,32.0,98.6,28.0,2,2,109,96.21501,83.867,12.3
 
 === SPORT TOTALS ===
-Ride,35.41h,33587.6kJ,1250.2km,1598 TSS
+Ride,37.58h,35589.4kJ,1325.4km,1687 TSS
 Swim,4.6h,0.0kJ,14.3km,517 TSS
 Run,6.38h,11034.2kJ,83.5km,453 TSS
