@@ -1,33 +1,33 @@
 # Training Report
 **Period:** 2026-04-19 to 2026-05-17
-**Last Updated:** 2026-05-17T03:36:56.292183
+**Last Updated:** 2026-05-17T06:36:39.703638
 
 ## Training Status
-- **Fitness (CTL):** 96.5 - Chronic Training Load
-- **Fatigue (ATL):** 87.6 - Acute Training Load
-- **Form (TSB):** 8.9 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -3.24
-- **✅ Recovery:** Ready - Good for threshold or VO2max
+- **Fitness (CTL):** 98.0 - Chronic Training Load
+- **Fatigue (ATL):** 96.1 - Acute Training Load
+- **Form (TSB):** 1.8 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -1.73
+- **👍 Recovery:** Normal - Maintain endurance
 
 ## Activity Summary
-- **Total Activities:** 35
-- **Total Duration:** 45.19h
-- **Total TSS:** 2467.0
-- **Total Energy:** 43866.5 kJ
+- **Total Activities:** 38
+- **Total Duration:** 47.57h
+- **Total TSS:** 2639.0
+- **Total Energy:** 46037.7 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 34.71h
-- Distance: 1226.6 km
-- Energy: 32832.3 kJ
-- Load: 1558
-- Avg Speed: 35.3 km/h
+- Time: 36.72h
+- Distance: 1300.7 km
+- Energy: 35003.5 kJ
+- Load: 1684
+- Avg Speed: 35.4 km/h
 
 ### Swim
-- Time: 4.1h
-- Distance: 12.7 km
-- Energy: 4563 kcal
-- Load: 456
+- Time: 4.47h
+- Distance: 13.9 km
+- Energy: 5066 kcal
+- Load: 502
 - Avg Speed: 3.1 km/h
 
 ### Run
@@ -38,20 +38,20 @@
 - Avg Pace: 4.6 min/km
 
 ### Total
-- Time: 45.19h
-- Distance: 1322.8 km
-- Energy: 32882.0 kJ
-- Load: 2467
+- Time: 47.57h
+- Distance: 1398.1 km
+- Energy: 35055.3 kJ
+- Load: 2639
 
 ## Zone Distribution
-- **Z1:** 257m (10.1%)
-- **Z2:** 1862m (73.5%)
-- **Z3:** 167m (6.6%)
-- **Z4:** 151m (6.0%)
-- **Z5:** 25m (1.0%)
+- **Z1:** 259m (9.6%)
+- **Z2:** 1919m (70.7%)
+- **Z3:** 203m (7.5%)
+- **Z4:** 175m (6.5%)
+- **Z5:** 25m (0.9%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 68m (2.7%)
+- **SS:** 128m (4.7%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 5.1h
@@ -59,4 +59,6 @@
 - **HRV:** 29.0
 - **Weight:** 100.1 kg
 - **Readiness:** 19.0%
+- **Soreness:** 2/5
+- **Fatigue:** 2/5
 - **Steps:** 65
