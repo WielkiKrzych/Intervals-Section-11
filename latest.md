@@ -1,27 +1,27 @@
 # Training Report
-**Period:** 2026-04-19 to 2026-05-17
-**Last Updated:** 2026-05-17T21:57:03.329918
+**Period:** 2026-04-20 to 2026-05-18
+**Last Updated:** 2026-05-18T04:41:58.136366
 
 ## Training Status
-- **Fitness (CTL):** 96.3 - Chronic Training Load
-- **Fatigue (ATL):** 86.5 - Acute Training Load
-- **Form (TSB):** 9.7 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -3.43
-- **✅ Recovery:** Ready - Good for threshold or VO2max
+- **Fitness (CTL):** 95.4 - Chronic Training Load
+- **Fatigue (ATL):** 83.0 - Acute Training Load
+- **Form (TSB):** 12.4 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -2.99
+- **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 38
-- **Total Duration:** 47.0h
-- **Total TSS:** 2610.0
-- **Total Energy:** 45785.3 kJ
+- **Total Activities:** 37
+- **Total Duration:** 45.43h
+- **Total TSS:** 2507.0
+- **Total Energy:** 43083.0 kJ
 
 ## Sport Breakdown
 ### Run
-- Time: 6.81h
-- Distance: 89.4 km
-- Energy: 7841 kcal
-- Load: 487
-- Avg Pace: 4.6 min/km
+- Time: 5.24h
+- Distance: 69.4 km
+- Energy: 6157 kcal
+- Load: 384
+- Avg Pace: 4.5 min/km
 
 ### Ride
 - Time: 35.71h
@@ -38,27 +38,27 @@
 - Avg Speed: 3.1 km/h
 
 ### Total
-- Time: 46.99h
-- Distance: 1366.5 km
-- Energy: 33972.3 kJ
-- Load: 2610
+- Time: 45.42h
+- Distance: 1346.5 km
+- Energy: 33965.3 kJ
+- Load: 2507
 
 ## Zone Distribution
-- **Z1:** 258m (9.8%)
-- **Z2:** 1896m (71.6%)
-- **Z3:** 194m (7.3%)
-- **Z4:** 170m (6.4%)
-- **Z5:** 29m (1.1%)
+- **Z1:** 257m (10.1%)
+- **Z2:** 1844m (72.2%)
+- **Z3:** 155m (6.1%)
+- **Z4:** 168m (6.6%)
+- **Z5:** 29m (1.2%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 98m (3.7%)
+- **SS:** 98m (3.9%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 5.1h
+- **Sleep:** 6.9h
 - **Resting HR:** 76 bpm
-- **HRV:** 29.0
-- **Weight:** 100.1 kg
-- **Readiness:** 19.0%
+- **HRV:** 32.0
+- **Weight:** 98.8 kg
+- **Readiness:** 32.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 65
+- **Steps:** 43
