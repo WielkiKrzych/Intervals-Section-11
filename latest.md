@@ -1,27 +1,27 @@
 # Training Report
-**Period:** 2026-04-20 to 2026-05-18
-**Last Updated:** 2026-05-18T21:37:25.060855
+**Period:** 2026-04-21 to 2026-05-19
+**Last Updated:** 2026-05-19T07:02:28.767422
 
 ## Training Status
-- **Fitness (CTL):** 95.1 - Chronic Training Load
-- **Fatigue (ATL):** 81.0 - Acute Training Load
-- **Form (TSB):** 14.1 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -3.35
+- **Fitness (CTL):** 94.2 - Chronic Training Load
+- **Fatigue (ATL):** 78.0 - Acute Training Load
+- **Form (TSB):** 16.3 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -3.38
 - **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 38
-- **Total Duration:** 46.5h
-- **Total TSS:** 2552.0
-- **Total Energy:** 44081.5 kJ
+- **Total Activities:** 37
+- **Total Duration:** 44.4h
+- **Total TSS:** 2435.0
+- **Total Energy:** 41876.1 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 36.79h
-- Distance: 1301.1 km
-- Energy: 34916.7 kJ
-- Load: 1666
-- Avg Speed: 35.4 km/h
+- Time: 34.69h
+- Distance: 1232.1 km
+- Energy: 32711.4 kJ
+- Load: 1549
+- Avg Speed: 35.5 km/h
 
 ### Run
 - Time: 5.24h
@@ -38,27 +38,27 @@
 - Avg Speed: 3.1 km/h
 
 ### Total
-- Time: 46.5h
-- Distance: 1384.4 km
-- Energy: 34963.7 kJ
-- Load: 2552
+- Time: 44.4h
+- Distance: 1315.4 km
+- Energy: 32758.4 kJ
+- Load: 2435
 
 ## Zone Distribution
-- **Z1:** 257m (9.8%)
-- **Z2:** 1909m (72.8%)
-- **Z3:** 155m (5.9%)
-- **Z4:** 168m (6.4%)
-- **Z5:** 29m (1.1%)
+- **Z1:** 257m (10.3%)
+- **Z2:** 1798m (72.1%)
+- **Z3:** 155m (6.2%)
+- **Z4:** 153m (6.2%)
+- **Z5:** 28m (1.2%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 98m (3.8%)
+- **SS:** 98m (3.9%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 6.9h
-- **Resting HR:** 72 bpm
-- **HRV:** 32.0
-- **Weight:** 98.3 kg
-- **Readiness:** 32.0%
+- **Sleep:** 5.7h
+- **Resting HR:** 74 bpm
+- **HRV:** 31.0
+- **Weight:** 99.5 kg
+- **Readiness:** 30.0%
 - **Soreness:** 2/5
-- **Fatigue:** 2/5
-- **Steps:** 13690
+- **Fatigue:** 3/5
+- **Steps:** 12
