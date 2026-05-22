@@ -1,34 +1,34 @@
 # Training Report
 **Period:** 2026-04-24 to 2026-05-22
-**Last Updated:** 2026-05-22T11:19:17.350063
+**Last Updated:** 2026-05-22T13:53:01.719266
 
 ## Training Status
-- **Fitness (CTL):** 93.1 - Chronic Training Load
-- **Fatigue (ATL):** 78.7 - Acute Training Load
-- **Form (TSB):** 14.4 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -3.32
+- **Fitness (CTL):** 92.5 - Chronic Training Load
+- **Fatigue (ATL):** 75.5 - Acute Training Load
+- **Form (TSB):** 17.0 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -3.88
 - **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 39
-- **Total Duration:** 43.85h
-- **Total TSS:** 2382.0
-- **Total Energy:** 40648.2 kJ
+- **Total Activities:** 40
+- **Total Duration:** 44.85h
+- **Total TSS:** 2438.0
+- **Total Energy:** 41667.6 kJ
 
 ## Sport Breakdown
+### Ride
+- Time: 35.8h
+- Distance: 1269.0 km
+- Energy: 33709.5 kJ
+- Load: 1607
+- Avg Speed: 35.4 km/h
+
 ### Swim
 - Time: 4.46h
 - Distance: 13.9 km
 - Energy: 5040 kcal
 - Load: 505
 - Avg Speed: 3.1 km/h
-
-### Ride
-- Time: 34.8h
-- Distance: 1232.5 km
-- Energy: 32690.0 kJ
-- Load: 1551
-- Avg Speed: 35.4 km/h
 
 ### Run
 - Time: 4.58h
@@ -38,27 +38,27 @@
 - Avg Pace: 4.6 min/km
 
 ### Total
-- Time: 43.84h
-- Distance: 1306.3 km
-- Energy: 32733.5 kJ
-- Load: 2382
+- Time: 44.84h
+- Distance: 1342.8 km
+- Energy: 33753.0 kJ
+- Load: 2438
 
 ## Zone Distribution
-- **Z1:** 255m (10.3%)
-- **Z2:** 1768m (71.3%)
-- **Z3:** 174m (7.0%)
-- **Z4:** 132m (5.3%)
-- **Z5:** 29m (1.2%)
+- **Z1:** 255m (10.0%)
+- **Z2:** 1812m (71.1%)
+- **Z3:** 184m (7.2%)
+- **Z4:** 138m (5.4%)
+- **Z5:** 30m (1.2%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 118m (4.8%)
+- **SS:** 127m (5.0%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 6.1h
-- **Resting HR:** 69 bpm
+- **Resting HR:** 84 bpm
 - **HRV:** 35.0
-- **Weight:** 98.8 kg
+- **Weight:** 97.7 kg
 - **Readiness:** 69.0%
 - **Soreness:** 2/5
 - **Fatigue:** 3/5
-- **Steps:** 48
+- **Steps:** 10047
