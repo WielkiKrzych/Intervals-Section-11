@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-24T04:39:09.374679",
+  "last_updated": "2026-05-24T07:41:08.661996",
   "date_range": {
     "start": "2026-04-26",
     "end": "2026-05-24"
@@ -1855,7 +1855,7 @@
       "protein": null,
       "fatTotal": null,
       "locked": null,
-      "tempWeight": false,
+      "tempWeight": true,
       "tempRestingHR": false,
       "REMSleep": 7117.826570987701,
       "DeepSleep": 1226.1385605335236,
