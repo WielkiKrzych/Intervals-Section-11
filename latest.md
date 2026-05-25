@@ -1,19 +1,19 @@
 # Training Report
-**Period:** 2026-04-26 to 2026-05-24
-**Last Updated:** 2026-05-24T21:11:19.905323
+**Period:** 2026-04-27 to 2026-05-25
+**Last Updated:** 2026-05-25T06:09:54.452847
 
 ## Training Status
-- **Fitness (CTL):** 89.8 - Chronic Training Load
-- **Fatigue (ATL):** 64.8 - Acute Training Load
-- **Form (TSB):** 24.9 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -6.51
+- **Fitness (CTL):** 89.7 - Chronic Training Load
+- **Fatigue (ATL):** 67.9 - Acute Training Load
+- **Form (TSB):** 21.8 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -5.34
 - **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 40
-- **Total Duration:** 42.97h
-- **Total TSS:** 2292.0
-- **Total Energy:** 39643.0 kJ
+- **Total Activities:** 39
+- **Total Duration:** 42.22h
+- **Total TSS:** 2236.0
+- **Total Energy:** 38357.0 kJ
 
 ## Sport Breakdown
 ### OpenWaterSwim
@@ -24,10 +24,10 @@
 - Avg Speed: 2.0 km/h
 
 ### Run
-- Time: 4.08h
-- Distance: 53.6 km
-- Energy: 4767 kcal
-- Load: 293
+- Time: 3.33h
+- Distance: 43.6 km
+- Energy: 3828 kcal
+- Load: 237
 - Avg Pace: 4.6 min/km
 
 ### Ride
@@ -45,26 +45,27 @@
 - Avg Speed: 3.1 km/h
 
 ### Total
-- Time: 42.97h
-- Distance: 1295.1 km
-- Energy: 32492.5 kJ
-- Load: 2292
+- Time: 42.22h
+- Distance: 1285.1 km
+- Energy: 32488.6 kJ
+- Load: 2236
 
 ## Zone Distribution
-- **Z1:** 263m (10.8%)
-- **Z2:** 1706m (69.6%)
-- **Z3:** 178m (7.3%)
-- **Z4:** 143m (5.8%)
+- **Z1:** 252m (10.5%)
+- **Z2:** 1686m (70.1%)
+- **Z3:** 178m (7.4%)
+- **Z4:** 130m (5.4%)
 - **Z5:** 27m (1.1%)
 - **Z6:** 2m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 129m (5.3%)
+- **SS:** 129m (5.4%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 6.1h
-- **Resting HR:** 75 bpm
-- **HRV:** 35.0
-- **Readiness:** 70.0%
+- **Sleep:** 5.0h
+- **Resting HR:** 71 bpm
+- **HRV:** 39.0
+- **Weight:** 98.0 kg
+- **Readiness:** 73.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 16378
+- **Steps:** 44
