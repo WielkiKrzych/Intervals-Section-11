@@ -1,7 +1,6 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
 2026-05-28,Run,Warszawa Bieganie,20,25,632.7,4.5
-2026-05-28,VirtualRide,Kolarstwo w pomieszczeniu,70,63,1203.9,41.6
 2026-05-28,VirtualRide,SST Ride,70,63,1203.3,42.6
 2026-05-28,Swim,Swim — Technika,28,57,0.0,1.5
 2026-05-27,Run,Warszawa Bieganie,44,57,1373.0,10.1
@@ -75,10 +74,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-05-25,5.7,71,39.0,97.3,73.0,2,2,14099,89.68563,67.64883,22.0
 2026-05-26,5.6,75,29.0,98.4,18.0,3,3,13415,89.17541,67.69557,21.5
 2026-05-27,6.1,71,28.0,98.3,22.0,3,3,18922,90.46534,77.85338,12.6
-2026-05-28,6.0,70,38.0,97.2,71.0,2,3,9796,93.230736,95.17877,-1.9
+2026-05-28,6.0,71,38.0,97.2,71.0,2,3,12851,91.74845,86.792076,5.0
 
 === SPORT TOTALS ===
 Run,4.73h,8547.8kJ,62.7km,344 TSS
-Ride,34.71h,32620.3kJ,1225.2km,1571 TSS
+Ride,33.54h,31416.4kJ,1183.6km,1508 TSS
 Swim,4.37h,0.0kJ,13.7km,504 TSS
 OpenWaterSwim,0.45h,0.0kJ,0.9km,13 TSS
