@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-05-30T10:17:54.582968",
+  "last_updated": "2026-05-30T11:52:18.376973",
   "date_range": {
     "start": "2026-05-02",
     "end": "2026-05-30"
@@ -1819,15 +1819,15 @@
           "pMax": 875.7578
         }
       ],
-      "updated": "2026-05-30T07:33:57.673+00:00",
-      "weight": null,
-      "restingHR": 75,
+      "updated": "2026-05-30T10:48:32.180+00:00",
+      "weight": 96.6,
+      "restingHR": 81,
       "hrv": 30.0,
       "hrvSDNN": 60.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 24720,
+      "kcalConsumed": 319,
+      "sleepSecs": 24733,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 74.0,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.9,
       "readiness": 35.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,13 +1850,13 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 144,
+      "steps": 12855,
       "respiration": 17.11111,
       "carbohydrates": null,
       "protein": null,
       "fatTotal": null,
       "locked": null,
-      "tempWeight": true,
+      "tempWeight": false,
       "tempRestingHR": false,
       "REMSleep": 8553.530151605606,
       "DeepSleep": 328.9741450548172,
@@ -1871,7 +1871,7 @@
   },
   "activities": [
     {
-      "id": "i152646447",
+      "id": "i152684638",
       "start_date_local": "2026-05-30T08:33:47",
       "type": "VirtualRun",
       "icu_ignore_time": false,
@@ -1903,8 +1903,8 @@
       "name": "Treadmill: Threshold Run 5x1km",
       "description": null,
       "start_date": "2026-05-30T06:33:47Z",
-      "distance": 6000.0,
-      "icu_distance": 6000.0,
+      "distance": 10500.0,
+      "icu_distance": 10500.0,
       "moving_time": 906,
       "coasting_time": 3,
       "total_elevation_gain": null,
@@ -1915,7 +1915,7 @@
       "commute": false,
       "race": false,
       "max_speed": 3.928,
-      "average_speed": 1.96,
+      "average_speed": 3.4324942,
       "device_watts": true,
       "has_heartrate": true,
       "max_heartrate": 175,
@@ -1945,9 +1945,9 @@
       "file_sport_index": 0,
       "file_type": "fit",
       "icu_athlete_id": "39505110",
-      "created": "2026-05-30T07:33:56.689+00:00",
-      "icu_sync_date": "2026-05-30T07:33:57.570+00:00",
-      "analyzed": "2026-05-30T07:33:57.570+00:00",
+      "created": "2026-05-30T10:47:53.376+00:00",
+      "icu_sync_date": "2026-05-30T10:47:53.984+00:00",
+      "analyzed": "2026-05-30T10:47:53.984+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.2918453,
@@ -1966,8 +1966,8 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 75,
-      "icu_weight": 98.4,
+      "icu_resting_hr": 81,
+      "icu_weight": 96.6,
       "icu_power_zones": [
         80,
         90,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 23.415325,
+      "trimp": 21.917892,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2169,14 +2169,14 @@
       "carbs_ingested": null,
       "route_id": null,
       "analysis_issues": null,
-      "pace": 6.6225166,
+      "pace": 11.589404,
       "athlete_max_hr": 184,
       "group": "fbcc1c9d",
       "icu_intensity": 91.13207,
       "icu_efficiency_factor": 3.2635136,
       "icu_power_hr": 1.5945946,
       "session_rpe": 105,
-      "average_stride": 2.3609917,
+      "average_stride": 4.131736,
       "icu_average_watts": 236,
       "icu_variability_index": 2.04661,
       "strain_score": 35.482525,
@@ -15830,12 +15830,12 @@
   "sport_totals": {
     "Run": {
       "total_time_hours": 5.43,
-      "total_distance_km": 74.2,
+      "total_distance_km": 78.7,
       "total_kj": 10043.0,
       "total_calories": 6996,
       "total_load": 433,
-      "avg_speed_kmh": 13.7,
-      "avg_pace_minkm": 4.4
+      "avg_speed_kmh": 14.5,
+      "avg_pace_minkm": 4.1
     },
     "Swim": {
       "total_time_hours": 4.88,
@@ -15874,17 +15874,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 11,
-      "tss": 581,
-      "duration_hours": 7.67
+      "count": 10,
+      "tss": 520,
+      "duration_hours": 6.4
     },
     "previous_week": {
-      "count": 10,
-      "tss": 379,
-      "duration_hours": 6.88
+      "count": 11,
+      "tss": 440,
+      "duration_hours": 8.15
     },
-    "tss_change": "\u2191 53%",
-    "duration_change": "\u2191 11%",
-    "count_change": "\u2191 10%"
+    "tss_change": "\u2191 18%",
+    "duration_change": "\u2193 21%",
+    "count_change": "\u2193 9%"
   }
 }

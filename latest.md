@@ -1,6 +1,6 @@
 # Training Report
 **Period:** 2026-05-02 to 2026-05-30
-**Last Updated:** 2026-05-30T10:17:54.582968
+**Last Updated:** 2026-05-30T11:52:18.376973
 
 ## Training Status
 - **Fitness (CTL):** 90.7 - Chronic Training Load
@@ -18,10 +18,10 @@
 ## Sport Breakdown
 ### Run
 - Time: 5.43h
-- Distance: 74.2 km
+- Distance: 78.7 km
 - Energy: 6996 kcal
 - Load: 433
-- Avg Pace: 4.4 min/km
+- Avg Pace: 4.1 min/km
 
 ### Swim
 - Time: 4.88h
@@ -46,7 +46,7 @@
 
 ### Total
 - Time: 40.69h
-- Distance: 1147.8 km
+- Distance: 1152.3 km
 - Energy: 28278.2 kJ
 - Load: 2352
 
@@ -62,9 +62,10 @@
 
 ## Daily Wellness (Latest)
 - **Sleep:** 6.9h
-- **Resting HR:** 75 bpm
+- **Resting HR:** 81 bpm
 - **HRV:** 30.0
+- **Weight:** 96.6 kg
 - **Readiness:** 35.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 144
+- **Steps:** 12855
