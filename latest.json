@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-01T04:15:22.688492",
+  "last_updated": "2026-06-01T09:39:52.244290",
   "date_range": {
     "start": "2026-05-04",
     "end": "2026-06-01"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-06-01",
-      "ctl": 89.12714,
-      "atl": 76.82238,
-      "rampRate": -0.55849457,
-      "ctlLoad": 113.0,
-      "atlLoad": 113.0,
+      "ctl": 89.08008,
+      "atl": 76.55614,
+      "rampRate": -0.6055527,
+      "ctlLoad": 111.0,
+      "atlLoad": 111.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,14 +1819,14 @@
           "pMax": 874.0072
         }
       ],
-      "updated": "2026-06-01T03:57:46.051+00:00",
-      "weight": 99.5,
+      "updated": "2026-06-01T09:34:10.011+00:00",
+      "weight": 98.7,
       "restingHR": 71,
       "hrv": 40.0,
       "hrvSDNN": 75.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
+      "kcalConsumed": 715,
       "sleepSecs": 19170,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1837,11 +1837,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 94.0,
+      "spO2": 95.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.6,
       "readiness": 75.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 2193,
+      "steps": 6325,
       "respiration": 18.034483,
       "carbohydrates": null,
       "protein": null,
@@ -1865,9 +1865,9 @@
   ],
   "weekly_summary": {
     "ctl": 89.1,
-    "atl": 76.8,
-    "tsb": 12.3,
-    "ramp_rate": -0.56
+    "atl": 76.6,
+    "tsb": 12.5,
+    "ramp_rate": -0.61
   },
   "activities": [
     {
@@ -3669,7 +3669,7 @@
       "icu_pm_ftp_watts": 539,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 44537.176,
+      "icu_rolling_w_prime": 44802.0,
       "icu_rolling_p_max": 878.3903,
       "icu_rolling_ftp": 526,
       "icu_rolling_ftp_delta": 3,
