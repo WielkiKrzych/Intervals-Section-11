@@ -1,19 +1,19 @@
 # Training Report
-**Period:** 2026-05-03 to 2026-05-31
-**Last Updated:** 2026-05-31T21:15:12.151306
+**Period:** 2026-05-04 to 2026-06-01
+**Last Updated:** 2026-06-01T04:15:22.688492
 
 ## Training Status
-- **Fitness (CTL):** 88.6 - Chronic Training Load
-- **Fatigue (ATL):** 71.3 - Acute Training Load
-- **Form (TSB):** 17.3 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -1.22
+- **Fitness (CTL):** 89.1 - Chronic Training Load
+- **Fatigue (ATL):** 76.8 - Acute Training Load
+- **Form (TSB):** 12.3 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -0.56
 - **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 42
-- **Total Duration:** 36.75h
-- **Total TSS:** 2197.0
-- **Total Energy:** 34780.3 kJ
+- **Total Activities:** 40
+- **Total Duration:** 35.48h
+- **Total TSS:** 2107.0
+- **Total Energy:** 34277.0 kJ
 
 ## Sport Breakdown
 ### Run
@@ -24,17 +24,17 @@
 - Avg Pace: 4.1 min/km
 
 ### Swim
-- Time: 4.88h
-- Distance: 15.2 km
-- Energy: 5543 kcal
-- Load: 553
+- Time: 4.21h
+- Distance: 13.2 km
+- Energy: 4875 kcal
+- Load: 486
 - Avg Speed: 3.1 km/h
 
 ### Ride
-- Time: 26.0h
-- Distance: 927.5 km
-- Energy: 24737.3 kJ
-- Load: 1198
+- Time: 25.39h
+- Distance: 905.9 km
+- Energy: 24234.0 kJ
+- Load: 1175
 - Avg Speed: 35.7 km/h
 
 ### OpenWaterSwim
@@ -45,27 +45,27 @@
 - Avg Speed: 2.0 km/h
 
 ### Total
-- Time: 36.76h
-- Distance: 1022.3 km
-- Energy: 24792.2 kJ
-- Load: 2197
+- Time: 35.48h
+- Distance: 998.7 km
+- Energy: 24286.1 kJ
+- Load: 2107
 
 ## Zone Distribution
-- **Z1:** 132m (6.6%)
-- **Z2:** 1357m (67.8%)
-- **Z3:** 246m (12.3%)
-- **Z4:** 126m (6.3%)
-- **Z5:** 21m (1.1%)
+- **Z1:** 115m (5.9%)
+- **Z2:** 1341m (68.3%)
+- **Z3:** 244m (12.4%)
+- **Z4:** 125m (6.4%)
+- **Z5:** 20m (1.1%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 116m (5.8%)
+- **SS:** 115m (5.9%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 7.6h
-- **Resting HR:** 72 bpm
-- **HRV:** 31.0
-- **Weight:** 97.4 kg
-- **Readiness:** 41.0%
+- **Sleep:** 5.3h
+- **Resting HR:** 71 bpm
+- **HRV:** 40.0
+- **Weight:** 99.5 kg
+- **Readiness:** 75.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 11420
+- **Steps:** 2193
