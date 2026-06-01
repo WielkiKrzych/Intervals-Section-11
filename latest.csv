@@ -1,5 +1,6 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-06-01,VirtualRide,Threshold 4x3' // Z2,101,84,1626.0,59.9
 2026-05-30,VirtualRun,Treadmill: Threshold Run 5x1km,15,60,722.1,10.5
 2026-05-29,Run,Warszawa Bieganie,26,29,773.1,5.5
 2026-05-29,Swim,Pływanie szybkość,30,49,0.0,1.5
@@ -71,10 +72,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-05-29,5.9,75,35.0,98.4,55.0,2,3,19241,91.42497,85.62166,5.8
 2026-05-30,6.8,74,30.0,96.6,35.0,2,2,15772,90.68559,82.210846,8.5
 2026-05-31,8.5,72,31.0,97.4,41.0,2,2,11443,88.55191,71.26676,17.3
-2026-06-01,5.3,71,40.0,98.7,75.0,2,2,6325,89.08008,76.55614,12.5
+2026-06-01,5.3,72,40.0,98.7,75.0,2,2,7894,88.44481,72.96184,15.5
 
 === SPORT TOTALS ===
+Ride,27.07h,25860.1kJ,965.8km,1259 TSS
 Run,5.43h,10043.0kJ,78.7km,433 TSS
 Swim,4.21h,0.0kJ,13.2km,486 TSS
-Ride,25.39h,24234.0kJ,905.9km,1175 TSS
 OpenWaterSwim,0.45h,0.0kJ,0.9km,13 TSS
