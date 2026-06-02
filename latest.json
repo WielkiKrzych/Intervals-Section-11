@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-02T17:23:45.577396",
+  "last_updated": "2026-06-02T20:24:49.221802",
   "date_range": {
     "start": "2026-05-05",
     "end": "2026-06-02"
@@ -1819,9 +1819,9 @@
           "pMax": 873.1332
         }
       ],
-      "updated": "2026-06-02T16:57:34.143+00:00",
+      "updated": "2026-06-02T18:59:25.832+00:00",
       "weight": 97.7,
-      "restingHR": 77,
+      "restingHR": 76,
       "hrv": 32.0,
       "hrvSDNN": 88.0,
       "menstrualPhase": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 3.9,
+      "hydrationVolume": 5.9,
       "readiness": 37.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 14887,
+      "steps": 16356,
       "respiration": 18.060606,
       "carbohydrates": null,
       "protein": null,
@@ -1966,7 +1966,7 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 77,
+      "icu_resting_hr": 76,
       "icu_weight": 97.7,
       "icu_power_zones": [
         80,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 41.657047,
+      "trimp": 42.01623,
       "icu_warmup_time": 0,
       "icu_cooldown_time": 0,
       "icu_chat_id": null,
@@ -2309,7 +2309,7 @@
       ],
       "pace_zones": null,
       "lthr": 162,
-      "icu_resting_hr": 77,
+      "icu_resting_hr": 76,
       "icu_weight": 97.7,
       "icu_power_zones": [
         55,
@@ -2322,7 +2322,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 64.00109,
+      "trimp": 65.07148,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -4742,7 +4742,7 @@
       "icu_pm_ftp_watts": 539,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 44537.176,
+      "icu_rolling_w_prime": 44802.0,
       "icu_rolling_p_max": 878.3903,
       "icu_rolling_ftp": 526,
       "icu_rolling_ftp_delta": 3,
