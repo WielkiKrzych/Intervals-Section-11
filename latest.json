@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-04T15:44:34.819243",
+  "last_updated": "2026-06-04T18:01:42.808675",
   "date_range": {
     "start": "2026-05-07",
     "end": "2026-06-04"
@@ -1691,7 +1691,7 @@
           "pMax": 873.1332
         }
       ],
-      "updated": "2026-06-04T06:59:29.393+00:00",
+      "updated": "2026-06-04T17:54:39.307+00:00",
       "weight": 97.7,
       "restingHR": 76,
       "hrv": 32.0,
@@ -1755,7 +1755,7 @@
           "pMax": 872.2601
         }
       ],
-      "updated": "2026-06-04T06:59:29.368+00:00",
+      "updated": "2026-06-04T17:54:39.272+00:00",
       "weight": 97.6,
       "restingHR": 73,
       "hrv": 14.344226,
@@ -1819,10 +1819,10 @@
           "pMax": 871.3878
         }
       ],
-      "updated": "2026-06-04T15:37:46.843+00:00",
+      "updated": "2026-06-04T17:54:39.239+00:00",
       "weight": 97.7,
       "restingHR": 70,
-      "hrv": 54.095768,
+      "hrv": 33.301174,
       "hrvSDNN": 82.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 5498,
+      "steps": 10389,
       "respiration": 17.647728,
       "carbohydrates": null,
       "protein": null,
@@ -2815,7 +2815,7 @@
       "icu_pm_ftp_watts": 558,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 45608.0,
+      "icu_rolling_w_prime": 44533.863,
       "icu_rolling_p_max": 873.1332,
       "icu_rolling_ftp": 535,
       "icu_rolling_ftp_delta": 12,
