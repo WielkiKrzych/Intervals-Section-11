@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-04T12:10:48.622062",
+  "last_updated": "2026-06-04T15:44:34.819243",
   "date_range": {
     "start": "2026-05-07",
     "end": "2026-06-04"
@@ -1819,14 +1819,14 @@
           "pMax": 871.3878
         }
       ],
-      "updated": "2026-06-04T12:07:45.424+00:00",
+      "updated": "2026-06-04T15:37:46.843+00:00",
       "weight": 97.7,
       "restingHR": 70,
       "hrv": 54.095768,
       "hrvSDNN": 82.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 1181,
+      "kcalConsumed": 2767,
       "sleepSecs": 29756,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.6,
+      "hydrationVolume": 4.1,
       "readiness": 61.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 3938,
+      "steps": 5498,
       "respiration": 17.647728,
       "carbohydrates": null,
       "protein": null,
@@ -2815,7 +2815,7 @@
       "icu_pm_ftp_watts": 558,
       "icu_ignore_power": false,
       "icu_rolling_cp": null,
-      "icu_rolling_w_prime": 44533.863,
+      "icu_rolling_w_prime": 45608.0,
       "icu_rolling_p_max": 873.1332,
       "icu_rolling_ftp": 535,
       "icu_rolling_ftp_delta": 12,
@@ -15666,12 +15666,12 @@
       "duration_hours": 4.34
     },
     "previous_week": {
-      "count": 11,
-      "tss": 604,
-      "duration_hours": 8.09
+      "count": 10,
+      "tss": 579,
+      "duration_hours": 7.75
     },
-    "tss_change": "\u2193 53%",
-    "duration_change": "\u2193 46%",
-    "count_change": "\u2193 55%"
+    "tss_change": "\u2193 51%",
+    "duration_change": "\u2193 44%",
+    "count_change": "\u2193 50%"
   }
 }
