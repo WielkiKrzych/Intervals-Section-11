@@ -1,5 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-06-05,Run,T2 Symulacja — 1km po rowerze,10,14,344.4,2.5
+2026-06-05,VirtualRide,Aktywacja: OPENERS,60,57,1029.1,38.1
 2026-06-05,Swim,Swim,19,36,0.0,1.0
 2026-06-04,VirtualRide,Z2,102,82,1701.0,64.7
 2026-06-03,Run,Easy run rozruszanie,30,31,846.5,6.2
@@ -73,10 +75,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-06-02,5.9,76,32.0,97.7,37.0,2,3,16732,88.8108,77.093704,11.7
 2026-06-03,5.6,73,14.344226,97.6,48.0,3,2,18271,89.00348,79.743675,9.3
 2026-06-04,10.2,70,33.301174,97.7,61.0,3,2,10893,88.8387,80.044044,8.8
-2026-06-05,4.6,77,34.94623,98.6,83.0,2,2,3369,89.21895,83.366234,5.9
+2026-06-05,4.6,77,34.94623,98.0,83.0,2,2,7911,89.26601,83.63248,5.6
 
 === SPORT TOTALS ===
+Run,4.77h,9019.9kJ,70.9km,394 TSS
+Ride,27.86h,26710.3kJ,999.1km,1317 TSS
 Swim,4.48h,0.0kJ,14.0km,509 TSS
-Ride,26.85h,25681.3kJ,960.9km,1260 TSS
-Run,4.59h,8675.5kJ,68.4km,380 TSS
 OpenWaterSwim,0.45h,0.0kJ,0.9km,13 TSS
