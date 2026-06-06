@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-06T05:29:13.610038",
+  "last_updated": "2026-06-06T08:07:22.082130",
   "date_range": {
     "start": "2026-05-09",
     "end": "2026-06-06"
@@ -1755,7 +1755,7 @@
           "pMax": 870.5164
         }
       ],
-      "updated": "2026-06-06T05:15:55.530+00:00",
+      "updated": "2026-06-06T05:31:04.820+00:00",
       "weight": 98.0,
       "restingHR": 76,
       "hrv": 34.94623,
@@ -1763,10 +1763,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 5856,
-      "sleepSecs": 16478,
+      "sleepSecs": 19558,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 70.0,
+      "avgSleepingHR": 72.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1786,16 +1786,17 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 14005,
-      "respiration": 17.775862,
+      "steps": 14006,
+      "respiration": 17.922222,
       "carbohydrates": null,
       "protein": null,
       "fatTotal": null,
       "locked": null,
       "tempWeight": false,
       "tempRestingHR": false,
-      "REMSleep": 6250.443574547768,
-      "LightSleep": 10228.003884077072
+      "REMSleep": 6370.071894526482,
+      "DeepSleep": 1106.5886359214783,
+      "LightSleep": 12082.29237151146
     },
     {
       "id": "2026-06-06",
@@ -1818,18 +1819,18 @@
           "pMax": 869.64594
         }
       ],
-      "updated": "2026-06-06T05:19:52.862+00:00",
+      "updated": "2026-06-06T07:47:58.311+00:00",
       "weight": null,
-      "restingHR": 74,
+      "restingHR": 78,
       "hrv": 34.0,
       "hrvSDNN": 51.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 33960,
+      "kcalConsumed": 1068,
+      "sleepSecs": 30922,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": null,
+      "avgSleepingHR": 74.0,
       "soreness": 2,
       "fatigue": 2,
       "stress": null,
@@ -1840,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 1.2,
       "readiness": 56.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1849,14 +1850,17 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 21,
-      "respiration": null,
+      "steps": 2591,
+      "respiration": 18.181818,
       "carbohydrates": null,
       "protein": null,
       "fatTotal": null,
       "locked": null,
       "tempWeight": false,
-      "tempRestingHR": false
+      "tempRestingHR": false,
+      "REMSleep": 8941.960861086845,
+      "DeepSleep": 2601.8330575227737,
+      "LightSleep": 19378.950970053673
     }
   ],
   "weekly_summary": {
