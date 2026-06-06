@@ -1,19 +1,19 @@
 # Training Report
-**Period:** 2026-05-08 to 2026-06-05
-**Last Updated:** 2026-06-05T21:56:21.458480
+**Period:** 2026-05-09 to 2026-06-06
+**Last Updated:** 2026-06-06T05:29:13.610038
 
 ## Training Status
-- **Fitness (CTL):** 89.3 - Chronic Training Load
-- **Fatigue (ATL):** 83.6 - Acute Training Load
-- **Form (TSB):** 5.6 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -2.16
-- **✅ Recovery:** Ready - Good for threshold or VO2max
+- **Fitness (CTL):** 88.0 - Chronic Training Load
+- **Fatigue (ATL):** 77.3 - Acute Training Load
+- **Form (TSB):** 10.7 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -2.67
+- **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 44
-- **Total Duration:** 37.55h
-- **Total TSS:** 2233.0
-- **Total Energy:** 35730.2 kJ
+- **Total Activities:** 43
+- **Total Duration:** 36.48h
+- **Total TSS:** 2189.0
+- **Total Energy:** 34708.2 kJ
 
 ## Sport Breakdown
 ### Run
@@ -24,10 +24,10 @@
 - Avg Pace: 4.0 min/km
 
 ### Ride
-- Time: 27.86h
-- Distance: 999.1 km
-- Energy: 26710.3 kJ
-- Load: 1317
+- Time: 26.78h
+- Distance: 961.2 km
+- Energy: 25688.3 kJ
+- Load: 1273
 - Avg Speed: 35.9 km/h
 
 ### Swim
@@ -45,27 +45,26 @@
 - Avg Speed: 2.0 km/h
 
 ### Total
-- Time: 37.56h
-- Distance: 1084.9 km
-- Energy: 26760.4 kJ
-- Load: 2233
+- Time: 36.48h
+- Distance: 1047.0 km
+- Energy: 25738.4 kJ
+- Load: 2189
 
 ## Zone Distribution
-- **Z1:** 112m (5.3%)
-- **Z2:** 1403m (66.6%)
-- **Z3:** 279m (13.2%)
-- **Z4:** 139m (6.6%)
-- **Z5:** 21m (1.0%)
+- **Z1:** 112m (5.5%)
+- **Z2:** 1339m (65.6%)
+- **Z3:** 279m (13.7%)
+- **Z4:** 139m (6.8%)
+- **Z5:** 21m (1.1%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 149m (7.1%)
+- **SS:** 149m (7.3%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 4.6h
-- **Resting HR:** 77 bpm
-- **HRV:** 34.94623
-- **Weight:** 98.0 kg
-- **Readiness:** 83.0%
+- **Sleep:** 9.4h
+- **Resting HR:** 74 bpm
+- **HRV:** 34.0
+- **Readiness:** 56.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 13572
+- **Steps:** 21
