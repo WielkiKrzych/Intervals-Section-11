@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-06T11:53:52.811132",
+  "last_updated": "2026-06-06T13:47:03.681447",
   "date_range": {
     "start": "2026-05-09",
     "end": "2026-06-06"
@@ -1819,14 +1819,14 @@
           "pMax": 869.64594
         }
       ],
-      "updated": "2026-06-06T11:39:35.813+00:00",
+      "updated": "2026-06-06T13:40:10.064+00:00",
       "weight": null,
-      "restingHR": 78,
+      "restingHR": 72,
       "hrv": 34.0,
       "hrvSDNN": 51.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 1642,
+      "kcalConsumed": 2905,
       "sleepSecs": 30922,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 2.5,
+      "hydrationVolume": 3.6,
       "readiness": 56.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4084,
+      "steps": 5241,
       "respiration": 18.181818,
       "carbohydrates": null,
       "protein": null,
@@ -1922,10 +1922,10 @@
       "average_heartrate": 115,
       "average_cadence": 76.198204,
       "calories": 1011,
-      "average_temp": null,
-      "min_temp": null,
-      "max_temp": null,
-      "avg_lr_balance": null,
+      "average_temp": 25.313208,
+      "min_temp": 22,
+      "max_temp": 34,
+      "avg_lr_balance": 55.790203,
       "gap": null,
       "gap_model": "NONE",
       "use_elevation_correction": false,
@@ -1946,8 +1946,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-06-06T09:51:17.580+00:00",
-      "icu_sync_date": "2026-06-06T09:51:21.108+00:00",
-      "analyzed": "2026-06-06T09:51:21.108+00:00",
+      "icu_sync_date": "2026-06-06T11:55:54.350+00:00",
+      "analyzed": "2026-06-06T11:55:54.350+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -1960,7 +1960,7 @@
       ],
       "pace_zones": null,
       "lthr": 162,
-      "icu_resting_hr": 78,
+      "icu_resting_hr": 72,
       "icu_weight": 98.0,
       "icu_power_zones": [
         55,
@@ -1973,7 +1973,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 35.012268,
+      "trimp": 41.19621,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -1981,7 +1981,7 @@
       "ignore_velocity": false,
       "ignore_pace": false,
       "ignore_parts": null,
-      "icu_training_load_data": 98,
+      "icu_training_load_data": 96,
       "interval_summary": null,
       "skyline_chart_bytes": "CAYSAt4mGgErIgEBKAE=",
       "stream_types": [
@@ -1994,7 +1994,17 @@
         "latlng",
         "velocity_smooth",
         "torque",
-        "PercentageinZ2"
+        "PercentageinZ2",
+        "temp",
+        "left_right_balance",
+        "hrv",
+        "core_temperature",
+        "skin_temperature",
+        "respiration",
+        "heat_strain_index",
+        "HeatStrainIndex",
+        "smo2",
+        "THb"
       ],
       "has_weather": true,
       "has_segments": false,
@@ -2046,11 +2056,49 @@
       "pace_zone_times": null,
       "gap_zone_times": null,
       "use_gap_zone_times": null,
-      "custom_zones": null,
+      "custom_zones": [
+        {
+          "code": "COREsHeatZones",
+          "zones": [
+            {
+              "id": "1",
+              "start": 0.0,
+              "end": 1.0,
+              "start_value": 0.0,
+              "end_value": 1.0,
+              "secs": 4952
+            },
+            {
+              "id": "2",
+              "start": 1.0,
+              "end": 3.0,
+              "start_value": 1.0,
+              "end_value": 3.0,
+              "secs": 0
+            },
+            {
+              "id": "3",
+              "start": 3.0,
+              "end": 7.0,
+              "start_value": 3.0,
+              "end_value": 7.0,
+              "secs": 0
+            },
+            {
+              "id": "4",
+              "start": 7.0,
+              "end": null,
+              "start_value": 7.0,
+              "end_value": null,
+              "secs": 0
+            }
+          ]
+        }
+      ],
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 1.03,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 1,
       "icu_joules_above_ftp": 6440,
@@ -2126,7 +2174,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.582852017261334,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 34.979048204109645,
       "Pvo2max": 406.5,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -2142,6 +2190,7 @@
       "EnduranceHR": 116,
       "EnduranceVE": 54,
       "Vo2MaxPower": 470,
+      "AvgBreathing": 27.12802208983887,
       "SmO2BP1Power": 320,
       "SmO2BP2Power": 410,
       "TimeAboveFTP": 1.4333333333333333,
@@ -16181,12 +16230,12 @@
       "duration_hours": 7.23
     },
     "previous_week": {
-      "count": 11,
-      "tss": 604,
-      "duration_hours": 8.09
+      "count": 10,
+      "tss": 579,
+      "duration_hours": 7.75
     },
-    "tss_change": "\u2193 30%",
-    "duration_change": "\u2193 11%",
-    "count_change": "\u2193 18%"
+    "tss_change": "\u2193 27%",
+    "duration_change": "\u2193 7%",
+    "count_change": "\u2193 10%"
   }
 }
