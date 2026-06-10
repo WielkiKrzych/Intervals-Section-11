@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-10T12:26:45.870732",
+  "last_updated": "2026-06-10T16:21:57.085979",
   "date_range": {
     "start": "2026-05-13",
     "end": "2026-06-10"
@@ -1819,14 +1819,14 @@
           "pMax": 867.0396
         }
       ],
-      "updated": "2026-06-10T12:11:21.053+00:00",
+      "updated": "2026-06-10T15:49:39.521+00:00",
       "weight": 98.8,
-      "restingHR": 65,
+      "restingHR": 66,
       "hrv": 48.0,
       "hrvSDNN": 71.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 987,
+      "kcalConsumed": 2567,
       "sleepSecs": 21144,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.9,
+      "hydrationVolume": 3.1,
       "readiness": 81.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 13931,
+      "steps": 15896,
       "respiration": 18.655172,
       "carbohydrates": null,
       "protein": null,
@@ -1966,7 +1966,7 @@
         999.0
       ],
       "lthr": 172,
-      "icu_resting_hr": 65,
+      "icu_resting_hr": 66,
       "icu_weight": 98.8,
       "icu_power_zones": [
         80,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 30.164364,
+      "trimp": 29.731657,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2287,13 +2287,13 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 65,
+      "icu_resting_hr": 66,
       "icu_weight": 98.8,
       "icu_power_zones": null,
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 29.619417,
+      "trimp": 29.050495,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -16850,17 +16850,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 2,
-      "tss": 113,
-      "duration_hours": 1.89
+      "count": 3,
+      "tss": 143,
+      "duration_hours": 2.4
     },
     "previous_week": {
       "count": 13,
       "tss": 577,
       "duration_hours": 10.35
     },
-    "tss_change": "\u2193 80%",
-    "duration_change": "\u2193 82%",
-    "count_change": "\u2193 85%"
+    "tss_change": "\u2193 75%",
+    "duration_change": "\u2193 77%",
+    "count_change": "\u2193 77%"
   }
 }
