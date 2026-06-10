@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-10T19:11:30.389117",
+  "last_updated": "2026-06-10T21:28:17.681148",
   "date_range": {
     "start": "2026-05-13",
     "end": "2026-06-10"
@@ -1819,14 +1819,14 @@
           "pMax": 867.0396
         }
       ],
-      "updated": "2026-06-10T18:53:18.269+00:00",
+      "updated": "2026-06-10T20:06:25.995+00:00",
       "weight": 98.8,
       "restingHR": 67,
       "hrv": 48.0,
       "hrvSDNN": 71.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": 2567,
+      "kcalConsumed": 3914,
       "sleepSecs": 21144,
       "sleepScore": null,
       "sleepQuality": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 5.1,
+      "hydrationVolume": 5.6,
       "readiness": 81.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 18064,
+      "steps": 18295,
       "respiration": 18.655172,
       "carbohydrates": null,
       "protein": null,
