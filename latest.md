@@ -1,26 +1,26 @@
 # Training Report
-**Period:** 2026-05-12 to 2026-06-09
-**Last Updated:** 2026-06-09T21:15:07.922982
+**Period:** 2026-05-13 to 2026-06-10
+**Last Updated:** 2026-06-10T04:57:59.486349
 
 ## Training Status
-- **Fitness (CTL):** 86.5 - Chronic Training Load
-- **Fatigue (ATL):** 72.4 - Acute Training Load
-- **Form (TSB):** 14.1 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -2.31
+- **Fitness (CTL):** 85.9 - Chronic Training Load
+- **Fatigue (ATL):** 71.0 - Acute Training Load
+- **Form (TSB):** 14.9 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -3.08
 - **🚀 Recovery:** Fresh - Great for race or hard workout
 
 ## Activity Summary
-- **Total Activities:** 46
-- **Total Duration:** 35.52h
-- **Total TSS:** 2160.0
-- **Total Energy:** 33884.5 kJ
+- **Total Activities:** 45
+- **Total Duration:** 34.43h
+- **Total TSS:** 2097.0
+- **Total Energy:** 32791.5 kJ
 
 ## Sport Breakdown
 ### Ride
-- Time: 24.64h
-- Distance: 888.1 km
-- Energy: 23442.1 kJ
-- Load: 1170
+- Time: 23.55h
+- Distance: 848.5 km
+- Energy: 22349.1 kJ
+- Load: 1107
 - Avg Speed: 36.0 km/h
 
 ### Run
@@ -45,27 +45,27 @@
 - Avg Speed: 3.1 km/h
 
 ### Total
-- Time: 35.53h
-- Distance: 985.2 km
-- Energy: 23498.0 kJ
-- Load: 2160
+- Time: 34.44h
+- Distance: 945.6 km
+- Energy: 22405.0 kJ
+- Load: 2097
 
 ## Zone Distribution
-- **Z1:** 165m (8.5%)
-- **Z2:** 1161m (59.3%)
-- **Z3:** 311m (15.9%)
-- **Z4:** 147m (7.5%)
-- **Z5:** 23m (1.2%)
+- **Z1:** 165m (8.7%)
+- **Z2:** 1107m (58.4%)
+- **Z3:** 310m (16.4%)
+- **Z4:** 147m (7.8%)
+- **Z5:** 14m (0.8%)
 - **Z6:** 2m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 147m (7.5%)
+- **SS:** 147m (7.8%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 6.4h
+- **Sleep:** 5.9h
 - **Resting HR:** 67 bpm
-- **HRV:** 50.0
+- **HRV:** 48.0
 - **Weight:** 98.8 kg
-- **Readiness:** 80.0%
-- **Soreness:** 3/5
-- **Fatigue:** 3/5
-- **Steps:** 11366
+- **Readiness:** 81.0%
+- **Soreness:** 2/5
+- **Fatigue:** 2/5
+- **Steps:** 3526
