@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-10T16:21:57.085979",
+  "last_updated": "2026-06-10T19:11:30.389117",
   "date_range": {
     "start": "2026-05-13",
     "end": "2026-06-10"
@@ -1819,9 +1819,9 @@
           "pMax": 867.0396
         }
       ],
-      "updated": "2026-06-10T15:49:39.521+00:00",
+      "updated": "2026-06-10T18:53:18.269+00:00",
       "weight": 98.8,
-      "restingHR": 66,
+      "restingHR": 67,
       "hrv": 48.0,
       "hrvSDNN": 71.0,
       "menstrualPhase": null,
@@ -1837,11 +1837,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.0,
+      "spO2": 96.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 3.1,
+      "hydrationVolume": 5.1,
       "readiness": 81.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 15896,
+      "steps": 18064,
       "respiration": 18.655172,
       "carbohydrates": null,
       "protein": null,
@@ -1966,7 +1966,7 @@
         999.0
       ],
       "lthr": 172,
-      "icu_resting_hr": 66,
+      "icu_resting_hr": 67,
       "icu_weight": 98.8,
       "icu_power_zones": [
         80,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 29.731657,
+      "trimp": 29.296408,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2287,13 +2287,13 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 66,
+      "icu_resting_hr": 67,
       "icu_weight": 98.8,
       "icu_power_zones": null,
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 29.050495,
+      "trimp": 28.479578,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
