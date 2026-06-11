@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-11T06:26:28.040652",
+  "last_updated": "2026-06-11T11:10:52.404543",
   "date_range": {
     "start": "2026-05-14",
     "end": "2026-06-11"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-06-11",
-      "ctl": 85.22568,
-      "atl": 68.57067,
-      "rampRate": -3.6130219,
-      "ctlLoad": 25.0,
-      "atlLoad": 25.0,
+      "ctl": 86.59032,
+      "atl": 76.291756,
+      "rampRate": -2.2483826,
+      "ctlLoad": 83.0,
+      "atlLoad": 83.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,9 +1819,9 @@
           "pMax": 866.1726
         }
       ],
-      "updated": "2026-06-11T05:47:54.392+00:00",
+      "updated": "2026-06-11T10:33:05.244+00:00",
       "weight": 98.8,
-      "restingHR": 73,
+      "restingHR": 68,
       "hrv": 50.0,
       "hrvSDNN": 77.0,
       "menstrualPhase": null,
@@ -1841,7 +1841,7 @@
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.6,
+      "hydrationVolume": 1.7,
       "readiness": 85.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 4098,
+      "steps": 6113,
       "respiration": 17.814816,
       "carbohydrates": null,
       "protein": null,
@@ -1864,10 +1864,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 85.2,
-    "atl": 68.6,
-    "tsb": 16.7,
-    "ramp_rate": -3.61
+    "ctl": 86.6,
+    "atl": 76.3,
+    "tsb": 10.3,
+    "ramp_rate": -2.25
   },
   "activities": [
     {
@@ -16312,12 +16312,12 @@
       "duration_hours": 3.18
     },
     "previous_week": {
-      "count": 13,
-      "tss": 639,
-      "duration_hours": 11.25
+      "count": 12,
+      "tss": 555,
+      "duration_hours": 9.57
     },
-    "tss_change": "\u2193 74%",
-    "duration_change": "\u2193 72%",
-    "count_change": "\u2193 69%"
+    "tss_change": "\u2193 70%",
+    "duration_change": "\u2193 67%",
+    "count_change": "\u2193 67%"
   }
 }
