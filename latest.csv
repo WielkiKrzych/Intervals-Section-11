@@ -1,5 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-06-13,VirtualRide,Kolarstwo w pomieszczeniu,121,113,2009.0,71.1
+2026-06-13,VirtualRide,SST 3×12' ~330-340W + Z2,121,113,2010.6,72.8
 2026-06-13,VirtualRide,Maciek test,27,11,257.4,23.2
 2026-06-12,Run,Warszawa Bieganie,26,34,825.6,6.0
 2026-06-12,VirtualRide,Z2 90' @65-70%,90,65,1417.4,55.3
@@ -78,10 +80,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-06-10,4.2,68,48.0,98.8,81.0,2,2,18624,86.67683,75.261604,11.4
 2026-06-11,5.0,68,50.0,98.8,85.0,2,3,10816,86.54326,76.02551,10.5
 2026-06-12,5.5,80,28.0,99.0,9.0,2,3,15729,88.60097,89.068085,-0.5
-2026-06-13,8.4,80,26.0,99.5,2.0,2,3,24,89.78677,95.715126,-5.9
+2026-06-13,8.4,80,26.0,99.5,2.0,2,3,24,92.774864,112.621635,-19.8
 
 === SPORT TOTALS ===
-Ride,25.19h,23711.2kJ,919.2km,1156 TSS
+Ride,29.24h,27730.9kJ,1063.1km,1382 TSS
 Run,5.87h,11024.6kJ,85.3km,473 TSS
 Swim,4.99h,0.0kJ,15.5km,558 TSS
 OpenWaterSwim,0.84h,0.0kJ,1.8km,30 TSS
