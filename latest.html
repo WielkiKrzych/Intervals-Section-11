@@ -67,23 +67,23 @@
                 <h2>Training Status</h2>
                 <div class="metric">
                     <span class="metric-label">Fitness (CTL)</span>
-                    <span class="metric-value">90.1</span>
+                    <span class="metric-value">89.4</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Fatigue (ATL)</span>
-                    <span class="metric-value">96.4</span>
+                    <span class="metric-value">92.7</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Form (TSB)</span>
-                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">-6.3</span>
+                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">-3.3</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Ramp Rate</span>
-                    <span class="metric-value">3.43</span>
+                    <span class="metric-value">2.77</span>
                 </div>
                 <div class="metric" style="background: var(--bg-secondary); margin: 10px -20px -20px; padding: 12px 20px; border-radius: 0 0 12px 12px;">
-                    <span class="metric-label">🛑 Recovery</span>
-                    <span class="metric-value" style="font-size: 0.95rem;">Overreaching - Rest day recommended</span>
+                    <span class="metric-label">⚠️ Recovery</span>
+                    <span class="metric-value" style="font-size: 0.95rem;">Caution - Easy training only</span>
                 </div>
             </div>
 
@@ -111,15 +111,15 @@
                 <h2>Week Comparison</h2>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">127 (↓ 81%)</span>
+                    <span class="metric-value">198 (↓ 70%)</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">2.52h (↓ 80%)</span>
+                    <span class="metric-value">3.08h (↓ 75%)</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">2 (↓ 80%)</span>
+                    <span class="metric-value">3 (↓ 70%)</span>
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
             </table>
         </div>
 
-        <p class="footer">Last updated: 2026-06-17T05:24:31.276514</p>
+        <p class="footer">Last updated: 2026-06-17T10:13:50.347343</p>
     </div>
 
     <script>
@@ -217,19 +217,19 @@
                 labels: ["2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-24", "2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17"],
                 datasets: [{
                     label: 'CTL (Fitness)',
-                    data: [93.51594, 92.37444, 92.506805, 91.62434, 89.77444, 89.68563, 89.17541, 90.46534, 91.74845, 91.42497, 90.68559, 88.55191, 88.44481, 88.8108, 89.00348, 88.8387, 89.26601, 87.8951, 88.97987, 87.40395, 86.500374, 86.67683, 86.54326, 88.60097, 89.17503, 89.92382, 88.584496, 88.711914, 90.106865],
+                    data: [93.51594, 92.37444, 92.506805, 91.62434, 89.77444, 89.68563, 89.17541, 90.46534, 91.74845, 91.42497, 90.68559, 88.55191, 88.44481, 88.8108, 89.00348, 88.8387, 89.26601, 87.8951, 88.97987, 87.40395, 86.500374, 86.67683, 86.54326, 88.60097, 89.17503, 89.92382, 88.584496, 88.711914, 89.44807],
                     borderColor: '#34c759',
                     backgroundColor: 'rgba(52, 199, 89, 0.1)',
                     fill: true
                 }, {
                     label: 'ATL (Fatigue)',
-                    data: [76.22726, 72.07022, 75.52205, 72.79011, 64.83073, 67.64883, 67.69557, 77.85338, 86.792076, 85.62166, 82.210846, 71.26676, 72.96184, 77.093704, 79.743675, 80.044044, 83.63248, 76.62593, 84.26369, 75.97501, 72.38404, 75.261604, 76.02551, 89.068085, 92.25395, 96.08069, 87.68326, 88.524155, 96.4417],
+                    data: [76.22726, 72.07022, 75.52205, 72.79011, 64.83073, 67.64883, 67.69557, 77.85338, 86.792076, 85.62166, 82.210846, 71.26676, 72.96184, 77.093704, 79.743675, 80.044044, 83.63248, 76.62593, 84.26369, 75.97501, 72.38404, 75.261604, 76.02551, 89.068085, 92.25395, 96.08069, 87.68326, 88.524155, 92.71429],
                     borderColor: '#ff9500',
                     backgroundColor: 'rgba(255, 149, 0, 0.1)',
                     fill: true
                 }, {
                     label: 'TSB (Form)',
-                    data: [17.3, 20.3, 17.0, 18.8, 24.9, 22.0, 21.5, 12.6, 5.0, 5.8, 8.5, 17.3, 15.5, 11.7, 9.3, 8.8, 5.6, 11.3, 4.7, 11.4, 14.1, 11.4, 10.5, -0.5, -3.1, -6.2, 0.9, 0.2, -6.3],
+                    data: [17.3, 20.3, 17.0, 18.8, 24.9, 22.0, 21.5, 12.6, 5.0, 5.8, 8.5, 17.3, 15.5, 11.7, 9.3, 8.8, 5.6, 11.3, 4.7, 11.4, 14.1, 11.4, 10.5, -0.5, -3.1, -6.2, 0.9, 0.2, -3.3],
                     borderColor: '#5856d6',
                     backgroundColor: 'rgba(88, 86, 214, 0.05)',
                     fill: false,
