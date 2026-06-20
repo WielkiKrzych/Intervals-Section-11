@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-20T12:18:01.160158",
+  "last_updated": "2026-06-20T14:40:39.080112",
   "date_range": {
     "start": "2026-05-23",
     "end": "2026-06-20"
@@ -2224,8 +2224,8 @@
       "elapsed_time": 3601,
       "icu_weighted_avg_watts": 241,
       "carbs_used": 160,
-      "name": "Rozruszanie + race pace",
-      "description": null,
+      "name": "Rozruszanie",
+      "description": "",
       "start_date": "2026-06-20T09:45:19Z",
       "distance": 36234.08,
       "icu_distance": 36234.08,
@@ -2234,7 +2234,7 @@
       "total_elevation_gain": 27.0,
       "total_elevation_loss": 22.0,
       "timezone": null,
-      "trainer": null,
+      "trainer": false,
       "sub_type": null,
       "commute": false,
       "race": false,
@@ -2270,8 +2270,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-06-20T10:48:49.947+00:00",
-      "icu_sync_date": "2026-06-20T10:48:51.173+00:00",
-      "analyzed": "2026-06-20T10:48:51.173+00:00",
+      "icu_sync_date": "2026-06-20T12:18:31.705+00:00",
+      "analyzed": "2026-06-20T12:18:31.705+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2460,7 +2460,7 @@
       "min_altitude": 99.4,
       "max_altitude": 110.8,
       "power_load": 40,
-      "hr_load": 46,
+      "hr_load": 45,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2506,7 +2506,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.7126691595812678,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 44.69456240652011,
       "Pvo2max": 402.0,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -16505,16 +16505,16 @@
   "week_comparison": {
     "this_week": {
       "count": 8,
-      "tss": 499,
-      "duration_hours": 8.24
+      "tss": 485,
+      "duration_hours": 7.47
     },
     "previous_week": {
-      "count": 9,
-      "tss": 632,
-      "duration_hours": 11.58
+      "count": 10,
+      "tss": 665,
+      "duration_hours": 12.61
     },
-    "tss_change": "\u2193 21%",
-    "duration_change": "\u2193 29%",
-    "count_change": "\u2193 11%"
+    "tss_change": "\u2193 27%",
+    "duration_change": "\u2193 41%",
+    "count_change": "\u2193 20%"
   }
 }

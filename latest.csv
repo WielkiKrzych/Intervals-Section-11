@@ -1,7 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
 2026-06-20,Run,Warszawa Bieganie,15,19,478.2,3.5
-2026-06-20,Ride,Rozruszanie + race pace,60,40,811.0,36.2
+2026-06-20,Ride,Rozruszanie,60,40,811.0,36.2
 2026-06-19,VirtualRide,VO2max 6×90"/90" + Z2,64,64,1036.3,38.1
 2026-06-19,Swim,Swim 45',38,73,0.0,2.0
 2026-06-18,VirtualRide,Z2 90’,92,68,1400.8,53.6
