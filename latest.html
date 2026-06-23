@@ -60,30 +60,30 @@
 <body>
     <div class="container">
         <h1>Training Report</h1>
-        <p class="subtitle">2026-05-25 to 2026-06-22</p>
+        <p class="subtitle">2026-05-26 to 2026-06-23</p>
 
         <div class="grid">
             <div class="card">
                 <h2>Training Status</h2>
                 <div class="metric">
                     <span class="metric-label">Fitness (CTL)</span>
-                    <span class="metric-value">89.1</span>
+                    <span class="metric-value">89.8</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Fatigue (ATL)</span>
-                    <span class="metric-value">88.4</span>
+                    <span class="metric-value">92.2</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Form (TSB)</span>
-                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">0.8</span>
+                    <span class="metric-value {'status-ok' if summary['tsb'] > 0 else 'status-warning'}">-2.4</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Ramp Rate</span>
-                    <span class="metric-value">0.56</span>
+                    <span class="metric-value">1.09</span>
                 </div>
                 <div class="metric" style="background: var(--bg-secondary); margin: 10px -20px -20px; padding: 12px 20px; border-radius: 0 0 12px 12px;">
-                    <span class="metric-label">👍 Recovery</span>
-                    <span class="metric-value" style="font-size: 0.95rem;">Normal - Maintain endurance</span>
+                    <span class="metric-label">⚠️ Recovery</span>
+                    <span class="metric-value" style="font-size: 0.95rem;">Caution - Easy training only</span>
                 </div>
             </div>
 
@@ -91,19 +91,19 @@
                 <h2>Activity Summary</h2>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">47</span>
+                    <span class="metric-value">45</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">43.18h</span>
+                    <span class="metric-value">41.58h</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">2557.0</span>
+                    <span class="metric-value">2471.0</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Energy</span>
-                    <span class="metric-value">40841.1 kJ</span>
+                    <span class="metric-value">38968.9 kJ</span>
                 </div>
             </div>
 
@@ -111,15 +111,15 @@
                 <h2>Week Comparison</h2>
                 <div class="metric">
                     <span class="metric-label">TSS</span>
-                    <span class="metric-value">0 (↓ 100%)</span>
+                    <span class="metric-value">34 (↓ 95%)</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Duration</span>
-                    <span class="metric-value">0.0h (↓ 100%)</span>
+                    <span class="metric-value">1.02h (↓ 91%)</span>
                 </div>
                 <div class="metric">
                     <span class="metric-label">Activities</span>
-                    <span class="metric-value">0 (↓ 100%)</span>
+                    <span class="metric-value">1 (↓ 92%)</span>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                     <tr><th>Sport</th><th>Time</th><th>Distance</th><th>Energy</th><th>Load</th><th>Avg Speed/Pace</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Ride</td><td>30.36h</td><td>1100.0 km</td><td>28287.2 kJ</td><td>1419</td><td>36.2 km/h</td></tr><tr><td>Run</td><td>6.89h</td><td>96.6 km</td><td>8559 kcal</td><td>524</td><td>4.3 min/km</td></tr><tr><td>OpenWaterSwim</td><td>0.79h</td><td>1.8 km</td><td>979 kcal</td><td>36</td><td>2.3 km/h</td></tr><tr><td>Swim</td><td>5.14h</td><td>16.0 km</td><td>5797 kcal</td><td>578</td><td>3.1 km/h</td></tr><tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>43.18h</td><td>1214.4 km</td><td>28351.4 kJ</td><td>2557</td><td>-</td></tr>
+                    <tr><td>Ride</td><td>29.09h</td><td>1054.6 km</td><td>27051.9 kJ</td><td>1358</td><td>36.3 km/h</td></tr><tr><td>Run</td><td>6.56h</td><td>92.1 km</td><td>8166 kcal</td><td>499</td><td>4.3 min/km</td></tr><tr><td>OpenWaterSwim</td><td>0.79h</td><td>1.8 km</td><td>979 kcal</td><td>36</td><td>2.3 km/h</td></tr><tr><td>Swim</td><td>5.14h</td><td>16.0 km</td><td>5797 kcal</td><td>578</td><td>3.1 km/h</td></tr><tr style="font-weight:700;border-top:2px solid var(--text-secondary)"><td>Total</td><td>41.58h</td><td>1164.5 km</td><td>27114.5 kJ</td><td>2471</td><td>-</td></tr>
                 </tbody>
             </table>
         </div>
@@ -179,14 +179,14 @@
             <h2>Latest Wellness</h2>
             <div class="grid">
                 <div>
-                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">4.7h</span></div>
-                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">66 bpm</span></div>
-                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">79.0</span></div>
+                    <div class="metric"><span class="metric-label">Sleep</span><span class="metric-value">6.6h</span></div>
+                    <div class="metric"><span class="metric-label">Resting HR</span><span class="metric-value">64 bpm</span></div>
+                    <div class="metric"><span class="metric-label">HRV</span><span class="metric-value">75.0</span></div>
                 </div>
                 <div>
-                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">98.0 kg</span></div>
-                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">77.0%</span></div>
-                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">7873</span></div>
+                    <div class="metric"><span class="metric-label">Weight</span><span class="metric-value">99.8 kg</span></div>
+                    <div class="metric"><span class="metric-label">Readiness</span><span class="metric-value">74.0%</span></div>
+                    <div class="metric"><span class="metric-label">Steps</span><span class="metric-value">56</span></div>
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
             </table>
         </div>
 
-        <p class="footer">Last updated: 2026-06-22T20:49:56.609282</p>
+        <p class="footer">Last updated: 2026-06-23T04:30:08.421457</p>
     </div>
 
     <script>
@@ -214,22 +214,22 @@
         new Chart(document.getElementById('fitnessChart'), {
             type: 'line',
             data: {
-                labels: ["2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22"],
+                labels: ["2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23"],
                 datasets: [{
                     label: 'CTL (Fitness)',
-                    data: [89.68563, 89.17541, 90.46534, 91.74845, 91.42497, 90.68559, 88.55191, 88.44481, 88.8108, 89.00348, 88.8387, 89.26601, 87.8951, 88.97987, 87.40395, 86.500374, 86.67683, 86.54326, 88.60097, 89.17503, 89.92382, 88.584496, 88.711914, 89.61277, 89.104256, 90.23116, 89.496346, 90.472855, 89.14414],
+                    data: [89.17541, 90.46534, 91.74845, 91.42497, 90.68559, 88.55191, 88.44481, 88.8108, 89.00348, 88.8387, 89.26601, 87.8951, 88.97987, 87.40395, 86.500374, 86.67683, 86.54326, 88.60097, 89.17503, 89.92382, 88.584496, 88.711914, 89.61277, 89.104256, 90.23116, 89.496346, 90.472855, 89.14414, 89.799545],
                     borderColor: '#34c759',
                     backgroundColor: 'rgba(52, 199, 89, 0.1)',
                     fill: true
                 }, {
                     label: 'ATL (Fatigue)',
-                    data: [67.64883, 67.69557, 77.85338, 86.792076, 85.62166, 82.210846, 71.26676, 72.96184, 77.093704, 79.743675, 80.044044, 83.63248, 76.62593, 84.26369, 75.97501, 72.38404, 75.261604, 76.02551, 89.068085, 92.25395, 96.08069, 87.68326, 88.524155, 93.64614, 90.23207, 96.45792, 91.47144, 96.73357, 88.38234],
+                    data: [67.69557, 77.85338, 86.792076, 85.62166, 82.210846, 71.26676, 72.96184, 77.093704, 79.743675, 80.044044, 83.63248, 76.62593, 84.26369, 75.97501, 72.38404, 75.261604, 76.02551, 89.068085, 92.25395, 96.08069, 87.68326, 88.524155, 93.64614, 90.23207, 96.45792, 91.47144, 96.73357, 88.38234, 92.191986],
                     borderColor: '#ff9500',
                     backgroundColor: 'rgba(255, 149, 0, 0.1)',
                     fill: true
                 }, {
                     label: 'TSB (Form)',
-                    data: [22.0, 21.5, 12.6, 5.0, 5.8, 8.5, 17.3, 15.5, 11.7, 9.3, 8.8, 5.6, 11.3, 4.7, 11.4, 14.1, 11.4, 10.5, -0.5, -3.1, -6.2, 0.9, 0.2, -4.0, -1.1, -6.2, -2.0, -6.3, 0.8],
+                    data: [21.5, 12.6, 5.0, 5.8, 8.5, 17.3, 15.5, 11.7, 9.3, 8.8, 5.6, 11.3, 4.7, 11.4, 14.1, 11.4, 10.5, -0.5, -3.1, -6.2, 0.9, 0.2, -4.0, -1.1, -6.2, -2.0, -6.3, 0.8, -2.4],
                     borderColor: '#5856d6',
                     backgroundColor: 'rgba(88, 86, 214, 0.05)',
                     fill: false,
@@ -250,7 +250,7 @@
             type: 'pie',
             data: {
                 labels: ["Z1", "Z2", "Z3", "Z4", "Z5", "Z6", "Z7", "SS"],
-                datasets: [{ data: [189, 1548, 344, 124, 28, 2, 0, 123] }]
+                datasets: [{ data: [189, 1482, 323, 116, 28, 2, 0, 113] }]
             },
             options: { responsive: true, maintainAspectRatio: false }
         });
@@ -261,7 +261,7 @@
                 labels: ["2026-W21", "2026-W22", "2026-W23", "2026-W24", "2026-W25"],
                 datasets: [{
                     label: 'Weekly TSS',
-                    data: [581.0, 639.0, 654.0, 649.0, 34.0],
+                    data: [495.0, 639.0, 654.0, 649.0, 34.0],
                     backgroundColor: '#0071e3',
                     borderRadius: 4
                 }]
@@ -279,10 +279,10 @@
         new Chart(document.getElementById('weightChart'), {
             type: 'line',
             data: {
-                labels: ["2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22"],
+                labels: ["2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23"],
                 datasets: [{
                     label: 'Weight (kg)',
-                    data: [97.3, 98.4, 98.3, 97.2, 98.4, 96.6, 97.4, 98.7, 97.7, 97.6, 97.7, 98.0, 96.8, 98.8, 98.8, 98.8, 99.0, 97.7, 96.4, 98.7, 97.8, 98.2, 97.2, 97.0, 97.6, 99.4, 98.0],
+                    data: [98.4, 98.3, 97.2, 98.4, 96.6, 97.4, 98.7, 97.7, 97.6, 97.7, 98.0, 96.8, 98.8, 98.8, 98.8, 99.0, 97.7, 96.4, 98.7, 97.8, 98.2, 97.2, 97.0, 97.6, 99.4, 98.0, 99.8],
                     borderColor: '#5856d6',
                     backgroundColor: 'rgba(88, 86, 214, 0.1)',
                     fill: true,
@@ -302,10 +302,10 @@
         new Chart(document.getElementById('dailyLoadChart'), {
             type: 'bar',
             data: {
-                labels: ["2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22"],
+                labels: ["2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22"],
                 datasets: [{
                     label: 'Daily TSS',
-                    data: [86, 68, 144, 145, 78, 60, 84, 104, 97, 82, 107, 31, 134, 22, 49, 94, 81, 174, 113, 121, 33, 94, 127, 68, 137, 59, 131, 34],
+                    data: [68, 144, 145, 78, 60, 84, 104, 97, 82, 107, 31, 134, 22, 49, 94, 81, 174, 113, 121, 33, 94, 127, 68, 137, 59, 131, 34],
                     backgroundColor: '#ff9500',
                     borderRadius: 4
                 }]
