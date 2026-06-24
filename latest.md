@@ -1,26 +1,33 @@
 # Training Report
-**Period:** 2026-05-26 to 2026-06-23
-**Last Updated:** 2026-06-23T20:55:33.110729
+**Period:** 2026-05-27 to 2026-06-24
+**Last Updated:** 2026-06-24T05:49:46.544259
 
 ## Training Status
-- **Fitness (CTL):** 89.3 - Chronic Training Load
-- **Fatigue (ATL):** 89.1 - Acute Training Load
-- **Form (TSB):** 0.1 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 0.55
-- **👍 Recovery:** Normal - Maintain endurance
+- **Fitness (CTL):** 89.9 - Chronic Training Load
+- **Fatigue (ATL):** 92.8 - Acute Training Load
+- **Form (TSB):** -2.9 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 0.3
+- **⚠️ Recovery:** Caution - Easy training only
 
 ## Activity Summary
 - **Total Activities:** 46
-- **Total Duration:** 43.17h
-- **Total TSS:** 2565.0
-- **Total Energy:** 40503.2 kJ
+- **Total Duration:** 42.42h
+- **Total TSS:** 2566.0
+- **Total Energy:** 39102.4 kJ
 
 ## Sport Breakdown
+### Swim
+- Time: 5.8h
+- Distance: 18.0 km
+- Energy: 6619 kcal
+- Load: 647
+- Avg Speed: 3.1 km/h
+
 ### Ride
-- Time: 30.68h
-- Distance: 1118.9 km
-- Energy: 28586.2 kJ
-- Load: 1452
+- Time: 29.27h
+- Distance: 1067.6 km
+- Energy: 27185.4 kJ
+- Load: 1384
 - Avg Speed: 36.5 km/h
 
 ### Run
@@ -37,35 +44,28 @@
 - Load: 36
 - Avg Speed: 2.3 km/h
 
-### Swim
-- Time: 5.14h
-- Distance: 16.0 km
-- Energy: 5797 kcal
-- Load: 578
-- Avg Speed: 3.1 km/h
-
 ### Total
-- Time: 43.17h
-- Distance: 1228.8 km
-- Energy: 28648.8 kJ
-- Load: 2565
+- Time: 42.42h
+- Distance: 1179.5 km
+- Energy: 27251.4 kJ
+- Load: 2566
 
 ## Zone Distribution
-- **Z1:** 190m (8.1%)
-- **Z2:** 1556m (66.3%)
-- **Z3:** 327m (13.9%)
-- **Z4:** 122m (5.2%)
+- **Z1:** 190m (8.4%)
+- **Z2:** 1476m (65.2%)
+- **Z3:** 323m (14.3%)
+- **Z4:** 122m (5.4%)
 - **Z5:** 36m (1.6%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 113m (4.8%)
+- **SS:** 113m (5.0%)
 
 ## Daily Wellness (Latest)
-- **Sleep:** 6.6h
-- **Resting HR:** 64 bpm
-- **HRV:** 75.0
-- **Weight:** 99.8 kg
-- **Readiness:** 74.0%
+- **Sleep:** 6.2h
+- **Resting HR:** 62 bpm
+- **HRV:** 92.0
+- **Weight:** 98.5 kg
+- **Readiness:** 77.0%
 - **Soreness:** 2/5
-- **Fatigue:** 3/5
-- **Steps:** 56
+- **Fatigue:** 2/5
+- **Steps:** 60
