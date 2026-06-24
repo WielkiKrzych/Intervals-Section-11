@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-24T12:09:40.130258",
+  "last_updated": "2026-06-24T15:08:03.115823",
   "date_range": {
     "start": "2026-05-27",
     "end": "2026-06-24"
@@ -1691,7 +1691,7 @@
           "pMax": 865.30646
         }
       ],
-      "updated": "2026-06-23T03:42:49.941+00:00",
+      "updated": "2026-06-24T14:35:13.425+00:00",
       "weight": 98.0,
       "restingHR": 66,
       "hrv": 79.0,
@@ -1699,10 +1699,10 @@
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": 3214,
-      "sleepSecs": 18213,
+      "sleepSecs": 16239,
       "sleepScore": null,
       "sleepQuality": null,
-      "avgSleepingHR": 62.0,
+      "avgSleepingHR": 61.0,
       "soreness": 3,
       "fatigue": 3,
       "stress": null,
@@ -1732,7 +1732,7 @@
       "tempRestingHR": false,
       "REMSleep": 5532.632378935814,
       "DeepSleep": 1435.4942879676819,
-      "LightSleep": 11245.023788928986
+      "LightSleep": 9271.22930598259
     },
     {
       "id": "2026-06-23",
@@ -1819,15 +1819,15 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-06-24T10:39:24.880+00:00",
-      "weight": 98.5,
-      "restingHR": 62,
+      "updated": "2026-06-24T14:43:41.597+00:00",
+      "weight": 97.4,
+      "restingHR": 69,
       "hrv": 92.0,
       "hrvSDNN": 129.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
-      "kcalConsumed": null,
-      "sleepSecs": 22440,
+      "kcalConsumed": 2509,
+      "sleepSecs": 19588,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 61.0,
@@ -1837,11 +1837,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.0,
+      "spO2": 96.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 2.9,
       "readiness": 77.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1850,7 +1850,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 60,
+      "steps": 13250,
       "respiration": 19.827587,
       "carbohydrates": null,
       "protein": null,
@@ -1966,8 +1966,8 @@
         999.0
       ],
       "lthr": 172,
-      "icu_resting_hr": 62,
-      "icu_weight": 98.5,
+      "icu_resting_hr": 69,
+      "icu_weight": 97.4,
       "icu_power_zones": [
         80,
         90,
@@ -1978,7 +1978,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 33.47451,
+      "trimp": 30.877926,
       "icu_warmup_time": 0,
       "icu_cooldown_time": 0,
       "icu_chat_id": null,
@@ -2288,13 +2288,13 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 62,
-      "icu_weight": 98.5,
+      "icu_resting_hr": 69,
+      "icu_weight": 97.4,
       "icu_power_zones": null,
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 42.573547,
+      "trimp": 38.463425,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -16697,17 +16697,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 4,
-      "tss": 225,
-      "duration_hours": 3.68
+      "count": 3,
+      "tss": 191,
+      "duration_hours": 2.67
     },
     "previous_week": {
       "count": 12,
-      "tss": 649,
-      "duration_hours": 10.88
+      "tss": 650,
+      "duration_hours": 10.87
     },
-    "tss_change": "\u2193 65%",
-    "duration_change": "\u2193 66%",
-    "count_change": "\u2193 67%"
+    "tss_change": "\u2193 71%",
+    "duration_change": "\u2193 75%",
+    "count_change": "\u2193 75%"
   }
 }
