@@ -1,21 +1,28 @@
 # Training Report
 **Period:** 2026-05-28 to 2026-06-25
-**Last Updated:** 2026-06-25T09:44:08.078291
+**Last Updated:** 2026-06-25T12:07:33.816326
 
 ## Training Status
-- **Fitness (CTL):** 90.7 - Chronic Training Load
-- **Fatigue (ATL):** 97.2 - Acute Training Load
-- **Form (TSB):** -6.5 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 1.6
-- **🛑 Recovery:** Overreaching - Rest day recommended
+- **Fitness (CTL):** 90.3 - Chronic Training Load
+- **Fatigue (ATL):** 94.7 - Acute Training Load
+- **Form (TSB):** -4.4 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 1.15
+- **⚠️ Recovery:** Caution - Easy training only
 
 ## Activity Summary
-- **Total Activities:** 45
-- **Total Duration:** 41.35h
-- **Total TSS:** 2450.0
-- **Total Energy:** 38462.8 kJ
+- **Total Activities:** 46
+- **Total Duration:** 43.88h
+- **Total TSS:** 2574.0
+- **Total Energy:** 40867.2 kJ
 
 ## Sport Breakdown
+### Ride
+- Time: 31.81h
+- Distance: 1170.4 km
+- Energy: 29589.8 kJ
+- Load: 1508
+- Avg Speed: 36.8 km/h
+
 ### Run
 - Time: 6.25h
 - Distance: 87.4 km
@@ -30,13 +37,6 @@
 - Load: 560
 - Avg Speed: 3.1 km/h
 
-### Ride
-- Time: 29.27h
-- Distance: 1067.6 km
-- Energy: 27185.4 kJ
-- Load: 1384
-- Avg Speed: 36.5 km/h
-
 ### OpenWaterSwim
 - Time: 0.79h
 - Distance: 1.8 km
@@ -45,27 +45,27 @@
 - Avg Speed: 2.3 km/h
 
 ### Total
-- Time: 41.34h
-- Distance: 1172.4 km
-- Energy: 27246.2 kJ
-- Load: 2450
+- Time: 43.88h
+- Distance: 1275.2 km
+- Energy: 29650.6 kJ
+- Load: 2574
 
 ## Zone Distribution
-- **Z1:** 189m (8.4%)
-- **Z2:** 1478m (65.9%)
-- **Z3:** 320m (14.3%)
-- **Z4:** 106m (4.7%)
-- **Z5:** 35m (1.6%)
+- **Z1:** 189m (7.9%)
+- **Z2:** 1584m (66.1%)
+- **Z3:** 366m (15.3%)
+- **Z4:** 106m (4.4%)
+- **Z5:** 35m (1.5%)
 - **Z6:** 1m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 113m (5.1%)
+- **SS:** 113m (4.8%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 5.3h
-- **Resting HR:** 67 bpm
+- **Resting HR:** 70 bpm
 - **HRV:** 47.0
-- **Weight:** 96.3 kg
+- **Weight:** 96.1 kg
 - **Readiness:** 76.0%
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 2897
+- **Steps:** 6530
