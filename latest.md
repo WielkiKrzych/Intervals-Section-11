@@ -1,21 +1,28 @@
 # Training Report
 **Period:** 2026-05-29 to 2026-06-26
-**Last Updated:** 2026-06-26T04:40:13.825825
+**Last Updated:** 2026-06-26T08:20:34.503396
 
 ## Training Status
-- **Fitness (CTL):** 91.6 - Chronic Training Load
-- **Fatigue (ATL):** 101.8 - Acute Training Load
-- **Form (TSB):** -10.2 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 1.38
+- **Fitness (CTL):** 91.3 - Chronic Training Load
+- **Fatigue (ATL):** 100.2 - Acute Training Load
+- **Form (TSB):** -8.9 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 1.1
 - **🛑 Recovery:** Overreaching - Rest day recommended
 
 ## Activity Summary
-- **Total Activities:** 43
-- **Total Duration:** 41.91h
-- **Total TSS:** 2429.0
+- **Total Activities:** 44
+- **Total Duration:** 42.54h
+- **Total TSS:** 2504.0
 - **Total Energy:** 39031.2 kJ
 
 ## Sport Breakdown
+### Swim
+- Time: 5.19h
+- Distance: 16.1 km
+- Energy: 6081 kcal
+- Load: 578
+- Avg Speed: 3.1 km/h
+
 ### Ride
 - Time: 30.64h
 - Distance: 1127.8 km
@@ -30,13 +37,6 @@
 - Load: 445
 - Avg Pace: 4.3 min/km
 
-### Swim
-- Time: 4.56h
-- Distance: 14.1 km
-- Energy: 5317 kcal
-- Load: 503
-- Avg Speed: 3.1 km/h
-
 ### OpenWaterSwim
 - Time: 0.79h
 - Distance: 1.8 km
@@ -45,10 +45,10 @@
 - Avg Speed: 2.3 km/h
 
 ### Total
-- Time: 41.91h
-- Distance: 1226.6 km
-- Energy: 28443.5 kJ
-- Load: 2429
+- Time: 42.54h
+- Distance: 1228.6 km
+- Energy: 28446.7 kJ
+- Load: 2504
 
 ## Zone Distribution
 - **Z1:** 189m (8.3%)
