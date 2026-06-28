@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-28T04:54:54.320117",
+  "last_updated": "2026-06-28T08:21:48.455132",
   "date_range": {
     "start": "2026-05-31",
     "end": "2026-06-28"
@@ -1800,11 +1800,11 @@
     },
     {
       "id": "2026-06-28",
-      "ctl": 96.01099,
-      "atl": 122.99644,
-      "rampRate": 5.5381317,
-      "ctlLoad": 197.0,
-      "atlLoad": 197.0,
+      "ctl": 94.434586,
+      "atl": 114.077255,
+      "rampRate": 3.961731,
+      "ctlLoad": 130.0,
+      "atlLoad": 130.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1819,7 +1819,7 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-06-28T04:37:56.792+00:00",
+      "updated": "2026-06-28T06:52:29.629+00:00",
       "weight": null,
       "restingHR": 29,
       "hrv": 72.0,
@@ -1831,8 +1831,8 @@
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": null,
-      "soreness": null,
-      "fatigue": null,
+      "soreness": 2,
+      "fatigue": 3,
       "stress": null,
       "mood": null,
       "motivation": null,
@@ -1861,10 +1861,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 96.0,
-    "atl": 123.0,
-    "tsb": -27.0,
-    "ramp_rate": 5.54
+    "ctl": 94.4,
+    "atl": 114.1,
+    "tsb": -19.6,
+    "ramp_rate": 3.96
   },
   "activities": [
     {
