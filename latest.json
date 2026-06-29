@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-29T11:59:48.241128",
+  "last_updated": "2026-06-29T16:04:21.517044",
   "date_range": {
     "start": "2026-06-01",
     "end": "2026-06-29"
@@ -1972,8 +1972,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-06-29T11:44:37.448+00:00",
-      "icu_sync_date": "2026-06-29T11:44:38.103+00:00",
-      "analyzed": "2026-06-29T11:44:38.103+00:00",
+      "icu_sync_date": "2026-06-29T12:03:53.608+00:00",
+      "analyzed": "2026-06-29T12:03:53.608+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2129,7 +2129,7 @@
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.0,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 28,
       "icu_joules_above_ftp": 1334,
@@ -2159,7 +2159,7 @@
       "min_altitude": null,
       "max_altitude": null,
       "power_load": 123,
-      "hr_load": 93,
+      "hr_load": 92,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2207,7 +2207,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.760090897858659,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 130.20916841618458,
       "Pvo2max": 403.5,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -16809,9 +16809,9 @@
       "duration_hours": 0.0
     },
     "previous_week": {
-      "count": 11,
-      "tss": 897,
-      "duration_hours": 16.45
+      "count": 10,
+      "tss": 863,
+      "duration_hours": 15.44
     },
     "tss_change": "\u2193 100%",
     "duration_change": "\u2193 100%",
