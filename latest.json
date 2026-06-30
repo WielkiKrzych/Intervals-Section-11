@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-30T18:14:40.327578",
+  "last_updated": "2026-06-30T20:22:09.843604",
   "date_range": {
     "start": "2026-06-02",
     "end": "2026-06-30"
@@ -1847,11 +1847,11 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-06-30T11:32:36.039+00:00",
-      "weight": 97.0,
+      "updated": "2026-06-30T19:20:19.900+00:00",
+      "weight": 96.4,
       "restingHR": 68,
       "hrv": null,
-      "hrvSDNN": 57.0,
+      "hrvSDNN": 48.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
@@ -1865,11 +1865,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.5,
+      "spO2": 95.57143,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 0.4000004,
+      "hydrationVolume": 8.600009,
       "readiness": null,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1878,7 +1878,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 7186,
+      "steps": 11864,
       "respiration": 19.157143,
       "carbohydrates": null,
       "protein": null,
@@ -1889,8 +1889,8 @@
       "REMSleep": 7833,
       "DeepSleep": 4092,
       "LightSleep": 13958,
-      "ActiveEnergy": 337,
-      "RestingEnergy": 983
+      "ActiveEnergy": 5004,
+      "RestingEnergy": 2057
     }
   ],
   "weekly_summary": {
@@ -1991,7 +1991,7 @@
       "pace_zones": null,
       "lthr": 172,
       "icu_resting_hr": 68,
-      "icu_weight": 97.0,
+      "icu_weight": 96.4,
       "icu_power_zones": [
         55,
         75,
