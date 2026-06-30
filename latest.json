@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-30T08:20:41.765831",
+  "last_updated": "2026-06-30T11:27:18.687246",
   "date_range": {
     "start": "2026-06-02",
     "end": "2026-06-30"
@@ -1828,11 +1828,11 @@
     },
     {
       "id": "2026-06-30",
-      "ctl": 95.958305,
-      "atl": 118.15296,
-      "rampRate": 6.699913,
-      "ctlLoad": 158.0,
-      "atlLoad": 158.0,
+      "ctl": 95.39362,
+      "atl": 114.95803,
+      "rampRate": 6.135231,
+      "ctlLoad": 134.0,
+      "atlLoad": 134.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1847,15 +1847,15 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-06-30T07:52:20.946+00:00",
-      "weight": 97.7,
-      "restingHR": null,
+      "updated": "2026-06-30T11:26:51.328+00:00",
+      "weight": 97.0,
+      "restingHR": 68,
       "hrv": null,
-      "hrvSDNN": 64.0,
+      "hrvSDNN": 57.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 25860,
+      "sleepSecs": 25895,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 66.0,
@@ -1865,11 +1865,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.4,
+      "spO2": 95.5,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 0.4000004,
       "readiness": null,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1878,7 +1878,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 69,
+      "steps": 7186,
       "respiration": 19.157143,
       "carbohydrates": null,
       "protein": null,
@@ -1889,15 +1889,15 @@
       "REMSleep": 7833,
       "DeepSleep": 4092,
       "LightSleep": 13958,
-      "ActiveEnergy": 11,
-      "RestingEnergy": 476
+      "ActiveEnergy": 337,
+      "RestingEnergy": 983
     }
   ],
   "weekly_summary": {
-    "ctl": 96.0,
-    "atl": 118.2,
-    "tsb": -22.2,
-    "ramp_rate": 6.7
+    "ctl": 95.4,
+    "atl": 115.0,
+    "tsb": -19.6,
+    "ramp_rate": 6.14
   },
   "activities": [
     {
