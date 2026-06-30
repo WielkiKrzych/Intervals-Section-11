@@ -1,12 +1,12 @@
 # Training Report
 **Period:** 2026-06-02 to 2026-06-30
-**Last Updated:** 2026-06-30T04:36:43.697618
+**Last Updated:** 2026-06-30T08:20:41.765831
 
 ## Training Status
-- **Fitness (CTL):** 95.7 - Chronic Training Load
-- **Fatigue (ATL):** 116.7 - Acute Training Load
-- **Form (TSB):** -21.0 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 6.44
+- **Fitness (CTL):** 96.0 - Chronic Training Load
+- **Fatigue (ATL):** 118.2 - Acute Training Load
+- **Form (TSB):** -22.2 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 6.7
 - **🛑 Recovery:** Overreaching - Rest day recommended
 
 ## Activity Summary

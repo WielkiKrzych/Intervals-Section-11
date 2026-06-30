@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-06-30T04:36:43.697618",
+  "last_updated": "2026-06-30T08:20:41.765831",
   "date_range": {
     "start": "2026-06-02",
     "end": "2026-06-30"
@@ -1828,11 +1828,11 @@
     },
     {
       "id": "2026-06-30",
-      "ctl": 95.69949,
-      "atl": 116.68862,
-      "rampRate": 6.441101,
-      "ctlLoad": 147.0,
-      "atlLoad": 147.0,
+      "ctl": 95.958305,
+      "atl": 118.15296,
+      "rampRate": 6.699913,
+      "ctlLoad": 158.0,
+      "atlLoad": 158.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1847,7 +1847,7 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-06-30T03:56:51.017+00:00",
+      "updated": "2026-06-30T07:52:20.946+00:00",
       "weight": 97.7,
       "restingHR": null,
       "hrv": null,
@@ -1894,10 +1894,10 @@
     }
   ],
   "weekly_summary": {
-    "ctl": 95.7,
-    "atl": 116.7,
-    "tsb": -21.0,
-    "ramp_rate": 6.44
+    "ctl": 96.0,
+    "atl": 118.2,
+    "tsb": -22.2,
+    "ramp_rate": 6.7
   },
   "activities": [
     {
