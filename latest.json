@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-01T06:11:03.474212",
+  "last_updated": "2026-07-01T10:14:58.045229",
   "date_range": {
     "start": "2026-06-03",
     "end": "2026-07-01"
@@ -1830,11 +1830,11 @@
     },
     {
       "id": "2026-07-01",
-      "ctl": 96.30031,
-      "atl": 117.43977,
-      "rampRate": 6.8597717,
-      "ctlLoad": 131.0,
-      "atlLoad": 131.0,
+      "ctl": 96.32384,
+      "atl": 117.5729,
+      "rampRate": 6.883301,
+      "ctlLoad": 132.0,
+      "atlLoad": 132.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1849,7 +1849,7 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-07-01T05:08:54.265+00:00",
+      "updated": "2026-07-01T09:15:17.234+00:00",
       "weight": 97.8,
       "restingHR": 65,
       "hrv": 50.0,
@@ -1897,9 +1897,9 @@
   ],
   "weekly_summary": {
     "ctl": 96.3,
-    "atl": 117.4,
-    "tsb": -21.1,
-    "ramp_rate": 6.86
+    "atl": 117.6,
+    "tsb": -21.2,
+    "ramp_rate": 6.88
   },
   "activities": [
     {
@@ -1920,8 +1920,8 @@
       "icu_rolling_ftp": null,
       "icu_rolling_ftp_delta": null,
       "icu_training_load": 66,
-      "icu_atl": 117.43977,
-      "icu_ctl": 96.30031,
+      "icu_atl": 117.5729,
+      "icu_ctl": 96.32384,
       "ss_p_max": null,
       "ss_w_prime": null,
       "ss_cp": null,
@@ -2104,7 +2104,7 @@
       "strava_id": null,
       "lengths": 72,
       "pool_length": 25.0,
-      "compliance": 227.58621,
+      "compliance": 200.0,
       "coach_tick": null,
       "source": "GARMIN_CONNECT",
       "oauth_client_id": null,
