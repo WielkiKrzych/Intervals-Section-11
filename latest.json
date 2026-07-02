@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-02T05:42:47.545640",
+  "last_updated": "2026-07-02T08:34:30.981322",
   "date_range": {
     "start": "2026-06-04",
     "end": "2026-07-02"
@@ -1832,11 +1832,11 @@
     },
     {
       "id": "2026-07-02",
-      "ctl": 96.93848,
-      "atl": 118.498955,
-      "rampRate": 6.6848145,
-      "ctlLoad": 141.0,
-      "atlLoad": 141.0,
+      "ctl": 95.62089,
+      "atl": 111.04411,
+      "rampRate": 5.3672256,
+      "ctlLoad": 85.0,
+      "atlLoad": 85.0,
       "sportInfo": [
         {
           "type": "Ride",
@@ -1851,11 +1851,11 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-07-02T04:46:38.416+00:00",
-      "weight": 96.6,
-      "restingHR": 64,
+      "updated": "2026-07-02T08:32:08.403+00:00",
+      "weight": 95.0,
+      "restingHR": 68,
       "hrv": 64.0,
-      "hrvSDNN": 96.0,
+      "hrvSDNN": 82.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
@@ -1869,11 +1869,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.0,
+      "spO2": 95.46154,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 0.4000004,
+      "hydrationVolume": 1.7000017,
       "readiness": 88.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1882,7 +1882,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 3492,
+      "steps": 5709,
       "respiration": 18.87143,
       "carbohydrates": null,
       "protein": null,
@@ -1893,15 +1893,15 @@
       "REMSleep": 7294,
       "DeepSleep": 2571,
       "LightSleep": 16173,
-      "ActiveEnergy": 138,
-      "RestingEnergy": 595
+      "ActiveEnergy": 317,
+      "RestingEnergy": 991
     }
   ],
   "weekly_summary": {
-    "ctl": 96.9,
-    "atl": 118.5,
-    "tsb": -21.6,
-    "ramp_rate": 6.68
+    "ctl": 95.6,
+    "atl": 111.0,
+    "tsb": -15.4,
+    "ramp_rate": 5.37
   },
   "activities": [
     {
