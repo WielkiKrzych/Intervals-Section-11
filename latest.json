@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-04T12:19:17.067707",
+  "last_updated": "2026-07-04T14:09:09.188033",
   "date_range": {
     "start": "2026-06-06",
     "end": "2026-07-04"
@@ -1855,15 +1855,15 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-07-04T09:46:38.898+00:00",
-      "weight": 97.2,
-      "restingHR": 67,
+      "updated": "2026-07-04T13:56:07.247+00:00",
+      "weight": 96.7,
+      "restingHR": 70,
       "hrv": 43.0,
-      "hrvSDNN": 102.0,
+      "hrvSDNN": 59.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 23520,
+      "sleepSecs": 23533,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 67.0,
@@ -1873,11 +1873,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.625,
+      "spO2": 95.72727,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": null,
+      "hydrationVolume": 5.5000057,
       "readiness": 64.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1886,7 +1886,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 47,
+      "steps": 6925,
       "respiration": 19.796297,
       "carbohydrates": null,
       "protein": null,
@@ -1897,8 +1897,8 @@
       "REMSleep": 5920,
       "DeepSleep": 2332,
       "LightSleep": 15278,
-      "ActiveEnergy": 7,
-      "RestingEnergy": 351
+      "ActiveEnergy": 4441,
+      "RestingEnergy": 1702
     }
   ],
   "weekly_summary": {
@@ -1998,8 +1998,8 @@
       ],
       "pace_zones": null,
       "lthr": 172,
-      "icu_resting_hr": 67,
-      "icu_weight": 97.2,
+      "icu_resting_hr": 70,
+      "icu_weight": 96.7,
       "icu_power_zones": [
         55,
         75,
@@ -2011,7 +2011,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 197.42188,
+      "trimp": 185.87372,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -16112,12 +16112,12 @@
       "duration_hours": 11.84
     },
     "previous_week": {
-      "count": 11,
-      "tss": 897,
-      "duration_hours": 16.45
+      "count": 10,
+      "tss": 863,
+      "duration_hours": 15.44
     },
-    "tss_change": "\u2193 18%",
-    "duration_change": "\u2193 28%",
-    "count_change": "\u2193 36%"
+    "tss_change": "\u2193 14%",
+    "duration_change": "\u2193 23%",
+    "count_change": "\u2193 30%"
   }
 }
