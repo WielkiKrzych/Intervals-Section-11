@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-05T08:30:54.820246",
+  "last_updated": "2026-07-05T10:51:35.974900",
   "date_range": {
     "start": "2026-06-07",
     "end": "2026-07-05"
@@ -16484,17 +16484,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 9,
-      "tss": 978,
-      "duration_hours": 15.51
+      "count": 10,
+      "tss": 1040,
+      "duration_hours": 16.25
     },
     "previous_week": {
       "count": 10,
       "tss": 774,
       "duration_hours": 14.45
     },
-    "tss_change": "\u2191 26%",
-    "duration_change": "\u2191 7%",
-    "count_change": "\u2193 10%"
+    "tss_change": "\u2191 34%",
+    "duration_change": "\u2191 12%",
+    "count_change": "\u2193 0%"
   }
 }
