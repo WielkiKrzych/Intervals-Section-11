@@ -1,34 +1,34 @@
 # Training Report
 **Period:** 2026-06-09 to 2026-07-07
-**Last Updated:** 2026-07-07T07:03:11.847743
+**Last Updated:** 2026-07-07T10:31:50.929267
 
 ## Training Status
-- **Fitness (CTL):** 99.9 - Chronic Training Load
-- **Fatigue (ATL):** 117.9 - Acute Training Load
-- **Form (TSB):** -18.0 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 4.45
+- **Fitness (CTL):** 100.1 - Chronic Training Load
+- **Fatigue (ATL):** 119.0 - Acute Training Load
+- **Form (TSB):** -18.9 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 4.64
 - **🛑 Recovery:** Overreaching - Rest day recommended
 
 ## Activity Summary
-- **Total Activities:** 41
-- **Total Duration:** 53.17h
-- **Total TSS:** 3095.0
-- **Total Energy:** 48556.1 kJ
+- **Total Activities:** 43
+- **Total Duration:** 54.58h
+- **Total TSS:** 3200.0
+- **Total Energy:** 50280.6 kJ
 
 ## Sport Breakdown
 ### Run
-- Time: 5.07h
-- Distance: 65.7 km
-- Energy: 5803 kcal
-- Load: 330
+- Time: 5.4h
+- Distance: 70.2 km
+- Energy: 6196 kcal
+- Load: 357
 - Avg Pace: 4.6 min/km
 
 ### Ride
-- Time: 42.37h
-- Distance: 1491.6 km
-- Energy: 38912.9 kJ
-- Load: 2133
-- Avg Speed: 35.2 km/h
+- Time: 43.46h
+- Distance: 1522.5 km
+- Energy: 40014.6 kJ
+- Load: 2211
+- Avg Speed: 35.0 km/h
 
 ### Swim
 - Time: 5.33h
@@ -45,26 +45,26 @@
 - Avg Speed: 2.2 km/h
 
 ### Total
-- Time: 53.17h
-- Distance: 1574.9 km
-- Energy: 38965.7 kJ
-- Load: 3095
+- Time: 54.59h
+- Distance: 1610.3 km
+- Energy: 40069.0 kJ
+- Load: 3200
 
 ## Zone Distribution
-- **Z1:** 250m (7.9%)
-- **Z2:** 1794m (56.7%)
-- **Z3:** 510m (16.1%)
-- **Z4:** 173m (5.5%)
-- **Z5:** 114m (3.6%)
+- **Z1:** 251m (7.7%)
+- **Z2:** 1835m (56.4%)
+- **Z3:** 520m (16.0%)
+- **Z4:** 197m (6.1%)
+- **Z5:** 123m (3.8%)
 - **Z6:** 2m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 318m (10.1%)
+- **SS:** 322m (9.9%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 6.6h
-- **Resting HR:** 74 bpm
+- **Resting HR:** 72 bpm
 - **HRV:** 70.0
-- **Weight:** 97.0 kg
+- **Weight:** 96.7 kg
 - **Soreness:** 2/5
 - **Fatigue:** 2/5
-- **Steps:** 3867
+- **Steps:** 5911
