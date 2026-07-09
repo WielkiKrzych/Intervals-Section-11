@@ -1,41 +1,41 @@
 # Training Report
 **Period:** 2026-06-11 to 2026-07-09
-**Last Updated:** 2026-07-09T03:26:12.953408
+**Last Updated:** 2026-07-09T07:01:40.114333
 
 ## Training Status
-- **Fitness (CTL):** 98.8 - Chronic Training Load
-- **Fatigue (ATL):** 107.0 - Acute Training Load
-- **Form (TSB):** -8.2 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** 2.89
+- **Fitness (CTL):** 99.2 - Chronic Training Load
+- **Fatigue (ATL):** 109.6 - Acute Training Load
+- **Form (TSB):** -10.4 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** 3.36
 - **🛑 Recovery:** Overreaching - Rest day recommended
 
 ## Activity Summary
-- **Total Activities:** 42
-- **Total Duration:** 53.5h
-- **Total TSS:** 3140.0
-- **Total Energy:** 49185.5 kJ
+- **Total Activities:** 45
+- **Total Duration:** 54.66h
+- **Total TSS:** 3220.0
+- **Total Energy:** 50174.3 kJ
 
 ## Sport Breakdown
+### Run
+- Time: 5.13h
+- Distance: 67.1 km
+- Energy: 5922 kcal
+- Load: 342
+- Avg Pace: 4.6 min/km
+
 ### Ride
-- Time: 43.27h
-- Distance: 1507.9 km
-- Energy: 39755.3 kJ
-- Load: 2204
-- Avg Speed: 34.8 km/h
+- Time: 43.95h
+- Distance: 1527.2 km
+- Energy: 40356.8 kJ
+- Load: 2238
+- Avg Speed: 34.7 km/h
 
 ### Swim
-- Time: 4.93h
-- Distance: 15.7 km
-- Energy: 5997 kcal
-- Load: 590
+- Time: 5.18h
+- Distance: 16.5 km
+- Energy: 6278 kcal
+- Load: 621
 - Avg Speed: 3.2 km/h
-
-### Run
-- Time: 4.9h
-- Distance: 64.2 km
-- Energy: 5675 kcal
-- Load: 327
-- Avg Pace: 4.6 min/km
 
 ### OpenWaterSwim
 - Time: 0.4h
@@ -45,25 +45,26 @@
 - Avg Speed: 2.2 km/h
 
 ### Total
-- Time: 53.5h
-- Distance: 1588.7 km
-- Energy: 39806.2 kJ
-- Load: 3140
+- Time: 54.66h
+- Distance: 1611.7 km
+- Energy: 40410.0 kJ
+- Load: 3220
 
 ## Zone Distribution
-- **Z1:** 251m (7.8%)
-- **Z2:** 1804m (56.2%)
-- **Z3:** 510m (15.9%)
-- **Z4:** 197m (6.2%)
-- **Z5:** 123m (3.8%)
+- **Z1:** 253m (7.7%)
+- **Z2:** 1846m (56.4%)
+- **Z3:** 517m (15.8%)
+- **Z4:** 200m (6.1%)
+- **Z5:** 124m (3.8%)
 - **Z6:** 2m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 322m (10.0%)
+- **SS:** 328m (10.0%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 7.1h
 - **Resting HR:** 68 bpm
 - **HRV:** 33.0
-- **Weight:** 99.8 kg
+- **Weight:** 99.1 kg
 - **Soreness:** 2/5
 - **Fatigue:** 3/5
+- **Steps:** 7582
