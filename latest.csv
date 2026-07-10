@@ -1,5 +1,6 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-07-10,VirtualRide,Z2 60' @65% — Podtrzymanie,59,43,836.0,40.0
 2026-07-09,Run,Bieg 10' Z1 + strides,14,15,387.3,2.9
 2026-07-09,VirtualRide,Sprint Prep 40',40,34,601.5,19.2
 2026-07-09,Swim,Swim — Pre-Race Openers,14,31,0.0,0.8
@@ -75,10 +76,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-07-07,6.6,72,70.0,96.7,,2,2,15174,100.10453,118.99251,-18.9
 2026-07-08,6.7,70,38.0,98.2,,2,2,10268,99.70209,114.20111,-14.5
 2026-07-09,7.1,80,33.0,98.3,49.0,2,3,16834,99.23853,109.648186,-10.4
-2026-07-10,8.8,68,29.0,96.7,21.0,1,2,2152,97.84475,100.37647,-2.5
+2026-07-10,8.8,68,29.0,96.7,21.0,1,2,2152,97.91534,100.77584,-2.9
 
 === SPORT TOTALS ===
+Ride,42.94h,39361.7kJ,1494.6km,2200 TSS
 Run,5.13h,9817.5kJ,67.1km,342 TSS
-Ride,41.95h,38525.6kJ,1454.6km,2157 TSS
 Swim,5.18h,0.0kJ,16.5km,621 TSS
 OpenWaterSwim,0.4h,0.0kJ,0.9km,19 TSS
