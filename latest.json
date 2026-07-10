@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-10T11:33:32.944192",
+  "last_updated": "2026-07-10T13:43:46.428025",
   "date_range": {
     "start": "2026-06-12",
     "end": "2026-07-10"
@@ -1867,15 +1867,15 @@
           "pMax": 864.44116
         }
       ],
-      "updated": "2026-07-10T10:51:29.591+00:00",
+      "updated": "2026-07-10T12:31:38.845+00:00",
       "weight": 96.7,
-      "restingHR": 68,
+      "restingHR": 80,
       "hrv": 29.0,
-      "hrvSDNN": 42.0,
+      "hrvSDNN": 35.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
-      "sleepSecs": 31860,
+      "sleepSecs": 31902,
       "sleepScore": null,
       "sleepQuality": null,
       "avgSleepingHR": 72.0,
@@ -1885,11 +1885,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.9,
+      "spO2": 96.21429,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.3000013,
+      "hydrationVolume": 3.6000035,
       "readiness": 21.0,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1898,7 +1898,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 2152,
+      "steps": 7535,
       "respiration": 19.6625,
       "carbohydrates": null,
       "protein": null,
@@ -1909,8 +1909,8 @@
       "REMSleep": 5352,
       "DeepSleep": 3945,
       "LightSleep": 22598,
-      "ActiveEnergy": 137,
-      "RestingEnergy": 748
+      "ActiveEnergy": 1305,
+      "RestingEnergy": 1373
     }
   ],
   "weekly_summary": {
@@ -1956,7 +1956,7 @@
       "distance": 40026.0,
       "icu_distance": 40026.0,
       "moving_time": 3576,
-      "coasting_time": 3,
+      "coasting_time": 63,
       "total_elevation_gain": null,
       "total_elevation_loss": null,
       "timezone": null,
@@ -1996,8 +1996,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-07-10T10:51:29.066+00:00",
-      "icu_sync_date": "2026-07-10T10:51:29.505+00:00",
-      "analyzed": "2026-07-10T10:51:29.505+00:00",
+      "icu_sync_date": "2026-07-10T12:27:56.667+00:00",
+      "analyzed": "2026-07-10T12:27:56.667+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2010,7 +2010,7 @@
       ],
       "pace_zones": null,
       "lthr": 172,
-      "icu_resting_hr": 68,
+      "icu_resting_hr": 80,
       "icu_weight": 96.7,
       "icu_power_zones": [
         55,
@@ -2023,7 +2023,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 43.507454,
+      "trimp": 33.71684,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2151,7 +2151,7 @@
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 1.12,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 3,
       "icu_joules_above_ftp": 2201,
@@ -2181,7 +2181,7 @@
       "min_altitude": null,
       "max_altitude": null,
       "power_load": 43,
-      "hr_load": 48,
+      "hr_load": 47,
       "pace_load": null,
       "hr_load_type": "HR_ZONES",
       "pace_load_type": null,
@@ -2226,7 +2226,7 @@
       "VT2VE": 105,
       "AeTwkg": 2.730696511554498,
       "VO2max": 165,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 43.915490146103785,
       "Pvo2max": 403.5,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -16586,17 +16586,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 7,
-      "tss": 268,
-      "duration_hours": 3.9
+      "count": 8,
+      "tss": 311,
+      "duration_hours": 4.89
     },
     "previous_week": {
-      "count": 10,
-      "tss": 1040,
-      "duration_hours": 16.25
+      "count": 9,
+      "tss": 917,
+      "duration_hours": 14.25
     },
-    "tss_change": "\u2193 74%",
-    "duration_change": "\u2193 76%",
-    "count_change": "\u2193 30%"
+    "tss_change": "\u2193 66%",
+    "duration_change": "\u2193 66%",
+    "count_change": "\u2193 11%"
   }
 }
