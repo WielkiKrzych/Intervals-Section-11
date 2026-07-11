@@ -1,34 +1,41 @@
 # Training Report
 **Period:** 2026-06-13 to 2026-07-11
-**Last Updated:** 2026-07-11T06:37:36.826452
+**Last Updated:** 2026-07-11T08:28:24.488979
 
 ## Training Status
-- **Fitness (CTL):** 97.0 - Chronic Training Load
-- **Fatigue (ATL):** 95.3 - Acute Training Load
-- **Form (TSB):** 1.7 = CTL - ATL (negative = overtraining)
-- **Ramp Rate:** -3.55
-- **👍 Recovery:** Normal - Maintain endurance
+- **Fitness (CTL):** 99.7 - Chronic Training Load
+- **Fatigue (ATL):** 110.3 - Acute Training Load
+- **Form (TSB):** -10.6 = CTL - ATL (negative = overtraining)
+- **Ramp Rate:** -0.92
+- **🛑 Recovery:** Overreaching - Rest day recommended
 
 ## Activity Summary
-- **Total Activities:** 42
-- **Total Duration:** 51.08h
-- **Total TSS:** 3008.0
-- **Total Energy:** 46936.2 kJ
+- **Total Activities:** 46
+- **Total Duration:** 52.28h
+- **Total TSS:** 3150.0
+- **Total Energy:** 47561.6 kJ
 
 ## Sport Breakdown
-### Ride
-- Time: 41.44h
-- Distance: 1439.3 km
-- Energy: 37944.2 kJ
-- Load: 2135
-- Avg Speed: 34.7 km/h
-
 ### Run
-- Time: 4.69h
-- Distance: 61.1 km
-- Energy: 5391 kcal
-- Load: 308
+- Time: 5.02h
+- Distance: 65.8 km
+- Energy: 5823 kcal
+- Load: 337
 - Avg Pace: 4.6 min/km
+
+### Ride
+- Time: 42.25h
+- Distance: 1472.8 km
+- Energy: 37944.2 kJ
+- Load: 2241
+- Avg Speed: 34.9 km/h
+
+### OpenWaterSwim
+- Time: 0.45h
+- Distance: 1.1 km
+- Energy: 570 kcal
+- Load: 26
+- Avg Speed: 2.4 km/h
 
 ### Swim
 - Time: 4.55h
@@ -37,28 +44,21 @@
 - Load: 546
 - Avg Speed: 3.2 km/h
 
-### OpenWaterSwim
-- Time: 0.4h
-- Distance: 0.9 km
-- Energy: 504 kcal
-- Load: 19
-- Avg Speed: 2.2 km/h
-
 ### Total
-- Time: 51.08h
-- Distance: 1515.8 km
-- Energy: 37991.4 kJ
-- Load: 3008
+- Time: 52.27h
+- Distance: 1554.2 km
+- Energy: 37993.5 kJ
+- Load: 3150
 
 ## Zone Distribution
 - **Z1:** 255m (8.2%)
-- **Z2:** 1690m (54.6%)
-- **Z3:** 501m (16.2%)
-- **Z4:** 193m (6.3%)
-- **Z5:** 124m (4.0%)
+- **Z2:** 1691m (54.2%)
+- **Z3:** 510m (16.4%)
+- **Z4:** 202m (6.5%)
+- **Z5:** 125m (4.0%)
 - **Z6:** 2m (0.1%)
 - **Z7:** 0m (0.0%)
-- **SS:** 330m (10.7%)
+- **SS:** 330m (10.6%)
 
 ## Daily Wellness (Latest)
 - **Sleep:** 6.5h
