@@ -1,8 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
 2026-07-11,Run,ENEA Bydgoszcz Triathlon SuperSprint,19,29,625.3,4.7
-2026-07-11,Ride,ENEA Bydgoszcz Triathlon SuperSprint,24,53,0.0,18.0
-2026-07-11,Ride,Bydgoszcz Multisport,24,53,0.0,16.8
+2026-07-11,Ride,ENEA Bydgoszcz Triathlon SuperSprint,24,33,459.5,18.0
 2026-07-11,OpenWaterSwim,ENEA Bydgoszcz Triathlon SuperSprint,3,7,0.0,0.2
 2026-07-10,VirtualRide,Z2 60' @65% — Podtrzymanie,59,43,836.0,40.0
 2026-07-09,Run,Bieg 10' Z1 + strides,14,15,387.3,2.9
@@ -77,10 +76,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-07-08,6.7,70,38.0,98.2,,2,2,10268,99.70209,114.20111,-14.5
 2026-07-09,7.1,80,33.0,98.3,49.0,2,3,16834,99.23853,109.648186,-10.4
 2026-07-10,8.9,76,29.0,96.7,21.0,1,2,15138,97.91534,100.77584,-2.9
-2026-07-11,6.5,84,32.0,97.6,,2,2,2170,98.952576,106.26369,-7.3
+2026-07-11,6.5,84,32.0,97.3,,2,2,15561,97.23501,96.54578,0.7
 
 === SPORT TOTALS ===
 Run,5.02h,9617.3kJ,65.8km,337 TSS
-Ride,42.25h,37944.2kJ,1474.1km,2241 TSS
+Ride,41.84h,38403.8kJ,1457.3km,2168 TSS
 OpenWaterSwim,0.45h,0.0kJ,1.2km,26 TSS
 Swim,4.55h,0.0kJ,14.5km,546 TSS
