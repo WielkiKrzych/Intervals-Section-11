@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-12T20:27:39.030682",
+  "last_updated": "2026-07-12T21:25:37.665846",
   "date_range": {
     "start": "2026-06-14",
     "end": "2026-07-12"
@@ -1871,11 +1871,11 @@
           "pMax": 863.5767
         }
       ],
-      "updated": "2026-07-12T12:14:36.470+00:00",
+      "updated": "2026-07-12T21:18:14.417+00:00",
       "weight": 99.6,
-      "restingHR": 67,
+      "restingHR": 84,
       "hrv": 31.0,
-      "hrvSDNN": 44.0,
+      "hrvSDNN": 28.0,
       "menstrualPhase": null,
       "menstrualPhasePredicted": null,
       "kcalConsumed": null,
@@ -1889,11 +1889,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 96.5,
+      "spO2": 96.0,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 1.000001,
+      "hydrationVolume": 7.4000072,
       "readiness": null,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1902,7 +1902,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 1078,
+      "steps": 39011,
       "respiration": 18.770834,
       "carbohydrates": null,
       "protein": null,
@@ -1913,8 +1913,8 @@
       "REMSleep": 7206,
       "DeepSleep": 3347,
       "LightSleep": 12047,
-      "ActiveEnergy": 58,
-      "RestingEnergy": 358
+      "ActiveEnergy": 5945,
+      "RestingEnergy": 2446
     }
   ],
   "weekly_summary": {
@@ -2020,7 +2020,7 @@
         999.0
       ],
       "lthr": 172,
-      "icu_resting_hr": 67,
+      "icu_resting_hr": 84,
       "icu_weight": 99.6,
       "icu_power_zones": [
         80,
@@ -2032,7 +2032,7 @@
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 176.09505,
+      "trimp": 149.14705,
       "icu_warmup_time": 600,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2356,7 +2356,7 @@
       ],
       "pace_zones": null,
       "lthr": 172,
-      "icu_resting_hr": 67,
+      "icu_resting_hr": 84,
       "icu_weight": 99.6,
       "icu_power_zones": [
         55,
@@ -2369,7 +2369,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 197.873,
+      "trimp": 161.69131,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2646,7 +2646,7 @@
       ],
       "pace_zones": null,
       "lthr": 172,
-      "icu_resting_hr": 67,
+      "icu_resting_hr": 84,
       "icu_weight": 99.6,
       "icu_power_zones": [
         55,
@@ -2659,7 +2659,7 @@
       "icu_sweet_spot_min": 84,
       "icu_sweet_spot_max": 97,
       "icu_power_spike_threshold": null,
-      "trimp": 198.02068,
+      "trimp": 161.81198,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
@@ -2989,13 +2989,13 @@
         999.0
       ],
       "lthr": 166,
-      "icu_resting_hr": 67,
+      "icu_resting_hr": 84,
       "icu_weight": 99.6,
       "icu_power_zones": null,
       "icu_sweet_spot_min": 0,
       "icu_sweet_spot_max": 0,
       "icu_power_spike_threshold": null,
-      "trimp": 70.793274,
+      "trimp": 59.796932,
       "icu_warmup_time": 300,
       "icu_cooldown_time": 300,
       "icu_chat_id": null,
