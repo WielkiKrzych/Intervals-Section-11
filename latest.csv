@@ -2,7 +2,6 @@
 date,type,name,duration_min,tss,kj,distance_km
 2026-07-12,Run,ENEA Bydgoszcz Triathlon 1/2,100,129,2984.9,22.1
 2026-07-12,Ride,ENEA Bydgoszcz Triathlon 1/2,134,141,2207.5,90.7
-2026-07-12,Ride,ENEA Bydgoszcz Triathlon 1/2,134,141,2207.5,90.7
 2026-07-12,OpenWaterSwim,ENEA Bydgoszcz Triathlon 1/2,38,78,0.0,2.1
 2026-07-11,Run,ENEA Bydgoszcz Triathlon SuperSprint,19,29,625.3,4.7
 2026-07-11,Ride,ENEA Bydgoszcz Triathlon SuperSprint,24,33,459.5,18.0
@@ -77,11 +76,11 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-07-09,7.1,80,33.0,98.3,49.0,2,3,16834,99.23853,109.648186,-10.4
 2026-07-10,8.9,76,29.0,96.7,21.0,1,2,15138,97.91534,100.77584,-2.9
 2026-07-11,6.5,84,32.0,97.3,,2,2,22558,97.23501,96.54578,0.7
-2026-07-12,6.3,84,31.0,99.6,,2,2,39069,106.452576,148.7901,-42.3
-2026-07-13,6.9,67,35.0,100.2,48.0,4,4,19,103.94793,128.98285,-25.0
+2026-07-12,6.3,84,31.0,99.6,,2,2,39069,103.135086,130.0199,-26.9
+2026-07-13,6.9,78,35.0,98.9,48.0,4,4,3658,100.70849,112.71137,-12.0
 
 === SPORT TOTALS ===
 Run,6.7h,12602.2kJ,87.8km,466 TSS
-Ride,41.7h,38395.5kJ,1475.5km,2216 TSS
+Ride,39.47h,36188.0kJ,1384.8km,2075 TSS
 OpenWaterSwim,1.1h,0.0kJ,3.3km,104 TSS
 Swim,4.55h,0.0kJ,14.5km,546 TSS
