@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-17T18:05:50.396605",
+  "last_updated": "2026-07-17T19:32:33.040034",
   "date_range": {
     "start": "2026-06-19",
     "end": "2026-07-17"
@@ -1875,7 +1875,7 @@
           "pMax": 860.1276
         }
       ],
-      "updated": "2026-07-17T14:01:08.447+00:00",
+      "updated": "2026-07-17T19:00:24.007+00:00",
       "weight": null,
       "restingHR": 73,
       "hrv": 20.0,
@@ -1893,11 +1893,11 @@
       "mood": null,
       "motivation": null,
       "injury": null,
-      "spO2": 95.52631,
+      "spO2": 95.375,
       "systolic": null,
       "diastolic": null,
       "hydration": null,
-      "hydrationVolume": 3.2000031,
+      "hydrationVolume": 4.7000046,
       "readiness": null,
       "baevskySI": null,
       "bloodGlucose": null,
@@ -1906,7 +1906,7 @@
       "abdomen": null,
       "vo2max": null,
       "comments": null,
-      "steps": 6667,
+      "steps": 9209,
       "respiration": 19.127907,
       "carbohydrates": null,
       "protein": null,
@@ -1917,8 +1917,8 @@
       "REMSleep": 7264,
       "DeepSleep": 3677,
       "LightSleep": 12557,
-      "ActiveEnergy": 381,
-      "RestingEnergy": 1446
+      "ActiveEnergy": 599,
+      "RestingEnergy": 1939
     }
   ],
   "weekly_summary": {
