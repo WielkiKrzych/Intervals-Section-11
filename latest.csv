@@ -1,5 +1,7 @@
 === ACTIVITIES ===
 date,type,name,duration_min,tss,kj,distance_km
+2026-07-18,Run,Brick 20-30' Z1,24,29,705.9,5.1
+2026-07-18,VirtualRide,Rower 60' Z1-Z2 — Powrót na rower 🚴,60,41,824.3,33.4
 2026-07-12,Run,ENEA Bydgoszcz Triathlon 1/2,100,129,2984.9,22.1
 2026-07-12,Ride,ENEA Bydgoszcz Triathlon 1/2,134,141,2207.5,90.7
 2026-07-12,OpenWaterSwim,ENEA Bydgoszcz Triathlon 1/2,38,78,0.0,2.1
@@ -70,10 +72,10 @@ date,sleep_hrs,resting_hr,hrv,weight,readiness,soreness,fatigue,steps,ctl,atl,ts
 2026-07-15,8.7,75,36.0,,49.0,2,2,25678,96.02524,84.70004,11.3
 2026-07-16,9.3,72,25.0,,20.0,2,2,20784,93.76592,73.4246,20.3
 2026-07-17,6.5,73,20.0,,,2,2,10709,91.55977,63.65016,27.9
-2026-07-18,7.0,68,32.0,99.9,39.0,2,2,4,90.95839,63.96298,27.0
+2026-07-18,7.0,71,32.0,99.5,39.0,2,2,2781,91.052505,64.49547,26.6
 
 === SPORT TOTALS ===
-Run,5.8h,11087.3kJ,76.8km,410 TSS
-Ride,34.32h,31425.2kJ,1204.0km,1816 TSS
+Run,6.2h,11793.2kJ,82.0km,439 TSS
+Ride,35.32h,32249.4kJ,1237.4km,1857 TSS
 OpenWaterSwim,1.1h,0.0kJ,3.3km,104 TSS
 Swim,3.36h,0.0kJ,10.7km,402 TSS
