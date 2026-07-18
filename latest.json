@@ -1,6 +1,6 @@
 {
   "athlete_id": "39505110",
-  "last_updated": "2026-07-18T06:22:23.564129",
+  "last_updated": "2026-07-18T08:19:55.738788",
   "date_range": {
     "start": "2026-06-20",
     "end": "2026-07-18"
@@ -1958,7 +1958,7 @@
       "elapsed_time": 1441,
       "icu_weighted_avg_watts": 489,
       "carbs_used": null,
-      "name": "Brick 20-30' Z1",
+      "name": "Warszawa Bieganie",
       "description": null,
       "start_date": "2026-07-18T05:50:42Z",
       "distance": 5124.21,
@@ -1978,7 +1978,7 @@
       "has_heartrate": true,
       "max_heartrate": 153,
       "average_heartrate": 142,
-      "average_cadence": 81.986115,
+      "average_cadence": 163.97223,
       "calories": 455,
       "average_temp": 26.38835,
       "min_temp": 26,
@@ -2004,8 +2004,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-07-18T06:17:25.405+00:00",
-      "icu_sync_date": "2026-07-18T06:17:27.345+00:00",
-      "analyzed": "2026-07-18T06:17:27.345+00:00",
+      "icu_sync_date": "2026-07-18T06:42:27.475+00:00",
+      "analyzed": "2026-07-18T06:42:27.475+00:00",
       "icu_w_prime": null,
       "p_max": null,
       "threshold_pace": 4.1666665,
@@ -2074,7 +2074,9 @@
         "torque",
         "fixed_altitude",
         "PercentageinZ2",
-        "VerticalOscillation"
+        "VerticalOscillation",
+        "THb",
+        "TymeBreathRate"
       ],
       "has_weather": true,
       "has_segments": false,
@@ -2172,7 +2174,7 @@
       "tiz_order": "PACE_POWER_HR",
       "polarization_index": 0.0,
       "icu_achievements": null,
-      "icu_intervals_edited": null,
+      "icu_intervals_edited": true,
       "lock_intervals": null,
       "icu_lap_count": 6,
       "icu_joules_above_ftp": 171,
@@ -2182,7 +2184,7 @@
       "icu_color": null,
       "icu_power_hr_z2": 3.7687767,
       "icu_power_hr_z2_mins": 6,
-      "icu_cadence_z2": 82,
+      "icu_cadence_z2": 164,
       "icu_rpe": 3,
       "feel": 2,
       "kg_lifted": null,
@@ -2233,7 +2235,7 @@
       "icu_efficiency_factor": 3.443662,
       "icu_power_hr": 3.4507043,
       "session_rpe": 72,
-      "average_stride": 1.3011994,
+      "average_stride": 0.6505997,
       "icu_average_watts": 490,
       "icu_variability_index": 0.9979592,
       "strain_score": 36.237885,
@@ -2245,11 +2247,11 @@
       "AeTHR": 141.35999999999999,
       "AeTwkg": 2.5969115122442865,
       "MeanVE": 114.36199722607489,
-      "LoadCTL": "Infinity",
+      "LoadCTL": 31.849755086835284,
       "Pvo2max": 596.5,
       "AllWorkFTP": 11.831,
       "PVCsnumber": 0,
-      "RunCadence": 163.97222900390625,
+      "RunCadence": 327.9444580078125,
       "WorkHourKg": 17.723747118660615,
       "Workoverz2": 498.235,
       "AvgBreathing": 40.330929294538564,
@@ -2291,8 +2293,8 @@
       "elapsed_time": 3608,
       "icu_weighted_avg_watts": 229,
       "carbs_used": 195,
-      "name": "Rower 60' Z1-Z2 \u2014 Powr\u00f3t na rower \ud83d\udeb4",
-      "description": null,
+      "name": "Rower 60' Z1-Z2",
+      "description": "",
       "start_date": "2026-07-18T04:37:43Z",
       "distance": 33445.49,
       "icu_distance": 33445.49,
@@ -2337,8 +2339,8 @@
       "file_type": "fit",
       "icu_athlete_id": "39505110",
       "created": "2026-07-18T05:38:05.163+00:00",
-      "icu_sync_date": "2026-07-18T05:44:21.084+00:00",
-      "analyzed": "2026-07-18T05:44:21.084+00:00",
+      "icu_sync_date": "2026-07-18T06:41:42.223+00:00",
+      "analyzed": "2026-07-18T06:41:42.223+00:00",
       "icu_w_prime": 15600,
       "p_max": 1580,
       "threshold_pace": null,
@@ -2374,7 +2376,7 @@
       "ignore_parts": null,
       "icu_training_load_data": 93,
       "interval_summary": [
-        "2x 5m 201w",
+        "2x 5m5s 201w",
         "1x 50m 233w"
       ],
       "skyline_chart_bytes": "CAYSBq4CuBezAhoDN0A3IgMCAgIoAQ==",
@@ -2536,7 +2538,7 @@
       "tiz_order": "POWER_HR_PACE",
       "polarization_index": 0.0,
       "icu_achievements": null,
-      "icu_intervals_edited": true,
+      "icu_intervals_edited": false,
       "lock_intervals": null,
       "icu_lap_count": 3,
       "icu_joules_above_ftp": 0,
@@ -2612,7 +2614,7 @@
       "AeTwkg": 2.6781981805532427,
       "MeanVE": 65.25602660016625,
       "VO2max": 165,
-      "LoadCTL": 45.06389923441001,
+      "LoadCTL": 45.028964088284376,
       "Pvo2max": 403.5,
       "TopZ4HR": 162,
       "TopZ4VE": 113,
@@ -15392,17 +15394,17 @@
   },
   "week_comparison": {
     "this_week": {
-      "count": 0,
-      "tss": 0,
-      "duration_hours": 0.0
+      "count": 2,
+      "tss": 70,
+      "duration_hours": 1.4
     },
     "previous_week": {
       "count": 14,
       "tss": 728,
       "duration_hours": 10.23
     },
-    "tss_change": "\u2193 100%",
-    "duration_change": "\u2193 100%",
-    "count_change": "\u2193 100%"
+    "tss_change": "\u2193 90%",
+    "duration_change": "\u2193 86%",
+    "count_change": "\u2193 86%"
   }
 }
