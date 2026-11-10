@@ -1,6 +1,6 @@
 # Training Report
-**Period:** 2026-10-12 to 2026-11-09
-**Last Updated:** 2026-11-09T18:40:03.300367
+**Period:** 2026-10-13 to 2026-11-10
+**Last Updated:** 2026-11-10T01:46:10.729899
 
 ## Training Status
 - **Fitness (CTL):** 0 - Chronic Training Load
